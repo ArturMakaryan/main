@@ -4,6 +4,9 @@
 
 [data-mj="sidebar"] {
   padding: 0;
+}
+
+[data-mj="sidebar"].app-ltr-17u1px6 {
   width: 80px;
 }
 
