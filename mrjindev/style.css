@@ -30,6 +30,7 @@ input.app-ltr-15ushj4 {
 
 [data-mj="header"] {
   box-shadow: none;
+  background-color: #1d232a;
 }
 
 [data-mj="register-button"] {
@@ -37,7 +38,7 @@ input.app-ltr-15ushj4 {
   box-shadow: 4px 4px 12px 0 rgba(255, 255, 255, 0.3) inset, 0 2px 12px 0 rgba(132, 36, 248, 1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 12px;
-  
+  color: #fff;
 }
 
 a.app-ltr-1lzgh63 {
@@ -51,4 +52,16 @@ a.app-ltr-1emwpxm {
   box-shadow: 4px 4px 12px 0 rgba(255, 255, 255, 0.3) inset, 0 2px 12px 0 rgba(132, 36, 248, 1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 12px;
+}
+
+.app-ltr-fkpkqq {
+  max-width: none;
+}
+
+[data-mj="custom-header"] {
+  background-color: #1d232a;
+}
+
+.app-ltr-i58pjb {
+  max-width: none;
 }
