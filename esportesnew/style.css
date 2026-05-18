@@ -115,13 +115,26 @@ html body [data-mj="lobby-catalog-search"] {
   border-color: #0f1229 !important;
 }
 
+html body [data-mj="lobby-catalog-mobile-category-chip"].app-ltr-13u1vz6 {
+  background-image: linear-gradient(98.66deg, #232328, #121216) !important;
+  border: 1px solid rgb(255 255 255 / 6%) !important;
+  border-radius: 16px !important;
+}
+
+html body [data-mj="lobby-catalog-mobile-category-chip"].app-ltr-7v4hfh {
+  background-image: linear-gradient(98.66deg, #8424f8, #6126bc) !important;
+  box-shadow: 4px 4px 12px 0 rgba(255, 255, 255, 0.3) inset, 0 2px 12px 0 rgba(132, 36, 248, 1) !important;
+  border: 1px solid rgb(255 255 255 / 6%) !important;
+  border-radius: 16px !important;
+}
+
 html body [data-mj="register-button"] {
-  padding: 15px 30px !important;
+  padding: 12px 30px !important;
   text-align: center !important;
   transition: 0.5s !important;
   background-size: 200% auto !important;
   color: white !important;
-  border-radius: 10px !important;
+  border-radius: 6px !important;
   display: block !important;
   border: 0 !important;
   font-weight: 500 !important;
