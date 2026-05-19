@@ -97,6 +97,13 @@ html body [class~="css-s4hrud"] {
   border-radius: 22px !important;
 }
 
+html body .app-ltr-s4hrud {
+  margin: 20px !important;
+  width: calc(100% - 40px) !important;
+  box-sizing: border-box !important;
+  border-radius: 22px !important;
+}
+
 html body [data-mj="widget-game-card"],
 html body [data-mj="widget-game-slider-slide"] {
   border-radius: 6px !important;
@@ -123,11 +130,18 @@ html body [data-mj="lobby-catalog-mobile-provider-input"] {
 html body [data-mj="lobby-catalog-mobile-search-toggle"] {
   background-color: rgb(255 255 255 / 6%) !important;
   border-color: #0d132d !important;
+  box-shadow: none !important;
 }
 
 html body [data-mj="lobby-catalog-provider-bottom-sheet-search"] {
   background-color: rgb(255 255 255 / 6%) !important;
   border-color: #0e132a !important;
+}
+
+html body .app-ltr-ja3k2i {
+  background-color: rgb(255 255 255 / 6%) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
 }
 
 html body [data-mj="lobby-catalog-mobile-category-chip"].app-ltr-13u1vz6 {
