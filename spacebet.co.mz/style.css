@@ -32,3 +32,39 @@
 .app-ltr-cvus8s {
   max-height: 48px;
 }
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.42) 0 1px, transparent 1.5px), radial-gradient(circle, rgba(70, 202, 255, 0.34) 0 1px, transparent 1.5px), linear-gradient(105deg, transparent, rgba(114, 70, 255, 0.08), transparent 58%);
+  background-position: 0 0, 42px 62px, 0 0;
+  background-size: 118px 118px, 176px 176px, 100% 100%;
+  animation: starDrift 34s linear infinite;
+  will-change: background-position;
+}
+
+@keyframes starDrift {
+  from {
+    background-position: 0 0, 42px 62px, 0 0;
+  }
+
+  to {
+    background-position: 118px 118px, 218px 238px, 0 0;
+  }
+}
