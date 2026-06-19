@@ -123,7 +123,7 @@ button.sport-tile {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 36px !important;
-  font-size: 20px !important;
+  font-size: 16px !important;
 }
 
 .show-all-button:hover,
@@ -150,9 +150,41 @@ button.sport-tile {
   border-radius: 9px;
 }
 
+.app-ltr-1q5mnmx {
+  padding-right: 0;
+  padding-left: 18px;
+}
+
+.app-ltr-1ku0cza {
+  padding-bottom: 0;
+}
+
 .ph-event-card {
   border: 1px solid rgba(118, 237, 255, 0.12);
   border-radius: 9px;
+}
+
+.keen-slider__slide[data-mj="widget-game-slider-slide"].app-ltr-0 > .app-ltr-1u72um6 > [data-mj="widget-game-card"] {
+  position: relative;
+  overflow: hidden;
+}
+
+.keen-slider__slide[data-mj="widget-game-slider-slide"].app-ltr-0 > .app-ltr-1u72um6 > [data-mj="widget-game-card"]::before {
+  content: "";
+  position: absolute;
+  top: -75%;
+  left: -120px;
+  width: 60px;
+  height: 250%;
+  pointer-events: none;
+  transform: rotate(25deg);
+  background: linear-gradient(180deg, transparent, rgba(47, 199, 255, 0.9), rgba(143, 77, 255, 0.8), rgba(255, 147, 0, 0.9), transparent);
+  filter: blur(18px);
+  opacity: 0.8;
+}
+
+.keen-slider__slide[data-mj="widget-game-slider-slide"].app-ltr-0 > .app-ltr-1u72um6 > [data-mj="widget-game-card"]:hover::before {
+  animation: sweep 0.8s ease;
 }
 
 html,
@@ -204,5 +236,15 @@ body > * {
 
   50% {
     background-position: 100% 0, 0 0;
+  }
+}
+
+@keyframes sweep {
+  from {
+    left: -120px;
+  }
+
+  to {
+    left: calc(100% + 120px);
   }
 }
