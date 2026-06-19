@@ -51,7 +51,21 @@
 }
 
 .app-ltr-yf9epo {
+  position: relative;
   background: radial-gradient(circle at 72% 0%, rgba(47, 199, 255, 0.15), transparent 32%), radial-gradient(circle at 92% 10%, rgba(255, 147, 0, 0.14), transparent 30%), linear-gradient(180deg, #121923fa, #080d16fc);
+}
+
+.app-ltr-yf9epo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(47, 199, 255, 0.86), rgba(255, 205, 46, 0.92), transparent), linear-gradient(90deg, #2fc7ff29, #7246ff38, #ff93002e);
+  background-size: 45% 100%, 100% 100%;
+  animation: bottomNavTrace 4.8s ease-in-out infinite;
 }
 
 button.sl-icon.app-ltr-j95oo3 {
@@ -165,5 +179,16 @@ body > * {
 
   to {
     background-position: 118px 118px, 218px 238px, 0 0;
+  }
+}
+
+@keyframes bottomNavTrace {
+  from,
+  to {
+    background-position: 0 0, 0 0;
+  }
+
+  50% {
+    background-position: 100% 0, 0 0;
   }
 }
