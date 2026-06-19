@@ -87,6 +87,35 @@ button.sl-icon.app-ltr-8je6u2 {
   max-height: 32px;
 }
 
+.app-ltr-ycgkvi,
+button.sl-icon.app-ltr-1etfhiw {
+  background: linear-gradient(180deg, #ffffff1f, #ffffff0d);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.keen-slider__slide[data-mj="widget-game-slider-slide"].app-ltr-0 {
+  border-color: #263b52;
+  box-shadow: 0 18px 32px #00000057, 0 0 26px #2fc7ff2e;
+}
+
+button.sport-tile {
+  border: 1px solid rgba(101, 186, 255, 0.24);
+}
+
+[data-mj="widget-game-card"] .app-ltr-3kzt60 .app-ltr-10sbmph {
+  display: none;
+}
+
+[data-mj="widget-game-card"] .app-ltr-3kzt60 .app-ltr-1xdhyk6 {
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #ffcd2e 44%, rgb(255, 147, 0) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 36px;
+  font-size: 20px;
+}
+
 html,
 body {
   min-height: 100%;
