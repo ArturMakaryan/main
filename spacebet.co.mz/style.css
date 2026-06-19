@@ -86,8 +86,7 @@ nav[data-mj="header-nav-list"].app-ltr-1xhj18k {
   color: #fff !important;
 }
 
-.app-ltr-fnkr0i {
-  color: rgb(0 0 0);
+.app-ltr-fnkr0i:active {
   transform: translateY(-1px);
   background: linear-gradient(180deg, rgb(255 205 46), #ff9300);
   border-color: #76edff80;
@@ -139,10 +138,6 @@ button.sport-tile {
   transform: translateY(-1px);
   background: linear-gradient(180deg, rgb(255 205 46), #ff9300);
   border-color: #76edff80;
-}
-
-.app-ltr-1dzjkmt button {
-  color: rgb(0 0 0);
 }
 
 .app-ltr-1u72um6 {
