@@ -122,8 +122,12 @@ button.sport-tile {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 36px !important;
+  line-height: 20px !important;
   font-size: 16px !important;
+}
+
+.app-ltr-3kzt60 {
+  display: block;
 }
 
 .show-all-button:hover,
@@ -147,7 +151,7 @@ button.sport-tile {
 }
 
 .app-ltr-1q5mnmx {
-  padding-right: 0;
+  padding-right: 8px;
   padding-left: 18px;
 }
 
@@ -168,10 +172,11 @@ button.sport-tile {
 .keen-slider__slide[data-mj="widget-game-slider-slide"].app-ltr-0 > .app-ltr-1u72um6 > [data-mj="widget-game-card"]::before {
   content: "";
   position: absolute;
-  top: -75%;
-  left: -120px;
+  top: -115%;
+  left: -90px;
   width: 60px;
   height: 250%;
+  z-index: 10;
   pointer-events: none;
   transform: rotate(25deg);
   background: linear-gradient(180deg, transparent, rgba(47, 199, 255, 0.9), rgba(143, 77, 255, 0.8), rgba(255, 147, 0, 0.9), transparent);
@@ -180,7 +185,11 @@ button.sport-tile {
 }
 
 .keen-slider__slide[data-mj="widget-game-slider-slide"].app-ltr-0 > .app-ltr-1u72um6 > [data-mj="widget-game-card"]:hover::before {
-  animation: sweep 0.8s ease;
+  animation: sweep 1s ease;
+}
+
+.app-ltr-140fydw:hover img {
+  transform: none;
 }
 
 .sl-navlink.app-ltr-7wct61,
@@ -194,6 +203,16 @@ button.sport-tile {
   background: linear-gradient(180deg, #ffffff1f, #ffffff0d);
 }
 
+[data-mj="game-catalog-provider-item"].app-ltr-1w70klm {
+  background: linear-gradient(180deg, #ffffff1f, #ffffff0d);
+  border: 1px solid rgb(255, 136, 0);
+}
+
+[data-mj="game-catalog-provider-item"].app-ltr-pvh644 {
+  background: linear-gradient(180deg, #fe88011a, #ffffff0d);
+  border: 1px solid rgb(255, 136, 0);
+}
+
 button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-eafz4r {
   background: linear-gradient(180deg, #ffffff1f, #ffffff0d);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -204,6 +223,15 @@ input[data-mj="game-catalog-search"].app-ltr-wddiwa,
 input[data-mj="game-catalog-provider-search"].app-ltr-wddiwa {
   background: linear-gradient(180deg, #ffffff1f, #ffffff0d);
   border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1jpi4pq {
+  background: linear-gradient(180deg, #ffffff1f, #ffffff0d);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.app-ltr-1ns8y9q {
+  border-radius: 6px;
 }
 
 html,
@@ -260,10 +288,10 @@ body > * {
 
 @keyframes sweep {
   from {
-    left: -120px;
+    left: -90px;
   }
 
   to {
-    left: calc(100% + 120px);
+    left: calc(100% + 90px);
   }
 }
