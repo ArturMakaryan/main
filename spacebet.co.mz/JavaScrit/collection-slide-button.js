@@ -109,12 +109,20 @@
     return true;
   };
 
-  if (mountWidget()) return;
+  let mountScheduled = false;
+  const scheduleMount = () => {
+    if (mountScheduled) return;
 
-  const observer = new MutationObserver(() => {
-    if (mountWidget()) observer.disconnect();
-  });
+    mountScheduled = true;
+    requestAnimationFrame(() => {
+      mountScheduled = false;
+      mountWidget();
+    });
+  };
+
+  mountWidget();
+
+  const observer = new MutationObserver(scheduleMount);
 
   observer.observe(document.documentElement, { childList: true, subtree: true });
-  window.setTimeout(() => observer.disconnect(), 30000);
 })();
