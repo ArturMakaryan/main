@@ -181,11 +181,11 @@ button.sport-tile {
   transform: rotate(25deg);
   background: linear-gradient(180deg, transparent, rgba(47, 199, 255, 0.9), rgba(143, 77, 255, 0.8), rgba(255, 147, 0, 0.9), transparent);
   filter: blur(18px);
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 .keen-slider__slide[data-mj="widget-game-slider-slide"].app-ltr-0 > .app-ltr-1u72um6 > [data-mj="widget-game-card"]:hover::before {
-  animation: sweep 1s ease;
+  animation: sweep 0.5s ease;
 }
 
 .app-ltr-140fydw:hover img {
