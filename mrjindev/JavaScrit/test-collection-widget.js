@@ -85,6 +85,17 @@
             display: flex;
             gap: 10px;
             overflow: hidden;
+            max-height: 220px;
+            opacity: 1;
+            transform: translateY(0);
+            transition: max-height 0.3s ease, opacity 0.22s ease, transform 0.3s ease;
+          }
+
+          .collection:not(.is-expanded) .games {
+            max-height: 0;
+            opacity: 0;
+            transform: translateY(14px);
+            pointer-events: none;
           }
 
           .game {
@@ -129,6 +140,48 @@
             outline-offset: -3px;
           }
 
+          .toggle {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            z-index: 3;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+            background: rgba(8, 12, 22, 0.5);
+            cursor: pointer;
+            backdrop-filter: blur(8px);
+            transition: background 0.2s ease, transform 0.2s ease;
+          }
+
+          .toggle:hover {
+            background: rgba(8, 12, 22, 0.78);
+          }
+
+          .toggle:focus-visible {
+            outline: 2px solid #76edff;
+            outline-offset: 3px;
+          }
+
+          .toggle-icon {
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            line-height: 1;
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+          }
+
+          .collection.is-expanded .toggle-icon {
+            transform: rotate(180deg);
+          }
+
           @media (max-width: 640px) {
             .collection {
               min-height: 250px;
@@ -160,6 +213,9 @@
             <h2 class="title"></h2>
             <div class="games"></div>
           </div>
+          <button class="toggle" type="button" aria-expanded="false" aria-label="Show games">
+            <span class="toggle-icon">⌄</span>
+          </button>
           <a class="open-link" target="_blank" rel="noopener noreferrer" aria-label="Open collection"></a>
         </section>
       `;
@@ -169,6 +225,7 @@
       const title = root.querySelector(".title");
       const games = root.querySelector(".games");
       const link = root.querySelector(".open-link");
+      const toggle = root.querySelector(".toggle");
 
       if (config.hero) {
         hero.style.backgroundImage = `url("${config.hero}")`;
@@ -178,24 +235,52 @@
 
       const gameSources = config.games.length ? config.games : [null, null, null];
 
-      gameSources.slice(0, 3).forEach((source) => {
+      gameSources.slice(0, 3).forEach((source, index) => {
         const card = document.createElement("div");
         card.className = "game";
+
+        const addFallback = () => {
+          card.replaceChildren();
+
+          const fallback = document.createElement("div");
+          fallback.className = "fallback-game";
+          fallback.textContent = `${config.title} ${index + 1}`;
+          card.append(fallback);
+        };
 
         if (source) {
           const image = document.createElement("img");
           image.src = source;
           image.alt = "";
+          image.addEventListener("error", addFallback, { once: true });
           card.append(image);
         } else {
-          const fallback = document.createElement("div");
-          fallback.className = "fallback-game";
-          fallback.textContent = config.title;
-          card.append(fallback);
+          addFallback();
         }
 
         games.append(card);
       });
+
+      toggle.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        this._expanded = !this._expanded;
+        this.updateExpandedState();
+      });
+
+      this.updateExpandedState();
+    }
+
+    updateExpandedState() {
+      const collection = this.shadowRoot?.querySelector(".collection");
+      const toggle = this.shadowRoot?.querySelector(".toggle");
+
+      if (!collection || !toggle) return;
+
+      const isExpanded = Boolean(this._expanded);
+      collection.classList.toggle("is-expanded", isExpanded);
+      toggle.setAttribute("aria-expanded", String(isExpanded));
+      toggle.setAttribute("aria-label", isExpanded ? "Hide games" : "Show games");
     }
   }
 
