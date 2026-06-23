@@ -4,13 +4,27 @@ html {
 }
 
 body {
+  position: relative;
   min-height: 100vh;
   margin: 0;
+  isolation: isolate;
   background-color: #062635;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
   background-image: linear-gradient(rgba(1, 15, 27, 0.3), rgba(1, 15, 27, 0.3)),
     url("assets/page-background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
 }
