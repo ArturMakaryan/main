@@ -103,7 +103,11 @@
     const targetLink = document.querySelector(targetSelector);
     const targetSlide = targetLink?.closest('[data-mj="widget-collection-slider-item"]');
 
-    if (!targetSlide || targetSlide.querySelector(widgetTag)) return Boolean(targetSlide);
+    if (!targetSlide) return false;
+
+    targetSlide.style.position = "relative";
+
+    if (targetSlide.querySelector(widgetTag)) return true;
 
     targetSlide.append(document.createElement(widgetTag));
     return true;
