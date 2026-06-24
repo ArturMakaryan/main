@@ -4,11 +4,45 @@
   const headerSelector = '[data-mj="header"]';
   const stackingStyleId = "mrjindev-scroll-welcome-banner-stacking";
   const bannerImage = "https://cdn.jsdelivr.net/gh/arturvip1/main@main/assets/mrjindev-welcome-banner.png";
+  const gsapUrl = "https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js";
+  const splitTextUrl = "https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js";
+
+  const loadExternalScript = (id, source) => new Promise((resolve, reject) => {
+    const existing = document.getElementById(id);
+    if (existing) {
+      if (existing.dataset.loaded === "true") resolve();
+      else {
+        existing.addEventListener("load", resolve, { once: true });
+        existing.addEventListener("error", reject, { once: true });
+      }
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.id = id;
+    script.src = source;
+    script.async = true;
+    script.addEventListener("load", () => {
+      script.dataset.loaded = "true";
+      resolve();
+    }, { once: true });
+    script.addEventListener("error", reject, { once: true });
+    document.head.append(script);
+  });
+
+  const ensureGsapSplitText = async () => {
+    if (!window.gsap) await loadExternalScript("mrjindev-gsap", gsapUrl);
+    if (!window.SplitText) await loadExternalScript("mrjindev-gsap-split-text", splitTextUrl);
+    if (!window.gsap || !window.SplitText) return false;
+    window.gsap.registerPlugin(window.SplitText);
+    return true;
+  };
 
   class ScrollWelcomeBanner extends HTMLElement {
     constructor() {
       super();
       this.scrollQueued = false;
+      this.hasRevealedText = false;
       this.reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
       this.onScroll = this.onScroll.bind(this);
       this.onMotionChange = this.onMotionChange.bind(this);
@@ -21,12 +55,15 @@
         window.addEventListener("scroll", this.onScroll, { passive: true });
         this.reducedMotion.addEventListener?.("change", this.onMotionChange);
         this.updateBackgroundMotion();
+        this.observeTextReveal();
       }
     }
 
     disconnectedCallback() {
       window.removeEventListener("scroll", this.onScroll);
       this.reducedMotion.removeEventListener?.("change", this.onMotionChange);
+      this.textObserver?.disconnect();
+      this.textAnimation?.kill();
     }
 
     render() {
@@ -82,13 +119,43 @@
           <div class="background"></div>
           <div class="shade"></div>
           <div class="content">
-            <h2>Claim your welcome bonus</h2>
-            <p>Your next winning moment starts here. Play top casino games and unlock exclusive rewards.</p>
+            <h2 data-word-reveal>Claim your welcome bonus</h2>
+            <p data-word-reveal>Your next winning moment starts here. Play top casino games and unlock exclusive rewards.</p>
             <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Play now</a>
           </div>
         </section>
       `;
       this.banner = this.shadowRoot.querySelector(".banner");
+    }
+
+    observeTextReveal() {
+      if (this.reducedMotion.matches || !("IntersectionObserver" in window)) return;
+      this.textObserver = new IntersectionObserver((entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        this.textObserver.disconnect();
+        this.revealText();
+      }, { threshold: 0.35 });
+      this.textObserver.observe(this);
+    }
+
+    async revealText() {
+      if (this.hasRevealedText || this.reducedMotion.matches) return;
+      try {
+        if (!(await ensureGsapSplitText())) return;
+        const textElements = [...this.shadowRoot.querySelectorAll("[data-word-reveal]")];
+        const splits = textElements.map((element) => new window.SplitText(element, { type: "words" }));
+        const words = splits.flatMap((split) => split.words);
+        this.hasRevealedText = true;
+        this.textAnimation = window.gsap.from(words, {
+          opacity: 0,
+          y: 30,
+          stagger: 0.05,
+          duration: 0.6,
+          ease: "power2.out"
+        });
+      } catch {
+        // Keep the original, visible text when external animation assets are unavailable.
+      }
     }
 
     onScroll() {
@@ -102,6 +169,11 @@
 
     onMotionChange() {
       this.updateBackgroundMotion();
+      if (this.reducedMotion.matches) {
+        this.textAnimation?.progress(1).kill();
+      } else {
+        this.observeTextReveal();
+      }
     }
 
     updateBackgroundMotion() {
