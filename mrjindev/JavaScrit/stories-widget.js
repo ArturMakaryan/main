@@ -164,10 +164,18 @@
           .viewer.cube-in-next { animation: cube-in-next .35s cubic-bezier(.22,.8,.24,1) both; }
           .viewer.cube-out-previous { animation: cube-out-previous .27s cubic-bezier(.55,.06,.68,.19) both; }
           .viewer.cube-in-previous { animation: cube-in-previous .35s cubic-bezier(.22,.8,.24,1) both; }
+          .viewer.deck-out-next { animation: deck-out-next .22s cubic-bezier(.55,.06,.68,.19) both; }
+          .viewer.deck-in-next { animation: deck-in-next .32s cubic-bezier(.22,.8,.24,1) both; }
+          .viewer.deck-out-previous { animation: deck-out-previous .22s cubic-bezier(.55,.06,.68,.19) both; }
+          .viewer.deck-in-previous { animation: deck-in-previous .32s cubic-bezier(.22,.8,.24,1) both; }
           @keyframes cube-out-next { to { opacity: 0; transform: translate(-50%, -50%) rotateY(-90deg); } }
           @keyframes cube-in-next { from { opacity: 0; transform: translate(-50%, -50%) rotateY(90deg); } to { opacity: 1; transform: translate(-50%, -50%) rotateY(0); } }
           @keyframes cube-out-previous { to { opacity: 0; transform: translate(-50%, -50%) rotateY(90deg); } }
           @keyframes cube-in-previous { from { opacity: 0; transform: translate(-50%, -50%) rotateY(-90deg); } to { opacity: 1; transform: translate(-50%, -50%) rotateY(0); } }
+          @keyframes deck-out-next { to { opacity: 0; transform: translate(-50%, -50%) translateX(-96px) scale(.93); } }
+          @keyframes deck-in-next { from { opacity: 0; transform: translate(-50%, -50%) translateX(96px) scale(.93); } to { opacity: 1; transform: translate(-50%, -50%) translateX(0) scale(1); } }
+          @keyframes deck-out-previous { to { opacity: 0; transform: translate(-50%, -50%) translateX(96px) scale(.93); } }
+          @keyframes deck-in-previous { from { opacity: 0; transform: translate(-50%, -50%) translateX(-96px) scale(.93); } to { opacity: 1; transform: translate(-50%, -50%) translateX(0) scale(1); } }
           @media (max-width: 640px) { .rail { gap: 13px; padding-inline: 2px; } .story-trigger { flex-basis: 76px; } .story-avatar { width: 65px; height: 65px; border-width: 4px; } .story-avatar span { font-size: 29px; } .story-label { font-size: 14px; } .modal { padding: 0; } .story-stage { width: 100%; height: 100dvh; min-height: 0; perspective: 900px; } .neighbours { display: none; } .viewer { width: 100%; height: 100dvh; min-height: 0; border: 0; border-radius: 0; } .navigation { width: 34px; height: 54px; } }
         </style>
         <section class="rail" aria-label="Featured stories"></section>
@@ -401,8 +409,7 @@
     }
 
     switchStory(storyIndex, slideIndex, direction) {
-      const shouldAnimate = window.innerWidth <= 640 && !this.reducedMotion.matches;
-      if (!shouldAnimate) {
+      if (this.reducedMotion.matches) {
         this.storyIndex = storyIndex;
         this.slideIndex = slideIndex;
         this.updateViewer();
@@ -410,8 +417,12 @@
       }
 
       this.stopPlayback();
-      const outClass = direction === "next" ? "cube-out-next" : "cube-out-previous";
-      const inClass = direction === "next" ? "cube-in-next" : "cube-in-previous";
+      const useCubeTransition = window.innerWidth <= 640;
+      const transitionType = useCubeTransition ? "cube" : "deck";
+      const outClass = `${transitionType}-out-${direction}`;
+      const inClass = `${transitionType}-in-${direction}`;
+      const outDuration = useCubeTransition ? 260 : 210;
+      const inDuration = useCubeTransition ? 360 : 330;
       this.viewer.classList.add(outClass);
 
       window.setTimeout(() => {
@@ -420,8 +431,8 @@
         this.viewer.classList.remove(outClass);
         this.updateViewer();
         this.viewer.classList.add(inClass);
-        window.setTimeout(() => this.viewer.classList.remove(inClass), 360);
-      }, 260);
+        window.setTimeout(() => this.viewer.classList.remove(inClass), inDuration);
+      }, outDuration);
     }
 
     nextStoryGroup() {
