@@ -2,6 +2,7 @@
   const widgetTag = "stories-widget";
   const containerSelector = '[data-mj="widget-info-panel-container"]';
   const slideDuration = 5000;
+  const viewedStoriesStorageKey = "mrjindev-stories-viewed-v1";
 
   /*
    * Change this public URL after uploading the image to the MrjinDev asset
@@ -81,6 +82,7 @@
       this.previousBodyOverflow = "";
       this.swipeStart = null;
       this.isTransitioning = false;
+      this.viewedStories = this.getViewedStories();
       this.reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
       this.onKeydown = this.onKeydown.bind(this);
@@ -90,12 +92,14 @@
       this.onPointerUp = this.onPointerUp.bind(this);
       this.onTouchStart = this.onTouchStart.bind(this);
       this.onTouchEnd = this.onTouchEnd.bind(this);
+      this.onResize = this.onResize.bind(this);
     }
 
     connectedCallback() {
       if (!this.shadowRoot) {
         this.attachShadow({ mode: "open" });
         this.render();
+        window.addEventListener("resize", this.onResize);
       }
     }
 
@@ -104,6 +108,7 @@
       document.removeEventListener("keydown", this.onKeydown, true);
       document.removeEventListener("visibilitychange", this.onVisibilityChange);
       this.reducedMotion.removeEventListener?.("change", this.onMotionChange);
+      window.removeEventListener("resize", this.onResize);
     }
 
     render() {
@@ -117,11 +122,13 @@
           .rail::-webkit-scrollbar { display: none; }
           .story-trigger { flex: 0 0 88px; display: grid; gap: 9px; justify-items: center; padding: 0; color: #f8f8fb; border: 0; background: transparent; cursor: pointer; }
           .story-trigger:focus-visible { outline: 2px solid #a970ff; outline-offset: 5px; border-radius: 12px; }
-          .story-avatar { position: relative; display: grid; place-items: center; width: 76px; height: 76px; overflow: hidden; border: 5px solid #383540; border-radius: 50%; background: radial-gradient(circle at 35% 28%, #8d61ff 0 22%, #40229a 54%, #1b1534 100%); box-shadow: 0 0 0 2px rgba(157, 110, 255, 0.35); transition: transform .18s ease, box-shadow .18s ease; }
-          .story-trigger:hover .story-avatar { transform: translateY(-2px); box-shadow: 0 0 0 2px #a970ff, 0 10px 22px rgba(56, 24, 135, .45); }
-          .story-avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+          .story-avatar { position: relative; display: grid; place-items: center; width: 76px; height: 76px; overflow: hidden; border: 1px solid #5a5d66; border-radius: 50%; background: #1b1d24; box-shadow: none; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+          .story-trigger.is-unseen .story-avatar { border-color: #c86dff; box-shadow: 0 0 0 1px rgba(215, 109, 255, .52); }
+          .story-trigger:hover .story-avatar { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0, 0, 0, .4); }
+          .story-trigger.is-unseen:hover .story-avatar { box-shadow: 0 0 0 1px rgba(215, 109, 255, .76), 0 10px 22px rgba(56, 24, 135, .45); }
+          .story-avatar img { position: absolute; inset: 3px; width: calc(100% - 6px); height: calc(100% - 6px); border-radius: 50%; object-fit: cover; }
           .story-avatar span { font-size: 35px; line-height: 1; filter: drop-shadow(0 3px 5px rgba(0,0,0,.32)); }
-          .story-label { max-width: 104px; overflow: hidden; font-size: 16px; font-weight: 650; line-height: 1.15; text-align: center; text-overflow: ellipsis; white-space: nowrap; }
+          .story-label { max-width: 104px; overflow: hidden; font-size: 14px; font-weight: 300; line-height: 1.15; text-align: center; text-overflow: ellipsis; white-space: nowrap; }
 
           .modal { position: fixed; inset: 0; z-index: 2147483647; display: none; place-items: center; padding: 24px; }
           .modal.is-open { display: grid; }
@@ -131,9 +138,9 @@
           .neighbours { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
           .deck-transition-layer { position: absolute; inset: 0; z-index: 6; pointer-events: none; }
           .deck-transition-card { position: absolute !important; margin: 0; transform: none !important; transition: left .38s cubic-bezier(.22,.8,.24,1), top .38s cubic-bezier(.22,.8,.24,1), width .38s cubic-bezier(.22,.8,.24,1), height .38s cubic-bezier(.22,.8,.24,1), border-radius .38s cubic-bezier(.22,.8,.24,1), opacity .24s ease; will-change: left, top, width, height, border-radius; }
-          .story-peek { position: absolute; top: 50%; left: 50%; display: grid; place-items: end center; width: min(12vw, 216px); height: min(45vh, 390px); overflow: hidden; padding: 20px 12px; border: 0; border-radius: 18px; background: #151126; color: #fff; cursor: pointer; opacity: .44; pointer-events: auto; transform: translate(-50%, -50%) translateX(calc(var(--offset) * 320px)) scale(.82); transition: opacity .28s ease, transform .36s cubic-bezier(.2,.8,.2,1), filter .28s ease; }
+          .story-peek { position: absolute; top: 50%; left: 50%; display: grid; place-items: end center; width: min(12vw, 216px); height: min(45vh, 390px); overflow: hidden; padding: 20px 12px; border: 0; border-radius: 18px; background: #151126; color: #fff; cursor: pointer; opacity: .44; pointer-events: auto; transform: translate(-50%, -50%) translateX(calc(var(--offset) * var(--deck-step, 320px))) scale(.82); transition: opacity .28s ease, transform .36s cubic-bezier(.2,.8,.2,1), filter .28s ease; }
           .story-peek::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,5,20,.32), rgba(7,5,20,.82)); }
-          .story-peek:hover, .story-peek:focus-visible { opacity: .82; filter: brightness(1.08); transform: translate(-50%, -50%) translateX(calc(var(--offset) * 320px)) scale(.88); outline: 2px solid #a970ff; outline-offset: 4px; }
+          .story-peek:hover, .story-peek:focus-visible { opacity: .82; filter: brightness(1.08); transform: translate(-50%, -50%) translateX(calc(var(--offset) * var(--deck-step, 320px))) scale(.88); outline: 2px solid #a970ff; outline-offset: 4px; }
           .story-peek img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
           .story-peek-label { position: relative; z-index: 1; max-width: 100%; overflow: hidden; font-size: 15px; font-weight: 800; text-overflow: ellipsis; text-shadow: 0 2px 12px rgba(0,0,0,.8); white-space: nowrap; }
           .media, .media img, .media-fallback { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -233,6 +240,8 @@
       const button = document.createElement("button");
       button.className = "story-trigger";
       button.type = "button";
+      button.dataset.storyIndex = String(index);
+      button.classList.toggle("is-unseen", !this.viewedStories.has(story.title));
       button.setAttribute("aria-label", `Open ${story.title} story`);
       const avatar = this.createAvatar(story, "story-avatar");
       const label = document.createElement("span");
@@ -292,6 +301,7 @@
     updateViewer() {
       const story = STORIES[this.storyIndex];
       const slide = story.slides[this.slideIndex];
+      this.markStoryViewed(story);
       this.stopPlayback();
       this.elapsed = 0;
       this.storyTitle.textContent = story.title;
@@ -315,6 +325,26 @@
       }
       this.renderProgress();
       this.startPlayback();
+    }
+
+    getViewedStories() {
+      try {
+        const value = JSON.parse(localStorage.getItem(viewedStoriesStorageKey) || "[]");
+        return new Set(Array.isArray(value) ? value : []);
+      } catch {
+        return new Set();
+      }
+    }
+
+    markStoryViewed(story) {
+      if (this.viewedStories.has(story.title)) return;
+      this.viewedStories.add(story.title);
+      try {
+        localStorage.setItem(viewedStoriesStorageKey, JSON.stringify([...this.viewedStories]));
+      } catch {
+        // The interaction still works when storage is unavailable.
+      }
+      this.rail?.querySelector(`[data-story-index="${this.storyIndex}"]`)?.classList.remove("is-unseen");
     }
 
     renderNeighbourStories() {
@@ -349,6 +379,21 @@
         button.addEventListener("click", () => this.switchStory(index, 0, index > this.storyIndex ? "next" : "previous"));
         this.neighbours.append(button);
       });
+      this.updateDeckSpacing();
+    }
+
+    updateDeckSpacing() {
+      if (window.innerWidth <= 640) return;
+      const peek = this.neighbours.querySelector(".story-peek");
+      if (!peek) return;
+      const viewerWidth = this.viewer.getBoundingClientRect().width;
+      const peekWidth = peek.getBoundingClientRect().width;
+      const gap = 40;
+      this.neighbours.style.setProperty("--deck-step", `${(viewerWidth / 2) + (peekWidth / 2) + gap}px`);
+    }
+
+    onResize() {
+      this.updateDeckSpacing();
     }
 
     renderProgress() {
@@ -560,7 +605,7 @@
       if (offset > storyCount / 2) offset -= storyCount;
       if (offset < -storyCount / 2) offset += storyCount;
       return {
-        left: viewerRect.left + (viewerRect.width / 2) + (offset * 320) - (peekSize.width / 2),
+        left: viewerRect.left + (viewerRect.width / 2) + (offset * ((viewerRect.width / 2) + (peekSize.width / 2) + 40)) - (peekSize.width / 2),
         top: viewerRect.top + (viewerRect.height / 2) - (peekSize.height / 2),
         width: peekSize.width,
         height: peekSize.height,
