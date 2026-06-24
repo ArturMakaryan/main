@@ -8,6 +8,12 @@
    * host. Each story may contain any number of slides, and a CTA is optional.
    */
   const commonStoryImage = "https://cdn.jsdelivr.net/gh/arturvip1/main@52a5590/assets/mrjindev-casino-night.png";
+  const additionalStoryImages = [
+    "https://i.pinimg.com/736x/85/dc/0c/85dc0c13949d785165cb202be2d1616d.jpg",
+    "https://i.pinimg.com/1200x/c4/e1/38/c4e1383a7e47c89d7b44fc1754d4ddbe.jpg",
+    "https://i.pinimg.com/736x/85/71/b6/8571b6b7b0f1ac3c5766dec5657ab5c5.jpg",
+    "https://i.pinimg.com/736x/11/c8/c5/11c8c51f779299b09017cac7986b37d3.jpg"
+  ];
 
   const STORIES = [
     {
@@ -19,26 +25,36 @@
           image: commonStoryImage,
           alt: "Reload bonus",
           cta: { label: "Let's GO!", href: "https://mrjindev.com/en/" }
-        }
+        },
+        { image: additionalStoryImages[0], alt: "Reload promotion" }
       ]
     },
     {
       title: "Program",
       icon: "👑",
       thumbnail: commonStoryImage,
-      slides: [{ image: commonStoryImage, alt: "Program rewards" }]
+      slides: [
+        { image: commonStoryImage, alt: "Program rewards" },
+        { image: additionalStoryImages[1], alt: "Program promotion" }
+      ]
     },
     {
       title: "Races",
       icon: "🏆",
       thumbnail: commonStoryImage,
-      slides: [{ image: commonStoryImage, alt: "Races" }]
+      slides: [
+        { image: commonStoryImage, alt: "Races" },
+        { image: additionalStoryImages[2], alt: "Races promotion" }
+      ]
     },
     {
       title: "Lootboxes",
       icon: "🎁",
       thumbnail: commonStoryImage,
-      slides: [{ image: commonStoryImage, alt: "Lootboxes" }]
+      slides: [
+        { image: commonStoryImage, alt: "Lootboxes" },
+        { image: additionalStoryImages[3], alt: "Lootboxes promotion" }
+      ]
     }
   ];
 
