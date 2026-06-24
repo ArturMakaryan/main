@@ -114,8 +114,8 @@
 
       const bannerRect = this.getBoundingClientRect();
       const headerHeight = document.querySelector(headerSelector)?.getBoundingClientRect().height || 72;
-      const fadeDistance = Math.max(1, ((bannerRect.height / 2) - headerHeight) * 0.82);
-      const earlyStart = 24;
+      const fadeDistance = Math.max(1, ((bannerRect.height / 2) - headerHeight) * 1.55);
+      const earlyStart = 16;
       const progress = Math.min(1, Math.max(0, (-bannerRect.top + earlyStart) / fadeDistance));
       this.banner.style.transform = `translateY(${progress * 12}%)`;
       this.banner.style.opacity = String(1 - progress);
