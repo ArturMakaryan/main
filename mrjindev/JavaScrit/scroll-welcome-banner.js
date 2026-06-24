@@ -1,14 +1,12 @@
 (() => {
   const widgetTag = "scroll-welcome-banner";
   const containerSelector = '[data-mj="widget-info-panel-container"]';
+  const headerSelector = '[data-mj="header"]';
   const bannerImage = "https://cdn.jsdelivr.net/gh/arturvip1/main@main/assets/mrjindev-welcome-banner.png";
-  const scrollThreshold = 12;
 
   class ScrollWelcomeBanner extends HTMLElement {
     constructor() {
       super();
-      this.isHidden = false;
-      this.lastScrollY = window.scrollY;
       this.scrollQueued = false;
       this.reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
       this.onScroll = this.onScroll.bind(this);
@@ -21,6 +19,7 @@
         this.render();
         window.addEventListener("scroll", this.onScroll, { passive: true });
         this.reducedMotion.addEventListener?.("change", this.onMotionChange);
+        this.updateBackgroundMotion();
       }
     }
 
@@ -35,9 +34,6 @@
           :host {
             display: block;
             height: 400px;
-            margin-block-end: 0;
-            overflow: clip;
-            transition: margin-block-end 300ms cubic-bezier(.22, 1, .36, 1);
           }
 
           *, *::before, *::after { box-sizing: border-box; }
@@ -51,17 +47,10 @@
             isolation: isolate;
             background: #0c0a15;
             color: #fff;
-            transform: translateY(0);
-            opacity: 1;
-            transition: transform 300ms cubic-bezier(.22, 1, .36, 1), opacity 300ms cubic-bezier(.22, 1, .36, 1);
-            will-change: transform, opacity;
           }
 
-          :host(.is-hidden) { margin-block-end: -400px; }
-          :host(.is-hidden) .banner { transform: translateY(-100%); opacity: 0; pointer-events: none; }
-
           .background, .shade { position: absolute; inset: 0; z-index: -1; }
-          .background { background: center / cover no-repeat url("${bannerImage}"); }
+          .background { background: center / cover no-repeat url("${bannerImage}"); transform: translateY(0) scale(1); transform-origin: center; opacity: 1; will-change: transform, opacity; }
           .shade { background: linear-gradient(90deg, rgba(4, 3, 11, .58), rgba(4, 3, 11, .08) 50%, rgba(4, 3, 11, .55)); }
           .content {
             display: grid;
@@ -85,9 +74,6 @@
             .content { padding-inline: 22px; }
           }
 
-          @media (prefers-reduced-motion: reduce) {
-            :host, .banner, a { transition: none; }
-          }
         </style>
         <section class="banner" aria-label="Casino welcome offer">
           <div class="background"></div>
@@ -99,6 +85,7 @@
           </div>
         </section>
       `;
+      this.background = this.shadowRoot.querySelector(".background");
     }
 
     onScroll() {
@@ -106,30 +93,30 @@
       this.scrollQueued = true;
       requestAnimationFrame(() => {
         this.scrollQueued = false;
-        const currentScrollY = Math.max(0, window.scrollY);
-        const scrollDelta = currentScrollY - this.lastScrollY;
-
-        if (currentScrollY === 0) {
-          this.setHidden(false);
-        } else if (scrollDelta > scrollThreshold) {
-          this.setHidden(true);
-        } else if (scrollDelta < -scrollThreshold) {
-          this.setHidden(false);
-        }
-
-        this.lastScrollY = currentScrollY;
+        this.updateBackgroundMotion();
       });
     }
 
     onMotionChange() {
-      this.style.transition = this.reducedMotion.matches ? "none" : "";
+      this.updateBackgroundMotion();
     }
 
-    setHidden(shouldHide) {
-      if (this.isHidden === shouldHide) return;
-      this.isHidden = shouldHide;
-      this.classList.toggle("is-hidden", shouldHide);
+    updateBackgroundMotion() {
+      if (!this.background) return;
+      if (this.reducedMotion.matches) {
+        this.background.style.transform = "none";
+        this.background.style.opacity = "1";
+        return;
+      }
+
+      const bannerRect = this.getBoundingClientRect();
+      const headerHeight = document.querySelector(headerSelector)?.getBoundingClientRect().height || 72;
+      const fadeDistance = Math.max(1, (bannerRect.height / 2) - headerHeight);
+      const progress = Math.min(1, Math.max(0, -bannerRect.top / fadeDistance));
+      this.background.style.transform = `translateY(${-progress * 12}%) scale(${1 + (progress * 0.04)})`;
+      this.background.style.opacity = String(1 - progress);
     }
+
   }
 
   if (!customElements.get(widgetTag)) customElements.define(widgetTag, ScrollWelcomeBanner);
