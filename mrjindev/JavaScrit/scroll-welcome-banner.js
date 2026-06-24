@@ -45,13 +45,16 @@
             height: 400px;
             overflow: hidden;
             isolation: isolate;
-            background: #0c0a15;
             color: #fff;
+            transform: translateY(0) scale(1);
+            transform-origin: center;
+            opacity: 1;
+            will-change: transform, opacity;
           }
 
           .background, .shade { position: absolute; inset: 0; z-index: -1; }
-          .background { background: center / cover no-repeat url("${bannerImage}"); transform: translateY(0) scale(1); transform-origin: center; opacity: 1; will-change: transform, opacity; }
-          .shade { background: linear-gradient(90deg, rgba(4, 3, 11, .58), rgba(4, 3, 11, .08) 50%, rgba(4, 3, 11, .55)); }
+          .background { background: center / cover no-repeat url("${bannerImage}"); }
+          .shade { display: none; }
           .content {
             display: grid;
             place-content: center;
@@ -64,13 +67,12 @@
 
           h2 { margin: 0; font-size: clamp(32px, 4vw, 58px); font-weight: 850; letter-spacing: -.04em; line-height: .98; text-shadow: 0 5px 24px rgba(0, 0, 0, .5); }
           p { max-width: 590px; margin: 16px 0 24px; color: rgba(255, 255, 255, .86); font-size: clamp(15px, 1.55vw, 20px); line-height: 1.45; text-shadow: 0 2px 13px rgba(0, 0, 0, .55); }
-          a { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 13px 25px; border-radius: 999px; background: linear-gradient(105deg, #b56cff, #7545f5); box-shadow: 0 10px 26px rgba(66, 26, 157, .5), inset 0 1px 0 rgba(255, 255, 255, .35); color: #fff; font-size: 16px; font-weight: 800; text-decoration: none; transition: transform .18s ease, filter .18s ease; }
+          a { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 13px 25px; border: 1px solid rgba(255, 255, 255, .82); border-radius: 999px; background: transparent; box-shadow: none; color: #fff; font-size: 16px; font-weight: 800; text-decoration: none; transition: transform .18s ease, filter .18s ease; }
           a:hover { filter: brightness(1.12); transform: translateY(-2px); }
           a:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
 
           @media (max-width: 640px) {
             .background { background-position: 38% center; }
-            .shade { background: linear-gradient(90deg, rgba(4, 3, 11, .7), rgba(4, 3, 11, .2), rgba(4, 3, 11, .7)); }
             .content { padding-inline: 22px; }
           }
 
@@ -85,6 +87,7 @@
           </div>
         </section>
       `;
+      this.banner = this.shadowRoot.querySelector(".banner");
       this.background = this.shadowRoot.querySelector(".background");
     }
 
@@ -102,19 +105,20 @@
     }
 
     updateBackgroundMotion() {
-      if (!this.background) return;
+      if (!this.banner) return;
       if (this.reducedMotion.matches) {
-        this.background.style.transform = "none";
-        this.background.style.opacity = "1";
+        this.banner.style.transform = "none";
+        this.banner.style.opacity = "1";
         return;
       }
 
       const bannerRect = this.getBoundingClientRect();
       const headerHeight = document.querySelector(headerSelector)?.getBoundingClientRect().height || 72;
-      const fadeDistance = Math.max(1, (bannerRect.height / 2) - headerHeight);
-      const progress = Math.min(1, Math.max(0, -bannerRect.top / fadeDistance));
-      this.background.style.transform = `translateY(${-progress * 12}%) scale(${1 + (progress * 0.04)})`;
-      this.background.style.opacity = String(1 - progress);
+      const fadeDistance = Math.max(1, ((bannerRect.height / 2) - headerHeight) * 0.82);
+      const earlyStart = 24;
+      const progress = Math.min(1, Math.max(0, (-bannerRect.top + earlyStart) / fadeDistance));
+      this.banner.style.transform = `translateY(${-progress * 12}%) scale(${1 + (progress * 0.04)})`;
+      this.banner.style.opacity = String(1 - progress);
     }
 
   }
