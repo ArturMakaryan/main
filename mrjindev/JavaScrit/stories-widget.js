@@ -7,7 +7,7 @@
    * Change this public URL after uploading the image to the MrjinDev asset
    * host. Each story may contain any number of slides, and a CTA is optional.
    */
-  const commonStoryImage = "https://i.pinimg.com/736x/ba/b9/53/bab9530083cd2d59057eab1bb962e1ff.jpg";
+  const commonStoryImage = "https://cdn.jsdelivr.net/gh/arturvip1/main@52a5590/assets/mrjindev-casino-night.png";
 
   const STORIES = [
     {
