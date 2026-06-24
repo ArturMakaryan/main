@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Story Swipe Demo</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #090a10;
+    }
+
+    * { box-sizing: border-box; }
+    body { min-width: 320px; min-height: 100vh; margin: 0; overflow: hidden; background: radial-gradient(circle at 50% 16%, #282b3f, #090a10 55%); color: #fff; }
+    button { font: inherit; }
+
+    .demo { display: grid; min-height: 100vh; place-items: center; padding: 28px; }
+    .story-stage { position: relative; width: min(92vw, 410px); height: min(84vh, 740px); min-height: 480px; perspective: 1200px; touch-action: pan-y; }
+    .story-card { position: absolute; inset: 0; overflow: hidden; border: 1px solid rgba(255, 255, 255, .16); border-radius: 26px; background: #171824; box-shadow: 0 24px 66px rgba(0, 0, 0, .6); transform: translateZ(0); transform-style: preserve-3d; backface-visibility: hidden; }
+    .story-card img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+    .story-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(4, 5, 12, .46), transparent 32%, transparent 57%, rgba(4, 5, 12, .78)); pointer-events: none; }
+    .story-progress { position: absolute; top: 16px; right: 18px; left: 18px; z-index: 2; display: flex; gap: 6px; }
+    .story-progress span { height: 4px; flex: 1; border-radius: 999px; background: rgba(255, 255, 255, .46); }
+    .story-progress span:first-child { background: #fff; }
+    .story-header { position: absolute; top: 34px; right: 22px; left: 22px; z-index: 2; display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 750; text-shadow: 0 2px 10px rgba(0, 0, 0, .55); }
+    .story-avatar { width: 38px; height: 38px; border: 2px solid rgba(255, 255, 255, .75); border-radius: 50%; background: linear-gradient(135deg, #ff66cf, #7d4dff); }
+    .story-copy { position: absolute; right: 24px; bottom: 34px; left: 24px; z-index: 2; font-size: 17px; font-weight: 650; text-shadow: 0 2px 12px rgba(0, 0, 0, .7); }
+    .story-card.is-outgoing.next { animation: cube-out-next 410ms cubic-bezier(.22, 1, .36, 1) both; }
+    .story-card.is-incoming.next { animation: cube-in-next 410ms cubic-bezier(.22, 1, .36, 1) both; }
+    .story-card.is-outgoing.previous { animation: cube-out-previous 410ms cubic-bezier(.22, 1, .36, 1) both; }
+    .story-card.is-incoming.previous { animation: cube-in-previous 410ms cubic-bezier(.22, 1, .36, 1) both; }
+
+    @keyframes cube-out-next {
+      from { opacity: 1; filter: brightness(1); transform: translateX(0) rotateY(0) scale(1); transform-origin: left center; }
+      to { opacity: .64; filter: brightness(.68); transform: translateX(-17%) rotateY(-88deg) scale(.95); transform-origin: left center; }
+    }
+    @keyframes cube-in-next {
+      from { opacity: .64; filter: brightness(.68); transform: translateX(17%) rotateY(88deg) scale(.95); transform-origin: right center; }
+      to { opacity: 1; filter: brightness(1); transform: translateX(0) rotateY(0) scale(1); transform-origin: right center; }
+    }
+    @keyframes cube-out-previous {
+      from { opacity: 1; filter: brightness(1); transform: translateX(0) rotateY(0) scale(1); transform-origin: right center; }
+      to { opacity: .64; filter: brightness(.68); transform: translateX(17%) rotateY(88deg) scale(.95); transform-origin: right center; }
+    }
+    @keyframes cube-in-previous {
+      from { opacity: .64; filter: brightness(.68); transform: translateX(-17%) rotateY(-88deg) scale(.95); transform-origin: left center; }
+      to { opacity: 1; filter: brightness(1); transform: translateX(0) rotateY(0) scale(1); transform-origin: left center; }
+    }
+
+    .controls { position: fixed; right: 0; bottom: 26px; left: 0; display: flex; justify-content: center; gap: 12px; }
+    .controls button { min-width: 116px; padding: 12px 17px; border: 1px solid rgba(255, 255, 255, .2); border-radius: 999px; background: rgba(27, 29, 40, .84); color: #fff; cursor: pointer; backdrop-filter: blur(10px); }
+    .controls button:hover, .controls button:focus-visible { background: #373b52; outline: 2px solid #b36dff; outline-offset: 3px; }
+    .hint { position: fixed; top: 20px; right: 0; left: 0; margin: 0; color: rgba(255, 255, 255, .64); font-size: 14px; text-align: center; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .story-card.is-outgoing, .story-card.is-incoming { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="demo">
+    <p class="hint">Swipe left or right, use the buttons, or press ← / →</p>
+    <section class="story-stage" aria-label="3D story swipe demo"></section>
+  </main>
+  <nav class="controls" aria-label="Story navigation">
+    <button type="button" data-direction="previous">← Previous</button>
+    <button type="button" data-direction="next">Next →</button>
+  </nav>
+
+  <script>
+    const stories = [
+      {
+        name: "Reload",
+        copy: "A vivid casino-themed first story.",
+        image: "https://cdn.jsdelivr.net/gh/arturvip1/main@52a5590/assets/mrjindev-casino-night.png"
+      },
+      {
+        name: "Program",
+        copy: "The next story rotates in as the second cube face.",
+        image: "https://i.pinimg.com/736x/85/dc/0c/85dc0c13949d785165cb202be2d1616d.jpg"
+      },
+      {
+        name: "Races",
+        copy: "The same effect works in either direction.",
+        image: "https://i.pinimg.com/736x/85/71/b6/8571b6b7b0f1ac3c5766dec5657ab5c5.jpg"
+      }
+    ];
+
+    const stage = document.querySelector(".story-stage");
+    let activeIndex = 0;
+    let isAnimating = false;
+    let swipeStart = null;
+
+    const createCard = (story) => {
+      const card = document.createElement("article");
+      card.className = "story-card";
+      card.innerHTML = `
+        <img src="${story.image}" alt="${story.name} story">
+        <div class="story-progress"><span></span><span></span><span></span></div>
+        <header class="story-header"><span class="story-avatar"></span><span>${story.name}</span></header>
+        <p class="story-copy">${story.copy}</p>
+      `;
+      return card;
+    };
+
+    let activeCard = createCard(stories[activeIndex]);
+    stage.append(activeCard);
+
+    const navigate = (direction) => {
+      if (isAnimating) return;
+      const delta = direction === "next" ? 1 : -1;
+      const nextIndex = (activeIndex + delta + stories.length) % stories.length;
+      const incomingCard = createCard(stories[nextIndex]);
+      isAnimating = true;
+      activeCard.classList.add("is-outgoing", direction);
+      incomingCard.classList.add("is-incoming", direction);
+      stage.append(incomingCard);
+
+      window.setTimeout(() => {
+        activeCard.remove();
+        activeCard = incomingCard;
+        activeCard.className = "story-card";
+        activeIndex = nextIndex;
+        isAnimating = false;
+      }, 410);
+    };
+
+    document.querySelectorAll("[data-direction]").forEach((button) => {
+      button.addEventListener("click", () => navigate(button.dataset.direction));
+    });
+
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") navigate("next");
+      if (event.key === "ArrowLeft") navigate("previous");
+    });
+
+    stage.addEventListener("pointerdown", (event) => {
+      swipeStart = { x: event.clientX, y: event.clientY };
+    });
+
+    stage.addEventListener("pointerup", (event) => {
+      if (!swipeStart) return;
+      const deltaX = event.clientX - swipeStart.x;
+      const deltaY = event.clientY - swipeStart.y;
+      swipeStart = null;
+      if (Math.abs(deltaX) < 48 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+      navigate(deltaX < 0 ? "next" : "previous");
+    });
+  </script>
+</body>
+</html>
