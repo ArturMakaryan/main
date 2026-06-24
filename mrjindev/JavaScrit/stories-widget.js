@@ -80,6 +80,7 @@
       this.previousFocus = null;
       this.previousBodyOverflow = "";
       this.swipeStart = null;
+      this.isTransitioning = false;
       this.reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
       this.onKeydown = this.onKeydown.bind(this);
@@ -87,6 +88,8 @@
       this.onMotionChange = this.onMotionChange.bind(this);
       this.onPointerDown = this.onPointerDown.bind(this);
       this.onPointerUp = this.onPointerUp.bind(this);
+      this.onTouchStart = this.onTouchStart.bind(this);
+      this.onTouchEnd = this.onTouchEnd.bind(this);
     }
 
     connectedCallback() {
@@ -126,6 +129,8 @@
           .story-stage { position: relative; z-index: 1; width: min(100%, 1440px); height: min(92vh, 920px); min-height: 440px; perspective: 1600px; }
           .viewer { position: absolute; top: 50%; left: 50%; z-index: 3; width: min(31vw, 540px); height: 100%; min-height: 440px; overflow: hidden; isolation: isolate; border: 1px solid rgba(255,255,255,.14); border-radius: 28px; background: #151126; box-shadow: 0 28px 80px rgba(0,0,0,.62); transform: translate(-50%, -50%); transform-style: preserve-3d; touch-action: pan-y; }
           .neighbours { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+          .deck-transition-layer { position: absolute; inset: 0; z-index: 6; pointer-events: none; }
+          .deck-transition-card { position: absolute !important; margin: 0; transform: none !important; transition: left .38s cubic-bezier(.22,.8,.24,1), top .38s cubic-bezier(.22,.8,.24,1), width .38s cubic-bezier(.22,.8,.24,1), height .38s cubic-bezier(.22,.8,.24,1), border-radius .38s cubic-bezier(.22,.8,.24,1), opacity .24s ease; will-change: left, top, width, height, border-radius; }
           .story-peek { position: absolute; top: 50%; left: 50%; display: grid; place-items: end center; width: min(12vw, 216px); height: min(45vh, 390px); overflow: hidden; padding: 20px 12px; border: 0; border-radius: 18px; background: #151126; color: #fff; cursor: pointer; opacity: .44; pointer-events: auto; transform: translate(-50%, -50%) translateX(calc(var(--offset) * 320px)) scale(.82); transition: opacity .28s ease, transform .36s cubic-bezier(.2,.8,.2,1), filter .28s ease; }
           .story-peek::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,5,20,.32), rgba(7,5,20,.82)); }
           .story-peek:hover, .story-peek:focus-visible { opacity: .82; filter: brightness(1.08); transform: translate(-50%, -50%) translateX(calc(var(--offset) * 320px)) scale(.88); outline: 2px solid #a970ff; outline-offset: 4px; }
@@ -164,6 +169,7 @@
           .viewer.cube-in-next { animation: cube-in-next .35s cubic-bezier(.22,.8,.24,1) both; }
           .viewer.cube-out-previous { animation: cube-out-previous .27s cubic-bezier(.55,.06,.68,.19) both; }
           .viewer.cube-in-previous { animation: cube-in-previous .35s cubic-bezier(.22,.8,.24,1) both; }
+          .cube-preview { display: none; }
           .viewer.deck-out-next { animation: deck-out-next .22s cubic-bezier(.55,.06,.68,.19) both; }
           .viewer.deck-in-next { animation: deck-in-next .32s cubic-bezier(.22,.8,.24,1) both; }
           .viewer.deck-out-previous { animation: deck-out-previous .22s cubic-bezier(.55,.06,.68,.19) both; }
@@ -176,7 +182,7 @@
           @keyframes deck-in-next { from { opacity: 0; transform: translate(-50%, -50%) translateX(96px) scale(.93); } to { opacity: 1; transform: translate(-50%, -50%) translateX(0) scale(1); } }
           @keyframes deck-out-previous { to { opacity: 0; transform: translate(-50%, -50%) translateX(96px) scale(.93); } }
           @keyframes deck-in-previous { from { opacity: 0; transform: translate(-50%, -50%) translateX(-96px) scale(.93); } to { opacity: 1; transform: translate(-50%, -50%) translateX(0) scale(1); } }
-          @media (max-width: 640px) { .rail { gap: 13px; padding-inline: 2px; } .story-trigger { flex-basis: 76px; } .story-avatar { width: 65px; height: 65px; border-width: 4px; } .story-avatar span { font-size: 29px; } .story-label { font-size: 14px; } .modal { padding: 0; } .story-stage { width: 100%; height: 100dvh; min-height: 0; perspective: 900px; } .neighbours { display: none; } .viewer { width: 100%; height: 100dvh; min-height: 0; border: 0; border-radius: 0; } .navigation { width: 34px; height: 54px; } }
+          @media (max-width: 640px) { .rail { gap: 13px; padding-inline: 2px; } .story-trigger { flex-basis: 76px; } .story-avatar { width: 65px; height: 65px; border-width: 4px; } .story-avatar span { font-size: 29px; } .story-label { font-size: 14px; } .modal { padding: 0; } .story-stage { width: 100%; height: 100dvh; min-height: 0; perspective: 1100px; } .neighbours { display: none; } .viewer, .cube-preview { width: 100%; height: 100dvh; min-height: 0; border: 0; border-radius: 0; } .navigation { width: 34px; height: 54px; } .cube-preview { position: absolute; top: 50%; left: 50%; z-index: 2; display: block; overflow: hidden; background: #151126; color: #fff; pointer-events: none; transform: translate(-50%, -50%); transform-style: preserve-3d; backface-visibility: hidden; } .cube-preview-media, .cube-preview-media img, .cube-preview-shade { position: absolute; inset: 0; width: 100%; height: 100%; } .cube-preview-media { background: linear-gradient(155deg, #241064, #7143f4 52%, #d451e8); } .cube-preview-media img { display: block; object-fit: cover; } .cube-preview-shade { background: linear-gradient(180deg, rgba(7,5,20,.3), transparent 30%, transparent 61%, rgba(7,5,20,.65)); } .cube-preview-header { position: absolute; top: 33px; left: 22px; z-index: 1; display: flex; align-items: center; gap: 9px; font-size: 19px; font-weight: 800; text-shadow: 0 2px 10px rgba(0,0,0,.45); } .cube-preview-avatar { display: grid; place-items: center; width: 39px; height: 39px; overflow: hidden; border: 2px solid rgba(255,255,255,.7); border-radius: 50%; background: #5736be; font-size: 19px; } .cube-preview-avatar img { width: 100%; height: 100%; object-fit: cover; } .cube-preview.cube-preview-next { animation: cube-preview-in-next .35s cubic-bezier(.22,.8,.24,1) both; } .cube-preview.cube-preview-previous { animation: cube-preview-in-previous .35s cubic-bezier(.22,.8,.24,1) both; } @keyframes cube-preview-in-next { from { opacity: 0; transform: translate(-50%, -50%) rotateY(90deg); } to { opacity: 1; transform: translate(-50%, -50%) rotateY(0); } } @keyframes cube-preview-in-previous { from { opacity: 0; transform: translate(-50%, -50%) rotateY(-90deg); } to { opacity: 1; transform: translate(-50%, -50%) rotateY(0); } } }
         </style>
         <section class="rail" aria-label="Featured stories"></section>
         <section class="modal" aria-hidden="true" aria-label="Story viewer" role="dialog" aria-modal="true">
@@ -198,6 +204,7 @@
 
       this.rail = this.shadowRoot.querySelector(".rail");
       this.modal = this.shadowRoot.querySelector(".modal");
+      this.stage = this.shadowRoot.querySelector(".story-stage");
       this.neighbours = this.shadowRoot.querySelector(".neighbours");
       this.viewer = this.shadowRoot.querySelector(".viewer");
       this.progress = this.shadowRoot.querySelector(".progress");
@@ -217,6 +224,8 @@
       this.viewer.addEventListener("pointerdown", this.onPointerDown);
       this.viewer.addEventListener("pointerup", this.onPointerUp);
       this.viewer.addEventListener("pointercancel", () => { this.swipeStart = null; });
+      this.viewer.addEventListener("touchstart", this.onTouchStart, { passive: true });
+      this.viewer.addEventListener("touchend", this.onTouchEnd, { passive: true });
       this.mediaImage.addEventListener("error", () => this.media.classList.remove("has-image"));
     }
 
@@ -321,6 +330,7 @@
         const button = document.createElement("button");
         button.className = "story-peek";
         button.type = "button";
+        button.dataset.storyIndex = String(index);
         button.style.setProperty("--offset", String(offset));
         button.setAttribute("aria-label", `Open ${story.title} story`);
 
@@ -409,6 +419,7 @@
     }
 
     switchStory(storyIndex, slideIndex, direction) {
+      if (this.isTransitioning || storyIndex === this.storyIndex) return;
       if (this.reducedMotion.matches) {
         this.storyIndex = storyIndex;
         this.slideIndex = slideIndex;
@@ -418,11 +429,16 @@
 
       this.stopPlayback();
       const useCubeTransition = window.innerWidth <= 640;
+      if (!useCubeTransition) {
+        this.promoteDesktopStory(storyIndex, slideIndex);
+        return;
+      }
       const transitionType = useCubeTransition ? "cube" : "deck";
       const outClass = `${transitionType}-out-${direction}`;
       const inClass = `${transitionType}-in-${direction}`;
-      const outDuration = useCubeTransition ? 260 : 210;
+      const outDuration = useCubeTransition ? 350 : 210;
       const inDuration = useCubeTransition ? 360 : 330;
+      const cubePreview = useCubeTransition ? this.createCubePreview(storyIndex, slideIndex, direction) : null;
       this.viewer.classList.add(outClass);
 
       window.setTimeout(() => {
@@ -430,9 +446,164 @@
         this.slideIndex = slideIndex;
         this.viewer.classList.remove(outClass);
         this.updateViewer();
-        this.viewer.classList.add(inClass);
-        window.setTimeout(() => this.viewer.classList.remove(inClass), inDuration);
+        if (cubePreview) {
+          cubePreview.remove();
+        } else {
+          this.viewer.classList.add(inClass);
+          window.setTimeout(() => this.viewer.classList.remove(inClass), inDuration);
+        }
       }, outDuration);
+    }
+
+    promoteDesktopStory(nextStoryIndex, nextSlideIndex) {
+      const selectedPeek = this.neighbours.querySelector(`[data-story-index="${nextStoryIndex}"]`);
+      if (!selectedPeek) {
+        this.storyIndex = nextStoryIndex;
+        this.slideIndex = nextSlideIndex;
+        this.updateViewer();
+        return;
+      }
+
+      this.isTransitioning = true;
+      const currentStoryIndex = this.storyIndex;
+      const stageRect = this.stage.getBoundingClientRect();
+      const viewerRect = this.toStageRect(this.viewer.getBoundingClientRect(), stageRect, 28);
+      const selectedRect = this.toStageRect(selectedPeek.getBoundingClientRect(), stageRect, 18);
+      const peekSize = { width: selectedRect.width, height: selectedRect.height };
+      const layer = document.createElement("div");
+      layer.className = "deck-transition-layer";
+
+      const outgoing = this.createTransitionViewer(currentStoryIndex, this.slideIndex);
+      const incoming = this.createTransitionViewer(nextStoryIndex, nextSlideIndex);
+      this.setTransitionRect(outgoing, viewerRect);
+      this.setTransitionRect(incoming, selectedRect);
+      layer.append(outgoing, incoming);
+
+      const remaining = [...this.neighbours.querySelectorAll(".story-peek")]
+        .filter((peek) => peek !== selectedPeek)
+        .map((peek) => {
+          const clone = peek.cloneNode(true);
+          clone.classList.add("deck-transition-card");
+          const rect = this.toStageRect(peek.getBoundingClientRect(), stageRect, 18);
+          this.setTransitionRect(clone, rect);
+          layer.append(clone);
+          return { clone, storyIndex: Number(peek.dataset.storyIndex) };
+        });
+
+      this.stage.append(layer);
+      this.viewer.style.visibility = "hidden";
+      this.neighbours.style.visibility = "hidden";
+
+      requestAnimationFrame(() => {
+        this.setTransitionRect(incoming, viewerRect);
+        this.setTransitionRect(outgoing, this.getPeekTargetRect(currentStoryIndex, nextStoryIndex, viewerRect, peekSize));
+        remaining.forEach(({ clone, storyIndex }) => {
+          this.setTransitionRect(clone, this.getPeekTargetRect(storyIndex, nextStoryIndex, viewerRect, peekSize));
+        });
+      });
+
+      window.setTimeout(() => {
+        this.storyIndex = nextStoryIndex;
+        this.slideIndex = nextSlideIndex;
+        this.viewer.style.visibility = "";
+        this.neighbours.style.visibility = "";
+        layer.remove();
+        this.updateViewer();
+        this.isTransitioning = false;
+      }, 400);
+    }
+
+    createTransitionViewer(storyIndex, slideIndex) {
+      const story = STORIES[storyIndex];
+      const slide = story.slides[slideIndex];
+      const clone = this.viewer.cloneNode(true);
+      clone.className = "viewer deck-transition-card";
+      clone.querySelector(".story-title").textContent = story.title;
+      const avatar = clone.querySelector(".story-meta-avatar");
+      const compactAvatar = this.createAvatar(story, "story-meta-avatar");
+      avatar.replaceChildren(...compactAvatar.childNodes);
+      const media = clone.querySelector(".media");
+      const image = clone.querySelector(".media img");
+      media.classList.remove("has-image");
+      image.removeAttribute("src");
+      image.alt = slide.alt || story.title;
+      if (isSafeUrl(slide.image)) {
+        image.src = slide.image;
+        media.classList.add("has-image");
+      }
+      const fallback = clone.querySelector(".media-fallback");
+      fallback.textContent = story.title;
+      const cta = clone.querySelector(".cta");
+      cta.classList.remove("is-visible");
+      cta.removeAttribute("href");
+      if (slide.cta && isSafeUrl(slide.cta.href)) {
+        cta.textContent = slide.cta.label || "Learn more";
+        cta.href = slide.cta.href;
+        cta.classList.add("is-visible");
+      }
+      return clone;
+    }
+
+    toStageRect(rect, stageRect, radius) {
+      return {
+        left: rect.left - stageRect.left,
+        top: rect.top - stageRect.top,
+        width: rect.width,
+        height: rect.height,
+        radius
+      };
+    }
+
+    getPeekTargetRect(storyIndex, activeStoryIndex, viewerRect, peekSize) {
+      const storyCount = STORIES.length;
+      let offset = storyIndex - activeStoryIndex;
+      if (offset > storyCount / 2) offset -= storyCount;
+      if (offset < -storyCount / 2) offset += storyCount;
+      return {
+        left: viewerRect.left + (viewerRect.width / 2) + (offset * 320) - (peekSize.width / 2),
+        top: viewerRect.top + (viewerRect.height / 2) - (peekSize.height / 2),
+        width: peekSize.width,
+        height: peekSize.height,
+        radius: 18
+      };
+    }
+
+    setTransitionRect(element, rect) {
+      element.style.left = `${rect.left}px`;
+      element.style.top = `${rect.top}px`;
+      element.style.width = `${rect.width}px`;
+      element.style.height = `${rect.height}px`;
+      element.style.borderRadius = `${rect.radius}px`;
+    }
+
+    createCubePreview(storyIndex, slideIndex, direction) {
+      this.stage.querySelector(".cube-preview")?.remove();
+      const story = STORIES[storyIndex];
+      const slide = story.slides[slideIndex];
+      const preview = document.createElement("div");
+      preview.className = `cube-preview cube-preview-${direction}`;
+
+      const media = document.createElement("div");
+      media.className = "cube-preview-media";
+      if (isSafeUrl(slide.image)) {
+        const image = document.createElement("img");
+        image.src = slide.image;
+        image.alt = "";
+        image.addEventListener("error", () => image.remove(), { once: true });
+        media.append(image);
+      }
+
+      const shade = document.createElement("div");
+      shade.className = "cube-preview-shade";
+      const header = document.createElement("div");
+      header.className = "cube-preview-header";
+      const avatar = this.createAvatar(story, "cube-preview-avatar");
+      const title = document.createElement("span");
+      title.textContent = story.title;
+      header.append(avatar, title);
+      preview.append(media, shade, header);
+      this.stage.append(preview);
+      return preview;
     }
 
     nextStoryGroup() {
@@ -451,14 +622,30 @@
     }
 
     onPointerDown(event) {
-      if (window.innerWidth > 640 || event.pointerType !== "touch") return;
+      if (window.innerWidth > 640) return;
       this.swipeStart = { x: event.clientX, y: event.clientY };
     }
 
     onPointerUp(event) {
-      if (!this.swipeStart || window.innerWidth > 640 || event.pointerType !== "touch") return;
-      const deltaX = event.clientX - this.swipeStart.x;
-      const deltaY = event.clientY - this.swipeStart.y;
+      if (window.innerWidth > 640) return;
+      this.handleSwipeEnd(event.clientX, event.clientY);
+    }
+
+    onTouchStart(event) {
+      if (window.innerWidth > 640 || !event.touches[0]) return;
+      this.swipeStart = { x: event.touches[0].clientX, y: event.touches[0].clientY };
+    }
+
+    onTouchEnd(event) {
+      const touch = event.changedTouches[0];
+      if (window.innerWidth > 640 || !touch) return;
+      this.handleSwipeEnd(touch.clientX, touch.clientY);
+    }
+
+    handleSwipeEnd(endX, endY) {
+      if (!this.swipeStart) return;
+      const deltaX = endX - this.swipeStart.x;
+      const deltaY = endY - this.swipeStart.y;
       this.swipeStart = null;
 
       if (Math.abs(deltaX) < 48 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
