@@ -79,11 +79,14 @@
       this.isOpen = false;
       this.previousFocus = null;
       this.previousBodyOverflow = "";
+      this.swipeStart = null;
       this.reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
       this.onKeydown = this.onKeydown.bind(this);
       this.onVisibilityChange = this.onVisibilityChange.bind(this);
       this.onMotionChange = this.onMotionChange.bind(this);
+      this.onPointerDown = this.onPointerDown.bind(this);
+      this.onPointerUp = this.onPointerUp.bind(this);
     }
 
     connectedCallback() {
@@ -121,7 +124,7 @@
           .modal.is-open { display: grid; }
           .backdrop { position: absolute; inset: 0; background: rgba(4, 4, 8, .83); backdrop-filter: blur(4px); }
           .story-stage { position: relative; z-index: 1; width: min(100%, 1440px); height: min(92vh, 920px); min-height: 440px; perspective: 1600px; }
-          .viewer { position: absolute; top: 50%; left: 50%; z-index: 3; width: min(31vw, 540px); height: 100%; min-height: 440px; overflow: hidden; isolation: isolate; border: 1px solid rgba(255,255,255,.14); border-radius: 28px; background: #151126; box-shadow: 0 28px 80px rgba(0,0,0,.62); transform: translate(-50%, -50%); transform-style: preserve-3d; }
+          .viewer { position: absolute; top: 50%; left: 50%; z-index: 3; width: min(31vw, 540px); height: 100%; min-height: 440px; overflow: hidden; isolation: isolate; border: 1px solid rgba(255,255,255,.14); border-radius: 28px; background: #151126; box-shadow: 0 28px 80px rgba(0,0,0,.62); transform: translate(-50%, -50%); transform-style: preserve-3d; touch-action: pan-y; }
           .neighbours { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
           .story-peek { position: absolute; top: 50%; left: 50%; display: grid; place-items: end center; width: min(12vw, 216px); height: min(45vh, 390px); overflow: hidden; padding: 20px 12px; border: 0; border-radius: 18px; background: #151126; color: #fff; cursor: pointer; opacity: .44; pointer-events: auto; transform: translate(-50%, -50%) translateX(calc(var(--offset) * 320px)) scale(.82); transition: opacity .28s ease, transform .36s cubic-bezier(.2,.8,.2,1), filter .28s ease; }
           .story-peek::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,5,20,.32), rgba(7,5,20,.82)); }
@@ -203,6 +206,9 @@
       this.closeButton.addEventListener("click", () => this.close());
       this.shadowRoot.querySelector(".previous").addEventListener("click", () => this.previous());
       this.shadowRoot.querySelector(".next").addEventListener("click", () => this.next());
+      this.viewer.addEventListener("pointerdown", this.onPointerDown);
+      this.viewer.addEventListener("pointerup", this.onPointerUp);
+      this.viewer.addEventListener("pointercancel", () => { this.swipeStart = null; });
       this.mediaImage.addEventListener("error", () => this.media.classList.remove("has-image"));
     }
 
@@ -416,6 +422,37 @@
         this.viewer.classList.add(inClass);
         window.setTimeout(() => this.viewer.classList.remove(inClass), 360);
       }, 260);
+    }
+
+    nextStoryGroup() {
+      if (this.storyIndex < STORIES.length - 1) {
+        this.switchStory(this.storyIndex + 1, 0, "next");
+      } else {
+        this.close();
+      }
+    }
+
+    previousStoryGroup() {
+      if (this.storyIndex > 0) {
+        const previousStoryIndex = this.storyIndex - 1;
+        this.switchStory(previousStoryIndex, STORIES[previousStoryIndex].slides.length - 1, "previous");
+      }
+    }
+
+    onPointerDown(event) {
+      if (window.innerWidth > 640 || event.pointerType !== "touch") return;
+      this.swipeStart = { x: event.clientX, y: event.clientY };
+    }
+
+    onPointerUp(event) {
+      if (!this.swipeStart || window.innerWidth > 640 || event.pointerType !== "touch") return;
+      const deltaX = event.clientX - this.swipeStart.x;
+      const deltaY = event.clientY - this.swipeStart.y;
+      this.swipeStart = null;
+
+      if (Math.abs(deltaX) < 48 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+      if (deltaX < 0) this.nextStoryGroup();
+      else this.previousStoryGroup();
     }
 
     onVisibilityChange() {
