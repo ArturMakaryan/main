@@ -52,6 +52,9 @@
     .controls button { min-width: 116px; padding: 12px 17px; border: 1px solid rgba(255, 255, 255, .2); border-radius: 999px; background: rgba(27, 29, 40, .84); color: #fff; cursor: pointer; backdrop-filter: blur(10px); }
     .controls button:hover, .controls button:focus-visible { background: #373b52; outline: 2px solid #b36dff; outline-offset: 3px; }
     .hint { position: fixed; top: 20px; right: 0; left: 0; margin: 0; color: rgba(255, 255, 255, .64); font-size: 14px; text-align: center; }
+    .closed-message { display: none; padding: 16px 20px; border: 1px solid rgba(255, 255, 255, .2); border-radius: 16px; background: #1b1d28; color: #fff; cursor: pointer; }
+    body.viewer-closed .story-stage, body.viewer-closed .controls, body.viewer-closed .hint { opacity: 0; pointer-events: none; }
+    body.viewer-closed .closed-message { display: block; }
 
     @media (prefers-reduced-motion: reduce) {
       .story-card.is-outgoing, .story-card.is-incoming { animation: none; }
@@ -62,6 +65,7 @@
   <main class="demo">
     <p class="hint">Swipe left or right, use the buttons, or press ← / →</p>
     <section class="story-stage" aria-label="3D story swipe demo"></section>
+    <button class="closed-message" type="button">Stories closed — restart demo</button>
   </main>
   <nav class="controls" aria-label="Story navigation">
     <button type="button" data-direction="previous">← Previous</button>
@@ -109,8 +113,13 @@
 
     const navigate = (direction) => {
       if (isAnimating) return;
+      if (direction === "next" && activeIndex === stories.length - 1) {
+        closeViewer();
+        return;
+      }
+      if (direction === "previous" && activeIndex === 0) return;
       const delta = direction === "next" ? 1 : -1;
-      const nextIndex = (activeIndex + delta + stories.length) % stories.length;
+      const nextIndex = activeIndex + delta;
       const incomingCard = createCard(stories[nextIndex]);
       isAnimating = true;
       activeCard.classList.add("is-outgoing", direction);
@@ -125,6 +134,23 @@
         isAnimating = false;
       }, 410);
     };
+
+    const closeViewer = () => {
+      isAnimating = true;
+      activeCard.animate(
+        [{ opacity: 1, transform: "scale(1)" }, { opacity: 0, transform: "scale(.96)" }],
+        { duration: 220, easing: "cubic-bezier(.22, 1, .36, 1)", fill: "forwards" }
+      ).finished.then(() => document.body.classList.add("viewer-closed"));
+    };
+
+    document.querySelector(".closed-message").addEventListener("click", () => {
+      document.body.classList.remove("viewer-closed");
+      activeCard.remove();
+      activeIndex = 0;
+      activeCard = createCard(stories[activeIndex]);
+      stage.append(activeCard);
+      isAnimating = false;
+    });
 
     document.querySelectorAll("[data-direction]").forEach((button) => {
       button.addEventListener("click", () => navigate(button.dataset.direction));
