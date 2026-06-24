@@ -2,6 +2,7 @@
   const widgetTag = "scroll-welcome-banner";
   const containerSelector = '[data-mj="widget-info-panel-container"]';
   const headerSelector = '[data-mj="header"]';
+  const stackingStyleId = "mrjindev-scroll-welcome-banner-stacking";
   const bannerImage = "https://cdn.jsdelivr.net/gh/arturvip1/main@main/assets/mrjindev-welcome-banner.png";
 
   class ScrollWelcomeBanner extends HTMLElement {
@@ -88,7 +89,6 @@
         </section>
       `;
       this.banner = this.shadowRoot.querySelector(".banner");
-      this.background = this.shadowRoot.querySelector(".background");
     }
 
     onScroll() {
@@ -117,7 +117,7 @@
       const fadeDistance = Math.max(1, ((bannerRect.height / 2) - headerHeight) * 0.82);
       const earlyStart = 24;
       const progress = Math.min(1, Math.max(0, (-bannerRect.top + earlyStart) / fadeDistance));
-      this.banner.style.transform = `translateY(${-progress * 12}%) scale(${1 + (progress * 0.04)})`;
+      this.banner.style.transform = `translateY(${progress * 12}%)`;
       this.banner.style.opacity = String(1 - progress);
     }
 
@@ -125,9 +125,22 @@
 
   if (!customElements.get(widgetTag)) customElements.define(widgetTag, ScrollWelcomeBanner);
 
+  const ensureStackingStyles = () => {
+    if (document.getElementById(stackingStyleId)) return;
+    const style = document.createElement("style");
+    style.id = stackingStyleId;
+    style.textContent = `
+      ${containerSelector} { isolation: isolate; }
+      ${containerSelector} > ${widgetTag} { position: relative; z-index: 0; }
+      ${containerSelector} > :not(${widgetTag}) { position: relative; z-index: 1; }
+    `;
+    document.head.append(style);
+  };
+
   const mountBanner = () => {
     const container = document.querySelector(containerSelector);
     if (!container) return false;
+    ensureStackingStyles();
     let banner = container.querySelector(`:scope > ${widgetTag}`);
     if (!banner) {
       banner = document.createElement(widgetTag);
