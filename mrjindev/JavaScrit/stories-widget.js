@@ -120,7 +120,14 @@
           .modal { position: fixed; inset: 0; z-index: 2147483647; display: none; place-items: center; padding: 24px; }
           .modal.is-open { display: grid; }
           .backdrop { position: absolute; inset: 0; background: rgba(4, 4, 8, .83); backdrop-filter: blur(4px); }
-          .viewer { position: relative; z-index: 1; width: min(100%, 430px); height: min(86vh, 760px); min-height: 440px; overflow: hidden; isolation: isolate; border: 1px solid rgba(255,255,255,.14); border-radius: 28px; background: #151126; box-shadow: 0 28px 80px rgba(0,0,0,.62); }
+          .story-stage { position: relative; z-index: 1; width: min(100%, 1440px); height: min(92vh, 920px); min-height: 440px; perspective: 1600px; }
+          .viewer { position: absolute; top: 50%; left: 50%; z-index: 3; width: min(31vw, 540px); height: 100%; min-height: 440px; overflow: hidden; isolation: isolate; border: 1px solid rgba(255,255,255,.14); border-radius: 28px; background: #151126; box-shadow: 0 28px 80px rgba(0,0,0,.62); transform: translate(-50%, -50%); transform-style: preserve-3d; }
+          .neighbours { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+          .story-peek { position: absolute; top: 50%; left: 50%; display: grid; place-items: end center; width: 176px; height: min(66vh, 620px); overflow: hidden; padding: 20px 12px; border: 0; border-radius: 18px; background: #151126; color: #fff; cursor: pointer; opacity: .44; pointer-events: auto; transform: translate(-50%, -50%) translateX(calc(var(--offset) * 320px)) scale(.82); transition: opacity .28s ease, transform .36s cubic-bezier(.2,.8,.2,1), filter .28s ease; }
+          .story-peek::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,5,20,.32), rgba(7,5,20,.82)); }
+          .story-peek:hover, .story-peek:focus-visible { opacity: .82; filter: brightness(1.08); transform: translate(-50%, -50%) translateX(calc(var(--offset) * 320px)) scale(.88); outline: 2px solid #a970ff; outline-offset: 4px; }
+          .story-peek img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+          .story-peek-label { position: relative; z-index: 1; max-width: 100%; overflow: hidden; font-size: 15px; font-weight: 800; text-overflow: ellipsis; text-shadow: 0 2px 12px rgba(0,0,0,.8); white-space: nowrap; }
           .media, .media img, .media-fallback { position: absolute; inset: 0; width: 100%; height: 100%; }
           .media { z-index: 0; background: linear-gradient(155deg, #241064, #7143f4 52%, #d451e8); }
           .media img { display: block; object-fit: cover; }
@@ -150,12 +157,22 @@
           .cta { display: none; max-width: 100%; padding: 14px 26px; color: #fff; border-radius: 999px; background: linear-gradient(100deg, #7751fb, #9b58f2); box-shadow: 0 9px 22px rgba(45, 19, 117, .55), inset 0 1px 0 rgba(255,255,255,.3); font-size: 18px; font-weight: 800; line-height: 1; text-align: center; text-decoration: none; }
           .cta.is-visible { display: inline-flex; }
           .modal[aria-hidden="true"] { visibility: hidden; }
-          @media (max-width: 640px) { .rail { gap: 13px; padding-inline: 2px; } .story-trigger { flex-basis: 76px; } .story-avatar { width: 65px; height: 65px; border-width: 4px; } .story-avatar span { font-size: 29px; } .story-label { font-size: 14px; } .modal { padding: 0; } .viewer { width: 100%; height: 100dvh; min-height: 0; border: 0; border-radius: 0; } .navigation { width: 34px; height: 54px; } }
+          .viewer.cube-out-next { animation: cube-out-next .27s cubic-bezier(.55,.06,.68,.19) both; }
+          .viewer.cube-in-next { animation: cube-in-next .35s cubic-bezier(.22,.8,.24,1) both; }
+          .viewer.cube-out-previous { animation: cube-out-previous .27s cubic-bezier(.55,.06,.68,.19) both; }
+          .viewer.cube-in-previous { animation: cube-in-previous .35s cubic-bezier(.22,.8,.24,1) both; }
+          @keyframes cube-out-next { to { opacity: 0; transform: translate(-50%, -50%) rotateY(-90deg); } }
+          @keyframes cube-in-next { from { opacity: 0; transform: translate(-50%, -50%) rotateY(90deg); } to { opacity: 1; transform: translate(-50%, -50%) rotateY(0); } }
+          @keyframes cube-out-previous { to { opacity: 0; transform: translate(-50%, -50%) rotateY(90deg); } }
+          @keyframes cube-in-previous { from { opacity: 0; transform: translate(-50%, -50%) rotateY(-90deg); } to { opacity: 1; transform: translate(-50%, -50%) rotateY(0); } }
+          @media (max-width: 640px) { .rail { gap: 13px; padding-inline: 2px; } .story-trigger { flex-basis: 76px; } .story-avatar { width: 65px; height: 65px; border-width: 4px; } .story-avatar span { font-size: 29px; } .story-label { font-size: 14px; } .modal { padding: 0; } .story-stage { width: 100%; height: 100dvh; min-height: 0; perspective: 900px; } .neighbours { display: none; } .viewer { width: 100%; height: 100dvh; min-height: 0; border: 0; border-radius: 0; } .navigation { width: 34px; height: 54px; } }
         </style>
         <section class="rail" aria-label="Featured stories"></section>
         <section class="modal" aria-hidden="true" aria-label="Story viewer" role="dialog" aria-modal="true">
           <button class="backdrop" type="button" aria-label="Close story viewer"></button>
-          <div class="viewer" role="document">
+          <div class="story-stage">
+            <div class="neighbours" aria-label="Other stories"></div>
+            <div class="viewer" role="document">
             <div class="media"><img alt=""><div class="media-fallback"></div></div><div class="shade"></div>
             <div class="progress" aria-hidden="true"></div>
             <div class="story-meta"><div class="story-meta-avatar"></div><span class="story-title"></span></div>
@@ -163,12 +180,15 @@
             <button class="navigation previous" type="button" aria-label="Previous slide"></button>
             <button class="navigation next" type="button" aria-label="Next slide"></button>
             <div class="viewer-footer"><a class="cta" target="_blank" rel="noopener noreferrer"></a></div>
+            </div>
           </div>
         </section>
       `;
 
       this.rail = this.shadowRoot.querySelector(".rail");
       this.modal = this.shadowRoot.querySelector(".modal");
+      this.neighbours = this.shadowRoot.querySelector(".neighbours");
+      this.viewer = this.shadowRoot.querySelector(".viewer");
       this.progress = this.shadowRoot.querySelector(".progress");
       this.media = this.shadowRoot.querySelector(".media");
       this.mediaImage = this.shadowRoot.querySelector(".media img");
@@ -252,6 +272,7 @@
       this.stopPlayback();
       this.elapsed = 0;
       this.storyTitle.textContent = story.title;
+      this.renderNeighbourStories();
       const compactAvatar = this.createAvatar(story, "story-meta-avatar");
       this.metaAvatar.replaceChildren(...compactAvatar.childNodes);
       this.mediaFallback.textContent = story.title;
@@ -271,6 +292,39 @@
       }
       this.renderProgress();
       this.startPlayback();
+    }
+
+    renderNeighbourStories() {
+      this.neighbours.replaceChildren();
+      const storyCount = STORIES.length;
+
+      STORIES.forEach((story, index) => {
+        if (index === this.storyIndex) return;
+        let offset = index - this.storyIndex;
+        if (offset > storyCount / 2) offset -= storyCount;
+        if (offset < -storyCount / 2) offset += storyCount;
+
+        const button = document.createElement("button");
+        button.className = "story-peek";
+        button.type = "button";
+        button.style.setProperty("--offset", String(offset));
+        button.setAttribute("aria-label", `Open ${story.title} story`);
+
+        if (isSafeUrl(story.thumbnail)) {
+          const image = document.createElement("img");
+          image.src = story.thumbnail;
+          image.alt = "";
+          image.addEventListener("error", () => image.remove(), { once: true });
+          button.append(image);
+        }
+
+        const label = document.createElement("span");
+        label.className = "story-peek-label";
+        label.textContent = story.title;
+        button.append(label);
+        button.addEventListener("click", () => this.switchStory(index, 0, index > this.storyIndex ? "next" : "previous"));
+        this.neighbours.append(button);
+      });
     }
 
     renderProgress() {
@@ -318,8 +372,8 @@
       if (this.slideIndex < story.slides.length - 1) {
         this.slideIndex += 1;
       } else if (this.storyIndex < STORIES.length - 1) {
-        this.storyIndex += 1;
-        this.slideIndex = 0;
+        this.switchStory(this.storyIndex + 1, 0, "next");
+        return;
       } else {
         this.close();
         return;
@@ -331,12 +385,37 @@
       if (this.slideIndex > 0) {
         this.slideIndex -= 1;
       } else if (this.storyIndex > 0) {
-        this.storyIndex -= 1;
-        this.slideIndex = STORIES[this.storyIndex].slides.length - 1;
+        const previousStoryIndex = this.storyIndex - 1;
+        this.switchStory(previousStoryIndex, STORIES[previousStoryIndex].slides.length - 1, "previous");
+        return;
       } else {
         return;
       }
       this.updateViewer();
+    }
+
+    switchStory(storyIndex, slideIndex, direction) {
+      const shouldAnimate = window.innerWidth <= 640 && !this.reducedMotion.matches;
+      if (!shouldAnimate) {
+        this.storyIndex = storyIndex;
+        this.slideIndex = slideIndex;
+        this.updateViewer();
+        return;
+      }
+
+      this.stopPlayback();
+      const outClass = direction === "next" ? "cube-out-next" : "cube-out-previous";
+      const inClass = direction === "next" ? "cube-in-next" : "cube-in-previous";
+      this.viewer.classList.add(outClass);
+
+      window.setTimeout(() => {
+        this.storyIndex = storyIndex;
+        this.slideIndex = slideIndex;
+        this.viewer.classList.remove(outClass);
+        this.updateViewer();
+        this.viewer.classList.add(inClass);
+        window.setTimeout(() => this.viewer.classList.remove(inClass), 360);
+      }, 260);
     }
 
     onVisibilityChange() {
