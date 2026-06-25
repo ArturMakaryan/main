@@ -360,13 +360,10 @@
 
     renderNeighbourStories() {
       this.neighbours.replaceChildren();
-      const storyCount = STORIES.length;
 
       STORIES.forEach((story, index) => {
         if (index === this.storyIndex) return;
-        let offset = index - this.storyIndex;
-        if (offset > storyCount / 2) offset -= storyCount;
-        if (offset < -storyCount / 2) offset += storyCount;
+        const offset = index - this.storyIndex;
 
         const button = document.createElement("button");
         button.className = "story-peek";
@@ -475,6 +472,7 @@
     }
 
     switchStory(storyIndex, slideIndex, direction) {
+      if (!STORIES[storyIndex]?.slides?.[slideIndex]) return;
       if (this.isTransitioning || storyIndex === this.storyIndex) return;
       if (this.reducedMotion.matches) {
         this.storyIndex = storyIndex;
@@ -611,10 +609,7 @@
     }
 
     getPeekTargetRect(storyIndex, activeStoryIndex, viewerRect, peekSize) {
-      const storyCount = STORIES.length;
-      let offset = storyIndex - activeStoryIndex;
-      if (offset > storyCount / 2) offset -= storyCount;
-      if (offset < -storyCount / 2) offset += storyCount;
+      const offset = storyIndex - activeStoryIndex;
       return {
         left: viewerRect.left + (viewerRect.width / 2) + (offset * ((viewerRect.width / 2) + (peekSize.width / 2) + 40)) - (peekSize.width / 2),
         top: viewerRect.top + (viewerRect.height / 2) - (peekSize.height / 2),
