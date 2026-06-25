@@ -85,7 +85,7 @@
     style.textContent = `
       ${selector} {
         --background: rgb(20, 20, 20);
-        --background-card-content: rgba(44, 44, 44, 1);
+        --background-card-content: rgba(44, 44, 44, .5);
         --glitter2: url("https://assets.codepen.io/13471/noise-top.png");
         --ratio-x: .5;
         --ratio-y: .5;
