@@ -110,9 +110,49 @@
   text-shadow: inherit !important;
 }
 
+[data-mj="login-button"] > span,
+[data-mj="register-button"] > span,
+[data-mj="login-button"] > span > span,
+[data-mj="register-button"] > span > span {
+  background-image: linear-gradient(90deg, currentColor 0%, #ffffff 20%, hsl(var(--escortesnew-auth-highlight), 100%, 74%) 42%, #ffeaa6 55%, currentColor 76%, currentColor 100%) !important;
+  background-size: 260% 100% !important;
+  background-position: 100% 50% !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
 [data-mj="login-button"] > span > span::after,
 [data-mj="register-button"] > span > span::after {
   content: none !important;
+}
+
+[data-mj="login-button"] .escortesnew-auth-text,
+[data-mj="register-button"] .escortesnew-auth-text {
+  position: relative !important;
+  z-index: 2 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+[data-mj="login-button"] .escortesnew-auth-letter,
+[data-mj="register-button"] .escortesnew-auth-letter {
+  position: relative !important;
+  display: inline-block !important;
+  color: rgba(255, 255, 255, 0.45) !important;
+  background: none !important;
+  background-image: none !important;
+  background-clip: initial !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: currentColor !important;
+  animation: escortsnew-auth-letter-anim 2s ease-in-out infinite !important;
+  animation-delay: var(--letter-delay, 0s) !important;
+  transition: color var(--escortesnew-auth-transition), text-shadow var(--escortesnew-auth-transition), opacity var(--escortesnew-auth-transition) !important;
+}
+
+[data-mj="register-button"] .escortesnew-auth-letter {
+  color: rgba(0, 0, 0, 0.56) !important;
 }
 
 [data-mj="login-button"]:hover,
@@ -124,6 +164,23 @@
 [data-mj="login-button"]:hover::after,
 [data-mj="register-button"]:hover::after {
   animation: escortsnew-auth-shimmer 1.35s cubic-bezier(.22, 1, .36, 1) infinite !important;
+}
+
+[data-mj="login-button"]:hover > span,
+[data-mj="register-button"]:hover > span,
+[data-mj="login-button"]:hover > span > span,
+[data-mj="register-button"]:hover > span > span {
+  animation: escortsnew-auth-text-shimmer 1.35s cubic-bezier(.22, 1, .36, 1) infinite !important;
+}
+
+[data-mj="login-button"]:hover .escortesnew-auth-letter,
+[data-mj="register-button"]:hover .escortesnew-auth-letter,
+[data-mj="login-button"]:focus .escortesnew-auth-letter,
+[data-mj="register-button"]:focus .escortesnew-auth-letter {
+  animation:
+    escortsnew-auth-focused-letter 1s ease-in-out forwards,
+    escortsnew-auth-letter-anim 1.2s ease-in-out infinite !important;
+  animation-delay: 0s, var(--letter-delay, 0s) !important;
 }
 
 [data-mj="login-button"]:hover::before,
@@ -156,6 +213,35 @@
 
   100% {
     background-position: 140% 0, center;
+  }
+}
+
+@keyframes escortsnew-auth-text-shimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes escortsnew-auth-letter-anim {
+  50% {
+    color: #fff;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.56);
+  }
+}
+
+@keyframes escortsnew-auth-focused-letter {
+  0%,
+  100% {
+    filter: blur(0);
+  }
+
+  50% {
+    transform: scale(1.45);
+    filter: blur(3px) brightness(150%) drop-shadow(-10px 5px 8px hsl(var(--escortesnew-auth-highlight), 100%, 70%));
   }
 }
 

@@ -1,5 +1,6 @@
 (() => {
   const selector = "[data-mj=\"game-catalog-card\"]";
+  const authButtonSelector = "[data-mj=\"login-button\"], [data-mj=\"register-button\"]";
   const styleId = "mrjindev-game-card-hover-tilt-style";
   const angle = 20;
   const lerpAmount = 0.08;
@@ -60,6 +61,39 @@
     root.querySelectorAll?.(selector).forEach(enhanceCard);
   };
 
+  const getTextElement = (button) => {
+    const spans = [...button.querySelectorAll("span")];
+    return spans.findLast?.((span) => span.textContent.trim()) || spans.find((span) => span.textContent.trim()) || button;
+  };
+
+  const enhanceAuthButtonText = (button) => {
+    if (button.dataset.escortesnewLetters === "1") return;
+    const textElement = getTextElement(button);
+    const label = textElement.textContent.trim();
+    if (!label) return;
+
+    button.dataset.escortesnewLetters = "1";
+    button.setAttribute("aria-label", button.getAttribute("aria-label") || label);
+
+    const wrapper = document.createElement("span");
+    wrapper.className = "escortesnew-auth-text";
+    wrapper.setAttribute("aria-hidden", "true");
+
+    [...label].forEach((letter, index) => {
+      const span = document.createElement("span");
+      span.className = "escortesnew-auth-letter";
+      span.style.setProperty("--letter-delay", `${index * 0.08}s`);
+      span.textContent = letter === " " ? "\u00A0" : letter;
+      wrapper.append(span);
+    });
+
+    textElement.replaceChildren(wrapper);
+  };
+
+  const enhanceAuthButtons = (root = document) => {
+    root.querySelectorAll?.(authButtonSelector).forEach(enhanceAuthButtonText);
+  };
+
   const ensureStyle = () => {
     if (document.getElementById(styleId)) return;
     const style = document.createElement("style");
@@ -114,6 +148,7 @@
   const start = () => {
     ensureStyle();
     enhanceCards();
+    enhanceAuthButtons();
     console.info(`[MrjinDev] Tilt cards enhanced: ${cards.size}`);
     if (!animationFrame) animationFrame = requestAnimationFrame(update);
   };
@@ -123,7 +158,9 @@
       mutation.addedNodes.forEach((node) => {
         if (node.nodeType !== Node.ELEMENT_NODE) return;
         if (node.matches?.(selector)) enhanceCard(node);
+        if (node.matches?.(authButtonSelector)) enhanceAuthButtonText(node);
         enhanceCards(node);
+        enhanceAuthButtons(node);
       });
     });
   });
