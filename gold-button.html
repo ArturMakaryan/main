@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gold Beveled Button</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(ellipse 70% 90px at 50% 0%, rgba(131, 113, 255, 0.42) 0%, rgba(44, 35, 132, 0.34) 42%, rgba(3, 3, 18, 0) 82%),
+        linear-gradient(to left, #030312, #030312);
+      font-family: Arial, sans-serif;
+    }
+
+    .gold-button {
+      appearance: none;
+      position: relative;
+      width: 340px;
+      max-width: 90vw;
+      min-height: 56px;
+      padding: 10px 36px;
+      border: 2px solid #2b1704;
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      background:
+        radial-gradient(140px 28px at 50% 0%, rgba(255, 250, 188, .95), transparent 72%),
+        radial-gradient(150px 28px at 50% 100%, rgba(255, 238, 128, .86), transparent 72%),
+        linear-gradient(90deg, rgba(255, 232, 118, .94), #8f520d 8%, #2b1704 13%, #2b1704 87%, #8f520d 92%, rgba(255, 232, 118, .86)),
+        linear-gradient(180deg, #ffe18a 0%, #91530d 18%, #301904 50%, #9b5a0f 82%, #fff0a0 100%);
+      box-shadow:
+        0 0 0 1px #fff0a3 inset,
+        0 0 0 4px rgba(118, 65, 8, .9) inset,
+        0 8px 18px rgba(0, 0, 0, .45),
+        0 0 18px rgba(253, 191, 54, .28);
+    }
+
+    .gold-button::before {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      border-radius: 10px;
+      background-image: url("assets/gold-button-bg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow:
+        0 1px 2px rgba(255, 255, 220, .9) inset,
+        0 -2px 2px rgba(71, 34, 0, .58) inset,
+        2px 0 2px rgba(255, 236, 139, .46) inset,
+        -2px 0 2px rgba(74, 33, 0, .45) inset;
+      pointer-events: none;
+    }
+
+    .gold-button span {
+      position: relative;
+      z-index: 1;
+      color: #4b2603;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.15;
+      text-shadow:
+        0 1px 0 rgba(255, 237, 155, .8),
+        0 -1px 0 rgba(91, 43, 0, .22);
+    }
+  </style>
+</head>
+<body>
+  <button class="gold-button" type="button">
+    <span>Play Now</span>
+  </button>
+</body>
+</html>

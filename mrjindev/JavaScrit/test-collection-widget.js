@@ -250,10 +250,14 @@
 
         if (source) {
           const image = document.createElement("img");
-          image.src = source;
           image.alt = "";
           image.addEventListener("error", addFallback, { once: true });
+          image.src = source;
           card.append(image);
+
+          if (image.complete && !image.naturalWidth) {
+            queueMicrotask(addFallback);
+          }
         } else {
           addFallback();
         }

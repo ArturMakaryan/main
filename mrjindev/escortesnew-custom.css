@@ -1,53 +1,78 @@
-/* Escortesnew compact header buttons: gold login and green register */
+/* Escortesnew compact header buttons: Uiverse dark login and gold register */
 [data-mj="login-button"],
 [data-mj="register-button"] {
+  --escortesnew-auth-radius: 24px;
+  --escortesnew-auth-transition: 0.4s;
+  --escortesnew-auth-highlight: 210deg;
   position: relative !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 114px !important;
-  height: 28px !important;
-  min-width: 114px !important;
-  min-height: 28px !important;
-  border: 1px solid transparent !important;
-  border-radius: 9px !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  height: 40px !important;
+  min-height: 40px !important;
+  padding: 0 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.13) !important;
+  border-radius: var(--escortesnew-auth-radius) !important;
   box-sizing: border-box !important;
   cursor: pointer !important;
   overflow: hidden !important;
   isolation: isolate !important;
   text-decoration: none !important;
-  font-family: "Trebuchet MS", Arial, sans-serif !important;
-  font-size: 12px !important;
-  font-weight: 800 !important;
+  white-space: nowrap !important;
+  user-select: none !important;
+  font-family: "Poppins", "Inter", "Segoe UI", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
   line-height: 1 !important;
-  letter-spacing: 0.65px !important;
-  text-transform: uppercase !important;
-  transition: transform 140ms ease, filter 140ms ease, box-shadow 140ms ease !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  transition:
+    box-shadow var(--escortesnew-auth-transition),
+    border var(--escortesnew-auth-transition),
+    background-color var(--escortesnew-auth-transition),
+    filter 140ms ease,
+    transform 140ms ease !important;
 }
 
 [data-mj="login-button"]::before,
 [data-mj="register-button"]::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  z-index: 0;
-  border-radius: 6px;
-  pointer-events: none;
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  border-radius: inherit !important;
+  pointer-events: none !important;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.62)) !important;
+  box-shadow:
+    0 -8px 8px -6px rgba(0, 0, 0, 0) inset,
+    0 -16px 16px -8px rgba(0, 0, 0, 0) inset,
+    1px 1px 1px rgba(255, 255, 255, 0.13),
+    2px 2px 2px rgba(255, 255, 255, 0.07),
+    -1px -1px 1px rgba(0, 0, 0, 0.13),
+    -2px -2px 2px rgba(0, 0, 0, 0.07) !important;
+  transition: box-shadow var(--escortesnew-auth-transition), filter var(--escortesnew-auth-transition) !important;
 }
 
 [data-mj="login-button"]::after,
 [data-mj="register-button"]::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background:
-    radial-gradient(circle at 18% 14%, rgba(255, 246, 190, 0.52), transparent 15%),
-    linear-gradient(180deg, rgba(255, 235, 160, 0.2), transparent 36%, rgba(0, 0, 0, 0.3) 100%),
-    linear-gradient(105deg, transparent 20%, rgba(255, 244, 188, 0.14) 43%, transparent 62%);
-  opacity: 0.54;
-  pointer-events: none;
-  mix-blend-mode: screen;
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  border-radius: inherit !important;
+  pointer-events: none !important;
+  background-image: linear-gradient(
+    0deg,
+    #fff,
+    hsl(var(--escortesnew-auth-highlight), 100%, 70%),
+    hsla(var(--escortesnew-auth-highlight), 100%, 70%, 0.5),
+    8%,
+    transparent
+  ) !important;
+  opacity: 0 !important;
+  transition: opacity var(--escortesnew-auth-transition), filter var(--escortesnew-auth-transition) !important;
 }
 
 [data-mj="login-button"] > span,
@@ -59,6 +84,9 @@
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
+  width: auto !important;
+  height: auto !important;
+  gap: 0 !important;
   color: inherit !important;
   font: inherit !important;
   letter-spacing: inherit !important;
@@ -66,99 +94,81 @@
   text-shadow: inherit !important;
 }
 
-[data-mj="login-button"] > span,
-[data-mj="register-button"] > span {
-  width: 100% !important;
-  height: 100% !important;
-}
-
-[data-mj="login-button"] > span > span,
-[data-mj="register-button"] > span > span {
-  gap: 7px !important;
-}
-
 [data-mj="login-button"] > span > span::after,
 [data-mj="register-button"] > span > span::after {
-  content: "";
-  display: inline-block;
-  flex: 0 0 auto;
-}
-
-/* Gold Login button */
-[data-mj="login-button"] {
-  color: #241200 !important;
-  text-shadow: 0 1px 0 rgba(218, 145, 32, 0.46) !important;
-  background:
-    linear-gradient(180deg, #d99a2e 0%, #bd6e0d 43%, #743407 73%, #371704 100%) padding-box,
-    linear-gradient(180deg, #f2c86c 0%, #a66012 52%, #3b1803 100%) border-box !important;
-  box-shadow:
-    0 0 10px rgba(183, 105, 20, 0.42),
-    inset 0 1px 0 rgba(255, 218, 105, 0.52),
-    inset 0 -2px 3px rgba(42, 15, 0, 0.78) !important;
-}
-
-[data-mj="login-button"]::before {
-  background:
-    linear-gradient(180deg, rgba(255, 219, 105, 0.42) 0%, transparent 20%),
-    linear-gradient(180deg, transparent 0%, rgba(64, 24, 0, 0.36) 100%),
-    radial-gradient(circle at 78% 35%, rgba(78, 27, 0, 0.16), transparent 20%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 235, 151, 0.4),
-    inset 0 -1px 0 rgba(35, 12, 0, 0.66);
-}
-
-[data-mj="login-button"] > span > span::after {
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 7px solid #241200;
-  filter: drop-shadow(0 1px 0 rgba(198, 120, 18, 0.32));
-}
-
-/* Green Register button */
-[data-mj="register-button"] {
-  color: #d2aa50 !important;
-  text-shadow: 0 0 4px rgba(191, 146, 54, 0.3) !important;
-  background:
-    linear-gradient(180deg, #0b4a3d 0%, #00392f 42%, #002822 72%, #001312 100%) padding-box,
-    linear-gradient(180deg, #54cba1 0%, #159470 50%, #06392f 100%) border-box !important;
-  box-shadow:
-    0 0 10px rgba(22, 157, 116, 0.38),
-    inset 0 1px 0 rgba(121, 227, 184, 0.36),
-    inset 0 -2px 3px rgba(0, 8, 8, 0.82) !important;
-}
-
-[data-mj="register-button"]::before {
-  background:
-    linear-gradient(180deg, rgba(116, 224, 178, 0.26) 0%, transparent 22%),
-    linear-gradient(180deg, transparent 0%, rgba(0, 10, 9, 0.42) 100%),
-    radial-gradient(circle at 22% 28%, rgba(121, 224, 184, 0.16), transparent 22%);
-  box-shadow:
-    inset 0 1px 0 rgba(142, 241, 196, 0.28),
-    inset 0 -1px 0 rgba(0, 8, 7, 0.72);
-}
-
-[data-mj="register-button"] > span > span::after {
-  width: 7px;
-  height: 7px;
-  border: 1px solid rgba(215, 176, 73, 0.86);
-  border-radius: 1px;
-  background: linear-gradient(135deg, #dfc15d 0%, #57bfa2 43%, #07684f 100%);
-  box-shadow: 0 0 4px rgba(64, 197, 155, 0.62);
-  transform: rotate(45deg);
+  content: none !important;
 }
 
 [data-mj="login-button"]:hover,
 [data-mj="register-button"]:hover {
-  transform: translateY(-1px) !important;
+  border-color: hsla(var(--escortesnew-auth-highlight), 100%, 80%, 0.4) !important;
   filter: brightness(1.04) saturate(1.06) !important;
+}
+
+[data-mj="login-button"]:hover::before,
+[data-mj="register-button"]:hover::before {
+  box-shadow:
+    0 -8px 8px -6px rgba(255, 255, 255, 0.67) inset,
+    0 -16px 16px -8px hsla(var(--escortesnew-auth-highlight), 100%, 70%, 0.3) inset,
+    1px 1px 1px rgba(255, 255, 255, 0.13),
+    2px 2px 2px rgba(255, 255, 255, 0.07),
+    -1px -1px 1px rgba(0, 0, 0, 0.13),
+    -2px -2px 2px rgba(0, 0, 0, 0.07) !important;
+}
+
+[data-mj="login-button"]:hover::after,
+[data-mj="register-button"]:hover::after {
+  opacity: 1 !important;
+  mask-image: linear-gradient(0deg, #fff, transparent) !important;
 }
 
 [data-mj="login-button"]:active,
 [data-mj="register-button"]:active {
   transform: translateY(1px) scale(0.99) !important;
   filter: brightness(0.94) !important;
+}
+
+[data-mj="login-button"] {
+  --escortesnew-auth-highlight: 210deg;
+  color: rgba(255, 255, 255, 0.88) !important;
+  background-color: #101010 !important;
+  box-shadow:
+    inset 0px 1px 1px rgba(255, 255, 255, 0.2),
+    inset 0px 2px 2px rgba(255, 255, 255, 0.15),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.1),
+    inset 0px 8px 8px rgba(255, 255, 255, 0.05),
+    inset 0px 16px 16px rgba(255, 255, 255, 0.05),
+    0px -1px 1px rgba(0, 0, 0, 0.02),
+    0px -2px 2px rgba(0, 0, 0, 0.03),
+    0px -4px 4px rgba(0, 0, 0, 0.05),
+    0px -8px 8px rgba(0, 0, 0, 0.06),
+    0px -16px 16px rgba(0, 0, 0, 0.08) !important;
+}
+
+[data-mj="register-button"] {
+  --escortesnew-auth-highlight: 43deg;
+  color: #000 !important;
+  background:
+    radial-gradient(90px 24px at 50% 0%, rgba(255, 252, 198, 0.98) 0%, rgba(255, 220, 88, 0.82) 42%, transparent 76%),
+    radial-gradient(110px 34px at 50% 100%, rgba(255, 205, 56, 0.86) 0%, rgba(177, 92, 0, 0.55) 56%, transparent 78%),
+    radial-gradient(80px 42px at 22% 50%, rgba(255, 228, 109, 0.55) 0%, transparent 72%),
+    radial-gradient(80px 42px at 78% 50%, rgba(255, 190, 38, 0.48) 0%, transparent 72%),
+    linear-gradient(180deg, #ffe483 0%, #e7a526 30%, #8f4c05 64%, #f0b837 100%) !important;
+  border-color: rgba(255, 225, 130, 0.55) !important;
+  box-shadow:
+    inset 0px 1px 1px rgba(255, 252, 210, 0.75),
+    inset 0px 2px 2px rgba(255, 236, 150, 0.45),
+    inset 0px -2px 4px rgba(69, 30, 0, 0.65),
+    inset 0px -8px 12px rgba(44, 18, 0, 0.35),
+    0px 8px 16px rgba(0, 0, 0, 0.38),
+    0px 0px 18px rgba(245, 183, 45, 0.24) !important;
+}
+
+[data-mj="register-button"]::before {
+  background-image:
+    radial-gradient(90px 24px at 50% 0%, rgba(255, 244, 177, 0.32), transparent 70%),
+    radial-gradient(100px 28px at 50% 100%, rgba(255, 179, 24, 0.22), transparent 76%),
+    linear-gradient(0deg, rgba(64, 31, 0, 0.52), rgba(18, 9, 0, 0.72)) !important;
 }
 
 /* Escortesnew auth modal actions: gold Login and green Confirm */
