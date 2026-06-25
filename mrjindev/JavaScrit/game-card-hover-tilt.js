@@ -1,5 +1,5 @@
 (() => {
-  const selector = ".game-catalog-card, [class*='game-catalog-card']";
+  const selector = "[data-mj=\"game-catalog-card\"]";
   const styleId = "mrjindev-game-card-hover-tilt-style";
   const angle = 20;
   const lerpAmount = 0.08;
