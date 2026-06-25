@@ -1,8 +1,8 @@
 (() => {
-  const selector = ".game-catalog-card";
+  const selector = ".game-catalog-card, [class*='game-catalog-card']";
+  const styleId = "mrjindev-game-card-hover-tilt-style";
   const angle = 20;
   const lerpAmount = 0.08;
-  const enhancedAttribute = "data-mrjindev-tilt";
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const canHover = window.matchMedia("(hover: hover) and (pointer: fine)");
   const cards = new Set();
@@ -22,6 +22,7 @@
     card.dataset.rotateY = "0";
     card.style.setProperty("--rotateX", "0deg");
     card.style.setProperty("--rotateY", "0deg");
+    card.style.setProperty("--mrjindev-tilt-transform", "perspective(900px) rotateX(0deg) rotateY(0deg)");
   };
 
   const onMouseMove = (event) => {
@@ -50,10 +51,6 @@
     card.dataset.rotateY = "0";
     card.style.setProperty("--rotateX", "0deg");
     card.style.setProperty("--rotateY", "0deg");
-    card.style.transformStyle = "preserve-3d";
-    card.style.willChange = "transform";
-    card.style.transition = `${card.style.transition ? `${card.style.transition}, ` : ""}box-shadow .22s ease`;
-    card.style.transform = "perspective(900px) rotateX(var(--rotateX)) rotateY(var(--rotateY))";
     card.addEventListener("mousemove", onMouseMove);
     card.addEventListener("mouseleave", onMouseLeave);
     cards.add(card);
@@ -61,6 +58,26 @@
 
   const enhanceCards = (root = document) => {
     root.querySelectorAll?.(selector).forEach(enhanceCard);
+  };
+
+  const ensureStyle = () => {
+    if (document.getElementById(styleId)) return;
+    const style = document.createElement("style");
+    style.id = styleId;
+    style.textContent = `
+      ${selector} {
+        transform: var(--mrjindev-tilt-transform, perspective(900px) rotateX(0deg) rotateY(0deg)) !important;
+        transform-style: preserve-3d !important;
+        transform-origin: center center !important;
+        will-change: transform !important;
+        transition: box-shadow .22s ease, filter .22s ease !important;
+      }
+
+      ${selector}:hover {
+        filter: brightness(1.06);
+      }
+    `;
+    document.head.append(style);
   };
 
   const update = () => {
@@ -86,13 +103,16 @@
 
       card.style.setProperty("--rotateX", `${nextX}deg`);
       card.style.setProperty("--rotateY", `${nextY}deg`);
+      card.style.setProperty("--mrjindev-tilt-transform", `perspective(900px) rotateX(${nextX}deg) rotateY(${nextY}deg)`);
     });
 
     animationFrame = requestAnimationFrame(update);
   };
 
   const start = () => {
+    ensureStyle();
     enhanceCards();
+    console.info(`[MrjinDev] Tilt cards enhanced: ${cards.size}`);
     if (!animationFrame) animationFrame = requestAnimationFrame(update);
   };
 
