@@ -863,117 +863,123 @@ html body [data-mj="game-catalog-card"][data-escortesnew-tilt="1"]:hover {
   }
 }
 
-/* MrjinDev register button: gold btn-69 style */
-html body [data-mj="login-button"],
-html body [data-mj="register-button"] {
-  height: 40px !important;
-  min-height: 40px !important;
+/* Reusable sent button styles. Add these classes manually if needed. */
+.btn-69 {
+  display: inline-block;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 13px 25px;
+  text-transform: uppercase;
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(110, 80, 20, 0.4),
+    inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+    inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+  background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+  border: 1px solid #a55d07;
+  color: rgb(120, 50, 5);
+  text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-size: 100% 100%;
+  background-position: center;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
-/* MrjinDev login button: gold outline btn-94 style */
-html body [data-mj="login-button"] {
+.btn-69:focus,
+.btn-69:hover {
+  background-size: 150% 150%;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23),
+    inset 0 -2px 5px 1px #b17d10,
+    inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+  border: 1px solid rgba(165, 93, 7, 0.6);
+  color: rgba(120, 50, 5, 0.8);
+}
+
+.btn-69:active {
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(110, 80, 20, 0.4),
+    inset 0 -2px 5px 1px #b17d10,
+    inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+}
+
+.btn-69:disabled {
+  pointer-events: none;
+  opacity: .65;
+  color: #7e7e7e;
+  background: #dcdcdc;
+  box-shadow: none;
+  text-shadow: none;
+  border-color: #c2c2c2;
+}
+
+.btn-94 {
   --bg-color_94: #000;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 25px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  transition: 500ms ease;
+  width: 170px;
+  height: 50px;
+  z-index: 1;
+  text-transform: uppercase;
+  background-size: 100%;
   --bg-gold: linear-gradient(90deg, #893c15 0%, #ffde44 17%, #b1741e 24%, #ffe752 40%, #e09326 50%, #e4962a 59%, #b0781b 70%, #efb333 85%, #873a1a 100%);
-  position: relative !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 170px !important;
-  height: 40px !important;
-  min-width: 170px !important;
-  min-height: 40px !important;
-  padding: 0 !important;
-  border: none !important;
-  border-radius: 10px !important;
-  box-sizing: border-box !important;
-  color: #efb333 !important;
-  background: var(--bg-gold) !important;
-  background-size: 100% !important;
-  box-shadow: none !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  text-decoration: none !important;
-  text-transform: uppercase !important;
-  text-shadow: none !important;
-  cursor: pointer !important;
-  user-select: none !important;
-  transition: 500ms ease !important;
-  z-index: 1 !important;
+  background: var(--bg-gold);
+  box-sizing: border-box;
 }
 
-html body [data-mj="login-button"]::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 3px !important;
-  z-index: -1 !important;
-  display: block !important;
-  border-radius: 10px !important;
-  background: var(--bg-color_94) !important;
-  box-shadow: none !important;
-  pointer-events: none !important;
+.btn-94 span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  background: var(--bg-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-html body [data-mj="login-button"]::after {
-  display: none !important;
-  content: none !important;
+.btn-94::before {
+  position: absolute;
+  content: '';
+  inset: 1px;
+  border-radius: 10px;
+  background: var(--bg-color_94);
+  z-index: -1;
+  box-sizing: border-box;
 }
 
-html body [data-mj="login-button"] > span,
-html body [data-mj="login-button"] > span > span {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  color: transparent !important;
-  background: var(--bg-gold) !important;
-  background-clip: text !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 18px !important;
-  font-weight: 700 !important;
-  line-height: 1 !important;
-  letter-spacing: normal !important;
-  text-shadow: none !important;
-  text-transform: uppercase !important;
+.btn-94:hover {
+  animation: move_94 5s infinite alternate ease-in-out;
+  transform: scale(1.1);
 }
 
-html body [data-mj="login-button"] > span > span::after {
-  display: none !important;
-  content: none !important;
+.btn-94:hover span {
+  animation: move_94 5s infinite alternate ease-in-out;
 }
 
-html body [data-mj="login-button"]:hover,
-html body [data-mj="login-button"]:focus {
-  animation: move_94 5s infinite alternate ease-in-out !important;
-  filter: none !important;
-  transform: scale(1.1) !important;
+.btn-94:active {
+  animation: move_94 1s infinite alternate ease-in-out;
 }
 
-html body [data-mj="login-button"]:hover > span,
-html body [data-mj="login-button"]:hover > span > span,
-html body [data-mj="login-button"]:focus > span,
-html body [data-mj="login-button"]:focus > span > span {
-  animation: move_94 5s infinite alternate ease-in-out !important;
-}
-
-html body [data-mj="login-button"]:active {
-  animation: move_94 1s infinite alternate ease-in-out !important;
-}
-
-html body [data-mj="login-button"]:active > span,
-html body [data-mj="login-button"]:active > span > span {
-  animation: move_94 1s infinite alternate ease-in-out !important;
-}
-
-html body [data-mj="login-button"]:disabled,
-html body [data-mj="login-button"][disabled],
-html body [data-mj="login-button"][aria-disabled="true"] {
-  --bg-color_94: #dcdcdc;
-  --bg-gold: #7e7e7e;
-  pointer-events: none !important;
-  opacity: .65 !important;
-  color: #7e7e7e !important;
-  background: #dcdcdc !important;
-  box-shadow: none !important;
+.btn-94:active span {
+  animation: move_94 1s infinite alternate ease-in-out;
 }
 
 @keyframes move_94 {
@@ -993,78 +999,12 @@ html body [data-mj="login-button"][aria-disabled="true"] {
   }
 }
 
-/* MrjinDev register button: gold btn-69 style */
-html body [data-mj="register-button"] {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  outline: none !important;
-  width: auto !important;
-  height: 40px !important;
-  min-width: 114px !important;
-  min-height: 40px !important;
-  box-sizing: border-box !important;
-  border: 1px solid #a55d07 !important;
-  border-radius: 5px !important;
-  padding: 8px 18px !important;
-  overflow: hidden !important;
-  color: rgb(120, 50, 5) !important;
-  background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07) !important;
-  background-position: center !important;
-  background-size: 100% 100% !important;
-  box-shadow:
-    0 3px 6px rgba(0, 0, 0, 0.16),
-    0 3px 6px rgba(110, 80, 20, 0.4),
-    inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
-    inset 0 -1px 1px 3px rgba(250, 227, 133, 1) !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  line-height: 1 !important;
-  letter-spacing: 0.65px !important;
-  text-transform: uppercase !important;
-  text-shadow: 0 2px 2px rgba(250, 227, 133, 1) !important;
-  cursor: pointer !important;
-  user-select: none !important;
-  transition: all 0.2s ease-in-out !important;
-}
-
-html body [data-mj="register-button"]::before,
-html body [data-mj="register-button"]::after {
-  display: none !important;
-  content: none !important;
-}
-
-html body [data-mj="register-button"]:focus,
-html body [data-mj="register-button"]:hover {
-  color: rgba(120, 50, 5, 0.8) !important;
-  border: 1px solid rgba(165, 93, 7, 0.6) !important;
-  background-size: 150% 150% !important;
-  box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23),
-    inset 0 -2px 5px 1px #b17d10,
-    inset 0 -1px 1px 3px rgba(250, 227, 133, 1) !important;
-  filter: none !important;
-  transform: none !important;
-}
-
-html body [data-mj="register-button"]:active {
-  box-shadow:
-    0 3px 6px rgba(0, 0, 0, 0.16),
-    0 3px 6px rgba(110, 80, 20, 0.4),
-    inset 0 -2px 5px 1px #b17d10,
-    inset 0 -1px 1px 3px rgba(250, 227, 133, 1) !important;
-}
-
-html body [data-mj="register-button"]:disabled,
-html body [data-mj="register-button"][disabled],
-html body [data-mj="register-button"][aria-disabled="true"] {
-  pointer-events: none !important;
-  opacity: .65 !important;
-  color: #7e7e7e !important;
-  background: #dcdcdc !important;
-  box-shadow: none !important;
-  text-shadow: none !important;
-  border-color: #c2c2c2 !important;
+.btn-94:disabled {
+  pointer-events: none;
+  opacity: .65;
+  color: #7e7e7e;
+  background: #dcdcdc;
+  box-shadow: none;
+  --bg-color_94: #dcdcdc;
+  --bg-gold: #7e7e7e;
 }
