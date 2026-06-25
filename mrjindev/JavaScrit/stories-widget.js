@@ -130,8 +130,9 @@
           .story-avatar span { font-size: 35px; line-height: 1; filter: drop-shadow(0 3px 5px rgba(0,0,0,.32)); }
           .story-label { max-width: 104px; overflow: hidden; font-size: 14px; font-weight: 300; line-height: 1.15; text-align: center; text-overflow: ellipsis; white-space: nowrap; }
 
-          .modal { position: fixed; inset: 0; z-index: 2147483647; display: none; place-items: center; padding: 24px; }
+          .modal { position: fixed; inset: 0; z-index: 2147483647; display: none; place-items: center; width: 100vw; max-width: none; height: 100vh; max-height: none; margin: 0; padding: 24px; border: 0; background: transparent; color: inherit; }
           .modal.is-open { display: grid; }
+          .modal::backdrop { background: transparent; }
           .backdrop { position: absolute; inset: 0; background: rgba(4, 4, 8, .83); backdrop-filter: blur(4px); }
           .story-stage { position: relative; z-index: 1; width: min(100%, 1440px); height: min(92vh, 920px); min-height: 440px; perspective: 1600px; }
           .viewer { position: absolute; top: 50%; left: 50%; z-index: 3; width: min(31vw, 540px); height: 100%; min-height: 440px; overflow: hidden; isolation: isolate; border: 1px solid rgba(255,255,255,.14); border-radius: 28px; background: #151126; box-shadow: 0 28px 80px rgba(0,0,0,.62); transform: translate(-50%, -50%); transform-style: preserve-3d; touch-action: pan-y; }
@@ -192,7 +193,7 @@
           @media (max-width: 640px) { .rail { gap: 13px; padding-inline: 2px; } .story-trigger { flex-basis: 76px; } .story-avatar { width: 65px; height: 65px; border-width: 4px; } .story-avatar span { font-size: 29px; } .story-label { font-size: 14px; } .modal { padding: 0; } .story-stage { width: 100%; height: 100dvh; min-height: 0; perspective: 1100px; } .neighbours { display: none; } .viewer, .cube-preview { width: 100%; height: 100dvh; min-height: 0; border: 0; border-radius: 0; } .navigation { width: 34px; height: 54px; } .cube-preview { position: absolute; top: 50%; left: 50%; z-index: 2; display: block; overflow: hidden; background: #151126; color: #fff; pointer-events: none; transform: translate(-50%, -50%); transform-style: preserve-3d; backface-visibility: hidden; } .cube-preview-media, .cube-preview-media img, .cube-preview-shade { position: absolute; inset: 0; width: 100%; height: 100%; } .cube-preview-media { background: linear-gradient(155deg, #241064, #7143f4 52%, #d451e8); } .cube-preview-media img { display: block; object-fit: cover; } .cube-preview-shade { background: linear-gradient(180deg, rgba(7,5,20,.3), transparent 30%, transparent 61%, rgba(7,5,20,.65)); } .cube-preview-header { position: absolute; top: 33px; left: 22px; z-index: 1; display: flex; align-items: center; gap: 9px; font-size: 19px; font-weight: 800; text-shadow: 0 2px 10px rgba(0,0,0,.45); } .cube-preview-avatar { display: grid; place-items: center; width: 39px; height: 39px; overflow: hidden; border: 2px solid rgba(255,255,255,.7); border-radius: 50%; background: #5736be; font-size: 19px; } .cube-preview-avatar img { width: 100%; height: 100%; object-fit: cover; } .cube-preview.cube-preview-next { animation: cube-preview-in-next .35s cubic-bezier(.22,.8,.24,1) both; } .cube-preview.cube-preview-previous { animation: cube-preview-in-previous .35s cubic-bezier(.22,.8,.24,1) both; } @keyframes cube-preview-in-next { from { opacity: 0; transform: translate(-50%, -50%) rotateY(90deg); } to { opacity: 1; transform: translate(-50%, -50%) rotateY(0); } } @keyframes cube-preview-in-previous { from { opacity: 0; transform: translate(-50%, -50%) rotateY(-90deg); } to { opacity: 1; transform: translate(-50%, -50%) rotateY(0); } } }
         </style>
         <section class="rail" aria-label="Featured stories"></section>
-        <section class="modal" aria-hidden="true" aria-label="Story viewer" role="dialog" aria-modal="true">
+        <dialog class="modal" aria-hidden="true" aria-label="Story viewer" aria-modal="true">
           <button class="backdrop" type="button" aria-label="Close story viewer"></button>
           <div class="story-stage">
             <div class="neighbours" aria-label="Other stories"></div>
@@ -206,7 +207,7 @@
             <div class="viewer-footer"><a class="cta" target="_blank" rel="noopener noreferrer"></a></div>
             </div>
           </div>
-        </section>
+        </dialog>
       `;
 
       this.rail = this.shadowRoot.querySelector(".rail");
@@ -225,6 +226,10 @@
 
       STORIES.forEach((story, index) => this.rail.append(this.createStoryTrigger(story, index)));
       this.shadowRoot.querySelector(".backdrop").addEventListener("click", () => this.close());
+      this.modal.addEventListener("cancel", (event) => {
+        event.preventDefault();
+        this.close();
+      });
       this.closeButton.addEventListener("click", () => this.close());
       this.shadowRoot.querySelector(".previous").addEventListener("click", () => this.previous());
       this.shadowRoot.querySelector(".next").addEventListener("click", () => this.next());
@@ -277,6 +282,9 @@
       this.previousBodyOverflow = document.body.style.overflow;
       document.body.style.overflow = "hidden";
       this.modal.classList.add("is-open");
+      if (typeof this.modal.showModal === "function" && !this.modal.open) {
+        try { this.modal.showModal(); } catch (_) {}
+      }
       this.modal.setAttribute("aria-hidden", "false");
       document.addEventListener("keydown", this.onKeydown, true);
       document.addEventListener("visibilitychange", this.onVisibilityChange);
@@ -290,6 +298,9 @@
       this.isOpen = false;
       this.stopPlayback();
       this.modal.classList.remove("is-open");
+      if (typeof this.modal.close === "function" && this.modal.open) {
+        this.modal.close();
+      }
       this.modal.setAttribute("aria-hidden", "true");
       document.body.style.overflow = this.previousBodyOverflow;
       document.removeEventListener("keydown", this.onKeydown, true);
