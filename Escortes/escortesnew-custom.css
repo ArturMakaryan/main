@@ -167,16 +167,12 @@
 }
 
 [data-mj="login-button"]:hover > span,
-[data-mj="register-button"]:hover > span,
-[data-mj="login-button"]:hover > span > span,
-[data-mj="register-button"]:hover > span > span {
+[data-mj="login-button"]:hover > span > span {
   animation: escortsnew-auth-text-shimmer 1.35s cubic-bezier(.22, 1, .36, 1) infinite !important;
 }
 
 [data-mj="login-button"]:hover .escortesnew-auth-letter,
-[data-mj="register-button"]:hover .escortesnew-auth-letter,
-[data-mj="login-button"]:focus .escortesnew-auth-letter,
-[data-mj="register-button"]:focus .escortesnew-auth-letter {
+[data-mj="login-button"]:focus .escortesnew-auth-letter {
   animation:
     escortsnew-auth-focused-letter 1s ease-in-out forwards,
     escortsnew-auth-letter-anim 1.2s ease-in-out infinite !important;
@@ -301,7 +297,7 @@
   color: #000 !important;
   background: transparent !important;
   border-color: rgba(252, 246, 186, 0.72) !important;
-  border-radius: 1px !important;
+  border-radius: 999px !important;
   box-shadow: none !important;
   font-family: "Inter", "Poppins", "Segoe UI", sans-serif !important;
   font-size: 14px !important;
@@ -329,14 +325,21 @@
 }
 
 [data-mj="register-button"]::after {
-  z-index: 1 !important;
-  mix-blend-mode: screen !important;
+  display: none !important;
+  content: none !important;
 }
 
 [data-mj="register-button"] > span,
 [data-mj="register-button"] > span > span,
 [data-mj="register-button"] .escortesnew-auth-text,
 [data-mj="register-button"] .escortesnew-auth-letter {
+  color: #000 !important;
+  background: none !important;
+  background-image: none !important;
+  background-clip: initial !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: #000 !important;
+  animation: none !important;
   z-index: 2 !important;
 }
 
