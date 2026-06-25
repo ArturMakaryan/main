@@ -245,6 +245,18 @@
   }
 }
 
+@property --escortesnew-register-pulse-size {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+
+@property --escortesnew-register-pulse-alpha {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.4;
+}
+
 @keyframes escortsnew-register-gold-flow {
   0% {
     background-position: 0%;
@@ -257,11 +269,13 @@
 
 @keyframes escortsnew-register-pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(130, 195, 3, 0.4);
+    --escortesnew-register-pulse-size: 0px;
+    --escortesnew-register-pulse-alpha: 0.4;
   }
 
   100% {
-    box-shadow: 0 0 0 20px rgba(130, 195, 3, 0);
+    --escortesnew-register-pulse-size: 20px;
+    --escortesnew-register-pulse-alpha: 0;
   }
 }
 
@@ -285,11 +299,10 @@
 [data-mj="register-button"] {
   --escortesnew-auth-highlight: 43deg;
   color: #000 !important;
-  background: linear-gradient(90deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #BF953F) !important;
-  background-size: 400% !important;
+  background: transparent !important;
   border-color: rgba(252, 246, 186, 0.72) !important;
   border-radius: 1px !important;
-  box-shadow: 0 0 0 0 rgba(130, 195, 3, 0.4) !important;
+  box-shadow: none !important;
   font-family: "Inter", "Poppins", "Segoe UI", sans-serif !important;
   font-size: 14px !important;
   font-weight: 500 !important;
@@ -297,14 +310,34 @@
   padding-right: 16px !important;
   width: fit-content !important;
   min-width: 0 !important;
+}
+
+[data-mj="register-button"]::before {
+  --escortesnew-register-pulse-size: 0px;
+  --escortesnew-register-pulse-alpha: 0.4;
+  inset: 0 !important;
+  z-index: 0 !important;
+  border-radius: inherit !important;
+  background-color: transparent !important;
+  background-image: linear-gradient(90deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #BF953F) !important;
+  background-size: 400% 100% !important;
+  background-position: 0% 50%;
+  box-shadow: 0 0 0 var(--escortesnew-register-pulse-size) rgba(130, 195, 3, var(--escortesnew-register-pulse-alpha)) !important;
   animation:
     escortsnew-register-pulse 1s ease infinite,
     escortsnew-register-gold-flow 18s linear infinite !important;
 }
 
-[data-mj="register-button"]::before {
-  background-image: none !important;
-  box-shadow: none !important;
+[data-mj="register-button"]::after {
+  z-index: 1 !important;
+  mix-blend-mode: screen !important;
+}
+
+[data-mj="register-button"] > span,
+[data-mj="register-button"] > span > span,
+[data-mj="register-button"] .escortesnew-auth-text,
+[data-mj="register-button"] .escortesnew-auth-letter {
+  z-index: 2 !important;
 }
 
 /* Escortesnew auth modal actions: gold Login and green Confirm */
