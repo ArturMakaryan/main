@@ -75,6 +75,22 @@
   transition: opacity var(--escortesnew-auth-transition), filter var(--escortesnew-auth-transition) !important;
 }
 
+[data-mj="login-button"]::after,
+[data-mj="register-button"]::after {
+  background-image:
+    linear-gradient(115deg, transparent 0%, transparent 34%, rgba(255, 255, 255, 0.48) 46%, rgba(255, 235, 166, 0.72) 50%, rgba(255, 255, 255, 0.48) 54%, transparent 66%, transparent 100%),
+    linear-gradient(
+      0deg,
+      #fff,
+      hsl(var(--escortesnew-auth-highlight), 100%, 70%),
+      hsla(var(--escortesnew-auth-highlight), 100%, 70%, 0.5),
+      8%,
+      transparent
+    ) !important;
+  background-size: 240% 100%, 100% 100% !important;
+  background-position: -140% 0, center !important;
+}
+
 [data-mj="login-button"] > span,
 [data-mj="register-button"] > span,
 [data-mj="login-button"] > span > span,
@@ -105,6 +121,11 @@
   filter: brightness(1.04) saturate(1.06) !important;
 }
 
+[data-mj="login-button"]:hover::after,
+[data-mj="register-button"]:hover::after {
+  animation: escortsnew-auth-shimmer 1.35s cubic-bezier(.22, 1, .36, 1) infinite !important;
+}
+
 [data-mj="login-button"]:hover::before,
 [data-mj="register-button"]:hover::before {
   box-shadow:
@@ -126,6 +147,16 @@
 [data-mj="register-button"]:active {
   transform: translateY(1px) scale(0.99) !important;
   filter: brightness(0.94) !important;
+}
+
+@keyframes escortsnew-auth-shimmer {
+  0% {
+    background-position: -140% 0, center;
+  }
+
+  100% {
+    background-position: 140% 0, center;
+  }
 }
 
 [data-mj="login-button"] {
