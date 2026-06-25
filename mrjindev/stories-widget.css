@@ -1,3 +1,5 @@
+@import url("./escortesnew-custom.css");
+
 [data-mj="widget-info-panel-content"] {
   display: none !important;
 }

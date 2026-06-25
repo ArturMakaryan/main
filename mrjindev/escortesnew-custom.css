@@ -1,0 +1,864 @@
+/* Escortesnew compact header buttons: gold login and green register */
+[data-mj="login-button"],
+[data-mj="register-button"] {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 114px !important;
+  height: 28px !important;
+  min-width: 114px !important;
+  min-height: 28px !important;
+  border: 1px solid transparent !important;
+  border-radius: 9px !important;
+  box-sizing: border-box !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  text-decoration: none !important;
+  font-family: "Trebuchet MS", Arial, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.65px !important;
+  text-transform: uppercase !important;
+  transition: transform 140ms ease, filter 140ms ease, box-shadow 140ms ease !important;
+}
+
+[data-mj="login-button"]::before,
+[data-mj="register-button"]::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  z-index: 0;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+[data-mj="login-button"]::after,
+[data-mj="register-button"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 18% 14%, rgba(255, 246, 190, 0.52), transparent 15%),
+    linear-gradient(180deg, rgba(255, 235, 160, 0.2), transparent 36%, rgba(0, 0, 0, 0.3) 100%),
+    linear-gradient(105deg, transparent 20%, rgba(255, 244, 188, 0.14) 43%, transparent 62%);
+  opacity: 0.54;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+[data-mj="login-button"] > span,
+[data-mj="register-button"] > span,
+[data-mj="login-button"] > span > span,
+[data-mj="register-button"] > span > span {
+  position: relative !important;
+  z-index: 2 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: inherit !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+  text-transform: inherit !important;
+  text-shadow: inherit !important;
+}
+
+[data-mj="login-button"] > span,
+[data-mj="register-button"] > span {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+[data-mj="login-button"] > span > span,
+[data-mj="register-button"] > span > span {
+  gap: 7px !important;
+}
+
+[data-mj="login-button"] > span > span::after,
+[data-mj="register-button"] > span > span::after {
+  content: "";
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+/* Gold Login button */
+[data-mj="login-button"] {
+  color: #241200 !important;
+  text-shadow: 0 1px 0 rgba(218, 145, 32, 0.46) !important;
+  background:
+    linear-gradient(180deg, #d99a2e 0%, #bd6e0d 43%, #743407 73%, #371704 100%) padding-box,
+    linear-gradient(180deg, #f2c86c 0%, #a66012 52%, #3b1803 100%) border-box !important;
+  box-shadow:
+    0 0 10px rgba(183, 105, 20, 0.42),
+    inset 0 1px 0 rgba(255, 218, 105, 0.52),
+    inset 0 -2px 3px rgba(42, 15, 0, 0.78) !important;
+}
+
+[data-mj="login-button"]::before {
+  background:
+    linear-gradient(180deg, rgba(255, 219, 105, 0.42) 0%, transparent 20%),
+    linear-gradient(180deg, transparent 0%, rgba(64, 24, 0, 0.36) 100%),
+    radial-gradient(circle at 78% 35%, rgba(78, 27, 0, 0.16), transparent 20%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 235, 151, 0.4),
+    inset 0 -1px 0 rgba(35, 12, 0, 0.66);
+}
+
+[data-mj="login-button"] > span > span::after {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid #241200;
+  filter: drop-shadow(0 1px 0 rgba(198, 120, 18, 0.32));
+}
+
+/* Green Register button */
+[data-mj="register-button"] {
+  color: #d2aa50 !important;
+  text-shadow: 0 0 4px rgba(191, 146, 54, 0.3) !important;
+  background:
+    linear-gradient(180deg, #0b4a3d 0%, #00392f 42%, #002822 72%, #001312 100%) padding-box,
+    linear-gradient(180deg, #54cba1 0%, #159470 50%, #06392f 100%) border-box !important;
+  box-shadow:
+    0 0 10px rgba(22, 157, 116, 0.38),
+    inset 0 1px 0 rgba(121, 227, 184, 0.36),
+    inset 0 -2px 3px rgba(0, 8, 8, 0.82) !important;
+}
+
+[data-mj="register-button"]::before {
+  background:
+    linear-gradient(180deg, rgba(116, 224, 178, 0.26) 0%, transparent 22%),
+    linear-gradient(180deg, transparent 0%, rgba(0, 10, 9, 0.42) 100%),
+    radial-gradient(circle at 22% 28%, rgba(121, 224, 184, 0.16), transparent 22%);
+  box-shadow:
+    inset 0 1px 0 rgba(142, 241, 196, 0.28),
+    inset 0 -1px 0 rgba(0, 8, 7, 0.72);
+}
+
+[data-mj="register-button"] > span > span::after {
+  width: 7px;
+  height: 7px;
+  border: 1px solid rgba(215, 176, 73, 0.86);
+  border-radius: 1px;
+  background: linear-gradient(135deg, #dfc15d 0%, #57bfa2 43%, #07684f 100%);
+  box-shadow: 0 0 4px rgba(64, 197, 155, 0.62);
+  transform: rotate(45deg);
+}
+
+[data-mj="login-button"]:hover,
+[data-mj="register-button"]:hover {
+  transform: translateY(-1px) !important;
+  filter: brightness(1.04) saturate(1.06) !important;
+}
+
+[data-mj="login-button"]:active,
+[data-mj="register-button"]:active {
+  transform: translateY(1px) scale(0.99) !important;
+  filter: brightness(0.94) !important;
+}
+
+/* Escortesnew auth modal actions: gold Login and green Confirm */
+html body [data-mj="auth-modal"] .app-ltr-hk64jw,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr {
+  width: 100% !important;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15 {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 56px !important;
+  min-width: 0 !important;
+  min-height: 56px !important;
+  border: 1px solid transparent !important;
+  border-radius: 12px !important;
+  box-sizing: border-box !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  text-decoration: none !important;
+  font-family: "Trebuchet MS", Arial, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  transition: transform 140ms ease, filter 140ms ease, box-shadow 140ms ease !important;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15::before,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  z-index: 0;
+  border-radius: 9px;
+  pointer-events: none;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15::after,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 18% 14%, rgba(255, 246, 190, 0.52), transparent 15%),
+    linear-gradient(180deg, rgba(255, 235, 160, 0.2), transparent 36%, rgba(0, 0, 0, 0.3) 100%),
+    linear-gradient(105deg, transparent 20%, rgba(255, 244, 188, 0.14) 43%, transparent 62%);
+  opacity: 0.54;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15 > span,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15 > span,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15 > span > span,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15 > span > span {
+  position: relative !important;
+  z-index: 2 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: inherit !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+  text-transform: inherit !important;
+  text-shadow: inherit !important;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15 > span,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15 > span {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15 > span > span,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15 > span > span {
+  gap: 7px !important;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15 > span > span::after,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15 > span > span::after {
+  content: "";
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15 {
+  color: #241200 !important;
+  text-shadow: 0 1px 0 rgba(218, 145, 32, 0.46) !important;
+  background:
+    linear-gradient(180deg, #d99a2e 0%, #bd6e0d 43%, #743407 73%, #371704 100%) padding-box,
+    linear-gradient(180deg, #f2c86c 0%, #a66012 52%, #3b1803 100%) border-box !important;
+  box-shadow:
+    0 0 18px rgba(183, 105, 20, 0.5),
+    0 10px 24px rgba(40, 16, 0, 0.34),
+    inset 0 1px 0 rgba(255, 218, 105, 0.58),
+    inset 0 -3px 5px rgba(42, 15, 0, 0.78) !important;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15::before {
+  background:
+    linear-gradient(180deg, rgba(255, 219, 105, 0.42) 0%, transparent 20%),
+    linear-gradient(180deg, transparent 0%, rgba(64, 24, 0, 0.36) 100%),
+    radial-gradient(circle at 78% 35%, rgba(78, 27, 0, 0.16), transparent 20%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 235, 151, 0.4),
+    inset 0 -1px 0 rgba(35, 12, 0, 0.66);
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15 > span > span::after {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid #241200;
+  filter: drop-shadow(0 1px 0 rgba(198, 120, 18, 0.32));
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15 {
+  color: #d2aa50 !important;
+  text-shadow: 0 0 4px rgba(191, 146, 54, 0.3) !important;
+  background:
+    linear-gradient(180deg, #0b4a3d 0%, #00392f 42%, #002822 72%, #001312 100%) padding-box,
+    linear-gradient(180deg, #54cba1 0%, #159470 50%, #06392f 100%) border-box !important;
+  box-shadow:
+    0 0 18px rgba(22, 157, 116, 0.45),
+    0 10px 24px rgba(0, 12, 10, 0.34),
+    inset 0 1px 0 rgba(121, 227, 184, 0.42),
+    inset 0 -3px 5px rgba(0, 8, 8, 0.82) !important;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15::before {
+  background:
+    linear-gradient(180deg, rgba(116, 224, 178, 0.26) 0%, transparent 22%),
+    linear-gradient(180deg, transparent 0%, rgba(0, 10, 9, 0.42) 100%),
+    radial-gradient(circle at 22% 28%, rgba(121, 224, 184, 0.16), transparent 22%);
+  box-shadow:
+    inset 0 1px 0 rgba(142, 241, 196, 0.28),
+    inset 0 -1px 0 rgba(0, 8, 7, 0.72);
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15 > span > span::after {
+  width: 7px;
+  height: 7px;
+  border: 1px solid rgba(215, 176, 73, 0.86);
+  border-radius: 1px;
+  background: linear-gradient(135deg, #dfc15d 0%, #57bfa2 43%, #07684f 100%);
+  box-shadow: 0 0 4px rgba(64, 197, 155, 0.62);
+  transform: rotate(45deg);
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15:hover,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15:hover {
+  transform: translateY(-1px) !important;
+  filter: brightness(1.04) saturate(1.06) !important;
+}
+
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > button.app-ltr-196db15:active,
+html body [data-mj="auth-modal"] .app-ltr-hk64jw > .app-ltr-x66tbr > button.app-ltr-196db15:active {
+  transform: translateY(1px) scale(0.99) !important;
+  filter: brightness(0.94) !important;
+}
+
+/* Footer navigation: 8 items ordered as 3 + 3 + 2 */
+ul[data-mj="footer-nav"] {
+  display: grid !important;
+  grid-template-columns: repeat(3, max-content) !important;
+  gap: 12px 48px !important;
+  padding: 0 !important;
+  margin: 100px 0 0 0 !important;
+  list-style: none !important;
+  align-items: start !important;
+  justify-items: start !important;
+  justify-content: start !important;
+  text-align: left !important;
+}
+
+ul[data-mj="footer-nav"] > li[data-mj="footer-nav-item"] {
+  display: block !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+ul[data-mj="footer-nav"] > li[data-mj="footer-nav-item"] > a {
+  display: block !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+  text-decoration: none;
+  font-size: 14px !important;
+  color: #AA630D !important;
+  transition: color 180ms ease !important;
+}
+
+ul[data-mj="footer-nav"] > li[data-mj="footer-nav-item"] > a:hover,
+ul[data-mj="footer-nav"] > li[data-mj="footer-nav-item"] > a.active-link,
+ul[data-mj="footer-nav"] > li[data-mj="footer-nav-item"] > a[aria-current="page"] {
+  color: #E0AD56 !important;
+}
+
+ul[data-mj="footer-nav"] > li[data-mj="footer-nav-item"]:nth-child(7) {
+  grid-column: 1 / 2 !important;
+}
+
+ul[data-mj="footer-nav"] > li[data-mj="footer-nav-item"]:nth-child(8) {
+  grid-column: 2 / 3 !important;
+}
+
+html body [data-mj="footer"] {
+  margin-top: 30px !important;
+  padding-top: 0 !important;
+}
+
+html body [data-mj="footer-content"] {
+  position: relative !important;
+}
+
+html body .escortesnew-footer-assets {
+  position: absolute !important;
+  top: 180px !important;
+  right: -17px !important;
+  z-index: 3 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 14px !important;
+  width: 520px !important;
+  min-height: 54px !important;
+  pointer-events: auto !important;
+}
+
+html body .escortesnew-footer-assets-apps {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 14px !important;
+}
+
+html body .escortesnew-footer-assets-license {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+html body .escortesnew-footer-assets a {
+  display: block !important;
+  width: 132px !important;
+  height: 44px !important;
+  line-height: 0 !important;
+  text-decoration: none !important;
+}
+
+html body .escortesnew-footer-assets img {
+  display: block !important;
+  width: 132px !important;
+  height: 44px !important;
+  object-fit: contain !important;
+}
+
+html body .escortesnew-footer-assets img[data-escortesnew-footer-img="anjouan"] {
+  width: 132px !important;
+  height: 44px !important;
+}
+
+html body .escortesnew-footer-assets img[data-escortesnew-footer-img="ios"],
+html body .escortesnew-footer-assets img[data-escortesnew-footer-img="android"] {
+  width: 132px !important;
+  height: 44px !important;
+}
+
+html body [data-mj="footer-content"] .app-ltr-19zdw54 .app-ltr-e92i57,
+html body [data-mj="footer-content"] [class~="app-ltr-19zdw54"] [class~="app-ltr-e92i57"] {
+  color: #AC6B24 !important;
+}
+
+@media (min-width: 1200px) {
+  html body [data-mj="footer"].app-ltr-ii8huo,
+  html body [data-mj="footer"][class~="app-ltr-ii8huo"] {
+    padding-bottom: 40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  ul[data-mj="footer-nav"] {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  ul[data-mj="footer-nav"] > li[data-mj="footer-nav-item"]:nth-child(7),
+  ul[data-mj="footer-nav"] > li[data-mj="footer-nav-item"]:nth-child(8) {
+    grid-column: auto !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  html body .escortesnew-footer-assets {
+    position: static !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+    margin: 24px 0 8px !important;
+  }
+
+  html body .escortesnew-footer-assets-apps,
+  html body .escortesnew-footer-assets-license {
+    position: static !important;
+  }
+}
+
+html body .sl-select__menu.app-ltr-zktdmf-menu,
+html body .sl-select__menu[class~="app-ltr-zktdmf-menu"] {
+  z-index: 999999999999 !important;
+}
+
+html body [data-mj="header"] > .app-ltr-i58pjb,
+html body [data-mj="header"] > [class~="app-ltr-i58pjb"] {
+  max-width: none !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+html body .app-ltr-1jpm9pd,
+html body [class~="app-ltr-1jpm9pd"] {
+  padding-bottom: 0 !important;
+}
+
+html body [data-mj="header-nav-item"] > a > span[data-escortesnew-bg-icon="true"] {
+  margin-right: 8px !important;
+  display: block !important;
+  flex: 0 0 auto !important;
+  width: 28px !important;
+  height: 28px !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: transparent !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  -webkit-mask: none !important;
+  mask: none !important;
+}
+
+html body [data-mj="header-nav"],
+html body [data-mj="header-nav"] > div,
+html body [data-mj="header-nav"] [class~="app-ltr-1jpm9pd"],
+html body [data-mj="header-nav"] [data-mj="header-nav-list"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+html body [data-mj="header-nav"] {
+  position: relative !important;
+  margin-top: -8px !important;
+  width: 100vw !important;
+  max-width: none !important;
+  min-height: 72px !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  box-sizing: border-box !important;
+  background:
+    radial-gradient(
+      ellipse 45% 35% at 50% 0%,
+      rgba(131, 113, 255, 0.50) 0%,
+      rgba(90, 75, 210, 0.25) 35%,
+      rgba(0, 1, 6, 0.00) 70%
+    ),
+    #000106 !important;
+  overflow: visible !important;
+}
+
+html body [data-mj="header-nav"] > div {
+  max-width: none !important;
+  min-height: 52px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html body [data-mj="header-nav"]::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: min(820px, calc(100vw - 80px)) !important;
+  height: 14px !important;
+  flex-shrink: 0 !important;
+  border-radius: 50% !important;
+  background: #7A6EB9 !important;
+  filter: blur(20px) !important;
+  transform: translate(-50%, -50%) !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+html body [data-mj="header-nav"] [data-mj="header-nav-list"] {
+  position: relative !important;
+  z-index: 1 !important;
+  min-height: 52px !important;
+}
+
+html body [data-mj="header-nav"] [data-mj="header-nav-list"] ul,
+html body [data-mj="header-nav"] [data-mj="header-nav-list"] [id="ul"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: auto !important;
+  min-height: 52px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+html body [data-mj="header-nav-item"],
+html body [data-mj="header-nav-item"] > a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+html body [data-mj="header-nav-item"] > a {
+  position: relative !important;
+  gap: 8px !important;
+  min-height: 40px !important;
+  padding: 8px 12px 8px 8px !important;
+  border: 1px solid transparent !important;
+  border-radius: 16px !important;
+  box-sizing: border-box !important;
+  opacity: 0.8 !important;
+  color: #F2F2F2 !important;
+  background:
+    linear-gradient(#070216, #070216) padding-box,
+    radial-gradient(closest-side, rgba(255, 255, 255, 0.5) 0%, rgb(233 171 80 / 20%) 100%) border-box !important;
+  text-decoration: none !important;
+  transition: opacity 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
+}
+
+html body [data-mj="header-nav-item"] > a > p,
+html body [data-mj="header-nav-item"] > a [class~="app-ltr-1g3kp0t"] {
+  margin: 0 !important;
+  color: inherit !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+}
+
+html body [data-mj="header-nav-item"] > a:hover,
+html body [data-mj="header-nav-item"] > a.active-link,
+html body [data-mj="header-nav-item"] > a[aria-current="page"] {
+  opacity: 1 !important;
+  filter: brightness(1.08) saturate(1.08) !important;
+  background:
+    radial-gradient(closest-side at 28% 50%, rgba(141, 162, 209, 0.3) 0%, rgba(3, 8, 16, 0) 100%) padding-box,
+    linear-gradient(to left, #000108, #000108) padding-box,
+    radial-gradient(closest-side, rgba(255, 255, 255, 1) 0%, rgba(233, 171, 80, 1) 100%) border-box !important;
+  box-shadow:
+    0 0 14px rgba(233, 171, 80, 0.28),
+    0 0 22px rgba(91, 45, 145, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Escortesnew custom info panel banner */
+html body [data-mj="widget-info-panel"] {
+  margin: 28px 0 !important;
+}
+
+html body [data-mj="widget-info-panel-container"] {
+  display: block !important;
+}
+
+html body [data-mj="widget-info-panel-content"] {
+  display: none !important;
+}
+
+html body scroll-welcome-banner[data-escortesnew-info-banner="true"] {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 28px !important;
+  min-height: 220px !important;
+  padding: 30px 34px !important;
+  border: 1px solid rgba(224, 173, 86, 0.48) !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  background:
+    radial-gradient(circle at 80% 28%, rgba(91, 45, 145, 0.62), transparent 34%),
+    radial-gradient(circle at 18% 14%, rgba(224, 173, 86, 0.22), transparent 30%),
+    linear-gradient(135deg, rgba(7, 2, 22, 0.98), rgba(0, 1, 8, 0.96) 56%, rgba(20, 9, 38, 0.98)) !important;
+  box-shadow:
+    0 20px 48px rgba(0, 0, 0, 0.36),
+    0 0 34px rgba(91, 45, 145, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
+
+html body scroll-welcome-banner[data-escortesnew-info-banner="true"]::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  background:
+    linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.08) 42%, transparent 64%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 44px) !important;
+  opacity: 0.5 !important;
+  pointer-events: none !important;
+}
+
+html body .escortesnew-welcome-copy {
+  position: relative !important;
+  z-index: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  max-width: 560px !important;
+}
+
+html body .escortesnew-welcome-copy > span {
+  display: inline-flex !important;
+  margin-bottom: 10px !important;
+  color: #E0AD56 !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+html body .escortesnew-welcome-copy > strong {
+  color: #F2F2F2 !important;
+  font-size: clamp(28px, 4vw, 54px) !important;
+  line-height: 1.02 !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+  text-shadow: 0 0 24px rgba(224, 173, 86, 0.24) !important;
+}
+
+html body .escortesnew-welcome-copy > p {
+  max-width: 460px !important;
+  margin: 12px 0 22px !important;
+  color: rgba(242, 242, 242, 0.78) !important;
+  font-size: 16px !important;
+  line-height: 1.45 !important;
+}
+
+html body .escortesnew-welcome-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 148px !important;
+  min-height: 44px !important;
+  padding: 12px 20px !important;
+  border: 1px solid rgba(255, 228, 154, 0.72) !important;
+  border-radius: 10px !important;
+  color: #211100 !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.7px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  background:
+    linear-gradient(180deg, #F7CA70, #D0912F 46%, #7F4109) !important;
+  box-shadow:
+    0 0 18px rgba(224, 173, 86, 0.36),
+    inset 0 1px 0 rgba(255, 244, 190, 0.48) !important;
+  transition: transform 160ms ease, filter 160ms ease, box-shadow 160ms ease !important;
+}
+
+html body .escortesnew-welcome-button:hover {
+  transform: translateY(-2px) !important;
+  filter: brightness(1.08) saturate(1.08) !important;
+  box-shadow:
+    0 0 24px rgba(224, 173, 86, 0.52),
+    0 12px 28px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 244, 190, 0.58) !important;
+}
+
+html body .escortesnew-welcome-art {
+  position: relative !important;
+  z-index: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: min(30vw, 220px) !important;
+  min-width: 150px !important;
+  aspect-ratio: 1 !important;
+  border-radius: 50% !important;
+  background:
+    radial-gradient(circle, rgba(224, 173, 86, 0.34), transparent 58%),
+    radial-gradient(circle, rgba(91, 45, 145, 0.38), transparent 70%) !important;
+  filter: drop-shadow(0 0 28px rgba(224, 173, 86, 0.18)) !important;
+}
+
+html body .escortesnew-welcome-art img {
+  width: 52% !important;
+  height: 52% !important;
+  object-fit: contain !important;
+}
+
+html body stories-widget[data-escortesnew-stories="true"] {
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  width: 100% !important;
+  margin: 14px 0 20px !important;
+}
+
+html body .escortesnew-story-link {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  min-height: 48px !important;
+  padding: 8px 10px !important;
+  border: 1px solid rgba(224, 173, 86, 0.42) !important;
+  border-radius: 14px !important;
+  color: #F2F2F2 !important;
+  background:
+    linear-gradient(#070216, #070216) padding-box,
+    radial-gradient(closest-side, rgba(255, 255, 255, 0.4), rgba(233, 171, 80, 0.16)) border-box !important;
+  text-decoration: none !important;
+  overflow: hidden !important;
+  transition: transform 160ms ease, filter 160ms ease, box-shadow 160ms ease !important;
+}
+
+html body .escortesnew-story-link:hover {
+  transform: translateY(-2px) !important;
+  filter: brightness(1.1) saturate(1.08) !important;
+  box-shadow:
+    0 0 18px rgba(224, 173, 86, 0.24),
+    0 10px 24px rgba(0, 0, 0, 0.28) !important;
+}
+
+html body .escortesnew-story-link img {
+  width: 26px !important;
+  height: 26px !important;
+  object-fit: contain !important;
+  flex: 0 0 auto !important;
+}
+
+html body .escortesnew-story-link span {
+  color: inherit !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+}
+
+html body [data-mj="game-catalog-card"][data-escortesnew-tilt="1"] {
+  position: relative !important;
+  isolation: isolate !important;
+  transform: var(--escortesnew-tilt-transform, perspective(900px) rotateX(0deg) rotateY(0deg)) !important;
+  transform-style: preserve-3d !important;
+  transform-origin: center center !important;
+  will-change: transform !important;
+  transition: box-shadow 0.22s ease, filter 0.22s ease !important;
+}
+
+html body [data-mj="game-catalog-card"][data-escortesnew-tilt="1"]:hover {
+  filter: brightness(1.06) !important;
+}
+
+@media (max-width: 768px) {
+  html body scroll-welcome-banner[data-escortesnew-info-banner="true"] {
+    min-height: 0 !important;
+    padding: 24px 18px !important;
+    gap: 16px !important;
+  }
+
+  html body .escortesnew-welcome-art {
+    width: 120px !important;
+    min-width: 104px !important;
+  }
+
+  html body stories-widget[data-escortesnew-stories="true"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 520px) {
+  html body scroll-welcome-banner[data-escortesnew-info-banner="true"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  html body .escortesnew-welcome-art {
+    position: absolute !important;
+    right: -24px !important;
+    bottom: -28px !important;
+    opacity: 0.32 !important;
+  }
+}
