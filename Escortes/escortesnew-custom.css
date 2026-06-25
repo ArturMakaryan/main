@@ -245,6 +245,26 @@
   }
 }
 
+@keyframes escortsnew-register-gold-flow {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes escortsnew-register-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(130, 195, 3, 0.4);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(130, 195, 3, 0);
+  }
+}
+
 [data-mj="login-button"] {
   --escortesnew-auth-highlight: 210deg;
   color: rgba(255, 255, 255, 0.88) !important;
@@ -265,27 +285,26 @@
 [data-mj="register-button"] {
   --escortesnew-auth-highlight: 43deg;
   color: #000 !important;
-  background:
-    radial-gradient(90px 24px at 50% 0%, rgba(255, 252, 198, 0.98) 0%, rgba(255, 220, 88, 0.82) 42%, transparent 76%),
-    radial-gradient(110px 34px at 50% 100%, rgba(255, 205, 56, 0.86) 0%, rgba(177, 92, 0, 0.55) 56%, transparent 78%),
-    radial-gradient(80px 42px at 22% 50%, rgba(255, 228, 109, 0.55) 0%, transparent 72%),
-    radial-gradient(80px 42px at 78% 50%, rgba(255, 190, 38, 0.48) 0%, transparent 72%),
-    linear-gradient(180deg, #ffe483 0%, #e7a526 30%, #8f4c05 64%, #f0b837 100%) !important;
-  border-color: rgba(255, 225, 130, 0.55) !important;
-  box-shadow:
-    inset 0px 1px 1px rgba(255, 252, 210, 0.75),
-    inset 0px 2px 2px rgba(255, 236, 150, 0.45),
-    inset 0px -2px 4px rgba(69, 30, 0, 0.65),
-    inset 0px -8px 12px rgba(44, 18, 0, 0.35),
-    0px 8px 16px rgba(0, 0, 0, 0.38),
-    0px 0px 18px rgba(245, 183, 45, 0.24) !important;
+  background: linear-gradient(90deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #BF953F) !important;
+  background-size: 400% !important;
+  border-color: rgba(252, 246, 186, 0.72) !important;
+  border-radius: 1px !important;
+  box-shadow: 0 0 0 0 rgba(130, 195, 3, 0.4) !important;
+  font-family: "Inter", "Poppins", "Segoe UI", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  animation:
+    escortsnew-register-pulse 1s ease infinite,
+    escortsnew-register-gold-flow 18s linear infinite !important;
 }
 
 [data-mj="register-button"]::before {
-  background-image:
-    radial-gradient(90px 24px at 50% 0%, rgba(255, 244, 177, 0.32), transparent 70%),
-    radial-gradient(100px 28px at 50% 100%, rgba(255, 179, 24, 0.22), transparent 76%),
-    linear-gradient(0deg, rgba(64, 31, 0, 0.52), rgba(18, 9, 0, 0.72)) !important;
+  background-image: none !important;
+  box-shadow: none !important;
 }
 
 /* Escortesnew auth modal actions: gold Login and green Confirm */
