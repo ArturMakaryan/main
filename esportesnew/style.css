@@ -236,6 +236,7 @@ html body [data-mj="lobby-catalog-mobile-category-chip"].app-ltr-7v4hfh {
 
 html body [data-mj="register-button"] {
   --escortesnew-auth-highlight: 43deg;
+  --escortesnew-auth-radius: 24px;
   --escortesnew-auth-transition: 0.4s;
   position: relative !important;
   display: inline-flex !important;
@@ -243,24 +244,34 @@ html body [data-mj="register-button"] {
   justify-content: center !important;
   width: fit-content !important;
   min-width: 0 !important;
-  height: 32px !important;
-  min-height: 32px !important;
+  height: 40px !important;
+  min-height: 40px !important;
   padding: 0 16px !important;
-  overflow: hidden !important;
-  isolation: isolate !important;
-  color: #000 !important;
-  font-weight: 500 !important;
-  text-align: center !important;
-  background: transparent !important;
   border: 1px solid rgba(252, 246, 186, 0.72) !important;
   border-radius: 999px !important;
-  box-shadow: none !important;
+  box-sizing: border-box !important;
   cursor: pointer !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
   user-select: none !important;
+  color: #000 !important;
+  font-family: "Inter", "Poppins", "Segoe UI", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  text-align: center !important;
+  background: transparent !important;
+  box-shadow: none !important;
   -webkit-user-select: none !important;
   touch-action: manipulation !important;
   transition:
+    box-shadow var(--escortesnew-auth-transition),
     border var(--escortesnew-auth-transition),
+    background-color var(--escortesnew-auth-transition),
     filter 140ms ease,
     transform 140ms ease !important;
 }
@@ -297,8 +308,8 @@ html body [data-mj="register-button"] > span > span {
   align-items: center !important;
   justify-content: center !important;
   width: auto !important;
-  min-width: 0 !important;
-  height: 100% !important;
+  height: auto !important;
+  gap: 0 !important;
   color: #000 !important;
   font: inherit !important;
   letter-spacing: inherit !important;
@@ -315,6 +326,33 @@ html body [data-mj="register-button"] > span > span::after {
   content: none !important;
 }
 
+html body [data-mj="register-button"] .escortesnew-auth-text {
+  position: relative !important;
+  z-index: 2 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #000 !important;
+  background: none !important;
+  background-image: none !important;
+  background-clip: initial !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+html body [data-mj="register-button"] .escortesnew-auth-letter {
+  position: relative !important;
+  z-index: 2 !important;
+  display: inline-block !important;
+  color: #000 !important;
+  background: none !important;
+  background-image: none !important;
+  background-clip: initial !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: #000 !important;
+  animation: none !important;
+}
+
 html body [data-mj="register-button"]:hover {
   border-color: hsla(var(--escortesnew-auth-highlight), 100%, 80%, 0.4) !important;
   filter: brightness(1.04) saturate(1.06) !important;
@@ -328,8 +366,8 @@ html body [data-mj="register-button"]:active {
 
 @media (min-width: 993px) {
   html body [data-mj="register-button"] {
-    height: 32px !important;
-    min-height: 32px !important;
+    height: 40px !important;
+    min-height: 40px !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     display: inline-flex !important;
