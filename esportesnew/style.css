@@ -200,32 +200,130 @@ html body [data-mj="lobby-catalog-mobile-category-chip"].app-ltr-7v4hfh {
   color: #fff !important;
 }
 
+@property --escortesnew-register-pulse-size {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+
+@property --escortesnew-register-pulse-alpha {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.4;
+}
+
+@keyframes escortsnew-register-gold-flow {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes escortsnew-register-pulse {
+  0% {
+    --escortesnew-register-pulse-size: 0px;
+    --escortesnew-register-pulse-alpha: 0.4;
+  }
+
+  100% {
+    --escortesnew-register-pulse-size: 20px;
+    --escortesnew-register-pulse-alpha: 0;
+  }
+}
+
 html body [data-mj="register-button"] {
-  padding: 12px 30px !important;
-  text-align: center !important;
-  transition: 0.5s !important;
-  background-size: 200% auto !important;
-  color: white !important;
-  border-radius: 6px !important;
-  display: block !important;
-  border: 0 !important;
+  --escortesnew-auth-highlight: 43deg;
+  --escortesnew-auth-transition: 0.4s;
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  padding: 0 16px !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  color: #000 !important;
   font-weight: 500 !important;
-  box-shadow: 0 0 14px -7px #f09819 !important;
-  background-image: linear-gradient(45deg, #ff512f 0%, #f09819 51%, #ff512f 100%) !important;
+  text-align: center !important;
+  background: transparent !important;
+  border: 1px solid rgba(252, 246, 186, 0.72) !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
   cursor: pointer !important;
   user-select: none !important;
   -webkit-user-select: none !important;
   touch-action: manipulation !important;
+  transition:
+    border var(--escortesnew-auth-transition),
+    filter 140ms ease,
+    transform 140ms ease !important;
+}
+
+html body [data-mj="register-button"]::before {
+  --escortesnew-register-pulse-size: 0px;
+  --escortesnew-register-pulse-alpha: 0.4;
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  border-radius: inherit !important;
+  pointer-events: none !important;
+  background-color: transparent !important;
+  background-image: linear-gradient(90deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #BF953F) !important;
+  background-size: 400% 100% !important;
+  background-position: 0% 50%;
+  box-shadow: 0 0 0 var(--escortesnew-register-pulse-size) rgba(130, 195, 3, var(--escortesnew-register-pulse-alpha)) !important;
+  animation:
+    escortsnew-register-pulse 1s ease infinite,
+    escortsnew-register-gold-flow 18s linear infinite !important;
+}
+
+html body [data-mj="register-button"]::after {
+  display: none !important;
+  content: none !important;
+}
+
+html body [data-mj="register-button"] > span,
+html body [data-mj="register-button"] > span > span {
+  position: relative !important;
+  z-index: 2 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  color: #000 !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+  text-transform: inherit !important;
+  text-shadow: inherit !important;
+  background: none !important;
+  background-image: none !important;
+  background-clip: initial !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+html body [data-mj="register-button"] > span > span::after {
+  content: none !important;
 }
 
 html body [data-mj="register-button"]:hover {
-  background-position: right center !important;
-  color: #fff !important;
+  border-color: hsla(var(--escortesnew-auth-highlight), 100%, 80%, 0.4) !important;
+  filter: brightness(1.04) saturate(1.06) !important;
   text-decoration: none !important;
 }
 
 html body [data-mj="register-button"]:active {
-  transform: scale(0.95) !important;
+  transform: translateY(1px) scale(0.99) !important;
+  filter: brightness(0.94) !important;
 }
 
 @media (min-width: 993px) {
