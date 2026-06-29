@@ -153,8 +153,8 @@ html body .app-ltr-1x6c2u9 {
   margin: 0 !important;
   box-sizing: border-box !important;
   background: rgba(255, 255, 255, 0.08) !important;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 16px;
   position: fixed;
 }
@@ -167,9 +167,9 @@ html body .app-ltr-1x6c2u9::before {
   border-radius: inherit;
   pointer-events: none;
   background: linear-gradient(
-    90deg,
+    57deg,
     rgba(255, 255, 255, 0.45),
-    rgba(255, 205, 46, 0.9),
+    rgb(255 205 46 / 28%),
     rgba(255, 255, 255, 0.25)
   );
   -webkit-mask:
