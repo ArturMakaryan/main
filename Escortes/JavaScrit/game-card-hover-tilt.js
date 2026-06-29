@@ -1,7 +1,7 @@
 (() => {
   const selector = "[data-mj=\"widget-pages-item\"], [data-mj=\"widget-collection-slider-item\"]";
   const authButtonSelector = "[data-mj=\"login-button\"], [data-mj=\"register-button\"]";
-  const styleId = "mrjindev-game-card-hover-tilt-style";
+  const styleId = "escortesnew-widget-hover-tilt-style";
   const angle = 20;
   const lerpAmount = 0.08;
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -23,7 +23,7 @@
     card.dataset.rotateY = "0";
     card.style.setProperty("--rotateX", "0deg");
     card.style.setProperty("--rotateY", "0deg");
-    card.style.setProperty("--mrjindev-tilt-transform", "perspective(900px) rotateX(0deg) rotateY(0deg)");
+    card.style.setProperty("--escortesnew-tilt-transform", "perspective(900px) rotateX(0deg) rotateY(0deg)");
   };
 
   const onMouseMove = (event) => {
@@ -46,8 +46,8 @@
   };
 
   const enhanceCard = (card) => {
-    if (card.dataset.mrjindevTilt === "1") return;
-    card.dataset.mrjindevTilt = "1";
+    if (card.dataset.escortesnewTilt === "1") return;
+    card.dataset.escortesnewTilt = "1";
     card.dataset.rotateX = "0";
     card.dataset.rotateY = "0";
     card.style.setProperty("--rotateX", "0deg");
@@ -102,7 +102,7 @@
       ${selector} {
         position: relative !important;
         isolation: isolate !important;
-        transform: var(--mrjindev-tilt-transform, perspective(900px) rotateX(0deg) rotateY(0deg)) !important;
+        transform: var(--escortesnew-tilt-transform, perspective(900px) rotateX(0deg) rotateY(0deg)) !important;
         transform-style: preserve-3d !important;
         transform-origin: center center !important;
         will-change: transform !important;
@@ -139,7 +139,7 @@
 
       card.style.setProperty("--rotateX", `${nextX}deg`);
       card.style.setProperty("--rotateY", `${nextY}deg`);
-      card.style.setProperty("--mrjindev-tilt-transform", `perspective(900px) rotateX(${nextX}deg) rotateY(${nextY}deg)`);
+      card.style.setProperty("--escortesnew-tilt-transform", `perspective(900px) rotateX(${nextX}deg) rotateY(${nextY}deg)`);
     });
 
     animationFrame = requestAnimationFrame(update);
@@ -149,7 +149,6 @@
     ensureStyle();
     enhanceCards();
     enhanceAuthButtons();
-    console.info(`[MrjinDev] Tilt cards enhanced: ${cards.size}`);
     if (!animationFrame) animationFrame = requestAnimationFrame(update);
   };
 
