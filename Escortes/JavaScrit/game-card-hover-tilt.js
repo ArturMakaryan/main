@@ -1,5 +1,5 @@
 (() => {
-  const selector = "[data-mj=\"widget-pages-item\"], [data-mj=\"widget-collection-slider-item\"]";
+  const selector = "[data-mj=\"widget-pages-item\"]";
   const authButtonSelector = "[data-mj=\"login-button\"], [data-mj=\"register-button\"]";
   const styleId = "escortesnew-widget-hover-tilt-style";
   const angle = 20;
