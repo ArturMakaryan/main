@@ -1,5 +1,5 @@
 (() => {
-  const selector = "[data-mj=\"game-catalog-card\"]";
+  const selector = "[data-mj=\"widget-pages-item\"], [data-mj=\"widget-collection-slider-item\"]";
   const authButtonSelector = "[data-mj=\"login-button\"], [data-mj=\"register-button\"]";
   const styleId = "mrjindev-game-card-hover-tilt-style";
   const angle = 20;
