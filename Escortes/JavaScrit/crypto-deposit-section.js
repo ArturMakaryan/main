@@ -4,6 +4,21 @@
   const welcomeTag = "scroll-welcome-banner";
   const assetBaseUrl = "https://cdn.jsdelivr.net/gh/ArturMakaryan/main@main/Escortes/assets/crypto-deposit";
   const depositUrl = "https://spinwin.com/en/home/promotions/first-deposit";
+  const coins = [
+    { file: "01.png", alt: "Solana" },
+    { file: "02.png", alt: "TRON" },
+    { file: "03.png", alt: "Ethereum" },
+    { file: "04.png", alt: "Dogecoin" },
+    { file: "05.png", alt: "Tether" },
+    { file: "06.png", alt: "USD Coin" },
+    { file: "07.png", alt: "BNB" },
+    { file: "08.png", alt: "XRP" },
+    { file: "09.png", alt: "Bitcoin" }
+  ];
+
+  const renderCoinImages = (isDuplicate = false) => coins.map(({ file, alt }) => (
+    `<img src="${assetBaseUrl}/${file}" alt="${isDuplicate ? "" : alt}" loading="lazy"${isDuplicate ? ' aria-hidden="true"' : ""}>`
+  )).join("");
 
   class CryptoDepositSection extends HTMLElement {
     connectedCallback() {
@@ -17,15 +32,10 @@
             </h2>
 
             <div class="escortesnew-crypto-deposit-coins" aria-label="Supported crypto coins">
-              <img src="${assetBaseUrl}/01.png" alt="Solana" loading="lazy">
-              <img src="${assetBaseUrl}/02.png" alt="TRON" loading="lazy">
-              <img src="${assetBaseUrl}/03.png" alt="Ethereum" loading="lazy">
-              <img src="${assetBaseUrl}/04.png" alt="Dogecoin" loading="lazy">
-              <img src="${assetBaseUrl}/05.png" alt="Tether" loading="lazy">
-              <img src="${assetBaseUrl}/06.png" alt="USD Coin" loading="lazy">
-              <img src="${assetBaseUrl}/07.png" alt="BNB" loading="lazy">
-              <img src="${assetBaseUrl}/08.png" alt="XRP" loading="lazy">
-              <img src="${assetBaseUrl}/09.png" alt="Bitcoin" loading="lazy">
+              <div class="escortesnew-crypto-deposit-track">
+                ${renderCoinImages()}
+                ${renderCoinImages(true)}
+              </div>
             </div>
 
             <a class="escortesnew-crypto-deposit-button" href="${depositUrl}">
