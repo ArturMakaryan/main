@@ -1159,6 +1159,21 @@ html body .escortesnew-crypto-deposit-button:active {
   filter: brightness(0.96) saturate(1.05) !important;
 }
 
+@media (max-width: 1100px) {
+  html body .escortesnew-crypto-deposit-card {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  html body .escortesnew-crypto-deposit-coins {
+    width: 100% !important;
+    flex: 0 0 auto !important;
+    flex-wrap: wrap !important;
+  }
+}
+
 @media (max-width: 480px) {
   html body .escortesnew-crypto-deposit-card {
     min-height: 120px !important;
