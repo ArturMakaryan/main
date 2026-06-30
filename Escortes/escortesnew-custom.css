@@ -1050,6 +1050,7 @@ html body .escortesnew-crypto-deposit {
   width: 100% !important;
   padding: 12px 0 !important;
   box-sizing: border-box !important;
+  container: escortsnew-crypto-deposit / inline-size !important;
 }
 
 html body .escortesnew-crypto-deposit-card {
@@ -1104,7 +1105,7 @@ html body .escortesnew-crypto-deposit-coins {
 
 html body .escortesnew-crypto-deposit-coins img {
   display: block !important;
-  width: clamp(48px, 3.05vw, 64px) !important;
+  width: 48px !important;
   height: auto !important;
   flex: 0 0 auto !important;
   filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.34)) !important;
@@ -1159,7 +1160,7 @@ html body .escortesnew-crypto-deposit-button:active {
   filter: brightness(0.96) saturate(1.05) !important;
 }
 
-@media (max-width: 1100px) {
+@container escortsnew-crypto-deposit (max-width: 1100px) {
   html body .escortesnew-crypto-deposit-card {
     flex-direction: column !important;
     align-items: center !important;
