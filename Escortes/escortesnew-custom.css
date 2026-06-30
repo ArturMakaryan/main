@@ -680,6 +680,17 @@ html body [class~="app-ltr-1jpm9pd"] {
   padding-bottom: 0 !important;
 }
 
+html body .app-ltr-1x6c2u9,
+html body [class~="app-ltr-1x6c2u9"] {
+  bottom: calc(8px + env(safe-area-inset-bottom, 0px)) !important;
+  max-height: 88px !important;
+  overflow: hidden !important;
+}
+
+html body {
+  padding-bottom: calc(104px + env(safe-area-inset-bottom, 0px)) !important;
+}
+
 html body [data-mj="header-nav-item"] > a > span[data-escortesnew-bg-icon="true"] {
   margin-right: 8px !important;
   display: block !important;
