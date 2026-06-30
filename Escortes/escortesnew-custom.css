@@ -688,6 +688,8 @@ html body [class~="app-ltr-1x6c2u9"] {
   bottom: calc(8px + env(safe-area-inset-bottom, 0px)) !important;
   margin: 0 !important;
   box-sizing: border-box !important;
+  height: 50px !important;
+  min-height: 50px !important;
   max-height: 88px !important;
   overflow: hidden !important;
   border-radius: 12px !important;
