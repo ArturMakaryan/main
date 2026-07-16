@@ -1,0 +1,27 @@
+html body .app-ltr-ilfj1r {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+}
+
+html body .app-ltr-ilfj1r > object.app-ltr-nh34ao,
+html body .app-ltr-ilfj1r > object[data="/api/cmsgateway/api/v1.0/AssetTemplateSite/mad.png"] {
+  display: none !important;
+}
+
+html body .app-ltr-ilfj1r::before {
+  content: "$" !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+}
+
+html body .app-ltr-175g6sl,
+html body [class~="app-ltr-175g6sl"] {
+  display: none !important;
+}
