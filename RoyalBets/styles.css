@@ -96,3 +96,8 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 .app-ltr-10a4mqi {
   padding: 12px 12px 0 12px !important;
 }
+
+button[aria-label="arrow_down"].sl-icon.app-ltr-6zgeic {
+  background-color: transparent !important;
+  right: 0 !important;
+}
