@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RoyalBets Available Regions Drawer</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-preview" aria-label="RoyalBets preview">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">R</span>
+          <span>RoyalBets</span>
+        </div>
+        <button class="wallet-button" type="button">Deposit</button>
+      </header>
+
+      <section class="hero-panel">
+        <div>
+          <h1>Live casino lobby</h1>
+          <p>Preview background for the unavailable-region drawer.</p>
+        </div>
+      </section>
+    </main>
+
+    <section class="region-drawer" aria-labelledby="regions-title">
+      <div class="drawer-handle" aria-hidden="true"></div>
+      <div class="drawer-content">
+        <h2 id="regions-title">Available Regions</h2>
+        <p><strong>"Game Name"</strong> is unavailable in your region. Check the list of available regions below.</p>
+
+        <label class="search-field">
+          <input type="search" placeholder="Search" aria-label="Search regions">
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+            <circle cx="17" cy="17" r="11" stroke="currentColor" stroke-width="4"></circle>
+            <path d="M25.5 25.5L34 34" stroke="currentColor" stroke-width="4" stroke-linecap="round"></path>
+          </svg>
+        </label>
+
+        <div class="regions-label">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor" aria-hidden="true">
+            <path d="M15 2.4 25.2 6.6v7.7c0 6.5-4.3 10.9-10.2 13.3C9.1 25.2 4.8 20.8 4.8 14.3V6.6L15 2.4Z"></path>
+            <circle cx="15" cy="12" r="2.1" fill="#06100a"></circle>
+            <path d="M15 16.2v4.2" stroke="#06100a" stroke-width="2.4" stroke-linecap="round"></path>
+          </svg>
+          <span>Available regions</span>
+        </div>
+
+        <ul class="country-grid">
+          <li>Albania</li>
+          <li>Algeria</li>
+          <li>Andorra</li>
+          <li>Angola</li>
+          <li>Antigua and Barbuda</li>
+          <li>Argentina</li>
+          <li>Armenia</li>
+          <li>Australia</li>
+          <li>Austria</li>
+          <li>Azerbaijan</li>
+          <li>Bahamas</li>
+          <li>Bahrain</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
