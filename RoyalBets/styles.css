@@ -63,6 +63,7 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 [data-mj="content-wrapper"].app-ltr-fkpkqq {
   display: flex !important;
   max-width: none !important;
+  margin-right: initial !important;
 }
 
 .app-ltr-1trb7go {
