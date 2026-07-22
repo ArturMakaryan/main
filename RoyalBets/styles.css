@@ -98,9 +98,16 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 }
 
 [data-mj="sidebar-group"] {
-  background-color: transparent !important;
-  border-radius: 0 !important;
+  background: #2a213f !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   font-weight: 300 !important;
+}
+
+[data-mj="sidebar-group"]:hover {
+  background-image: none !important;
+  background-color: #392f4f !important;
+  border-radius: 10px !important;
 }
 
 .app-ltr-10a4mqi {
