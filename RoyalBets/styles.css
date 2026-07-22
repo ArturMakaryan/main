@@ -51,7 +51,8 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
   border-left: 1px solid #ffffff21 !important;
 }
 
-[data-mj="sidebar-content"].app-ltr-1790snn {
+[data-mj="sidebar-content"].app-ltr-1790snn,
+[data-mj="sidebar-content"].app-ltr-5b4sb2 {
   border-right: 1px solid rgb(255 255 255 / 10%) !important;
   border-radius: 0 !important;
 }
