@@ -212,8 +212,8 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-16cu
   }
 
   .app-ltr-10a4mqi {
-    margin-left: 0 !important;
-    padding: 12px 0 0 12px !important;
+    padding: 0 !important;
+    margin: 12px 0 0 12px !important;
   }
 }
 
