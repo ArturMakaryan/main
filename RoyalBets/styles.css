@@ -80,10 +80,14 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 }
 
 .app-ltr-1q5mnmx {
-  scrollbar-gutter: auto !important;
+  scrollbar-gutter: unset !important;
   padding: 0 !important;
 }
 
 [data-mj="sidebar-footer"] {
   padding: 12px 12px 0 12px !important;
+}
+
+[data-mj="sidebar-group"] {
+  border-radius: 0 !important;
 }
