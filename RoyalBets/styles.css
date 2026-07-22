@@ -15,7 +15,8 @@ input[data-mj="game-catalog-provider-search"].app-ltr-191h9jm,
   display: flex !important;
 }
 
-[data-mj="header"].app-ltr-1h7q2um {
+[data-mj="header"],
+[data-mj="custom-header"] {
   background-color: #1f182f !important;
   border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
   box-shadow: none !important;
@@ -51,8 +52,7 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
   border-left: 1px solid #ffffff21 !important;
 }
 
-[data-mj="sidebar-content"].app-ltr-1790snn,
-[data-mj="sidebar-content"].app-ltr-5b4sb2 {
+[data-mj="sidebar-content"] {
   border-right: 1px solid rgb(255 255 255 / 10%) !important;
   border-radius: 0 !important;
 }
