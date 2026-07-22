@@ -13,6 +13,7 @@ input[data-mj="game-catalog-provider-search"].app-ltr-191h9jm,
 
 [data-mj="header"].app-ltr-1h7q2um {
   background-color: #1f182f !important;
+  border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
   box-shadow: none !important;
 }
 
@@ -48,4 +49,9 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 
 [data-mj="sidebar-content"].app-ltr-1790snn {
   border-radius: 0 !important;
+}
+
+[data-mj="content-wrapper"].app-ltr-fkpkqq {
+  display: flex !important;
+  max-width: none !important;
 }
