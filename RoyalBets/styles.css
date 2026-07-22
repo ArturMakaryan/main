@@ -89,5 +89,10 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 }
 
 [data-mj="sidebar-group"] {
+  background-color: transparent !important;
   border-radius: 0 !important;
+}
+
+.app-ltr-10a4mqi {
+  padding: 12px 12px 0 12px !important;
 }
