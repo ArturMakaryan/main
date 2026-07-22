@@ -15,16 +15,19 @@ input[data-mj="game-catalog-provider-search"].app-ltr-191h9jm,
   display: flex !important;
 }
 
-[data-mj="header"],
-[data-mj="custom-header"] {
+[data-mj="header"] {
   background-color: #0f1734 !important;
   border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
   box-shadow: none !important;
 }
 
-[data-mj="custom-header"].app-ltr-1bdm31y {
+[data-mj="custom-header"],
+[data-mj="custom-header"].app-ltr-1bdm31y,
+[data-mj="custom-header"].app-ltr-17241jj {
   display: flex !important;
   background-color: #0f1734 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
 }
 
 [data-mj="sidebar"].app-ltr-17u1px6 {
