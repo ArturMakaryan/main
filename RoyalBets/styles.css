@@ -141,6 +141,15 @@ button[aria-label="arrow_right"].sl-icon.app-ltr-1ius09c {
     linear-gradient(167deg, rgb(47 40 64) 0%, rgb(36 29 51) 100%) border-box !important;
 }
 
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-16cu704 {
+  inset-inline-end: 20px !important;
+  top: 8px !important;
+}
+
+.app-ltr-es55kh {
+  margin-top: 44px !important;
+}
+
 @media (max-width: 991px) {
   [data-mj="content-wrapper"].app-ltr-fkpkqq {
     max-width: none !important;
