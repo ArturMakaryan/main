@@ -23,3 +23,17 @@ input[data-mj="game-catalog-provider-search"].app-ltr-191h9jm,
   padding: 0 !important;
   border-radius: 0 !important;
 }
+
+li[data-mj="sidebar-section"].app-ltr-io3k4 {
+  display: flex !important;
+  background-color: transparent !important;
+  margin-bottom: 8px !important;
+}
+
+.app-ltr-i6bazn {
+  padding-left: 26px !important;
+}
+
+.app-ltr-b4va7y {
+  border-left: 1px solid #ffffff21 !important;
+}
