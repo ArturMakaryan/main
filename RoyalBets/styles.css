@@ -118,6 +118,8 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-6zgeic {
 .app-ltr-efiit2 {
   border-color: #34274e !important;
   background-color: #1e162f !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
 }
 
 .sl-select__control.app-ltr-96c07s-control {
@@ -133,9 +135,11 @@ button[aria-label="arrow_left"].sl-icon.app-ltr-1ucxo6b,
 button[aria-label="arrow_right"].sl-icon.app-ltr-1ucxo6b,
 button[data-mj="sidebar-collapse"].sl-icon.app-ltr-16cu704,
 button[aria-label="arrow_left"].sl-icon.app-ltr-1ius09c,
-button[aria-label="arrow_right"].sl-icon.app-ltr-1ius09c {
+button[aria-label="arrow_right"].sl-icon.app-ltr-1ius09c,
+button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914 {
   border: 1px solid transparent !important;
   border-radius: 12px !important;
+  box-shadow: none !important;
   background:
     linear-gradient(#241D33, #241D33) padding-box,
     linear-gradient(167deg, rgb(47 40 64) 0%, rgb(36 29 51) 100%) border-box !important;
@@ -148,6 +152,12 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-16c
 
 .app-ltr-es55kh {
   margin-top: 44px !important;
+}
+
+.css-hzxgfa.app-ltr-rnjuc1,
+.app-ltr-1dmoq6l,
+.app-ltr-t43k38 {
+  color: #6a627b !important;
 }
 
 @media (max-width: 991px) {
