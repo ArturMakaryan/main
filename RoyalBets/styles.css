@@ -1,8 +1,8 @@
 input[data-mj="game-catalog-game-search"].app-ltr-zpek89,
 input[data-mj="game-catalog-provider-search"].app-ltr-191h9jm,
 .sl-select__control.app-ltr-o1e5fm-control {
-  background-color: #1f182f !important;
-  border-color: #1f182f !important;
+  background-color: #0f1734 !important;
+  border-color: #0f1734 !important;
 }
 
 .sl-select__control.app-ltr-1hye55j-control {
@@ -17,14 +17,14 @@ input[data-mj="game-catalog-provider-search"].app-ltr-191h9jm,
 
 [data-mj="header"],
 [data-mj="custom-header"] {
-  background-color: #1f182f !important;
+  background-color: #0f1734 !important;
   border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
   box-shadow: none !important;
 }
 
 [data-mj="custom-header"].app-ltr-1bdm31y {
   display: flex !important;
-  background-color: #1f182f !important;
+  background-color: #0f1734 !important;
 }
 
 [data-mj="sidebar"].app-ltr-17u1px6 {
