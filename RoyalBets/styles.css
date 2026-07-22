@@ -77,3 +77,12 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
   font-size: 14px !important;
   font-weight: 300 !important;
 }
+
+.app-ltr-1q5mnmx {
+  scrollbar-gutter: auto !important;
+  padding: 0 !important;
+}
+
+[data-mj="sidebar-footer"] {
+  padding: 12px 12px 0 12px !important;
+}
