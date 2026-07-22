@@ -1,11 +1,13 @@
 input[data-mj="game-catalog-game-search"].app-ltr-zpek89,
 input[data-mj="game-catalog-provider-search"].app-ltr-191h9jm,
-.sl-select__control.app-ltr-o1e5fm-control {
+.sl-select__control.app-ltr-o1e5fm-control,
+.sl-select__control.app-ltr-1hye55j-control {
   background-color: #1f182f !important;
   border-color: #1f182f !important;
 }
 
-.sl-select__control.app-ltr-o1e5fm-control {
+.sl-select__control.app-ltr-o1e5fm-control,
+.sl-select__control.app-ltr-1hye55j-control {
   display: flex !important;
 }
 
