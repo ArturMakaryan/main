@@ -131,6 +131,7 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-6zgeic {
 .app-ltr-17y30q7,
 .app-ltr-efiit2,
 [data-mj="login-button"],
+.app-ltr-1d93vvc,
 button[aria-label="arrow_left"].sl-icon.app-ltr-1ucxo6b,
 button[aria-label="arrow_right"].sl-icon.app-ltr-1ucxo6b,
 button[data-mj="sidebar-collapse"].sl-icon.app-ltr-16cu704,
@@ -163,5 +164,12 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-16c
 @media (max-width: 991px) {
   [data-mj="content-wrapper"].app-ltr-fkpkqq {
     max-width: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  [data-mj="sidebar-footer"],
+  .app-ltr-10a4mqi {
+    padding: 0 !important;
   }
 }
