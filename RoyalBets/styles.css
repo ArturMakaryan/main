@@ -48,6 +48,7 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 }
 
 [data-mj="sidebar-content"].app-ltr-1790snn {
+  border-right: 1px solid rgb(255 255 255 / 10%) !important;
   border-radius: 0 !important;
 }
 
