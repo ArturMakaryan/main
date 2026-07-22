@@ -93,6 +93,7 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 }
 
 [data-mj="sidebar-footer"] {
+  border-top: 0 !important;
   padding: 12px 12px 0 12px !important;
 }
 
@@ -159,12 +160,23 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914 {
 }
 
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-16cu704 {
-  inset-inline-end: 20px !important;
+  inset-inline-end: 16px !important;
   top: 8px !important;
+  width: 48px !important;
+  min-width: 48px !important;
+  height: 48px !important;
+}
+
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-16cu704 {
+  inset-inline-end: 200px !important;
+  top: 12px !important;
+  width: 48px !important;
+  min-width: 48px !important;
+  height: 48px !important;
 }
 
 .app-ltr-es55kh {
-  margin-top: 44px !important;
+  margin-top: 54px !important;
 }
 
 .css-hzxgfa.app-ltr-rnjuc1,
