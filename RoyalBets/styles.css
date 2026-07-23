@@ -115,7 +115,7 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
   border-radius: 12px !important;
   border: 1px solid rgb(53 46 68) !important;
   gap: 0px !important;
-  margin-left: 56px !important;
+  margin: 12px 0px 12px 56px !important;
   padding: 12px 12px 0 12px !important;
 }
 
@@ -215,7 +215,7 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-16c
 }
 
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-16cu704 {
-  inset-inline-end: 200px !important;
+  inset-inline-end: 210px !important;
   top: 12px !important;
   width: 42px !important;
   min-width: 42px !important;
@@ -229,7 +229,7 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-16cu
   gap: 0px !important;
   margin-left: 12px !important;
   width: 42px !important;
-  margin-top: 48px !important;
+  margin-top: 60px !important;
 }
 
 .css-hzxgfa.app-ltr-rnjuc1,
