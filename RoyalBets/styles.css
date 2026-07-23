@@ -152,8 +152,8 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914 {
   border-radius: 12px !important;
   box-shadow: none !important;
   background:
-    linear-gradient(#241D33, #241D33) padding-box,
-    linear-gradient(167deg, rgb(47 40 64) 0%, rgb(36 29 51) 100%) border-box !important;
+    linear-gradient(#241d33, #2b243b) padding-box,
+    linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
 }
 
 .app-ltr-efiit2,
@@ -177,17 +177,17 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914 {
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-16cu704 {
   inset-inline-end: 16px !important;
   top: 8px !important;
-  width: 48px !important;
-  min-width: 48px !important;
-  height: 48px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
 }
 
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-16cu704 {
   inset-inline-end: 200px !important;
   top: 12px !important;
-  width: 48px !important;
-  min-width: 48px !important;
-  height: 48px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
 }
 
 .app-ltr-es55kh {
