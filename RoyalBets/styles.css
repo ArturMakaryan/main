@@ -93,6 +93,16 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
   background: #ffffff0d !important;
 }
 
+.app-ltr-ky0fxc {
+  color: #bfb6d8 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+.app-ltr-h5qxq2 {
+  padding-left: 16px !important;
+}
+
 .app-ltr-1q5mnmx {
   scrollbar-gutter: unset !important;
   padding: 0 !important;
@@ -184,6 +194,15 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914,
 }
 
 [data-mj="game-catalog-category-slider-item"].app-ltr-11rdgdd {
+  border: 1px solid transparent !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  background:
+    linear-gradient(#241d33, #3a3056) padding-box,
+    linear-gradient(177deg, rgb(233 215 148 / 16%) 30%, rgb(156 137 88) 100%) border-box !important;
+}
+
+[data-mj="game-catalog-category-slider-item"]:hover {
   border: 1px solid transparent !important;
   border-radius: 12px !important;
   box-shadow: none !important;
