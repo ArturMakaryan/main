@@ -100,6 +100,7 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 [data-mj="sidebar-group"] {
   background-color: transparent !important;
   border-radius: 0 !important;
+  min-height: 40px !important;
   font-weight: 300 !important;
 }
 
