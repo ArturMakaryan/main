@@ -159,11 +159,16 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-6zgeic {
 .app-ltr-17y30q7,
 [data-mj="login-button"],
 .app-ltr-1d93vvc,
+.app-ltr-cvus8s,
 button[aria-label="arrow_left"].sl-icon.app-ltr-1ucxo6b,
 button[aria-label="arrow_right"].sl-icon.app-ltr-1ucxo6b,
+button[aria-label="user"].sl-icon.app-ltr-1ucxo6b,
 button[data-mj="sidebar-collapse"].sl-icon.app-ltr-16cu704,
+button[data-mj="sidebar-collapse"].sl-icon.app-ltr-au4yrk,
 button[aria-label="arrow_left"].sl-icon.app-ltr-1ius09c,
 button[aria-label="arrow_right"].sl-icon.app-ltr-1ius09c,
+button[aria-label="arrow_left"].sl-icon.app-ltr-v4gv5f,
+button[aria-label="arrow_right"].sl-icon.app-ltr-v4gv5f,
 button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914,
 [data-mj="game-catalog-category-slider-item"],
 [data-mj="game-catalog-mobile-category-chip"] {
@@ -234,7 +239,7 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914,
   background-color: #1e162f !important;
 }
 
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-16cu704 {
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4yrk {
   inset-inline-end: 14px !important;
   top: 8px !important;
   width: 42px !important;
@@ -242,8 +247,8 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-16c
   height: 42px !important;
 }
 
-button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-16cu704 {
-  inset-inline-end: 210px !important;
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-au4yrk {
+  inset-inline-end: 207px !important;
   top: 12px !important;
   width: 42px !important;
   min-width: 42px !important;
