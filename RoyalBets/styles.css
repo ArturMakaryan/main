@@ -343,6 +343,11 @@ html body [class~="app-ltr-175g6sl"] {
   display: none !important;
 }
 
+html body .app-ltr-lbbcnt,
+html body [class~="app-ltr-lbbcnt"] {
+  display: none !important;
+}
+
 html body img.app-ltr-6jrdpz[src="/api/cmsgateway/api/v1.0/AssetTemplateSite/mad.png"],
 html body img[class~="app-ltr-6jrdpz"][src="/api/cmsgateway/api/v1.0/AssetTemplateSite/mad.png"] {
   display: none !important;
