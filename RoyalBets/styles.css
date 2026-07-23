@@ -154,13 +154,33 @@ button[aria-label="arrow_right"].sl-icon.app-ltr-1ucxo6b,
 button[data-mj="sidebar-collapse"].sl-icon.app-ltr-16cu704,
 button[aria-label="arrow_left"].sl-icon.app-ltr-1ius09c,
 button[aria-label="arrow_right"].sl-icon.app-ltr-1ius09c,
-button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914 {
+button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914,
+[data-mj="game-catalog-category-slider-item"],
+[data-mj="game-catalog-mobile-category-chip"] {
   border: 1px solid transparent !important;
   border-radius: 12px !important;
   box-shadow: none !important;
   background:
     linear-gradient(#241d33, #2b243b) padding-box,
     linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-5kaam6 {
+  border: 1px solid transparent !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  background:
+    linear-gradient(#241d33, #3a3056) padding-box,
+    linear-gradient(177deg, rgb(233 215 148 / 16%) 30%, rgb(156 137 88) 100%) border-box !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-11rdgdd {
+  border: 1px solid transparent !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  background:
+    linear-gradient(#241d33, #3a3056) padding-box,
+    linear-gradient(177deg, rgb(233 215 148 / 16%) 30%, rgb(156 137 88) 100%) border-box !important;
 }
 
 .app-ltr-efiit2,
