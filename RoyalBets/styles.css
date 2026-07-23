@@ -258,6 +258,14 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-au4y
   width: 42px !important;
   min-width: 42px !important;
   height: 42px !important;
+  background-image: url("./Burger.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 24px 24px !important;
+}
+
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-au4yrk > svg {
+  display: none !important;
 }
 
 .app-ltr-es55kh {
