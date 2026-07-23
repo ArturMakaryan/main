@@ -57,7 +57,7 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 [data-mj="sidebar-content"] {
   border-right: 1px solid rgb(255 255 255 / 10%) !important;
   border-radius: 0 !important;
-  padding: 0 12px 12px 0 !important;
+  padding: 0 12px 12px 6px !important;
 }
 
 [data-mj="content-wrapper"].app-ltr-fkpkqq {
@@ -170,6 +170,15 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914,
   border-radius: 12px !important;
   box-shadow: none !important;
   background:
+    linear-gradient(#241d33, #2b243b) padding-box,
+    linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-10n3b4e {
+  border: 1px solid transparent !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  background:
     linear-gradient(#241d33, #3a3056) padding-box,
     linear-gradient(177deg, rgb(233 215 148 / 16%) 30%, rgb(156 137 88) 100%) border-box !important;
 }
@@ -227,7 +236,7 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-16cu
   border-radius: 12px !important;
   border: 1px solid rgb(53 46 68) !important;
   gap: 0px !important;
-  margin-left: 12px !important;
+  margin-left: 5px !important;
   width: 42px !important;
   margin-top: 60px !important;
 }
