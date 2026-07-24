@@ -395,7 +395,7 @@ html body .app-ltr-1959n0c::after {
 html body .app-ltr-1959n0c::before {
   content: "$" !important;
   position: absolute !important;
-  left: 0 !important;
+  left: 20px !important;
   top: 0 !important;
   z-index: 2 !important;
   color: #fff !important;
