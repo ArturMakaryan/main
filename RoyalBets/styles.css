@@ -371,3 +371,19 @@ html body .app-ltr-15c2koi,
 html body [class~="app-ltr-15c2koi"] {
   gap: 0 !important;
 }
+
+html body .app-ltr-1959n0c {
+  display: inline-block !important;
+  overflow: hidden !important;
+  position: relative !important;
+  padding-left: 1.15ch !important;
+  text-indent: -4ch !important;
+  white-space: nowrap !important;
+}
+
+html body .app-ltr-1959n0c::before {
+  content: "$" !important;
+  position: absolute !important;
+  left: 0 !important;
+  text-indent: 0 !important;
+}
