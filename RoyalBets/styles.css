@@ -77,7 +77,8 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 .sl-navlink.app-ltr-1nwippo,
 .sl-navlink.app-ltr-1cqr3zy,
 .sl-navlink.app-ltr-59lk66,
-.sl-navlink.app-ltr-jmifsr {
+.sl-navlink.app-ltr-jmifsr,
+.sl-navlink.app-ltr-1fijxsn {
   color: #bfb6d8 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
@@ -353,6 +354,11 @@ html body [class~="app-ltr-175g6sl"] {
 
 html body .app-ltr-lbbcnt,
 html body [class~="app-ltr-lbbcnt"] {
+  display: none !important;
+}
+
+html body .app-ltr-1bl06k4,
+html body [class~="app-ltr-1bl06k4"] {
   display: none !important;
 }
 
