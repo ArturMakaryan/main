@@ -373,17 +373,31 @@ html body [class~="app-ltr-15c2koi"] {
 }
 
 html body .app-ltr-1959n0c {
-  display: inline-block !important;
-  overflow: hidden !important;
   position: relative !important;
-  padding-left: 1.15ch !important;
-  text-indent: -40px !important;
+  display: inline-block !important;
+  text-indent: 0 !important;
+  padding-left: 0 !important;
   white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+html body .app-ltr-1959n0c::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 3.8ch !important;
+  height: 100% !important;
+  background: #251e33 !important;
+  z-index: 1 !important;
 }
 
 html body .app-ltr-1959n0c::before {
   content: "$" !important;
   position: absolute !important;
   left: 0 !important;
+  top: 0 !important;
+  z-index: 2 !important;
+  color: #fff !important;
   text-indent: 0 !important;
 }
