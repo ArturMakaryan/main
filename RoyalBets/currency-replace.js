@@ -1,13 +1,28 @@
 (function () {
-  var selector = ".app-ltr-1959n0c";
+  var selectors = [
+    ".app-ltr-1959n0c",
+    "p",
+    "span",
+    "div"
+  ];
   var madPrefixPattern = /^MAD\s*/;
+  var retryCount = 0;
+  var maxRetries = 40;
 
   function replaceMadPrefix(element) {
     if (!element || !madPrefixPattern.test(element.textContent || "")) {
       return;
     }
 
+    if (element.children && element.children.length > 0) {
+      return;
+    }
+
     element.textContent = element.textContent.replace(madPrefixPattern, "$ ");
+  }
+
+  function getSelector() {
+    return selectors.join(",");
   }
 
   function replaceAllMadPrefixes(root) {
@@ -15,11 +30,11 @@
       return;
     }
 
-    if (root.matches && root.matches(selector)) {
+    if (root.matches && root.matches(getSelector())) {
       replaceMadPrefix(root);
     }
 
-    root.querySelectorAll(selector).forEach(replaceMadPrefix);
+    root.querySelectorAll(getSelector()).forEach(replaceMadPrefix);
   }
 
   function start() {
@@ -43,11 +58,20 @@
       });
     });
 
-    observer.observe(document.body, {
+    observer.observe(document.documentElement, {
       childList: true,
       characterData: true,
       subtree: true
     });
+
+    var retryTimer = setInterval(function () {
+      replaceAllMadPrefixes(document);
+      retryCount += 1;
+
+      if (retryCount >= maxRetries) {
+        clearInterval(retryTimer);
+      }
+    }, 250);
   }
 
   if (document.readyState === "loading") {
