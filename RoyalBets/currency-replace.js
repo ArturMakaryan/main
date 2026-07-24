@@ -1,59 +1,47 @@
 (function () {
-  var selectors = [
-    ".app-ltr-1959n0c",
-    "p",
-    "span",
-    "div"
-  ];
   var madPrefixPattern = /^MAD\s*/;
   var retryCount = 0;
   var maxRetries = 40;
 
-  function replaceMadPrefix(element) {
-    if (!element || !madPrefixPattern.test(element.textContent || "")) {
+  function replaceTextNode(node) {
+    if (!node || node.nodeType !== 3 || !madPrefixPattern.test(node.nodeValue || "")) {
       return;
     }
 
-    if (element.children && element.children.length > 0) {
-      return;
-    }
-
-    element.textContent = element.textContent.replace(madPrefixPattern, "$ ");
-  }
-
-  function getSelector() {
-    return selectors.join(",");
+    node.nodeValue = node.nodeValue.replace(madPrefixPattern, "$ ");
   }
 
   function replaceAllMadPrefixes(root) {
-    if (!root || typeof root.querySelectorAll !== "function") {
+    if (!root) {
       return;
     }
 
-    if (root.matches && root.matches(getSelector())) {
-      replaceMadPrefix(root);
+    if (root.nodeType === 3) {
+      replaceTextNode(root);
+      return;
     }
 
-    root.querySelectorAll(getSelector()).forEach(replaceMadPrefix);
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    var node = walker.nextNode();
+
+    while (node) {
+      replaceTextNode(node);
+      node = walker.nextNode();
+    }
   }
 
   function start() {
-    replaceAllMadPrefixes(document);
+    replaceAllMadPrefixes(document.body || document.documentElement);
 
     var observer = new MutationObserver(function (mutations) {
       mutations.forEach(function (mutation) {
         if (mutation.type === "characterData") {
-          replaceAllMadPrefixes(mutation.target.parentElement);
+          replaceTextNode(mutation.target);
           return;
         }
 
         if (mutation.type === "childList") {
-          replaceAllMadPrefixes(mutation.target);
-          mutation.addedNodes.forEach(function (node) {
-            if (node.nodeType === 1) {
-              replaceAllMadPrefixes(node);
-            }
-          });
+          mutation.addedNodes.forEach(replaceAllMadPrefixes);
         }
       });
     });
@@ -65,7 +53,7 @@
     });
 
     var retryTimer = setInterval(function () {
-      replaceAllMadPrefixes(document);
+      replaceAllMadPrefixes(document.body || document.documentElement);
       retryCount += 1;
 
       if (retryCount >= maxRetries) {
