@@ -303,18 +303,18 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4
   color: #6a627b !important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   [data-mj="content-wrapper"].app-ltr-fkpkqq {
     max-width: none !important;
   }
 
   .app-ltr-10a4mqi {
-    padding: 0 !important;
+    padding: 0 12px 12px 0px !important;
     margin: 12px 0px 12px 12px !important;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   [data-mj="sidebar-footer"],
   .app-ltr-10a4mqi {
     padding: 0 !important;
@@ -371,6 +371,11 @@ html body img[class~="app-ltr-6jrdpz"][src="/api/cmsgateway/api/v1.0/AssetTempla
 
 html body img.app-ltr-6jrdpz[src="/api/cmsgateway/api/v1.0/AssetTemplateSite/try.png"],
 html body img[class~="app-ltr-6jrdpz"][src="/api/cmsgateway/api/v1.0/AssetTemplateSite/try.png"] {
+  display: none !important;
+}
+
+html body .app-ltr-6jrdpz,
+html body [class~="app-ltr-6jrdpz"] {
   display: none !important;
 }
 
