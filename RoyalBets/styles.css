@@ -369,6 +369,11 @@ html body img[class~="app-ltr-6jrdpz"][src="/api/cmsgateway/api/v1.0/AssetTempla
   display: none !important;
 }
 
+html body img.app-ltr-6jrdpz[src="/api/cmsgateway/api/v1.0/AssetTemplateSite/try.png"],
+html body img[class~="app-ltr-6jrdpz"][src="/api/cmsgateway/api/v1.0/AssetTemplateSite/try.png"] {
+  display: none !important;
+}
+
 html body .app-ltr-15c2koi,
 html body [class~="app-ltr-15c2koi"] {
   gap: 0 !important;
@@ -388,7 +393,7 @@ html body .app-ltr-1959n0c:not([data-mj="footer-copyright"])::after {
   position: absolute !important;
   left: 0 !important;
   top: 0 !important;
-  width: 3.8ch !important;
+  width: 8px !important;
   height: 100% !important;
   background: #251e33 !important;
   z-index: 1 !important;
@@ -397,7 +402,7 @@ html body .app-ltr-1959n0c:not([data-mj="footer-copyright"])::after {
 html body .app-ltr-1959n0c:not([data-mj="footer-copyright"])::before {
   content: "$" !important;
   position: absolute !important;
-  left: 20px !important;
+  left: 0px !important;
   top: 0 !important;
   z-index: 2 !important;
   color: #fff !important;
