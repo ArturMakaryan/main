@@ -303,14 +303,18 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4
   color: #6a627b !important;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   [data-mj="content-wrapper"].app-ltr-fkpkqq {
     max-width: none !important;
   }
 
   .app-ltr-10a4mqi {
-    padding: 0 12px 12px 0px !important;
+    padding: 0px 0px 0px 0px !important;
     margin: 12px 0px 12px 12px !important;
+  }
+
+  [data-mj="sidebar-content"] {
+    padding: 0 12px 12px 0px !important;
   }
 }
 
