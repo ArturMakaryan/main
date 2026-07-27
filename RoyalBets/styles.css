@@ -374,11 +374,6 @@ html body img[class~="app-ltr-6jrdpz"][src="/api/cmsgateway/api/v1.0/AssetTempla
   display: none !important;
 }
 
-html body .app-ltr-6jrdpz,
-html body [class~="app-ltr-6jrdpz"] {
-  display: none !important;
-}
-
 html body .app-ltr-15c2koi,
 html body [class~="app-ltr-15c2koi"] {
   gap: 0 !important;
