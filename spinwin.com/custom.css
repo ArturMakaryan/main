@@ -1,5 +1,5 @@
 [data-mj="header"] {
-  background-color: #1e162f !important;
+  background-color: #2c093c !important;
   border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
   box-shadow: none !important;
 }
@@ -8,7 +8,7 @@
 [data-mj="custom-header"].app-ltr-1ozdjqw,
 [data-mj="custom-header"].app-ltr-15p0w9m {
   display: flex !important;
-  background-color: #1e162f !important;
+  background-color: #2c093c !important;
   border-bottom: 0 !important;
   box-shadow: none !important;
 }
