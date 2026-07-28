@@ -1,9 +1,9 @@
 (function () {
   const tabs = [
-    { label: "Home", active: true },
-    { label: "Casino" },
+    { label: "Home", icon: "home.svg", active: true },
+    { label: "Casino", icon: "casino.svg" },
     { label: "Free money" },
-    { label: "Sports" }
+    { label: "Sports", icon: "sport.svg" }
   ];
   const targetSelectors = [
     '[data-mj="header-left"]',
@@ -12,9 +12,22 @@
   ];
 
   const observedRoots = new WeakSet();
+  const assetBaseUrl = getAssetBaseUrl();
+
+  function getAssetBaseUrl() {
+    const currentScript = document.currentScript;
+
+    if (currentScript && currentScript.src) {
+      return new URL("./icons/", currentScript.src).href;
+    }
+
+    return "https://cdn.jsdelivr.net/gh/ArturMakaryan/main@main/youcan.win/icons/";
+  }
 
   function getTabsCss() {
     return `
+      @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
       [data-mj="header-left"] {
         display: flex !important;
         align-items: center !important;
@@ -29,31 +42,58 @@
       .youcan-header-tabs {
         display: inline-flex !important;
         align-items: center !important;
-        height: 40px !important;
+        height: 44px !important;
         padding: 2px !important;
-        gap: 2px !important;
+        gap: 0 !important;
         background: #242626 !important;
         border-radius: 12px !important;
         box-sizing: border-box !important;
       }
 
       .youcan-header-tab {
-        height: 36px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        height: 40px !important;
         padding: 0 18px !important;
         border: 0 !important;
         border-radius: 10px !important;
         background: transparent !important;
         color: #ffffff !important;
+        font-family: "Rubik", Arial, sans-serif !important;
         font-size: 14px !important;
-        font-weight: 600 !important;
+        font-weight: 300 !important;
         line-height: 1 !important;
         cursor: pointer !important;
         white-space: nowrap !important;
       }
 
+      .youcan-header-tab:hover {
+        background: rgba(255, 255, 255, 0.04) !important;
+      }
+
+      .youcan-header-tab-icon {
+        display: block !important;
+        width: 22px !important;
+        height: 22px !important;
+        object-fit: contain !important;
+        flex: 0 0 22px !important;
+      }
+
       .youcan-header-tab.is-active {
         background: #27ed89 !important;
         color: #081410 !important;
+      }
+
+      .youcan-header-tab.is-active:hover {
+        background: #27ed89 !important;
+      }
+
+      @media screen and (max-width: 992px) {
+        .youcan-header-tabs {
+          display: none !important;
+        }
       }
     `;
   }
@@ -134,7 +174,18 @@
         button.classList.add("is-active");
       }
 
-      button.textContent = tab.label;
+      if (tab.icon) {
+        const icon = document.createElement("img");
+        icon.className = "youcan-header-tab-icon";
+        icon.src = assetBaseUrl + tab.icon;
+        icon.alt = "";
+        icon.setAttribute("aria-hidden", "true");
+        button.appendChild(icon);
+      }
+
+      const label = document.createElement("span");
+      label.textContent = tab.label;
+      button.appendChild(label);
       tabsGroup.appendChild(button);
     });
 
