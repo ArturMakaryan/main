@@ -58,12 +58,6 @@ li[data-mj="sidebar-section"] {
   font-weight: 300 !important;
 }
 
-[data-mj="sidebar-group"]:hover,
-[data-mj="sidebar-group"].active-link {
-  border-radius: 8px !important;
-  background: #ffffff0d !important;
-}
-
 [data-mj="sidebar-group"].active-link {
   color: #eeae10 !important;
 }
