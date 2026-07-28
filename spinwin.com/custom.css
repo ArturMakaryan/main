@@ -178,8 +178,6 @@ li[data-mj="sidebar-section"] {
 }
 
 button[data-mj="sidebar-collapse"].sl-icon.app-ltr-6wrrdz {
-  position: fixed !important;
-  z-index: 1000 !important;
   border: 1px solid transparent !important;
   border-radius: 12px !important;
   box-shadow: none !important;
@@ -192,8 +190,6 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-6wrrdz {
 }
 
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-6wrrdz {
-  left: 14px !important;
-  right: auto !important;
   inset-inline-end: 14px !important;
   top: 8px !important;
   width: 42px !important;
@@ -206,8 +202,6 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-6wr
 }
 
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-6wrrdz {
-  left: 207px !important;
-  right: auto !important;
   inset-inline-end: 207px !important;
   top: 12px !important;
   width: 42px !important;
