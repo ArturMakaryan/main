@@ -5,6 +5,11 @@
     { label: "Free money" },
     { label: "Sports" }
   ];
+  const targetSelectors = [
+    '[data-mj="header-left"]',
+    '[data-mj="custom-header"]',
+    '[data-mj="header"]'
+  ];
 
   const observedRoots = new WeakSet();
 
@@ -14,6 +19,11 @@
         display: flex !important;
         align-items: center !important;
         gap: 12px !important;
+      }
+
+      [data-mj="custom-header"],
+      [data-mj="header"] {
+        align-items: center !important;
       }
 
       .youcan-header-tabs {
@@ -103,7 +113,9 @@
   }
 
   function addHeaderTabs() {
-    const headerLeft = findDeep('[data-mj="header-left"]', document);
+    const headerLeft = targetSelectors
+      .map((selector) => findDeep(selector, document))
+      .find(Boolean);
 
     if (!headerLeft || headerLeft.querySelector(".youcan-header-tabs")) return;
 
@@ -130,6 +142,7 @@
   }
 
   function init() {
+    document.documentElement.setAttribute("data-youcan-tabs-ready", "true");
     addTabsStyles(document);
     observeOpenShadowRoots(document);
     addHeaderTabs();
