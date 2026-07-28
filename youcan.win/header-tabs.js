@@ -24,10 +24,29 @@
     return "https://cdn.jsdelivr.net/gh/ArturMakaryan/main@main/youcan.win/icons/";
   }
 
+  function loadRubikFont() {
+    if (document.getElementById("youcan-rubik-font")) return;
+    if (!document.head) return;
+
+    const preconnectGoogle = document.createElement("link");
+    preconnectGoogle.rel = "preconnect";
+    preconnectGoogle.href = "https://fonts.googleapis.com";
+
+    const preconnectGstatic = document.createElement("link");
+    preconnectGstatic.rel = "preconnect";
+    preconnectGstatic.href = "https://fonts.gstatic.com";
+    preconnectGstatic.crossOrigin = "anonymous";
+
+    const font = document.createElement("link");
+    font.id = "youcan-rubik-font";
+    font.rel = "stylesheet";
+    font.href = "https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap";
+
+    document.head.append(preconnectGoogle, preconnectGstatic, font);
+  }
+
   function getTabsCss() {
     return `
-      @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
-
       [data-mj="header-left"] {
         display: flex !important;
         align-items: center !important;
@@ -48,6 +67,8 @@
         background: #242626 !important;
         border-radius: 12px !important;
         box-sizing: border-box !important;
+        font-family: "Rubik", sans-serif !important;
+        font-weight: 300 !important;
       }
 
       .youcan-header-tab {
@@ -61,7 +82,7 @@
         border-radius: 10px !important;
         background: transparent !important;
         color: #ffffff !important;
-        font-family: "Rubik", Arial, sans-serif !important;
+        font-family: "Rubik", sans-serif !important;
         font-size: 14px !important;
         font-weight: 300 !important;
         line-height: 1 !important;
@@ -84,6 +105,12 @@
       .youcan-header-tab.is-active {
         background: #27ed89 !important;
         color: #081410 !important;
+      }
+
+      .youcan-header-tab,
+      .youcan-header-tab * {
+        font-family: "Rubik", sans-serif !important;
+        font-weight: 300 !important;
       }
 
       .youcan-header-tab.is-active:hover {
@@ -194,6 +221,7 @@
 
   function init() {
     document.documentElement.setAttribute("data-youcan-tabs-ready", "true");
+    loadRubikFont();
     addTabsStyles(document);
     observeOpenShadowRoots(document);
     addHeaderTabs();
