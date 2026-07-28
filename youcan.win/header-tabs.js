@@ -2,7 +2,6 @@
   const tabs = [
     { label: "Home", icon: "home.svg", active: true },
     { label: "Casino", icon: "casino.svg" },
-    { label: "Free money" },
     { label: "Sports", icon: "sport.svg" }
   ];
   const targetSelectors = [
@@ -105,6 +104,10 @@
       .youcan-header-tab.is-active {
         background: #27ed89 !important;
         color: #081410 !important;
+      }
+
+      .youcan-header-tab.is-active .youcan-header-tab-icon {
+        filter: brightness(0) saturate(100%) !important;
       }
 
       .youcan-header-tab,
