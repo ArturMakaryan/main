@@ -1,0 +1,22 @@
+[data-mj="sidebar"].app-ltr-1huuf1k {
+  width: 260px !important;
+  padding: 0 !important;
+}
+
+[data-mj="sidebar"].app-ltr-17u1px6 {
+  width: 80px !important;
+  padding: 0 !important;
+}
+
+[data-mj="sidebar-content"] {
+  border-radius: 0 !important;
+}
+
+[data-mj="content-wrapper"].app-ltr-fkpkqq {
+  display: flex !important;
+  max-width: calc(100% - 80px) !important;
+}
+
+[data-mj="header"] {
+  box-shadow: none !important;
+}
