@@ -134,12 +134,22 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 }
 
 .app-ltr-10a4mqi {
+  display: flex !important;
+  flex-direction: row !important;
   background: #2a213f !important;
   border-radius: 12px !important;
   border: 1px solid rgb(53 46 68) !important;
   gap: 0px !important;
   margin: 12px 0px 12px 56px !important;
   padding: 12px 12px 0 12px !important;
+  transform-origin: left center !important;
+  transition:
+    margin 220ms ease,
+    padding 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-group-horizontal 220ms ease-out !important;
 }
 
 button[aria-label="arrow_down"].sl-icon.app-ltr-6zgeic,
@@ -288,6 +298,8 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4
 }
 
 .app-ltr-es55kh {
+  display: flex !important;
+  flex-direction: column !important;
   background: #2a213f !important;
   border-radius: 12px !important;
   border: 1px solid rgb(53 46 68) !important;
@@ -295,6 +307,45 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4
   margin-left: 13px !important;
   width: 42px !important;
   margin-top: 60px !important;
+  transform-origin: top center !important;
+  transition:
+    margin 220ms ease,
+    width 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-group-vertical 220ms ease-out !important;
+}
+
+.app-ltr-es55kh > *,
+.app-ltr-10a4mqi > * {
+  transition:
+    transform 220ms ease,
+    opacity 180ms ease !important;
+}
+
+@keyframes rb-sidebar-group-horizontal {
+  from {
+    opacity: 0.86;
+    transform: translateX(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes rb-sidebar-group-vertical {
+  from {
+    opacity: 0.86;
+    transform: translateY(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .css-hzxgfa.app-ltr-rnjuc1,
