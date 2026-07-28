@@ -75,6 +75,11 @@ li[data-mj="sidebar-section"] {
   color: rgb(236, 202, 101) !important;
 }
 
+.app-ltr-1q5mnmx {
+  scrollbar-gutter: unset !important;
+  padding: 0 !important;
+}
+
 .app-ltr-es55kh {
   display: flex !important;
   background: #2a213f !important;
@@ -156,6 +161,15 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-6wrr
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-6wrrdz > svg,
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-6wrrdz > svg {
   display: none !important;
+}
+
+button[aria-label="arrow_down"].sl-icon.app-ltr-62n98p,
+button[aria-label="arrow_up"].sl-icon.app-ltr-62n98p {
+  width: 32px !important;
+  min-width: 32px !important;
+  height: 32px !important;
+  background-color: transparent !important;
+  right: 6px !important;
 }
 
 [data-mj="content-wrapper"].app-ltr-fkpkqq {
