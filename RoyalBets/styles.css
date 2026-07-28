@@ -57,7 +57,7 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
 [data-mj="sidebar-content"] {
   border-right: 1px solid rgb(255 255 255 / 10%) !important;
   border-radius: 0 !important;
-  padding: 0 12px 12px 6px !important;
+  padding: 0 12px 12px 0px !important;
 }
 
 [data-mj="content-wrapper"].app-ltr-fkpkqq {
@@ -82,7 +82,7 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
   color: #bfb6d8 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
-  padding: 4px 32px 4px 16px !important;
+  padding: 4px 32px 4px 22px !important;
 }
 
 .sl-navlink.app-ltr-1cqr3zy.active-link {
@@ -292,7 +292,7 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4
   border-radius: 12px !important;
   border: 1px solid rgb(53 46 68) !important;
   gap: 0px !important;
-  margin-left: 5px !important;
+  margin-left: 13px !important;
   width: 42px !important;
   margin-top: 60px !important;
 }
