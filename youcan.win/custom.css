@@ -11,6 +11,15 @@
   padding: 0 !important;
 }
 
+.app-ltr-b2xcke {
+  display: flex !important;
+}
+
+.app-ltr-1q5mnmx {
+  scrollbar-gutter: unset !important;
+  padding: 0 !important;
+}
+
 [data-mj="sidebar-content"].app-ltr-mtadak,
 [data-mj="sidebar-content"],
 .rb-sidebar-content {
