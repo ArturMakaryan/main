@@ -6,15 +6,10 @@
     { label: "Sports" }
   ];
 
-  let observer = null;
+  const observedRoots = new WeakSet();
 
-  function addTabsStyles() {
-    if (document.getElementById("youcan-header-tabs-style")) return;
-    if (!document.head) return;
-
-    const style = document.createElement("style");
-    style.id = "youcan-header-tabs-style";
-    style.textContent = `
+  function getTabsCss() {
+    return `
       [data-mj="header-left"] {
         display: flex !important;
         align-items: center !important;
@@ -51,14 +46,69 @@
         color: #081410 !important;
       }
     `;
+  }
 
-    document.head.appendChild(style);
+  function addTabsStyles(root) {
+    const styleRoot = root instanceof ShadowRoot ? root : document.head;
+
+    if (!styleRoot || styleRoot.querySelector("#youcan-header-tabs-style")) return;
+
+    const style = document.createElement("style");
+    style.id = "youcan-header-tabs-style";
+    style.textContent = getTabsCss();
+    styleRoot.appendChild(style);
+  }
+
+  function findDeep(selector, root) {
+    if (!root) return null;
+
+    const match = root.querySelector(selector);
+    if (match) return match;
+
+    const elements = root.querySelectorAll("*");
+
+    for (const element of elements) {
+      if (!element.shadowRoot) continue;
+
+      const shadowMatch = findDeep(selector, element.shadowRoot);
+      if (shadowMatch) return shadowMatch;
+    }
+
+    return null;
+  }
+
+  function observeRoot(root) {
+    if (!root || observedRoots.has(root)) return;
+
+    observedRoots.add(root);
+
+    const observer = new MutationObserver(init);
+    observer.observe(root, {
+      childList: true,
+      subtree: true
+    });
+  }
+
+  function observeOpenShadowRoots(root) {
+    if (!root) return;
+
+    observeRoot(root);
+
+    const elements = root.querySelectorAll("*");
+
+    for (const element of elements) {
+      if (!element.shadowRoot) continue;
+      observeOpenShadowRoots(element.shadowRoot);
+    }
   }
 
   function addHeaderTabs() {
-    const headerLeft = document.querySelector('[data-mj="header-left"]');
+    const headerLeft = findDeep('[data-mj="header-left"]', document);
 
     if (!headerLeft || headerLeft.querySelector(".youcan-header-tabs")) return;
+
+    const root = headerLeft.getRootNode();
+    addTabsStyles(root);
 
     const tabsGroup = document.createElement("div");
     tabsGroup.className = "youcan-header-tabs";
@@ -80,20 +130,16 @@
   }
 
   function init() {
-    addTabsStyles();
+    addTabsStyles(document);
+    observeOpenShadowRoots(document);
     addHeaderTabs();
   }
 
   function start() {
     init();
-
-    if (observer || !document.documentElement) return;
-
-    observer = new MutationObserver(init);
-    observer.observe(document.documentElement, {
-      childList: true,
-      subtree: true
-    });
+    window.setTimeout(init, 500);
+    window.setTimeout(init, 1500);
+    window.setTimeout(init, 3000);
   }
 
   if (document.readyState === "loading") {
