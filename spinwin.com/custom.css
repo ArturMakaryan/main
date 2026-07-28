@@ -145,23 +145,6 @@ li[data-mj="sidebar-section"] {
 }
 
 [data-mj="sidebar"] .app-ltr-1trb7go {
-  color: #bfb6d8 !important;
-  fill: #bfb6d8 !important;
-  background-color: #bfb6d8 !important;
-  opacity: 1 !important;
-  filter: none !important;
-}
-
-[data-mj="sidebar"] .app-ltr-1trb7go svg,
-[data-mj="sidebar"] .app-ltr-1trb7go path {
-  color: #bfb6d8 !important;
-  fill: #bfb6d8 !important;
-  opacity: 1 !important;
-}
-
-[data-mj="sidebar"] .app-ltr-1trb7go::before,
-[data-mj="sidebar"] .app-ltr-1trb7go::after {
-  background-color: #bfb6d8 !important;
   opacity: 1 !important;
 }
 
