@@ -60,7 +60,7 @@ li[data-mj="sidebar-section"] {
 
 [data-mj="sidebar-group"]:hover,
 [data-mj="sidebar-group"].active-link {
-  border-radius: 12px !important;
+  border-radius: 8px !important;
   background: #ffffff0d !important;
 }
 
@@ -77,7 +77,7 @@ li[data-mj="sidebar-section"] {
   display: flex !important;
   flex-direction: column !important;
   background: #2a213f !important;
-  border-radius: 12px !important;
+  border-radius: 8px !important;
   border: 1px solid rgb(53 46 68) !important;
   gap: 0px !important;
   margin-left: 13px !important;
@@ -97,7 +97,7 @@ li[data-mj="sidebar-section"] {
   display: flex !important;
   flex-direction: row !important;
   background: #2a213f !important;
-  border-radius: 12px !important;
+  border-radius: 8px !important;
   border: 1px solid rgb(53 46 68) !important;
   gap: 0px !important;
   margin: 12px 0px 12px 56px !important;
@@ -160,14 +160,14 @@ li[data-mj="sidebar-section"] {
 
 .sl-navlink.app-ltr-dis2o5.active-link,
 .sl-navlink.app-ltr-1cqr3zy.active-link {
-  border-radius: 0 12px 12px 0 !important;
+  border-radius: 0 8px 8px 0 !important;
   background: #ffffff0d !important;
   color: #eeae10 !important;
 }
 
 .sl-navlink.app-ltr-dis2o5:hover,
 .sl-navlink.app-ltr-1cqr3zy:hover {
-  border-radius: 0 12px 12px 0 !important;
+  border-radius: 0 8px 8px 0 !important;
   background: #ffffff0d !important;
 }
 
@@ -179,7 +179,7 @@ li[data-mj="sidebar-section"] {
 
 button[data-mj="sidebar-collapse"].sl-icon.app-ltr-6wrrdz {
   border: 1px solid transparent !important;
-  border-radius: 12px !important;
+  border-radius: 8px !important;
   box-shadow: none !important;
   background:
     linear-gradient(#241d33, #2b243b) padding-box,
@@ -247,7 +247,7 @@ input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1qnft40 {
 .sl-select__control.app-ltr-qwgxii-control {
   display: flex !important;
   border: 1px solid transparent !important;
-  border-radius: 12px !important;
+  border-radius: 8px !important;
   box-shadow: none !important;
   background:
     linear-gradient(#241d33, #2b243b) padding-box,
@@ -263,7 +263,7 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-abe2ck,
 [data-mj="game-catalog-category-slider-item"],
 [data-mj="game-catalog-mobile-category-chip"] {
   border: 1px solid transparent !important;
-  border-radius: 12px !important;
+  border-radius: 8px !important;
   box-shadow: none !important;
   background:
     linear-gradient(#241d33, #2b243b) padding-box,
@@ -274,7 +274,7 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-abe2ck,
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-1b5h65l,
 [data-mj="game-catalog-category-slider-item"]:hover {
   border: 1px solid transparent !important;
-  border-radius: 12px !important;
+  border-radius: 8px !important;
   box-shadow: none !important;
   background:
     linear-gradient(#241d33, #3a3056) padding-box,
