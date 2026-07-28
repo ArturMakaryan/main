@@ -6,8 +6,11 @@
     { label: "Sports" }
   ];
 
+  let observer = null;
+
   function addTabsStyles() {
     if (document.getElementById("youcan-header-tabs-style")) return;
+    if (!document.head) return;
 
     const style = document.createElement("style");
     style.id = "youcan-header-tabs-style";
@@ -81,11 +84,21 @@
     addHeaderTabs();
   }
 
-  init();
+  function start() {
+    init();
 
-  const observer = new MutationObserver(init);
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
+    if (observer || !document.documentElement) return;
+
+    observer = new MutationObserver(init);
+    observer.observe(document.documentElement, {
+      childList: true,
+      subtree: true
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
 })();
