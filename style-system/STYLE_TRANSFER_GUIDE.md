@@ -95,7 +95,7 @@ Muted icon:
 Gold active text:
 
 ```css
-rgb(236, 202, 101)
+#eeae10
 ```
 
 Default gradient border:
@@ -171,7 +171,7 @@ background: #ffffff0d !important;
 Sidebar active text:
 
 ```css
-color: rgb(236, 202, 101) !important;
+color: #eeae10 !important;
 ```
 
 Shared sidebar wrapper reset:
