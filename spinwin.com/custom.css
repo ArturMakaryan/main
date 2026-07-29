@@ -306,7 +306,7 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4:hover {
 }
 
 input[data-mj="game-catalog-game-search"].app-ltr-1opgtzu,
-input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1qnft40 {
+input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1opgtzu {
   border-color: #242c46 !important;
   background-color: #141a35 !important;
   font-size: 14px !important;
@@ -328,7 +328,7 @@ i[aria-label="filter"].sl-icon.app-ltr-r87dsi {
   color: #a0a4b7 !important;
 }
 
-button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-abe2ck,
+button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-12q98h,
 [data-mj="game-catalog-category-slider-item"],
 [data-mj="game-catalog-mobile-category-chip"] {
   border: 1px solid transparent !important;
