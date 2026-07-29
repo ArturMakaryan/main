@@ -46,7 +46,7 @@ Sidebar:
 - Shared wrapper/container classes that have been stable across sites: `.app-ltr-10a4mqi`, `.app-ltr-es55kh`, `.app-ltr-1q5mnmx`
 - `.sl-navlink` inside the sidebar
 - `.active-link` state
-- hover state
+- `.sl-navlink:hover` state only; do not add broad `[data-mj="sidebar-group"]:hover` styling by default
 
 Catalog:
 
@@ -161,11 +161,22 @@ font-weight: 300 !important;
 padding: 4px 32px 4px 22px !important;
 ```
 
-Sidebar active/hover link:
+Sidebar nav active/hover link:
 
 ```css
-border-radius: 0 12px 12px 0 !important;
-background: #ffffff0d !important;
+.sl-navlink.SITE_NAV_LINK_CLASS.active-link,
+.sl-navlink.SITE_NAV_LINK_CLASS:hover {
+  border-radius: 0 12px 12px 0 !important;
+  background: #ffffff0d !important;
+}
+```
+
+Do not add this broad hover state unless the user explicitly asks for it:
+
+```css
+[data-mj="sidebar-group"]:hover {
+  background: #ffffff0d !important;
+}
 ```
 
 Sidebar active text:
@@ -333,6 +344,13 @@ Selects and mobile search buttons use the default gradient border.
 Category inactive chips use the default gradient border.
 
 Category active chips and category hover state use the active category gradient.
+
+Mobile category chips should use:
+
+```css
+font-size: 14px !important;
+font-weight: 300 !important;
+```
 
 ## Important Caveats
 

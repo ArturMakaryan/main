@@ -210,6 +210,8 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914,
   border: 1px solid transparent !important;
   border-radius: 12px !important;
   box-shadow: none !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
   background:
     linear-gradient(#241d33, #2b243b) padding-box,
     linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
@@ -219,6 +221,8 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914,
   border: 1px solid transparent !important;
   border-radius: 12px !important;
   box-shadow: none !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
   background:
     linear-gradient(#241d33, #3a3056) padding-box,
     linear-gradient(177deg, rgb(233 215 148 / 16%) 30%, rgb(156 137 88) 100%) border-box !important;
