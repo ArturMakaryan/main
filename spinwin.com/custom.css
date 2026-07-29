@@ -385,8 +385,8 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-abe2ck,
   box-shadow: none !important;
   color: #000 !important;
   background:
-    linear-gradient(#eeae0e, #eeae0e) padding-box,
-    linear-gradient(135deg, #ffffff 10%, #ffffff47 25%, #ffffff75 50%, #ffffff00 75%, #ffffffa3 90%) border-box !important;
+    linear-gradient(#0e132a, #1f2649, #4d5da3) padding-box,
+    linear-gradient(135deg, #eeae109c 10%, #eeae1033 25%, #eeae1085 50%, #eeae1008 75%, #eeae10ad 90%) border-box !important;
   background-color: #19213e !important;
   font-size: 14px !important;
   font-weight: 300 !important;
