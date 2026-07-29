@@ -274,8 +274,8 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-zsg
   transform: none !important;
 }
 
-button[aria-label="arrow_down"].sl-icon.app-ltr-1vmvazq,
-button[aria-label="arrow_up"].sl-icon.app-ltr-1vmvazq {
+button[aria-label="arrow_down"].sl-icon.app-ltr-1j4nlu3,
+button[aria-label="arrow_up"].sl-icon.app-ltr-1j4nlu3 {
   width: 32px !important;
   min-width: 32px !important;
   height: 32px !important;
@@ -283,8 +283,8 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-1vmvazq {
   right: 6px !important;
 }
 
-button[aria-label="arrow_down"].sl-icon.app-ltr-1vmvazq:hover,
-button[aria-label="arrow_up"].sl-icon.app-ltr-1vmvazq:hover {
+button[aria-label="arrow_down"].sl-icon.app-ltr-1j4nlu3:hover,
+button[aria-label="arrow_up"].sl-icon.app-ltr-1j4nlu3:hover {
   background-color: rgb(255 255 255 / 4%) !important;
 }
 
