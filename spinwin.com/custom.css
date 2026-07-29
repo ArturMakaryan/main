@@ -342,8 +342,7 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-abe2ck,
 }
 
 [data-mj="game-catalog-category-slider-item"].app-ltr-igqst4,
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-1b5h65l,
-[data-mj="game-catalog-category-slider-item"]:hover {
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1b5h65l {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
@@ -352,6 +351,19 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-abe2ck,
   background:
     linear-gradient(#241d33, #3a3056) padding-box,
     linear-gradient(177deg, rgb(233 215 148 / 16%) 30%, rgb(156 137 88) 100%) border-box !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"]:hover,
+[data-mj="game-catalog-category-slider-item"]:hover {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  background:
+    linear-gradient(#19213e, #303c6c) padding-box,
+    linear-gradient(135deg, #fff3 10%, #ffffff03 25%, #fff3 50%, #ffffff03 75%, #fff3 90%) border-box !important;
+  background-color: #19213e !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
 }
 
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-1kwvn3q,
@@ -365,6 +377,22 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-abe2ck,
   background-color: #19213e !important;
   font-size: 14px !important;
   font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-7daqrc {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  background:
+    linear-gradient(#eeae0e, #eeae0e) padding-box,
+    linear-gradient(135deg, #ffffff 10%, #ffffff47 25%, #ffffff75 50%, #ffffff00 75%, #ffffffa3 90%) border-box !important;
+  background-color: #19213e !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+.app-ltr-ynlz1h {
+  color: #000 !important;
 }
 
 @media (max-width: 992px) {
