@@ -383,6 +383,7 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-abe2ck,
   border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
+  color: #000 !important;
   background:
     linear-gradient(#eeae0e, #eeae0e) padding-box,
     linear-gradient(135deg, #ffffff 10%, #ffffff47 25%, #ffffff75 50%, #ffffff00 75%, #ffffffa3 90%) border-box !important;
