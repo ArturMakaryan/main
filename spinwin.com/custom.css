@@ -274,6 +274,17 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-u8m
   transform: none !important;
 }
 
+button[aria-label="arrow_left"].sl-icon.app-ltr-sp5v9p,
+.app-ltr-8ac7ob,
+[data-mj="login-button"] {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  background:
+    linear-gradient(#283152, #242d4e) padding-box,
+    linear-gradient(180deg, #30354b 0%, #4c5371 100%) border-box !important;
+}
+
 button[aria-label="arrow_down"].sl-icon.app-ltr-bymed4,
 button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4 {
   width: 32px !important;
@@ -296,20 +307,18 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4:hover {
 
 input[data-mj="game-catalog-game-search"].app-ltr-1opgtzu,
 input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1qnft40 {
-  border-color: #34274e !important;
-  background-color: #1e162f !important;
+  border-color: #242c46 !important;
+  background-color: #141a35 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
 
 .sl-select__control.app-ltr-qwgxii-control {
   display: flex !important;
-  border: 1px solid transparent !important;
+  border-color: #242c46 !important;
   border-radius: 8px !important;
   box-shadow: none !important;
-  background:
-    linear-gradient(#241d33, #2b243b) padding-box,
-    linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
+  background-color: #141a35 !important;
 }
 
 .app-ltr-79elbk,
