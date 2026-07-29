@@ -161,17 +161,6 @@ li[data-mj="sidebar-section"] {
   animation: rb-sidebar-submenu-item-open 260ms ease-out both !important;
 }
 
-.app-ltr-i6bazn.rb-sidebar-submenu-closing,
-.app-ltr-7j3ixa.rb-sidebar-submenu-closing {
-  pointer-events: none !important;
-  animation: rb-sidebar-submenu-close 220ms ease-in forwards !important;
-}
-
-.app-ltr-i6bazn.rb-sidebar-submenu-closing .sl-navlink,
-.app-ltr-7j3ixa.rb-sidebar-submenu-closing .sl-navlink {
-  animation: rb-sidebar-submenu-item-close 180ms ease-in forwards !important;
-}
-
 @keyframes rb-sidebar-submenu-open {
   from {
     opacity: 0;
@@ -207,32 +196,6 @@ li[data-mj="sidebar-section"] {
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes rb-sidebar-submenu-close {
-  from {
-    opacity: 1;
-    clip-path: inset(0 0 0 0);
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0;
-    clip-path: inset(0 0 100% 0);
-    transform: translateY(-6px);
-  }
-}
-
-@keyframes rb-sidebar-submenu-item-close {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateX(-8px);
   }
 }
 
