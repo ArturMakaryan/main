@@ -374,10 +374,12 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-9g2u4p {
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-1kwvn3q {
   background: #2f385b !important;
   box-shadow: none !important;
+  font-size: 14px !important;
 }
 
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-lelrby {
   background: #2f385b !important;
+  font-size: 14px !important;
 }
 
 [data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-lelrby):not(.app-ltr-1kwvn3q):hover,
