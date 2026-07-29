@@ -325,7 +325,7 @@ input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1qnft40 {
 .css-hzxgfa.app-ltr-rnjuc1,
 i[aria-label="search"].sl-icon.app-ltr-45fs6o,
 i[aria-label="filter"].sl-icon.app-ltr-r87dsi {
-  color: #6a627b !important;
+  color: #a0a4b7 !important;
 }
 
 button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-abe2ck,
@@ -352,6 +352,19 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-abe2ck,
   background:
     linear-gradient(#241d33, #3a3056) padding-box,
     linear-gradient(177deg, rgb(233 215 148 / 16%) 30%, rgb(156 137 88) 100%) border-box !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1kwvn3q,
+[data-mj="game-catalog-category-slider-item"].app-ltr-17n6o01 {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  background:
+    linear-gradient(#19213e, #19213e) padding-box,
+    linear-gradient(135deg, #fff3 10%, #ffffff03 25%, #fff3 50%, #ffffff03 75%, #fff3 90%) border-box !important;
+  background-color: #19213e !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
 }
 
 @media (max-width: 992px) {
