@@ -328,7 +328,6 @@ i[aria-label="filter"].sl-icon.app-ltr-r87dsi {
   color: #a0a4b7 !important;
 }
 
-button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-12q98h,
 [data-mj="game-catalog-category-slider-item"],
 [data-mj="game-catalog-mobile-category-chip"] {
   border: 1px solid transparent !important;
@@ -341,6 +340,16 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-12q98h,
     linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
 }
 
+button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-12q98h {
+  border: 1px solid #242c46 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  background: #141a35 !important;
+  background-color: #141a35 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
 [data-mj="game-catalog-category-slider-item"].app-ltr-igqst4,
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-1b5h65l {
   border: 1px solid transparent !important;
@@ -349,8 +358,9 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-12q98h,
   font-size: 14px !important;
   font-weight: 300 !important;
   background:
-    linear-gradient(#241d33, #3a3056) padding-box,
-    linear-gradient(177deg, rgb(233 215 148 / 16%) 30%, rgb(156 137 88) 100%) border-box !important;
+    linear-gradient(#0e132a, #1f2649, #4d5da3) padding-box,
+    linear-gradient(135deg, #eeae109c 10%, #eeae1033 25%, #eeae1085 50%, #eeae1008 75%, #eeae10ad 90%) border-box !important;
+  background-color: #19213e !important;
 }
 
 [data-mj="game-catalog-mobile-category-chip"]:hover,
