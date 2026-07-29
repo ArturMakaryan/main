@@ -228,6 +228,11 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-62n98p {
   right: 6px !important;
 }
 
+button[aria-label="arrow_down"].sl-icon.app-ltr-62n98p:hover,
+button[aria-label="arrow_up"].sl-icon.app-ltr-62n98p:hover {
+  background-color: rgb(255 255 255 / 4%) !important;
+}
+
 [data-mj="content-wrapper"].app-ltr-fkpkqq {
   display: flex !important;
   max-width: calc(100% - 68px) !important;
