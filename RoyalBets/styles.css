@@ -52,6 +52,19 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
   margin-left: 24px !important;
   border-left: 1px solid #ffffff21 !important;
   padding-top: 4px !important;
+  overflow: hidden !important;
+  transform-origin: top left !important;
+  transition:
+    height 220ms ease,
+    max-height 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-submenu-open 220ms ease-out !important;
+}
+
+.app-ltr-i6bazn .app-ltr-b4va7y {
+  transform-origin: left center !important;
+  animation: rb-sidebar-submenu-item-open 220ms ease-out both !important;
 }
 
 [data-mj="sidebar-content"] {
@@ -349,6 +362,30 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes rb-sidebar-submenu-open {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scaleY(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes rb-sidebar-submenu-item-open {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
