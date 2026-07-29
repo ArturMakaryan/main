@@ -204,7 +204,8 @@ li[data-mj="sidebar-section"] {
 }
 
 .sl-navlink.app-ltr-dis2o5,
-.sl-navlink.app-ltr-1cqr3zy {
+.sl-navlink.app-ltr-1cqr3zy,
+.sl-navlink.app-ltr-17104h7 {
   color: #a0a4b8 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
@@ -212,14 +213,16 @@ li[data-mj="sidebar-section"] {
 }
 
 .sl-navlink.app-ltr-dis2o5.active-link,
-.sl-navlink.app-ltr-1cqr3zy.active-link {
+.sl-navlink.app-ltr-1cqr3zy.active-link,
+.sl-navlink.app-ltr-17104h7.active-link {
   border-radius: 0 8px 8px 0 !important;
   background: #ffffff0d !important;
   color: #eeae10 !important;
 }
 
 .sl-navlink.app-ltr-dis2o5:hover,
-.sl-navlink.app-ltr-1cqr3zy:hover {
+.sl-navlink.app-ltr-1cqr3zy:hover,
+.sl-navlink.app-ltr-17104h7:hover {
   border-radius: 0 8px 8px 0 !important;
   background: #ffffff0d !important;
 }
@@ -230,7 +233,8 @@ li[data-mj="sidebar-section"] {
   padding: 12px 0 0 12px !important;
 }
 
-button[data-mj="sidebar-collapse"].sl-icon.app-ltr-u8m6p1 {
+button[data-mj="sidebar-collapse"].sl-icon.app-ltr-u8m6p1,
+button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1gzjyqt {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
@@ -242,7 +246,8 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-u8m6p1 {
   transform: none !important;
 }
 
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-u8m6p1 {
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-u8m6p1,
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1gzjyqt {
   inset-inline-end: 14px !important;
   top: 8px !important;
   width: 42px !important;
@@ -254,7 +259,8 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-u8m
   background-size: 24px 24px !important;
 }
 
-button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-u8m6p1 {
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-u8m6p1,
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-1gzjyqt {
   inset-inline-end: 207px !important;
   top: 12px !important;
   width: 42px !important;
@@ -267,7 +273,9 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-u8m6
 }
 
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-u8m6p1 > svg,
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-u8m6p1 > svg {
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-u8m6p1 > svg,
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-1gzjyqt > svg,
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1gzjyqt > svg {
   display: none !important;
   transition: none !important;
   animation: none !important;
@@ -286,7 +294,9 @@ button[aria-label="arrow_left"].sl-icon.app-ltr-sp5v9p,
 }
 
 button[aria-label="arrow_down"].sl-icon.app-ltr-bymed4,
-button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4 {
+button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4,
+button[aria-label="arrow_down"].sl-icon.app-ltr-16d61q9,
+button[aria-label="arrow_up"].sl-icon.app-ltr-16d61q9 {
   width: 32px !important;
   min-width: 32px !important;
   height: 32px !important;
@@ -295,25 +305,31 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4 {
 }
 
 button[aria-label="arrow_down"].sl-icon.app-ltr-bymed4:hover,
-button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4:hover {
+button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4:hover,
+button[aria-label="arrow_down"].sl-icon.app-ltr-16d61q9:hover,
+button[aria-label="arrow_up"].sl-icon.app-ltr-16d61q9:hover {
   background-color: rgb(255 255 255 / 4%) !important;
 }
 
-[data-mj="content-wrapper"].app-ltr-fkpkqq {
+[data-mj="content-wrapper"].app-ltr-fkpkqq,
+[data-mj="content-wrapper"] {
   display: flex !important;
   max-width: calc(100% - 68px) !important;
   margin-right: initial !important;
 }
 
 input[data-mj="game-catalog-game-search"].app-ltr-1opgtzu,
-input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1opgtzu {
+input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1opgtzu,
+input[data-mj="game-catalog-game-search"].app-ltr-2vvp8e,
+input[data-mj="game-catalog-mobile-provider-input"].app-ltr-2vvp8e {
   border-color: #242c46 !important;
   background-color: #141a35 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
 
-.sl-select__control.app-ltr-qwgxii-control {
+.sl-select__control.app-ltr-qwgxii-control,
+.sl-select__control.app-ltr-1iqdwxp-control {
   display: flex !important;
   border-color: #242c46 !important;
   border-radius: 8px !important;
@@ -340,7 +356,8 @@ i[aria-label="filter"].sl-icon.app-ltr-r87dsi {
     linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
 }
 
-button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-12q98h {
+button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-12q98h,
+button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-9g2u4p {
   border: 1px solid #242c46 !important;
   border-radius: 8px !important;
   box-shadow: none !important;
@@ -351,7 +368,9 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-12q98h {
 }
 
 [data-mj="game-catalog-category-slider-item"].app-ltr-igqst4,
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-1b5h65l {
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1b5h65l,
+[data-mj="game-catalog-category-slider-item"].app-ltr-5gk2sj,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-lelrby {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
@@ -403,7 +422,9 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-12q98h {
   font-weight: 300 !important;
 }
 
-[data-mj="game-catalog-category-slider-item"].app-ltr-7daqrc {
+[data-mj="game-catalog-category-slider-item"].app-ltr-7daqrc,
+[data-mj="game-catalog-category-slider-item"].app-ltr-5gk2sj,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-lelrby {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
