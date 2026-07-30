@@ -146,6 +146,11 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
   font-weight: 300 !important;
 }
 
+[data-mj="sidebar-group"].active-link,
+[data-mj="sidebar-group"]:hover {
+  color: #000000 !important;
+}
+
 .app-ltr-10a4mqi {
   display: flex !important;
   flex-direction: row !important;
