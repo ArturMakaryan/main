@@ -63,6 +63,10 @@ li[data-mj="sidebar-section"] {
   color: #FFCA38 !important;
 }
 
+[data-mj="sidebar-group"]:hover {
+  color: #000 !important;
+}
+
 .app-ltr-1q5mnmx {
   scrollbar-gutter: unset !important;
   padding: 0 !important;
