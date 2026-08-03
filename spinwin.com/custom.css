@@ -284,19 +284,12 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1gz
 }
 
 button[aria-label="arrow_left"].sl-icon.app-ltr-sp5v9p,
-.app-ltr-8ac7ob,
-[data-mj="login-button"] {
+.app-ltr-8ac7ob {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
   background:
     linear-gradient(#283152, #242d4e) padding-box,
-    linear-gradient(180deg, #30354b 0%, #4c5371 100%) border-box !important;
-}
-
-[data-mj="login-button"]:hover {
-  background:
-    linear-gradient(#333f6d, #333f6d) padding-box,
     linear-gradient(180deg, #30354b 0%, #4c5371 100%) border-box !important;
 }
 
