@@ -63,7 +63,6 @@ li[data-mj="sidebar-section"] {
   color: #FFCA38 !important;
 }
 
-[data-mj="sidebar-group"]:hover,
 [data-mj="sidebar-group"].app-ltr-d9rhfw:hover {
   color: #000 !important;
 }
