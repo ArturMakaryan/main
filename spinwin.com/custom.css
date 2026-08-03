@@ -201,6 +201,8 @@ li[data-mj="sidebar-section"] {
 }
 
 [data-mj="sidebar"] .app-ltr-1trb7go {
+  min-width: 20px !important;
+  height: 20px !important;
   opacity: 1 !important;
 }
 
