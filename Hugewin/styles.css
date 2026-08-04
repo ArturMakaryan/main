@@ -1,9 +1,14 @@
 /* Hugewin custom styles */
 
 [data-mj="header"] {
+  position: fixed !important;
   background-color: #191d26 !important;
 }
 
 [aria-label="site-header"] {
   background-color: #191d26 !important;
+}
+
+.app-ltr-i58pjb {
+  max-width: none !important;
 }
