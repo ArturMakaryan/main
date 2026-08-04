@@ -17,3 +17,7 @@
 [data-mj="content-wrapper"] {
   margin-top: 64px !important;
 }
+
+[data-mj="sidebar"] {
+  padding: 0 !important;
+}
