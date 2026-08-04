@@ -20,11 +20,15 @@
 }
 
 [data-mj="sidebar"].app-ltr-1huuf1k {
+  position: sticky !important;
+  top: 64px !important;
   padding: 0 !important;
   width: 260px !important;
 }
 
 [data-mj="sidebar"].app-ltr-17u1px6 {
+  position: sticky !important;
+  top: 64px !important;
   padding: 0 !important;
   width: 68px !important;
 }
@@ -38,7 +42,7 @@
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"],
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   position: fixed !important;
-  top: -55px !important;
+  top: 12px !important;
   left: 14px !important;
   width: 41px !important;
   min-width: 41px !important;
