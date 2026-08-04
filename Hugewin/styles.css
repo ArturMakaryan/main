@@ -30,6 +30,7 @@
 }
 
 [data-mj="sidebar-content"] {
+  position: fixed !important;
   border-radius: 0 !important;
   border-top: 1px solid #101319 !important;
 }
