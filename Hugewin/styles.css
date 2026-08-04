@@ -7,6 +7,7 @@
 
 [aria-label="site-header"] {
   background-color: #191d26 !important;
+  padding-left: 48px !important;
 }
 
 .app-ltr-i58pjb {
@@ -30,6 +31,7 @@
 
 [data-mj="sidebar-content"] {
   border-radius: 0 !important;
+  border-top: 1px solid #101319 !important;
 }
 
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"],
