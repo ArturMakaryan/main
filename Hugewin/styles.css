@@ -27,3 +27,9 @@
   padding: 0 !important;
   width: 68px !important;
 }
+
+button[aria-label="arrow_left"],
+button[aria-label="arrow_right"] {
+  inset-inline-end: 14px !important;
+  top: -52px !important;
+}
