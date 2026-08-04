@@ -12,3 +12,8 @@
 .app-ltr-i58pjb {
   max-width: none !important;
 }
+
+[data-mj="sidebar"],
+[data-mj="content-wrapper"] {
+  margin-top: 64px !important;
+}
