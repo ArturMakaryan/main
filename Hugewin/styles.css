@@ -17,9 +17,14 @@
   max-width: none !important;
 }
 
-[data-mj="sidebar"],
-[data-mj="content-wrapper"] {
+[data-mj="sidebar"] {
   margin-top: 64px !important;
+}
+
+@media (min-width: 992px) {
+  [data-mj="content-wrapper"] {
+    margin-top: 64px !important;
+  }
 }
 
 [data-mj="sidebar"].app-ltr-1huuf1k {
