@@ -18,7 +18,12 @@
   margin-top: 64px !important;
 }
 
-[data-mj="sidebar"] {
+[data-mj="sidebar"].app-ltr-1huuf1k {
   padding: 0 !important;
   width: 260px !important;
+}
+
+[data-mj="sidebar-content"].app-ltr-13qmaqs {
+  width: 68px !important;
+  padding: 0 !important;
 }
