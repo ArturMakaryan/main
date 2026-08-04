@@ -37,7 +37,7 @@
 
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"],
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
-  position: absolute !important;
+  position: fixed !important;
   top: -55px !important;
   left: 14px !important;
   width: 41px !important;
