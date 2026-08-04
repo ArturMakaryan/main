@@ -31,8 +31,8 @@
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"],
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   position: absolute !important;
-  inset-inline-end: -12px !important;
   top: -55px !important;
+  left: 14px !important;
   width: 41px !important;
   min-width: 41px !important;
   height: 41px !important;
