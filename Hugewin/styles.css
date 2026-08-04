@@ -7,7 +7,10 @@
 
 [aria-label="site-header"] {
   background-color: #191d26 !important;
-  padding-left: 48px !important;
+}
+
+[aria-label="site-header"].app-ltr-1duwc2 {
+  padding-left: 54px !important;
 }
 
 .app-ltr-i58pjb {
@@ -36,6 +39,24 @@
 [data-mj="sidebar-content"] {
   border-radius: 0 !important;
   border-top: 1px solid #101319 !important;
+}
+
+[data-mj="logo"].app-ltr-1cg87ht {
+  padding-right: 17px !important;
+  border-right: 1px solid #101319 !important;
+}
+
+.app-ltr-cvus8s {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+[data-mj="login-button"] {
+  border: 1px solid hsl(45deg 76% 63% / 40%) !important;
+  color: #E8C35C !important;
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"],
