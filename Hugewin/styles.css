@@ -1,1 +1,9 @@
 /* Hugewin custom styles */
+
+[data-mj="header"] {
+  background-color: #191d26 !important;
+}
+
+[aria-label="site-header"] {
+  background-color: #191d26 !important;
+}
