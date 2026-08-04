@@ -31,22 +31,9 @@
 button[aria-label="arrow_right"] {
   inset-inline-end: 14px !important;
   top: -52px !important;
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
 }
 
 button[aria-label="arrow_left"] {
   inset-inline-end: 204px !important;
   top: -52px !important;
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
-}
-
-button[aria-label="arrow_left"] > svg,
-button[aria-label="arrow_right"] > svg {
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
 }
