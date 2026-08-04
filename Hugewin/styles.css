@@ -28,18 +28,10 @@
   width: 68px !important;
 }
 
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"] {
-  position: absolute !important;
-  inset-inline-end: 12px !important;
-  top: -55px !important;
-  width: 41px !important;
-  min-width: 41px !important;
-  height: 41px !important;
-}
-
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"],
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   position: absolute !important;
-  inset-inline-end: 202px !important;
+  inset-inline-end: -12px !important;
   top: -55px !important;
   width: 41px !important;
   min-width: 41px !important;
