@@ -28,8 +28,12 @@
   width: 68px !important;
 }
 
-button[aria-label="arrow_left"],
 button[aria-label="arrow_right"] {
   inset-inline-end: 14px !important;
+  top: -52px !important;
+}
+
+button[aria-label="arrow_left"] {
+  inset-inline-end: 204px !important;
   top: -52px !important;
 }
