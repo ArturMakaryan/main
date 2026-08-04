@@ -28,6 +28,10 @@
   width: 68px !important;
 }
 
+[data-mj="sidebar-content"] {
+  border-radius: 0 !important;
+}
+
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"],
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   position: absolute !important;
