@@ -118,7 +118,7 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   border: 1px solid #E8C35C !important;
 }
 
-[data-mj="game-catalog-game-search"] {
+[data-mj="game-catalog-game-search"].app-ltr-1dumd0j {
   color: #606A7C !important;
   background-color: #242933 !important;
   border: 1px solid #242933 !important;
