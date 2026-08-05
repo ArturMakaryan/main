@@ -117,3 +117,9 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
 .sl-navlink.app-ltr-11pzcef.active-link {
   border: 1px solid #E8C35C !important;
 }
+
+[data-mj="game-catalog-game-search"] {
+  color: #606A7C !important;
+  background-color: #242933 !important;
+  border: 1px solid #242933 !important;
+}
