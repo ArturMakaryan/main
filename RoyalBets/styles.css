@@ -494,7 +494,7 @@ html body .app-ltr-1959n0c:not([data-mj="footer-copyright"])::after {
   position: absolute !important;
   left: 0 !important;
   top: 0 !important;
-  width: 8px !important;
+  width: 30px !important;
   height: 100% !important;
   background: #251e33 !important;
   z-index: 1 !important;
@@ -503,7 +503,7 @@ html body .app-ltr-1959n0c:not([data-mj="footer-copyright"])::after {
 html body .app-ltr-1959n0c:not([data-mj="footer-copyright"])::before {
   content: "$" !important;
   position: absolute !important;
-  left: 0px !important;
+  left: 20px !important;
   top: 0 !important;
   z-index: 2 !important;
   color: #fff !important;
@@ -512,4 +512,8 @@ html body .app-ltr-1959n0c:not([data-mj="footer-copyright"])::before {
 
 .app-ltr-xhnoms {
   color: rgb(191 182 216) !important;
+}
+
+li.app-ltr-ky0fxc:has(i[aria-label="settings"][name="settings"]) {
+  display: none !important;
 }
