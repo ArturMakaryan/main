@@ -86,6 +86,15 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   color: #44484f !important;
 }
 
+.app-ltr-10a4mqi {
+  position: fixed !important;
+  top: 8px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 220px !important;
+  height: 40px !important;
+}
+
 .sl-navlink.app-ltr-11pzcef {
   padding: 4px 16px 4px 12px !important;
   font-size: 14px !important;
