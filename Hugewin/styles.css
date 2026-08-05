@@ -80,6 +80,8 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
 
 [data-mj="sidebar-group"] {
   min-height: 40px !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
 }
 
 .app-ltr-i6bazn {
@@ -100,8 +102,6 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   gap: 2px !important;
   background: #101319 !important;
   border-radius: 8px !important;
-  font-weight: 300 !important;
-  font-size: 14px !important;
 }
 
 .sl-navlink.app-ltr-11pzcef {
