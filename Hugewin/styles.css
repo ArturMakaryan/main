@@ -122,12 +122,17 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   color: #606A7C !important;
   background-color: #242933 !important;
   border: 1px solid #242933 !important;
+  font-weight: 300 !important;
 }
 
 .sl-select__control.app-ltr-3czh01-control {
   color: #ffffff !important;
   background-color: #242933 !important;
   border: 1px solid #242933 !important;
+}
+
+.sl-select__placeholder.app-ltr-sxu16n-placeholder {
+  color: #ffffff !important;
 }
 
 .sl-icon.app-ltr-45fs6o {
