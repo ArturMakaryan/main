@@ -125,7 +125,11 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
 }
 
 .sl-select__control.app-ltr-3czh01-control {
-  color: #606A7C !important;
+  color: #ffffff !important;
   background-color: #242933 !important;
   border: 1px solid #242933 !important;
+}
+
+.sl-icon.app-ltr-45fs6o {
+  color: #606A7C !important;
 }
