@@ -87,6 +87,7 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
 }
 
 .sl-navlink.app-ltr-11pzcef {
+  margin-bottom: 8px !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
