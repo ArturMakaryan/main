@@ -28,6 +28,9 @@
 
 [data-mj="game-catalog-category-slider-item"].app-ltr-1vffkr3,
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-h7o1hn {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  background: #364551 !important;
   border: 1px solid rgb(72 255 151) !important;
   color: rgb(71, 255, 151) !important;
 }
