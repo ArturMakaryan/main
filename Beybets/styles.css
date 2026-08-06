@@ -196,7 +196,19 @@ li[data-mj="sidebar-section"] {
   padding: 4px 32px 4px 22px !important;
 }
 
+.sl-navlink.app-ltr-1fwv5e8 {
+  color: #a0a4b8 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
 [data-mj="sidebar"] .sl-navlink.app-ltr-1fwv5e8.active-link {
+  border-radius: 0 8px 8px 0 !important;
+  background: #ffffff0d !important;
+  color: #47ff97 !important;
+}
+
+.sl-navlink.app-ltr-1fwv5e8.active-link {
   border-radius: 0 8px 8px 0 !important;
   background: #ffffff0d !important;
   color: #47ff97 !important;
