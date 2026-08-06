@@ -23,8 +23,13 @@
 }
 
 .sl-navlink.app-ltr-1fwv5e8 {
+  background: linear-gradient(90deg, rgb(24 155 130 / 15%) 0%, rgb(26 55 67 / 20%) 100%) !important;
   font-size: 14px !important;
   font-weight: 300 !important;
+}
+
+.sl-navlink.app-ltr-1fwv5e8.active-link {
+  background: linear-gradient(90deg, rgb(24 155 130 / 15%) 0%, rgb(26 55 67 / 20%) 100%) !important;
 }
 
 li[data-mj="sidebar-section"].app-ltr-6crnis
