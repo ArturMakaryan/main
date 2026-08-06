@@ -4,8 +4,10 @@
   box-shadow: none !important;
 }
 
-[data-mj="content-wrapper"] {
-  max-width: calc(100% - 96px) !important;
+@media (min-width: 992px) {
+  [data-mj="content-wrapper"] {
+    max-width: calc(100% - 68px) !important;
+  }
 }
 
 [data-mj="sidebar"] {
@@ -39,6 +41,9 @@
   font-size: 14px !important;
   font-weight: 300 !important;
   background: #364551 !important;
-  border: 1px solid rgb(72 255 151) !important;
   color: rgb(71, 255, 151) !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-h7o1hn {
+  border: 1px solid rgb(72 255 151) !important;
 }
