@@ -128,6 +128,20 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   font-weight: 300 !important;
 }
 
+[data-mj="game-catalog-mobile-provider-input"].app-ltr-1dumd0j {
+  color: #606A7C !important;
+  background-color: #242933 !important;
+  border: 1px solid #242933 !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-mobile-search-toggle"] {
+  color: #606A7C !important;
+  background-color: #242933 !important;
+  border: 1px solid #242933 !important;
+  box-shadow: none !important;
+}
+
 .sl-select__control.app-ltr-3czh01-control {
   color: #ffffff !important;
   background-color: #242933 !important;
