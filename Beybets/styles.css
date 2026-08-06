@@ -36,6 +36,11 @@
   width: 100% !important;
 }
 
+[data-mj="sidebar-nav-list"] .app-ltr-10t84xr {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
 li[data-mj="sidebar-section"] {
   display: flex !important;
   background-color: transparent !important;
