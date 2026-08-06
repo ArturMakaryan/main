@@ -6,7 +6,7 @@
 
 @media (min-width: 992px) {
   [data-mj="content-wrapper"] {
-    max-width: calc(100% - 68px) !important;
+    max-width: calc(100% - 96px) !important;
   }
 }
 
