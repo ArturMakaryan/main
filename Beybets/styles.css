@@ -1,7 +1,13 @@
 /* Beybets custom styles */
 
 [data-mj="header"] {
+  border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
+  background: #1a2c38 !important;
   box-shadow: none !important;
+}
+
+[data-mj="custom-header"] {
+  background: #1a2c38 !important;
 }
 
 [data-mj="sidebar"].app-ltr-1huuf1k {
