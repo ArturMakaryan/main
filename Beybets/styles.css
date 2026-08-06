@@ -27,6 +27,15 @@
   font-weight: 300 !important;
 }
 
+li[data-mj="sidebar-section"].app-ltr-6crnis
+  > .app-ltr-8atqhb
+  > .sl-navlink.app-ltr-1fwv5e8
+  > .app-ltr-1trb7go {
+  width: 20px !important;
+  min-width: 20px !important;
+  height: 20px !important;
+}
+
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-ym8a8q,
 [data-mj="game-catalog-category-slider-item"].app-ltr-1q03lhd {
   font-size: 14px !important;
