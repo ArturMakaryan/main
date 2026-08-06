@@ -27,6 +27,11 @@
   padding: 12px 12px 12px 0px !important;
 }
 
+[data-mj="sidebar-content"] .app-ltr-py5jdu {
+  padding-top: 55px !important;
+  padding-left: 8px !important;
+}
+
 [data-mj="sidebar-nav"] {
   width: 100% !important;
 }
