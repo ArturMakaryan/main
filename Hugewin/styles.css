@@ -85,6 +85,9 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
 }
 
 .app-ltr-i6bazn {
+  display: flex !important;
+  gap: 4px !important;
+  flex-direction: column !important;
   padding: 8px !important;
 }
 
