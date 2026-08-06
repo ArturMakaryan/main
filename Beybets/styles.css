@@ -61,6 +61,10 @@ li[data-mj="sidebar-section"].app-ltr-6crnis
   padding: 29px !important;
 }
 
+[data-mj="footer"] {
+  border-radius: 16px 16px 0 0 !important;
+}
+
 /* Hide mobile bottom navigation only while a game/sportsbook player is open. */
 @media screen and (max-width: 1024px) {
   html body [data-mj="root-layout"]:has(#sportsbook-wrapper) [data-mj="bottom-nav"],
