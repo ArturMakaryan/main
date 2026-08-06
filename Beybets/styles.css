@@ -1,1 +1,33 @@
 /* Beybets custom styles */
+
+[data-mj="header"] {
+  box-shadow: none !important;
+}
+
+[data-mj="content-wrapper"] {
+  max-width: none !important;
+}
+
+[data-mj="sidebar"] {
+  padding: 8px !important;
+}
+
+.sl-navlink.app-ltr-1fwv5e8 {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-ym8a8q,
+[data-mj="game-catalog-category-slider-item"].app-ltr-1q03lhd {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  background: #364551 !important;
+  color: #B5B8C3 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-1vffkr3,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-h7o1hn {
+  border: 1px solid rgb(72 255 151) !important;
+  color: rgb(71, 255, 151) !important;
+}
