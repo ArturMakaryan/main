@@ -96,11 +96,7 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
 }
 
 .app-ltr-10a4mqi {
-  position: fixed !important;
-  top: 12px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  width: 220px !important;
+  width: 100% !important;
   height: 40px !important;
   gap: 2px !important;
   background: #101319 !important;
