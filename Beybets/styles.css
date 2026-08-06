@@ -14,6 +14,11 @@
   padding: 8px !important;
 }
 
+[data-mj="sidebar-content"] {
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
 [data-mj="sidebar"].app-ltr-17u1px6 {
   width: 96px !important;
 }
