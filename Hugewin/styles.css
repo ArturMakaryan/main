@@ -25,6 +25,7 @@
 @media (min-width: 992px) {
   [data-mj="content-wrapper"] {
     margin-top: 64px !important;
+    max-width: none !important;
   }
 }
 
