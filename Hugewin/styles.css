@@ -149,6 +149,11 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   border: 1px solid #242933 !important;
 }
 
+.sl-select_control.sl-select_control--is-focused.sl-select_control--menu-is-open,
+.sl-select__control.sl-select__control--is-focused.sl-select__control--menu-is-open {
+  border-color: rgb(232 195 91) !important;
+}
+
 .sl-select__placeholder.app-ltr-sxu16n-placeholder {
   color: #ffffff !important;
 }
