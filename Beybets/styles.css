@@ -5,11 +5,19 @@
 }
 
 [data-mj="content-wrapper"] {
-  max-width: none !important;
+  max-width: calc(100% - 96px) !important;
 }
 
 [data-mj="sidebar"] {
   padding: 8px !important;
+}
+
+[data-mj="sidebar"].app-ltr-17u1px6 {
+  width: 96px !important;
+}
+
+[data-mj="sidebar"].app-ltr-1huuf1k {
+  width: 260px !important;
 }
 
 .sl-navlink.app-ltr-1fwv5e8 {
