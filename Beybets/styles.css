@@ -4,32 +4,207 @@
   box-shadow: none !important;
 }
 
-@media (min-width: 992px) {
-  [data-mj="content-wrapper"] {
-    max-width: calc(100% - 96px) !important;
-  }
-}
-
-[data-mj="sidebar"] {
-  padding: 8px !important;
-}
-
-[data-mj="sidebar-content"] {
+[data-mj="sidebar"].app-ltr-1huuf1k {
+  width: 260px !important;
   padding: 0 !important;
   border-radius: 0 !important;
 }
 
 [data-mj="sidebar"].app-ltr-17u1px6 {
-  width: 96px !important;
+  width: 68px !important;
+  padding: 0 !important;
 }
 
-[data-mj="sidebar"].app-ltr-1huuf1k {
-  width: 260px !important;
+[data-mj="sidebar-content"] {
+  border-right: 1px solid rgb(255 255 255 / 10%) !important;
+  border-radius: 0 !important;
+  padding: 0 12px 12px 0px !important;
 }
 
-.sl-navlink.app-ltr-1fwv5e8 {
+[data-mj="sidebar-nav"] {
+  width: 100% !important;
+}
+
+li[data-mj="sidebar-section"] {
+  display: flex !important;
+  background-color: transparent !important;
+  margin-bottom: 8px !important;
+  border-radius: 0 !important;
+  min-height: 40px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="sidebar-group"] {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  min-height: 40px !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+[data-mj="sidebar-group"].active-link {
+  color: #FFCA38 !important;
+}
+
+.app-ltr-1q5mnmx {
+  scrollbar-gutter: unset !important;
+  padding: 0 !important;
+}
+
+.app-ltr-es55kh {
+  display: flex !important;
+  flex-direction: column !important;
+  background: #0e132a !important;
+  border-radius: 8px !important;
+  border: 1px solid rgb(48 56 82) !important;
+  gap: 0px !important;
+  margin-left: 13px !important;
+  width: 42px !important;
+  margin-top: 60px !important;
+  transform-origin: top center !important;
+  transition:
+    margin 220ms ease,
+    width 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-group-vertical 220ms ease-out !important;
+}
+
+.app-ltr-10a4mqi {
+  display: flex !important;
+  flex-direction: row !important;
+  background: #0e132a !important;
+  border-radius: 8px !important;
+  border: 1px solid rgb(48 56 82) !important;
+  gap: 0px !important;
+  margin: 12px 0px 12px 56px !important;
+  padding: 12px 12px 0 12px !important;
+  transform-origin: left center !important;
+  transition:
+    margin 220ms ease,
+    padding 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-group-horizontal 220ms ease-out !important;
+}
+
+.app-ltr-es55kh > *,
+.app-ltr-10a4mqi > * {
+  transition:
+    transform 220ms ease,
+    opacity 180ms ease !important;
+}
+
+@keyframes rb-sidebar-group-horizontal {
+  from {
+    opacity: 0.86;
+    transform: translateX(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes rb-sidebar-group-vertical {
+  from {
+    opacity: 0.86;
+    transform: translateY(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.app-ltr-i6bazn {
+  height: auto !important;
+  margin-left: 24px !important;
+  border-left: 1px solid #ffffff21 !important;
+  padding-top: 4px !important;
+  overflow: hidden !important;
+  transform-origin: top left !important;
+  animation: rb-sidebar-submenu-open 240ms ease-out !important;
+  transition:
+    clip-path 240ms ease,
+    opacity 200ms ease,
+    transform 240ms ease !important;
+}
+
+.app-ltr-7j3ixa {
+  transform-origin: top left !important;
+  animation: rb-sidebar-submenu-content-open 260ms ease-out !important;
+}
+
+.app-ltr-i6bazn .sl-navlink,
+.app-ltr-7j3ixa .sl-navlink {
+  animation: rb-sidebar-submenu-item-open 260ms ease-out both !important;
+}
+
+@keyframes rb-sidebar-submenu-open {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes rb-sidebar-submenu-content-open {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes rb-sidebar-submenu-item-open {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+[data-mj="sidebar"] .app-ltr-1trb7go {
+  min-width: 20px !important;
+  height: 20px !important;
+  opacity: 1 !important;
+}
+
+[data-mj="sidebar"] .sl-navlink.app-ltr-1fwv5e8 {
+  color: #a0a4b8 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
+  padding: 4px 32px 4px 22px !important;
+}
+
+[data-mj="sidebar"] .sl-navlink.app-ltr-1fwv5e8.active-link {
+  border-radius: 0 8px 8px 0 !important;
+  background: #ffffff0d !important;
+  color: #FFCA38 !important;
+}
+
+[data-mj="sidebar"] .sl-navlink.app-ltr-1fwv5e8:hover {
+  border-radius: 0 8px 8px 0 !important;
+  background: #ffffff0d !important;
 }
 
 li[data-mj="sidebar-section"].app-ltr-6crnis
@@ -39,6 +214,75 @@ li[data-mj="sidebar-section"].app-ltr-6crnis
   width: 20px !important;
   min-width: 20px !important;
   height: 20px !important;
+}
+
+[data-mj="sidebar-footer"] {
+  border-top: 0 !important;
+  padding: 12px 0 0 12px !important;
+}
+
+button[data-mj="sidebar-collapse"].sl-icon {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  background:
+    linear-gradient(#241d33, #2b243b) padding-box,
+    linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon {
+  inset-inline-end: 14px !important;
+  top: 8px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  background-image: url("../RoyalBets/Burger.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 24px 24px !important;
+}
+
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon {
+  inset-inline-end: 207px !important;
+  top: 12px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  background-image: url("../RoyalBets/Burger.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 24px 24px !important;
+}
+
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon > svg,
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon > svg {
+  display: none !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+[data-mj="sidebar"] button[aria-label="arrow_down"].sl-icon,
+[data-mj="sidebar"] button[aria-label="arrow_up"].sl-icon {
+  width: 32px !important;
+  min-width: 32px !important;
+  height: 32px !important;
+  background-color: transparent !important;
+  right: 6px !important;
+}
+
+[data-mj="sidebar"] button[aria-label="arrow_down"].sl-icon:hover,
+[data-mj="sidebar"] button[aria-label="arrow_up"].sl-icon:hover {
+  background-color: rgb(255 255 255 / 4%) !important;
+}
+
+[data-mj="content-wrapper"] {
+  display: flex !important;
+  max-width: calc(100% - 68px) !important;
+  margin-right: initial !important;
 }
 
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-ym8a8q,
@@ -64,6 +308,28 @@ li[data-mj="sidebar-section"].app-ltr-6crnis
 
 [data-mj="footer"] {
   border-radius: 16px 16px 0 0 !important;
+}
+
+@media (max-width: 992px) {
+  [data-mj="content-wrapper"] {
+    max-width: none !important;
+  }
+
+  .app-ltr-10a4mqi {
+    padding: 0px 0px 0px 0px !important;
+    margin: 12px 0px 12px 12px !important;
+  }
+
+  [data-mj="sidebar-content"] {
+    padding: 0 12px 12px 0px !important;
+  }
+}
+
+@media (min-width: 993px) {
+  [data-mj="sidebar-footer"],
+  .app-ltr-10a4mqi {
+    padding: 0 !important;
+  }
 }
 
 /* Hide mobile bottom navigation only while a game/sportsbook player is open. */
