@@ -43,7 +43,7 @@ li[data-mj="sidebar-section"] {
 }
 
 [data-mj="sidebar-group"].active-link {
-  color: #FFCA38 !important;
+  color: #47ff97 !important;
 }
 
 .app-ltr-1q5mnmx {
@@ -199,7 +199,7 @@ li[data-mj="sidebar-section"] {
 [data-mj="sidebar"] .sl-navlink.app-ltr-1fwv5e8.active-link {
   border-radius: 0 8px 8px 0 !important;
   background: #ffffff0d !important;
-  color: #FFCA38 !important;
+  color: #47ff97 !important;
 }
 
 [data-mj="sidebar"] .sl-navlink.app-ltr-1fwv5e8:hover {
