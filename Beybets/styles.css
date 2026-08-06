@@ -310,6 +310,10 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon:not(.app-lt
   border-radius: 16px 16px 0 0 !important;
 }
 
+.app-ltr-ca8dpi-container {
+  margin-left: 12px !important;
+}
+
 @media (max-width: 992px) {
   [data-mj="content-wrapper"] {
     max-width: none !important;
