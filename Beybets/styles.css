@@ -382,11 +382,32 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
   color: #B5B8C3 !important;
 }
 
+.ph-event-card {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  background:
+    linear-gradient(9deg, #112F43, #0D2333) padding-box,
+    linear-gradient(113.67deg, rgb(29 68 92) 0%, rgb(23 42 52) 100%) border-box !important;
+}
+
+.app-ltr-1xe74qf .app-ltr-1268fb8 {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  background:
+    linear-gradient(9deg, #112F43, #0D2333) padding-box,
+    linear-gradient(113.67deg, rgb(29 68 92) 0%, rgb(23 42 52) 100%) border-box !important;
+}
+
 [data-mj="footer-nav"] {
   padding: 29px !important;
 }
 
+[data-mj="widget-payments"] {
+  box-shadow: none !important;
+}
+
 [data-mj="footer"] {
+  border-top: 1px solid rgb(255 255 255 / 10%) !important;
   border-radius: 16px 16px 0 0 !important;
 }
 
