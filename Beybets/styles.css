@@ -296,8 +296,40 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon:not(.app-lt
 button[data-mj="sidebar-collapse"].sl-icon,
 button[data-mj="sidebar-collapse"].sl-icon > svg {
   transition: none !important;
+  transition-property: none !important;
   animation: none !important;
   transform: none !important;
+  will-change: auto !important;
+}
+
+html body button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1abq07x,
+html body button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1abq07x > svg {
+  transition: none !important;
+  transition-property: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1abq07x {
+  inset-inline-end: 14px !important;
+  top: 8px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+}
+
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-1abq07x {
+  inset-inline-end: 207px !important;
+  top: 12px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+}
+
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-1abq07x > svg,
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1abq07x > svg {
+  display: none !important;
 }
 
 [data-mj="sidebar"] button[aria-label="arrow_down"].sl-icon,
