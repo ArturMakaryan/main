@@ -379,7 +379,6 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
   font-size: 14px !important;
   font-weight: 300 !important;
   background: #364551 !important;
-  color: #B5B8C3 !important;
 }
 
 .ph-event-card {
@@ -408,7 +407,6 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
 
 [data-mj="footer"] {
   border-top: 1px solid rgb(255 255 255 / 10%) !important;
-  border-radius: 16px 16px 0 0 !important;
 }
 
 .app-ltr-ca8dpi-container {
