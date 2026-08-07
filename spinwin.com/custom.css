@@ -287,6 +287,26 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1ax
   transform: none !important;
 }
 
+html body button[data-mj="sidebar-collapse"].sl-icon,
+html body button[data-mj="sidebar-collapse"].sl-icon > svg {
+  transition: none !important;
+  transition-property: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon,
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon {
+  position: fixed !important;
+  left: 14px !important;
+  inset-inline-end: auto !important;
+  top: 12px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+}
+
 .app-ltr-8ac7ob {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
