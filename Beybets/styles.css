@@ -293,6 +293,13 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon:not(.app-lt
   transform: none !important;
 }
 
+button[data-mj="sidebar-collapse"].sl-icon,
+button[data-mj="sidebar-collapse"].sl-icon > svg {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
 [data-mj="sidebar"] button[aria-label="arrow_down"].sl-icon,
 [data-mj="sidebar"] button[aria-label="arrow_up"].sl-icon {
   width: 32px !important;
