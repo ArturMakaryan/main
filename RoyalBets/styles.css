@@ -319,6 +319,31 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4
   display: none !important;
 }
 
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4yrk,
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-au4yrk {
+  position: fixed !important;
+  left: 12px !important;
+  inset-inline-end: auto !important;
+  top: 12px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  transition: none !important;
+  transition-property: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4yrk > svg,
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-au4yrk > svg {
+  transition: none !important;
+  transition-property: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
 .app-ltr-es55kh {
   display: flex !important;
   flex-direction: column !important;
