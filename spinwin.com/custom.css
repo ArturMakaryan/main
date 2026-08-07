@@ -301,7 +301,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon {
   position: fixed !important;
   left: 14px !important;
   inset-inline-end: auto !important;
-  top: 12px !important;
+  top: 8px !important;
   width: 42px !important;
   min-width: 42px !important;
   height: 42px !important;
