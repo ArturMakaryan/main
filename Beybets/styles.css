@@ -373,7 +373,6 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
 }
 
 [data-mj="game-catalog-category-slider-item"].app-ltr-1vffkr3,
-[data-mj="game-catalog-category-slider-item"].app-ltr-123n9wd,
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-h7o1hn {
   font-size: 14px !important;
   font-weight: 300 !important;
@@ -382,6 +381,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
   box-shadow: none !important;
 }
 
+[data-mj="game-catalog-category-slider-item"].app-ltr-123n9wd,
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-3viwl0 {
   font-size: 14px !important;
   font-weight: 300 !important;
