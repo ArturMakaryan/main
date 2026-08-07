@@ -102,6 +102,56 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"] {
   gap: 2px !important;
   background: #101319 !important;
   border-radius: 8px !important;
+  transform-origin: left center !important;
+  transition:
+    margin 220ms ease,
+    padding 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-group-horizontal 220ms ease-out !important;
+}
+
+.app-ltr-es55kh {
+  transform-origin: top center !important;
+  transition:
+    margin 220ms ease,
+    width 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-group-vertical 220ms ease-out !important;
+}
+
+.app-ltr-10a4mqi > *,
+.app-ltr-es55kh > * {
+  transition:
+    transform 220ms ease,
+    opacity 180ms ease !important;
+}
+
+@keyframes rb-sidebar-group-horizontal {
+  from {
+    opacity: 0.86;
+    transform: translateX(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes rb-sidebar-group-vertical {
+  from {
+    opacity: 0.86;
+    transform: translateY(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .sl-navlink.app-ltr-11pzcef {
