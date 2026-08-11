@@ -1,0 +1,9 @@
+/* iChancy365 custom styles */
+
+[data-mj="footer"] {
+  background-color: rgb(10 100 248) !important;
+}
+
+[data-mj="custom-header"] {
+  box-shadow: none !important;
+}
