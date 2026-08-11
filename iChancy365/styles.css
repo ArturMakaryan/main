@@ -1,9 +1,74 @@
-/* iChancy365 custom styles */
-
-[data-mj="footer"] {
-  background-color: rgb(10 100 248) !important;
+/* Header */
+[data-mj="header"] {
+  box-shadow: none !important;
+  background-color: #0b1629 !important;
 }
 
-[data-mj="custom-header"] {
+/* Header nav */
+[data-mj="header-nav"] {
+  background: transparent !important;
+  background-color: transparent !important;
   box-shadow: none !important;
+}
+
+[data-mj="header-nav-list"] {
+  justify-content: center;
+}
+
+.app-ltr-8zi5g1 {
+  background: #1a2a4678 !important;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 4px;
+  border: 1px solid rgb(255 255 255 / 5%) !important;
+}
+
+/* Nav links */
+.sl-navlink.app-ltr-xzotuo {
+  color: #d7dde8 !important;
+}
+
+.app-ltr-1g3kp0t {
+  color: #c0cfec !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+/* Active nav link */
+.sl-navlink.app-ltr-xzotuo.active-link {
+  background: #2f4160 !important;
+  border-radius: 16px;
+  border-bottom: 1px solid #1acdf566 !important;
+  color: #17cef5 !important;
+}
+
+/* Nav hover */
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-xzotuo:hover {
+  background: #2f416059 !important;
+  border-radius: 16px;
+}
+
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-xzotuo:hover .app-ltr-d34pj1 {
+  background-color: #17cef5 !important;
+}
+
+/* Game search */
+[data-mj="game-catalog-game-search"] {
+  background-color: #1a2b47 !important;
+  border-color: #25395a !important;
+}
+
+/* Select control */
+.sl-select__control.app-ltr-130crnb-control {
+  background-color: #1a2b47 !important;
+  border-color: #25395a !important;
+}
+
+/* Category chips */
+[data-mj="game-catalog-category-slider-item"],
+[data-mj="game-catalog-mobile-category-chip"] {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  background-color: rgb(47, 65, 96) !important;
 }
