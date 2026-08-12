@@ -1,5 +1,5 @@
 [data-mj="header-nav-list"] {
-  justify-content: center;
+  justify-content: initial !important;
 }
 
 .app-ltr-1g3kp0t {
@@ -13,22 +13,24 @@
 }
 
 [data-mj="header-nav"] {
-  background: transparent !important;
-  background-color: transparent !important;
+  background: #1a2b47 !important;
+  background-color: #1a2b47 !important;
   box-shadow: none !important;
 }
 
 [data-mj="header-nav"] .app-ltr-1jpm9pd {
-  padding-top: 0 !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
 }
 
 .app-ltr-8zi5g1 {
-  background: #1a2a4678 !important;
-  border-radius: 16px;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   padding: 4px;
-  border: 1px solid rgb(255 255 255 / 5%) !important;
 }
 
 .sl-navlink.app-ltr-xzotuo.active-link {
@@ -79,6 +81,10 @@
   background-color: transparent !important;
 }
 
+[data-mj="nav-item"] .app-ltr-1wkq73a {
+  padding-left: 16px !important;
+}
+
 .sl-navlink.app-ltr-fps215 {
   background: transparent !important;
   background-color: transparent !important;
@@ -98,6 +104,12 @@
   font-weight: 300 !important;
 }
 
+.sl-navlink.app-ltr-1ob3de1 .app-ltr-129y8n7 {
+  width: 20px !important;
+  min-width: 20px !important;
+  height: 20px !important;
+}
+
 button[aria-label="arrow_up"][name="arrow_up"].sl-icon.app-ltr-1luyj4n,
 button[aria-label="arrow_down"][name="arrow_down"].sl-icon.app-ltr-1luyj4n {
   right: 8px !important;
@@ -108,17 +120,31 @@ button[aria-label="arrow_down"][name="arrow_down"].sl-icon.app-ltr-1luyj4n {
   background: rgb(255 255 255 / .05) !important;
 }
 
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-1mb1iu5 {
-  background-color: rgb(47, 65, 96) !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-  color: #17cef5 !important;
-}
-
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-1ktndfc {
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1ktndfc,
+[data-mj="game-catalog-category-slider-item"].app-ltr-16es6s8 {
   background-color: rgb(47, 65, 96) !important;
   box-shadow: none !important;
   color: #c0cfec !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-1m8hetx {
+  background: #2f4160 !important;
+  border-radius: 16px;
+  border-bottom: 1px solid #1acdf566 !important;
+  box-shadow: none !important;
+  color: #17cef5 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1mb1iu5 {
+  background: #2f4160 !important;
+  border-radius: 8px;
+  border-bottom: 1px solid #1acdf566 !important;
+  box-shadow: none !important;
+  color: #17cef5 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
