@@ -123,3 +123,9 @@ button[aria-label="arrow_down"][name="arrow_down"].sl-icon.app-ltr-1luyj4n {
   font-size: 14px !important;
   font-weight: 300 !important;
 }
+
+[data-mj="game-catalog-mobile-provider-input"] {
+  background-color: #1a2b47 !important;
+  border-color: #25395a !important;
+  border-radius: 8px;
+}
