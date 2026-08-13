@@ -814,17 +814,9 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9:hover {
     max-width: none !important;
   }
 
-  [data-mj="sidebar-group"].app-ltr-10a4mqi,
   .app-ltr-10a4mqi {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: calc(100vw - 24px) !important;
     padding: 0px 0px 0px 0px !important;
     margin: 12px 0px 12px 12px !important;
-    transform: none !important;
   }
 
   [data-mj="sidebar-content"].app-ltr-1jpezfa,
