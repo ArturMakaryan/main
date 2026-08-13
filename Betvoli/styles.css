@@ -346,8 +346,7 @@ button[aria-label="arrow_down"].sl-icon:hover {
   font-weight: 300 !important;
 }
 
-[data-mj="promotion-card"],
-[data-mj="promotions-tabs"] {
+[data-mj="promotion-card"] {
   background: #0C1E34 !important;
   border: 1px solid #2F4160 !important;
   border-radius: 8px !important;
