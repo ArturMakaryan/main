@@ -632,7 +632,8 @@ li[data-mj="sidebar-section"] {
   padding: 12px 0 0 12px !important;
 }
 
-button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1axkc8o {
+button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1axkc8o,
+button[data-mj="sidebar-collapse"].sl-icon.app-ltr-cghelu {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
@@ -644,7 +645,8 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1axkc8o {
   transform: none !important;
 }
 
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1axkc8o {
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1axkc8o,
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-cghelu {
   inset-inline-end: 14px !important;
   top: 8px !important;
   width: 42px !important;
@@ -656,7 +658,8 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1ax
   background-size: 24px 24px !important;
 }
 
-button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-1axkc8o {
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-1axkc8o,
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-cghelu {
   inset-inline-end: 207px !important;
   top: 12px !important;
   width: 42px !important;
@@ -669,7 +672,9 @@ button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-1axk
 }
 
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-1axkc8o > svg,
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1axkc8o > svg {
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-cghelu > svg,
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1axkc8o > svg,
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-cghelu > svg {
   display: none !important;
   transition: none !important;
   animation: none !important;
@@ -697,7 +702,9 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon {
 }
 
 html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-1axkc8o,
-html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-1axkc8o {
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-cghelu,
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-1axkc8o,
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-cghelu {
   position: fixed !important;
   left: 14px !important;
   inset-inline-end: auto !important;
