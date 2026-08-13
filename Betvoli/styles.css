@@ -754,6 +754,10 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9:hover {
 
   [data-mj="sidebar-content"].app-ltr-1jpezfa,
   [data-mj="sidebar-content"] {
+    border-right: 1px solid rgb(255 255 255 / 10%) !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
     padding: 0 12px 12px 0px !important;
   }
 }
