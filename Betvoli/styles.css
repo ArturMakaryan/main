@@ -1,1 +1,235 @@
-/* Betvoli custom styles */
+:root {
+  --betvoli-page: #0b1629;
+  --betvoli-panel: #1a2b47;
+  --betvoli-panel-soft: rgb(47 65 96);
+  --betvoli-line: #25395a;
+  --betvoli-line-soft: rgb(255 255 255 / 8%);
+  --betvoli-text: #c0cfec;
+  --betvoli-text-strong: #d7dde8;
+  --betvoli-accent: #17cef5;
+}
+
+[data-mj="header"] {
+  background-color: var(--betvoli-page) !important;
+  border-bottom: 1px solid var(--betvoli-line-soft) !important;
+  box-shadow: none !important;
+}
+
+[data-mj="custom-header"] {
+  background-color: var(--betvoli-page) !important;
+  box-shadow: none !important;
+}
+
+[data-mj="header-nav"] {
+  background: var(--betvoli-panel) !important;
+  background-color: var(--betvoli-panel) !important;
+  box-shadow: none !important;
+}
+
+[data-mj="header-nav-list"] {
+  justify-content: initial !important;
+}
+
+[data-mj="header-nav"] ul {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 4px !important;
+}
+
+[data-mj="header-nav-item"] .sl-navlink,
+[data-mj="header-nav-item"] p {
+  color: var(--betvoli-text) !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="header-nav-item"] .sl-navlink.active-link,
+[data-mj="header-nav-item"] .sl-navlink[aria-current="page"] {
+  background: var(--betvoli-panel-soft) !important;
+  border-radius: 16px !important;
+  border-bottom: 1px solid #1acdf566 !important;
+  box-shadow: none !important;
+  color: var(--betvoli-accent) !important;
+}
+
+[data-mj="header-nav-item"] .sl-navlink.active-link p,
+[data-mj="header-nav-item"] .sl-navlink[aria-current="page"] p {
+  color: var(--betvoli-accent) !important;
+}
+
+[data-mj="header-nav-item"] .sl-navlink:hover {
+  background: rgb(47 65 96 / 35%) !important;
+  border-radius: 16px !important;
+}
+
+[data-mj="header-nav-item"] .sl-navlink:hover span {
+  background-color: var(--betvoli-accent) !important;
+}
+
+[data-mj="header-actions"] button,
+[data-mj="login-button"],
+[data-mj="register-button"],
+[data-mj="header-special-button"] {
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+[data-mj="sidebar"] {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-mj="sidebar-content"] {
+  background-color: var(--betvoli-page) !important;
+  border-right: 1px solid var(--betvoli-line-soft) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="sidebar-section"],
+[data-mj="sidebar-group"],
+[data-mj="nav-item"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="sidebar-group"].active-link,
+[data-mj="nav-item"] .sl-navlink.active-link,
+[data-mj="nav-item"] .sl-navlink[aria-current="page"] {
+  background: rgb(255 255 255 / 5%) !important;
+  color: var(--betvoli-accent) !important;
+  box-shadow: none !important;
+}
+
+[data-mj="nav-item"] .sl-navlink {
+  background: transparent !important;
+  background-color: transparent !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="nav-item"] .sl-navlink span {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="nav-item"] .sl-navlink [style*="mask-image"] {
+  width: 20px !important;
+  min-width: 20px !important;
+  height: 20px !important;
+}
+
+button[data-mj="sidebar-collapse"],
+button[aria-label="arrow_up"].sl-icon,
+button[aria-label="arrow_down"].sl-icon {
+  background: rgb(255 255 255 / 5%) !important;
+  box-shadow: none !important;
+}
+
+[data-mj="content-wrapper"] {
+  background-color: var(--betvoli-page) !important;
+}
+
+[data-mj="page-content"],
+[data-mj="root-layout"] {
+  background-color: var(--betvoli-page) !important;
+}
+
+[data-mj="game-catalog-game-search"],
+[data-mj="game-catalog-mobile-provider-input"] {
+  background-color: var(--betvoli-panel) !important;
+  border-color: var(--betvoli-line) !important;
+  border-radius: 8px !important;
+  color: var(--betvoli-text-strong) !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-game-search"]::placeholder,
+[data-mj="game-catalog-mobile-provider-input"]::placeholder {
+  color: #8f9bb3 !important;
+  opacity: 1 !important;
+}
+
+.sl-select__control {
+  background-color: var(--betvoli-panel) !important;
+  border-color: var(--betvoli-line) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.sl-select__control:hover,
+.sl-select__control--is-focused,
+.sl-select__control--menu-is-open {
+  background-color: var(--betvoli-panel) !important;
+  border-color: var(--betvoli-line) !important;
+  box-shadow: none !important;
+}
+
+.sl-select__placeholder,
+.sl-select__single-value,
+.sl-select__input-container,
+.sl-select__value-container {
+  color: var(--betvoli-text) !important;
+}
+
+[data-mj="game-catalog-category-slider-item"],
+[data-mj="game-catalog-mobile-category-chip"] {
+  background-color: var(--betvoli-panel-soft) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  color: var(--betvoli-text) !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-category-slider-item"]:hover,
+[data-mj="game-catalog-mobile-category-chip"]:hover {
+  background-color: rgb(47 65 96 / 75%) !important;
+  color: var(--betvoli-text-strong) !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].active,
+[data-mj="game-catalog-category-slider-item"].active-link,
+[data-mj="game-catalog-category-slider-item"][aria-current="page"],
+[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
+  background: var(--betvoli-panel-soft) !important;
+  border-radius: 16px !important;
+  border-bottom: 1px solid #1acdf566 !important;
+  box-shadow: none !important;
+  color: var(--betvoli-accent) !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].active,
+[data-mj="game-catalog-mobile-category-chip"].active-link,
+[data-mj="game-catalog-mobile-category-chip"][aria-current="page"],
+[data-mj="game-catalog-mobile-category-chip"][aria-selected="true"] {
+  background: var(--betvoli-panel-soft) !important;
+  border-radius: 8px !important;
+  border-bottom: 1px solid #1acdf566 !important;
+  box-shadow: none !important;
+  color: var(--betvoli-accent) !important;
+}
+
+[data-mj="promotion-card"],
+[data-mj="promotions-tabs"] {
+  background: var(--betvoli-panel) !important;
+  border: 1px solid var(--betvoli-line-soft) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+[data-mj="footer"] {
+  background-color: var(--betvoli-page) !important;
+  border-top: 1px solid var(--betvoli-line-soft) !important;
+  box-shadow: none !important;
+}
