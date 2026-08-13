@@ -56,7 +56,6 @@
 
 [data-mj="header-actions"] button,
 [data-mj="login-button"],
-[data-mj="register-button"],
 [data-mj="header-special-button"] {
   border-radius: 8px !important;
   box-shadow: none !important;
@@ -319,9 +318,10 @@ button[aria-label="arrow_down"].sl-icon:hover {
 [data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
   background: #5CC8FF !important;
   border-radius: 8px !important;
-  border-bottom: 1px solid rgb(92 200 255 / 40%) !important;
+  border-color: #5CC8FF !important;
+  border-bottom: 1px solid #5CC8FF !important;
   box-shadow: none !important;
-  color: #081526 !important;
+  color: white !important;
 }
 
 [data-mj="game-catalog-mobile-category-chip"].active,
@@ -330,9 +330,21 @@ button[aria-label="arrow_down"].sl-icon:hover {
 [data-mj="game-catalog-mobile-category-chip"][aria-selected="true"] {
   background: #5CC8FF !important;
   border-radius: 8px !important;
-  border-bottom: 1px solid rgb(92 200 255 / 40%) !important;
+  border-color: #5CC8FF !important;
+  border-bottom: 1px solid #5CC8FF !important;
   box-shadow: none !important;
-  color: #081526 !important;
+  color: white !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-qwqgj0,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1qcpv5g {
+  border-color: #5CC8FF !important;
+  color: white !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-qwqgj0 *,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1qcpv5g * {
+  color: white !important;
 }
 
 [data-mj="game-catalog-mobile-search-toggle"] {
