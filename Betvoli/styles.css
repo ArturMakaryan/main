@@ -1,25 +1,12 @@
-:root {
-  --betvoli-page: #19213e;
-  --betvoli-surface: #0e132a;
-  --betvoli-surface-2: #141a35;
-  --betvoli-purple: #241d33;
-  --betvoli-purple-2: #2b243b;
-  --betvoli-line: #242c46;
-  --betvoli-line-soft: rgb(255 255 255 / 10%);
-  --betvoli-text: #a0a4b8;
-  --betvoli-text-strong: #c0cfec;
-  --betvoli-accent: #ffca38;
-}
-
 [data-mj="header"] {
-  background-color: var(--betvoli-page) !important;
-  border-bottom: 1px solid var(--betvoli-line-soft) !important;
+  background-color: #081526 !important;
+  border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
   box-shadow: none !important;
 }
 
 [data-mj="custom-header"] {
   display: flex !important;
-  background-color: var(--betvoli-page) !important;
+  background-color: #081526 !important;
   border-bottom: 0 !important;
   box-shadow: none !important;
 }
@@ -44,7 +31,7 @@
 
 [data-mj="header-nav-item"] .sl-navlink,
 [data-mj="header-nav-item"] p {
-  color: var(--betvoli-text) !important;
+  color: #a0a4b8 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
@@ -54,12 +41,12 @@
   background: #ffffff0d !important;
   border-radius: 8px !important;
   box-shadow: none !important;
-  color: var(--betvoli-accent) !important;
+  color: #5CC8FF !important;
 }
 
 [data-mj="header-nav-item"] .sl-navlink.active-link p,
 [data-mj="header-nav-item"] .sl-navlink[aria-current="page"] p {
-  color: var(--betvoli-accent) !important;
+  color: #5CC8FF !important;
 }
 
 [data-mj="header-nav-item"] .sl-navlink:hover {
@@ -89,7 +76,7 @@
 }
 
 [data-mj="sidebar-content"] {
-  border-right: 1px solid var(--betvoli-line-soft) !important;
+  border-right: 1px solid rgb(255 255 255 / 10%) !important;
   border-radius: 0 !important;
   background: transparent !important;
   box-shadow: none !important;
@@ -122,13 +109,13 @@
 }
 
 [data-mj="sidebar-group"].active-link {
-  color: var(--betvoli-accent) !important;
+  color: #5CC8FF !important;
 }
 
 [data-mj="nav-item"] .sl-navlink {
   background: transparent !important;
   background-color: transparent !important;
-  color: var(--betvoli-text) !important;
+  color: #a0a4b8 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
   padding: 4px 32px 4px 22px !important;
@@ -150,7 +137,7 @@
 [data-mj="nav-item"] .sl-navlink[aria-current="page"] {
   border-radius: 0 8px 8px 0 !important;
   background: #ffffff0d !important;
-  color: var(--betvoli-accent) !important;
+  color: #5CC8FF !important;
   box-shadow: none !important;
 }
 
@@ -220,8 +207,8 @@ button[data-mj="sidebar-collapse"].sl-icon {
   border-radius: 8px !important;
   box-shadow: none !important;
   background:
-    linear-gradient(var(--betvoli-purple), var(--betvoli-purple-2)) padding-box,
-    linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
+    linear-gradient(#081526, #0C1E34) padding-box,
+    linear-gradient(164deg, rgb(255 255 255 / 10%) 0%, #2F4160 100%) border-box !important;
   background-image: url("../RoyalBets/Burger.svg") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -256,20 +243,20 @@ button[aria-label="arrow_down"].sl-icon:hover {
 
 [data-mj="content-wrapper"] {
   display: flex !important;
-  background-color: var(--betvoli-page) !important;
+  background-color: #081526 !important;
 }
 
 [data-mj="page-content"],
 [data-mj="root-layout"] {
-  background-color: var(--betvoli-page) !important;
+  background-color: #081526 !important;
 }
 
 [data-mj="game-catalog-game-search"],
 [data-mj="game-catalog-mobile-provider-input"] {
-  border-color: var(--betvoli-line) !important;
+  border-color: #2F4160 !important;
   border-radius: 8px !important;
-  background-color: var(--betvoli-surface-2) !important;
-  color: var(--betvoli-text-strong) !important;
+  background-color: #0C1E34 !important;
+  color: #a0a4b8 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
@@ -282,25 +269,25 @@ button[aria-label="arrow_down"].sl-icon:hover {
 
 .sl-select__control {
   display: flex !important;
-  border-color: var(--betvoli-line) !important;
+  border-color: #2F4160 !important;
   border-radius: 8px !important;
   box-shadow: none !important;
-  background-color: var(--betvoli-surface-2) !important;
+  background-color: #0C1E34 !important;
 }
 
 .sl-select__control:hover,
 .sl-select__control--is-focused,
 .sl-select__control--menu-is-open {
-  border-color: var(--betvoli-line) !important;
+  border-color: #2F4160 !important;
   box-shadow: none !important;
-  background-color: var(--betvoli-surface-2) !important;
+  background-color: #0C1E34 !important;
 }
 
 .sl-select__placeholder,
 .sl-select__single-value,
 .sl-select__input-container,
 .sl-select__value-container {
-  color: var(--betvoli-text) !important;
+  color: #a0a4b8 !important;
 }
 
 [data-mj="game-catalog-category-slider-item"],
@@ -308,12 +295,12 @@ button[aria-label="arrow_down"].sl-icon:hover {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
-  color: var(--betvoli-text-strong) !important;
+  color: #a0a4b8 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
   background:
-    linear-gradient(var(--betvoli-purple), var(--betvoli-purple-2)) padding-box,
-    linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
+    linear-gradient(#081526, #0C1E34) padding-box,
+    linear-gradient(164deg, rgb(255 255 255 / 10%) 0%, #2F4160 100%) border-box !important;
 }
 
 [data-mj="game-catalog-category-slider-item"]:hover,
@@ -322,54 +309,54 @@ button[aria-label="arrow_down"].sl-icon:hover {
   border-radius: 8px !important;
   box-shadow: none !important;
   background:
-    linear-gradient(var(--betvoli-page), #303c6c) padding-box,
+    linear-gradient(#081526, #0C1E34) padding-box,
     linear-gradient(135deg, #fff3 10%, #ffffff03 25%, #fff3 50%, #ffffff03 75%, #fff3 90%) border-box !important;
-  background-color: var(--betvoli-page) !important;
+  background-color: #081526 !important;
 }
 
 [data-mj="game-catalog-category-slider-item"].active,
 [data-mj="game-catalog-category-slider-item"].active-link,
 [data-mj="game-catalog-category-slider-item"][aria-current="page"],
 [data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
-  background: #2f385b !important;
+  background: #5CC8FF !important;
   border-radius: 8px !important;
-  border-bottom: 1px solid rgb(255 202 56 / 40%) !important;
+  border-bottom: 1px solid rgb(92 200 255 / 40%) !important;
   box-shadow: none !important;
-  color: #fff !important;
+  color: #081526 !important;
 }
 
 [data-mj="game-catalog-mobile-category-chip"].active,
 [data-mj="game-catalog-mobile-category-chip"].active-link,
 [data-mj="game-catalog-mobile-category-chip"][aria-current="page"],
 [data-mj="game-catalog-mobile-category-chip"][aria-selected="true"] {
-  background: #2f385b !important;
+  background: #5CC8FF !important;
   border-radius: 8px !important;
-  border-bottom: 1px solid rgb(255 202 56 / 40%) !important;
+  border-bottom: 1px solid rgb(92 200 255 / 40%) !important;
   box-shadow: none !important;
-  color: #fff !important;
+  color: #081526 !important;
 }
 
 [data-mj="game-catalog-mobile-search-toggle"] {
-  border: 1px solid var(--betvoli-line) !important;
+  border: 1px solid #2F4160 !important;
   border-radius: 8px !important;
   box-shadow: none !important;
-  background: var(--betvoli-surface-2) !important;
-  background-color: var(--betvoli-surface-2) !important;
+  background: #0C1E34 !important;
+  background-color: #0C1E34 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
 
 [data-mj="promotion-card"],
 [data-mj="promotions-tabs"] {
-  background: var(--betvoli-surface-2) !important;
-  border: 1px solid var(--betvoli-line) !important;
+  background: #0C1E34 !important;
+  border: 1px solid #2F4160 !important;
   border-radius: 8px !important;
   box-shadow: none !important;
 }
 
 [data-mj="footer"] {
-  background-color: var(--betvoli-page) !important;
-  border-top: 1px solid var(--betvoli-line-soft) !important;
+  background-color: #081526 !important;
+  border-top: 1px solid rgb(255 255 255 / 10%) !important;
   box-shadow: none !important;
 }
 
@@ -437,11 +424,11 @@ li[data-mj="sidebar-section"] {
 }
 
 [data-mj="sidebar-group"].active-link {
-  color: #ffca38 !important;
+  color: #5CC8FF !important;
 }
 
 [data-mj="sidebar-group"].app-ltr-d9rhfw:hover {
-  color: #000 !important;
+  color: #5CC8FF !important;
 }
 
 .app-ltr-1q5mnmx {
@@ -452,9 +439,9 @@ li[data-mj="sidebar-section"] {
 .app-ltr-es55kh {
   display: flex !important;
   flex-direction: column !important;
-  background: #0e132a !important;
+  background: #0C1E34 !important;
   border-radius: 8px !important;
-  border: 1px solid rgb(48 56 82) !important;
+  border: 1px solid #2F4160 !important;
   gap: 0px !important;
   margin-left: 13px !important;
   width: 42px !important;
@@ -472,9 +459,9 @@ li[data-mj="sidebar-section"] {
 .app-ltr-10a4mqi {
   display: flex !important;
   flex-direction: row !important;
-  background: #0e132a !important;
+  background: #0C1E34 !important;
   border-radius: 8px !important;
-  border: 1px solid rgb(48 56 82) !important;
+  border: 1px solid #2F4160 !important;
   gap: 0px !important;
   margin: 12px 0px 12px 56px !important;
   padding: 12px 12px 0 12px !important;
@@ -603,7 +590,7 @@ li[data-mj="sidebar-section"] {
 .sl-navlink.app-ltr-1mxpa7v.active-link {
   border-radius: 0 8px 8px 0 !important;
   background: #ffffff0d !important;
-  color: #ffca38 !important;
+  color: #5CC8FF !important;
 }
 
 .sl-navlink.app-ltr-dis2o5:hover,
@@ -625,8 +612,8 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1axkc8o {
   border-radius: 8px !important;
   box-shadow: none !important;
   background:
-    linear-gradient(#241d33, #2b243b) padding-box,
-    linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
+    linear-gradient(#081526, #0C1E34) padding-box,
+    linear-gradient(164deg, rgb(255 255 255 / 10%) 0%, #2F4160 100%) border-box !important;
   transition: none !important;
   animation: none !important;
   transform: none !important;
@@ -700,8 +687,8 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   border-radius: 8px !important;
   box-shadow: none !important;
   background:
-    linear-gradient(#283152, #242d4e) padding-box,
-    linear-gradient(180deg, #30354b 0%, #4c5371 100%) border-box !important;
+    linear-gradient(#081526, #0C1E34) padding-box,
+    linear-gradient(180deg, #081526 0%, #0C1E34 100%) border-box !important;
 }
 
 .ph-event-card {
