@@ -58,18 +58,10 @@
 [data-mj="login-button"],
 [data-mj="register-button"],
 [data-mj="header-special-button"] {
-  border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
   font-size: 14px !important;
   font-weight: 500 !important;
-}
-
-[data-mj="register-button"] {
-  background:
-    linear-gradient(180deg, rgba(160, 13, 14, 1) 0%, rgba(230, 53, 67, 1) 100%) padding-box,
-    radial-gradient(closest-side, rgba(255, 255, 255, 1) 28.8333%, rgba(181, 43, 53, 1) 100%) border-box !important;
-  box-shadow: 0 0 9px 0 rgba(69, 0, 5, 1) !important;
 }
 
 [data-mj="sidebar"] {
