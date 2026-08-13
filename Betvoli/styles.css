@@ -612,6 +612,12 @@ li[data-mj="sidebar-section"] {
   background: #ffffff0d !important;
 }
 
+.sl-navlink.app-ltr-qefzh.active-link {
+  border-radius: 0 8px 8px 0 !important;
+  background: #ffffff0d !important;
+  color: #5CC8FF !important;
+}
+
 [data-mj="sidebar-footer"].app-ltr-cf583f,
 [data-mj="sidebar-footer"] {
   border-top: 0 !important;
