@@ -844,12 +844,6 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9:hover {
 }
 
 [data-mj="bottom-nav-item"] {
-  display: flex !important;
-  flex: 1 1 0 !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 0 !important;
-  min-width: 0 !important;
   color: #a0a4b8 !important;
   font-size: 11px !important;
   font-weight: 300 !important;
