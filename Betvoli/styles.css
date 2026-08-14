@@ -640,6 +640,10 @@ li[data-mj="sidebar-section"] {
   color: #5CC8FF !important;
 }
 
+.sl-navlink.app-ltr-qefzh.active-link {
+  box-shadow: inset 2px 0 0 #5CC8FF !important;
+}
+
 [data-mj="sidebar-footer"] .app-ltr-12jajt9,
 [data-mj="sidebar-footer"] .app-ltr-11io9ir {
   color: #a0a4b8 !important;
