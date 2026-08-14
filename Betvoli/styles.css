@@ -445,6 +445,11 @@ li[data-mj="sidebar-section"] {
   color: rgb(255 255 255) !important;
 }
 
+[data-mj="sidebar-group"].app-ltr-1lj4nvv,
+[data-mj="sidebar-group"].app-ltr-10hwapu {
+  color: rgb(255 255 255) !important;
+}
+
 [data-mj="sidebar-group"].app-ltr-d9rhfw:hover {
   color: #5CC8FF !important;
 }
