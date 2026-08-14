@@ -826,6 +826,10 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   border-radius: 8px !important;
 }
 
+.top-events {
+  border: 0 !important;
+}
+
 button[aria-label="arrow_down"].sl-icon.app-ltr-bymed4,
 button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4,
 button[aria-label="arrow_down"].sl-icon.app-ltr-16d61q9,
