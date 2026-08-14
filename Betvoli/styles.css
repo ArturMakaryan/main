@@ -199,6 +199,10 @@
   padding: 12px 0 0 12px !important;
 }
 
+[data-mj="sidebar-special-button"] {
+  display: none !important;
+}
+
 button[data-mj="sidebar-collapse"].sl-icon {
   position: fixed !important;
   left: 14px !important;
