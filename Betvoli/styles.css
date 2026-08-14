@@ -860,6 +860,11 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9:hover {
   z-index: 1 !important;
 }
 
+[data-mj="bottom-nav-item"][aria-current="page"].sl-navlink.app-ltr-1v4wcjd.active-link {
+  color: #a0a4b8 !important;
+  font-size: 11px !important;
+}
+
 [data-mj="bottom-nav-item"].active-link::before {
   content: "" !important;
   position: absolute !important;
