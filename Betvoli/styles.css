@@ -478,7 +478,7 @@ li[data-mj="sidebar-section"] {
   display: flex !important;
   flex-direction: row !important;
   background: #0C1E34 !important;
-  border-radius: 8px !important;
+  border-radius: 12px !important;
   border: 1px solid #2F4160 !important;
   gap: 0px !important;
   margin: 12px 0px 12px 56px !important;
