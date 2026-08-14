@@ -827,7 +827,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
 }
 
 .top-events {
-  border: 0 !important;
+  border: 1px solid rgb(255 255 255 / 15%) !important;
 }
 
 button[aria-label="arrow_down"].sl-icon.app-ltr-bymed4,
