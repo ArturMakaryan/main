@@ -843,6 +843,52 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9:hover {
   background-color: rgb(255 255 255 / 4%) !important;
 }
 
+[data-mj="bottom-nav-item"] {
+  display: flex !important;
+  flex: 1 1 0 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="bottom-nav-item"].active-link {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+[data-mj="bottom-nav-item"].active-link::before {
+  content: "" !important;
+  position: absolute !important;
+  width: 35px !important;
+  height: 32px !important;
+  left: 50% !important;
+  bottom: -25px !important;
+  transform: translateX(-50%) !important;
+  background: #5cc8ff !important;
+  border-radius: 35px !important;
+  filter: blur(12.5px) !important;
+  opacity: 0.5 !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+  transition:
+    opacity 0.1s ease-in-out !important;
+}
+
+[data-mj="bottom-nav-item"].active-link::after {
+  content: "" !important;
+  position: absolute !important;
+  width: 36px !important;
+  height: 3px !important;
+  left: 50% !important;
+  bottom: -9px !important;
+  transform: translateX(-50%) !important;
+  background: linear-gradient(101deg, #ed1d4900 0%, #5cc8ff 50%, #ed1d4900 100%) !important;
+  border-radius: 50px 50px 0 0 !important;
+  pointer-events: none !important;
+}
+
 [data-mj="content-wrapper"].app-ltr-fkpkqq,
 [data-mj="content-wrapper"] {
   display: flex !important;
