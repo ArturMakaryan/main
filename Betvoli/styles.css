@@ -263,10 +263,6 @@ button[aria-label="arrow_down"].sl-icon:hover {
   font-weight: 300 !important;
 }
 
-[data-mj="game-catalog-mobile-provider-input"] {
-  border-radius: 8px !important;
-}
-
 [data-mj="game-catalog-game-search"]::placeholder,
 [data-mj="game-catalog-mobile-provider-input"]::placeholder {
   color: #7e8996 !important;
