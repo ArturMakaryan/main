@@ -377,6 +377,17 @@ button[aria-label="arrow_down"].sl-icon:hover {
   box-shadow: none !important;
 }
 
+[data-mj="footer-content"] {
+  align-items: flex-start !important;
+}
+
+[data-mj="footer-top"] {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+}
+
 @media (max-width: 992px) {
   [data-mj="content-wrapper"] {
     max-width: none !important;
@@ -660,6 +671,7 @@ li[data-mj="sidebar-section"] {
   color: #a0a4b8 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
+  padding: 0 !important;
 }
 
 [data-mj="sidebar-footer"].app-ltr-cf583f,
