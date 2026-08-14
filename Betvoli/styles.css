@@ -942,9 +942,11 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9:hover {
   [data-mj="footer"] {
     display: flex !important;
     width: 100% !important;
+    max-width: 1200px !important;
+    gap: 8px 16px !important;
     flex-direction: column !important;
     flex-wrap: wrap !important;
     align-items: center !important;
-    gap: 8px 16px !important;
+    margin-bottom: 20px !important;
   }
 }
