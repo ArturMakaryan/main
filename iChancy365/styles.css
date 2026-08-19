@@ -45,6 +45,35 @@
   background-color: #0b1629 !important;
 }
 
+[data-mj="telegram-button"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  min-width: 40px !important;
+  height: 40px !important;
+  min-height: 40px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background-color: #1a2538 !important;
+  background-image: url("https://cdn.jsdelivr.net/gh/ArturMakaryan/main@87d023f/assets/telegram.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 24px 24px !important;
+  box-shadow: none !important;
+  font-size: 0 !important;
+}
+
+@media (max-width: 992px) {
+  [data-mj="telegram-button"] {
+    width: 32px !important;
+    min-width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    background-size: 16px 16px !important;
+  }
+}
+
 [data-mj="header-nav-item"] .sl-navlink.app-ltr-xzotuo:hover {
   background: #2f416059 !important;
   border-radius: 16px;
