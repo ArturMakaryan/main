@@ -74,7 +74,15 @@
     min-width: 32px !important;
     height: 32px !important;
     min-height: 32px !important;
+    border-radius: 8px !important;
     background-size: 16px 16px !important;
+  }
+}
+
+@media (min-width: 993px) {
+  [data-mj="custom-header"] [data-mj="header-right"] [data-mj="telegram-button"],
+  [data-mj="telegram-button"] {
+    border-radius: 16px !important;
   }
 }
 
