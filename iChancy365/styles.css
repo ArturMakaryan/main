@@ -58,11 +58,9 @@
   min-height: 40px !important;
   padding: 0 !important;
   border: 0 !important;
-  background-color: #1a2538 !important;
-  background-image: url("https://cdn.jsdelivr.net/gh/ArturMakaryan/main@f54d1dd/assets/telegram-white.svg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: 24px 24px !important;
+  background:
+    url("https://cdn.jsdelivr.net/gh/ArturMakaryan/main@f54d1dd/assets/telegram-white.svg") center / 24px 24px no-repeat,
+    linear-gradient(106.97deg, rgba(149, 219, 252, 1.00) 0%, rgba(24, 164, 226, 1.00) 100%) !important;
   box-shadow: none !important;
   font-size: 0 !important;
 }
@@ -75,7 +73,9 @@
     height: 32px !important;
     min-height: 32px !important;
     border-radius: 8px !important;
-    background-size: 16px 16px !important;
+    background:
+      url("https://cdn.jsdelivr.net/gh/ArturMakaryan/main@f54d1dd/assets/telegram-white.svg") center / 16px 16px no-repeat,
+      linear-gradient(106.97deg, rgba(149, 219, 252, 1.00) 0%, rgba(24, 164, 226, 1.00) 100%) !important;
   }
 }
 
