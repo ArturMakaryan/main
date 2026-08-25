@@ -258,11 +258,14 @@ html body button[data-mj="sidebar-collapse"][name="arrow_left"].sl-icon {
   width: 42px !important;
   min-width: 42px !important;
   height: 42px !important;
-  background: none !important;
-  background-image: url("../assets/Burger.svg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: 24px 24px !important;
+  background: url("../assets/Burger.svg") center / 24px 24px no-repeat !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+html body button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1c3tamj > svg {
+  display: none !important;
   transition: none !important;
   animation: none !important;
   transform: none !important;
