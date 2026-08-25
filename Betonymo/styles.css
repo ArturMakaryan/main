@@ -382,6 +382,11 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   color: #f8931c !important;
 }
 
+html body [data-mj="game-catalog-mobile-category-chip"].app-ltr-7k4h61 {
+  box-shadow: none !important;
+  color: #f8931c !important;
+}
+
 [data-mj="game-catalog-mobile-category-chip"]:not(.active-link):not([aria-current="page"]):not(.app-ltr-7k4h61):hover,
 [data-mj="game-catalog-category-slider-item"]:not(.active-link):not([aria-current="page"]):hover {
   border: 1px solid transparent !important;
