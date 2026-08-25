@@ -15,6 +15,10 @@
   box-shadow: none !important;
 }
 
+[data-mj="login-button"] {
+  background-color: #424C59 !important;
+}
+
 [data-mj="sidebar"].app-ltr-1huuf1k {
   width: 260px !important;
   padding: 0 !important;
