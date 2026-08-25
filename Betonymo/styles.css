@@ -69,10 +69,6 @@ li[data-mj="sidebar-section"] {
   color: #000 !important;
 }
 
-[data-mj="sidebar-content"] [class*="app-ltr-"] {
-  scrollbar-gutter: unset !important;
-}
-
 .app-ltr-1q5mnmx {
   scrollbar-gutter: unset !important;
   padding: 0 !important;
@@ -249,17 +245,6 @@ li[data-mj="sidebar-section"] {
   padding: 12px 0 0 12px !important;
 }
 
-button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1c3tamj,
-button[data-mj="sidebar-collapse"].sl-icon {
-  border: 1px solid transparent !important;
-  border-radius: 8px !important;
-  box-shadow: none !important;
-  background: #3E4E5B !important;
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
-}
-
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon > svg,
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon > svg,
 button[data-mj="sidebar-collapse"][name="arrow_left"].sl-icon > svg,
@@ -270,19 +255,13 @@ button[data-mj="sidebar-collapse"][name="arrow_right"].sl-icon > svg {
   transform: none !important;
 }
 
-html body button[data-mj="sidebar-collapse"].sl-icon,
-html body button[data-mj="sidebar-collapse"].sl-icon > svg {
-  transition: none !important;
-  transition-property: none !important;
-  animation: none !important;
-  transform: none !important;
-  will-change: auto !important;
-}
-
 html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon,
 html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon,
 html body button[data-mj="sidebar-collapse"][name="arrow_right"].sl-icon,
 html body button[data-mj="sidebar-collapse"][name="arrow_left"].sl-icon {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
   position: fixed !important;
   left: 14px !important;
   inset-inline-end: auto !important;
@@ -290,10 +269,14 @@ html body button[data-mj="sidebar-collapse"][name="arrow_left"].sl-icon {
   width: 42px !important;
   min-width: 42px !important;
   height: 42px !important;
+  background: #3E4E5B !important;
   background-image: url("../RoyalBets/Burger.svg") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: 24px 24px !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
 }
 
 .app-ltr-8ac7ob {
@@ -376,7 +359,6 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   border-radius: 8px !important;
   box-shadow: none !important;
   background: #1e2933 !important;
-  background-color: #1e2933 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
@@ -402,7 +384,6 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   background:
     linear-gradient(#1E2933, #303c6c) padding-box,
     linear-gradient(135deg, #fff3 10%, #ffffff03 25%, #fff3 50%, #ffffff03 75%, #fff3 90%) border-box !important;
-  background-color: #1E2933 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
@@ -416,11 +397,6 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   .app-ltr-10a4mqi {
     padding: 0px 0px 0px 0px !important;
     margin: 12px 0px 12px 12px !important;
-  }
-
-  [data-mj="sidebar-content"].app-ltr-cl73bn,
-  [data-mj="sidebar-content"] {
-    padding: 0 12px 12px 0px !important;
   }
 }
 
