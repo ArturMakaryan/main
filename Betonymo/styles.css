@@ -19,6 +19,10 @@
   background-color: #424C59 !important;
 }
 
+[data-mj="login-button"]:hover {
+  background-color: #343c47 !important;
+}
+
 [data-mj="sidebar"].app-ltr-1huuf1k {
   width: 260px !important;
   padding: 0 !important;
