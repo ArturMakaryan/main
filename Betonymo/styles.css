@@ -81,7 +81,7 @@ li[data-mj="sidebar-section"] {
 .app-ltr-es55kh {
   display: flex !important;
   flex-direction: column !important;
-  background: #0e132a !important;
+  background: #293742 !important;
   border-radius: 8px !important;
   border: 1px solid rgb(48 56 82) !important;
   gap: 0px !important;
@@ -101,7 +101,7 @@ li[data-mj="sidebar-section"] {
 .app-ltr-10a4mqi {
   display: flex !important;
   flex-direction: row !important;
-  background: #0e132a !important;
+  background: #293742 !important;
   border-radius: 8px !important;
   border: 1px solid rgb(48 56 82) !important;
   gap: 0px !important;
@@ -409,11 +409,11 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
 [data-mj="game-catalog-category-slider-item"].active-link,
 [data-mj="game-catalog-category-slider-item"][aria-current="page"],
 [data-mj="game-catalog-category-slider-item"].app-ltr-17htgyk {
-  border-color: #F8931B !important;
+  border: 1px solid #F8931B !important;
   background: #2f385b !important;
   box-shadow: none !important;
   font-size: 14px !important;
-  color: #fff !important;
+  color: #f8931c !important;
 }
 
 [data-mj="game-catalog-mobile-category-chip"]:not(.active-link):not([aria-current="page"]):hover,
