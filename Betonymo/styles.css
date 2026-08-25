@@ -384,7 +384,16 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
 
 html body [data-mj="game-catalog-mobile-category-chip"].app-ltr-7k4h61 {
   box-shadow: none !important;
+  background: #1e2933 !important;
   color: #f8931c !important;
+}
+
+html body [data-mj="game-catalog-mobile-category-chip"].app-ltr-1amlssn {
+  color: rgb(255, 255, 255) !important;
+}
+
+html body [data-mj="game-catalog-category-slider-item"].app-ltr-17htgyk {
+  border: 1px solid #F8931B !important;
 }
 
 [data-mj="game-catalog-mobile-category-chip"]:not(.active-link):not([aria-current="page"]):not(.app-ltr-7k4h61):hover,
