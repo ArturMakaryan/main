@@ -245,40 +245,6 @@ li[data-mj="sidebar-section"] {
   padding: 12px 0 0 12px !important;
 }
 
-button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon > svg,
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon > svg,
-button[data-mj="sidebar-collapse"][name="arrow_left"].sl-icon > svg,
-button[data-mj="sidebar-collapse"][name="arrow_right"].sl-icon > svg {
-  display: none !important;
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
-}
-
-html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon,
-html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon,
-html body button[data-mj="sidebar-collapse"][name="arrow_right"].sl-icon,
-html body button[data-mj="sidebar-collapse"][name="arrow_left"].sl-icon {
-  border: 1px solid transparent !important;
-  border-radius: 8px !important;
-  box-shadow: none !important;
-  position: fixed !important;
-  left: 14px !important;
-  inset-inline-end: auto !important;
-  top: 12px !important;
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  background: #3E4E5B !important;
-  background-image: url("../RoyalBets/Burger.svg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: 24px 24px !important;
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
-}
-
 .app-ltr-8ac7ob {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
