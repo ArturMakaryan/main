@@ -260,32 +260,6 @@ button[data-mj="sidebar-collapse"].sl-icon {
   transform: none !important;
 }
 
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon,
-button[data-mj="sidebar-collapse"][name="arrow_right"].sl-icon {
-  inset-inline-end: 14px !important;
-  top: 8px !important;
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  background-image: url("../RoyalBets/Burger.svg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: 24px 24px !important;
-}
-
-button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon,
-button[data-mj="sidebar-collapse"][name="arrow_left"].sl-icon {
-  inset-inline-end: 207px !important;
-  top: 12px !important;
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  background-image: url("../RoyalBets/Burger.svg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: 24px 24px !important;
-}
-
 button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon > svg,
 button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon > svg,
 button[data-mj="sidebar-collapse"][name="arrow_left"].sl-icon > svg,
@@ -316,6 +290,10 @@ html body button[data-mj="sidebar-collapse"][name="arrow_left"].sl-icon {
   width: 42px !important;
   min-width: 42px !important;
   height: 42px !important;
+  background-image: url("../RoyalBets/Burger.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 24px 24px !important;
 }
 
 .app-ltr-8ac7ob {
