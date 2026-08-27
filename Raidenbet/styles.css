@@ -27,7 +27,8 @@
   border-color: #222c3d !important;
 }
 
-.sl-select__control.app-ltr-wmz2hl-control {
+.sl-select__control.app-ltr-wmz2hl-control,
+.sl-select__control.app-rtl-wmz2hl-control {
   background-color: #1a1e2d !important;
   border-color: #222c3d !important;
 }
