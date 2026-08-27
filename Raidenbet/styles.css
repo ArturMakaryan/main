@@ -100,7 +100,8 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
   stroke: #5a91fe !important;
 }
 
-[data-mj="bottom-nav"] .app-ltr-1awe48f {
+[data-mj="bottom-nav"] .app-ltr-1awe48f,
+[data-mj="bottom-nav"] .app-rtl-1awe48f {
   border-top: 1px solid #222c3d !important;
   border-radius: 16px 16px 0 0 !important;
 }
