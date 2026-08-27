@@ -21,3 +21,41 @@
 [data-mj="header-nav-item"] .app-rtl-1g3kp0t {
   font-weight: 300 !important;
 }
+
+@keyframes raiden-register-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+[data-mj="register-button"] {
+  position: relative !important;
+  z-index: 0 !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  border: 2px solid transparent !important;
+  background:
+    linear-gradient(#1f2937, #1f2937) padding-box,
+    conic-gradient(from 0deg, #00f5ff, #000, #000, #00f5ff, #000, #000, #000, #00f5ff) border-box !important;
+  background-size:
+    auto,
+    300% 300% !important;
+  animation: raiden-register-shine 6s ease-out infinite !important;
+  transition: transform 300ms ease !important;
+}
+
+[data-mj="register-button"]:hover {
+  transform: scale(1.05) !important;
+}
+
+[data-mj="register-button"]:active {
+  transform: scale(1) !important;
+}
