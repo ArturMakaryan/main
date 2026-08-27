@@ -6,7 +6,7 @@
   }
 }
 
-[data-mj="widget-pages-item"] .app-ltr-lhbbxp {
+[data-mj="widget-pages-item"] .app-ltr-lhbbxp.app-rtl-lhbbxp {
   padding: 16px !important;
 }
 
@@ -14,6 +14,7 @@
   text-align: left !important;
 }
 
-[data-mj="header-nav-item"] .app-ltr-1g3kp0t {
+[data-mj="header-nav-item"] .app-ltr-1g3kp0t,
+[data-mj="header-nav-item"] .app-rtl-1g3kp0t {
   font-weight: 300 !important;
 }
