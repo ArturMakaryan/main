@@ -17,11 +17,6 @@
   text-align: left !important;
 }
 
-button[role="button"][aria-label="arrow_down"],
-button[role="button"][aria-label="arrow_up"] {
-  right: 6px !important;
-}
-
 .app-ltr-b2xcke .app-ltr-1q5mnmx {
   padding: 16px 8px 16px 12px !important;
 }
