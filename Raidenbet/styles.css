@@ -1,0 +1,110 @@
+/* Raidenbet custom styles */
+
+@media (min-width: 1200px) {
+  [data-mj="footer"].app-ltr-1ldnvmh,
+  [data-mj="footer"].app-rtl-1ldnvmh {
+    padding-bottom: 60px !important;
+  }
+}
+
+[data-mj="widget-pages-item"] .app-ltr-lhbbxp,
+[data-mj="widget-pages-item"] .app-rtl-lhbbxp {
+  padding: 4px 6px 8px 12px !important;
+}
+
+[data-mj="widget-pages-item"] .app-ltr-1uys7bq,
+[data-mj="widget-pages-item"] .app-rtl-1uys7bq {
+  text-align: left !important;
+}
+
+button[role="button"][aria-label="arrow_down"],
+button[role="button"][aria-label="arrow_up"] {
+  right: 6px !important;
+}
+
+.app-ltr-b2xcke .app-ltr-1q5mnmx {
+  padding: 16px 8px 16px 12px !important;
+}
+
+[data-mj="game-catalog-game-search"] {
+  background-color: #1a1e2d !important;
+  border-color: #222c3d !important;
+}
+
+.sl-select__control.app-ltr-wmz2hl-control {
+  background-color: #1a1e2d !important;
+  border-color: #222c3d !important;
+}
+
+[data-mj="game-catalog-mobile-provider-input"] {
+  background-color: #1a1e2d !important;
+  border-color: #222c3d !important;
+}
+
+[data-mj="game-catalog-mobile-search-toggle"] {
+  background-color: #1a1e2d !important;
+  border-color: #222c3d !important;
+}
+
+[data-mj="nav-item"],
+[data-mj="nav-item"] * {
+  color: #a0a4b8 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="nav-item"].active-link,
+[data-mj="nav-item"][aria-current="page"],
+[data-mj="nav-item"] .active-link,
+[data-mj="nav-item"] [aria-current="page"],
+[data-mj="nav-item"].active-link *,
+[data-mj="nav-item"][aria-current="page"] *,
+[data-mj="nav-item"] .active-link *,
+[data-mj="nav-item"] [aria-current="page"] * {
+  color: #5a91fe !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+button[role="button"][aria-label="arrow_up"][name="arrow_up"]:hover,
+button[role="button"][aria-label="arrow_down"][name="arrow_down"]:hover,
+button[role="button"][aria-label="arrow_up"][name="arrow_up"]:disabled,
+button[role="button"][aria-label="arrow_down"][name="arrow_down"]:disabled,
+button[role="button"][aria-label="arrow_up"][name="arrow_up"][disabled],
+button[role="button"][aria-label="arrow_down"][name="arrow_down"][disabled],
+button[role="button"][aria-label="arrow_up"][name="arrow_up"][aria-disabled="true"],
+button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled="true"] {
+  color: #222c3d !important;
+  background-color: #222c3d !important;
+  border-color: #222c3d !important;
+}
+
+[data-mj="header-nav-item"],
+[data-mj="header-nav-item"] * {
+  font-weight: 400 !important;
+}
+
+[data-mj="bottom-nav-item"],
+[data-mj="bottom-nav-item"] * {
+  color: #a0a4b8 !important;
+  fill: #a0a4b8 !important;
+  stroke: #a0a4b8 !important;
+}
+
+[data-mj="bottom-nav-item"].active-link,
+[data-mj="bottom-nav-item"][aria-current="page"],
+[data-mj="bottom-nav-item"] .active-link,
+[data-mj="bottom-nav-item"] [aria-current="page"],
+[data-mj="bottom-nav-item"].active-link *,
+[data-mj="bottom-nav-item"][aria-current="page"] *,
+[data-mj="bottom-nav-item"] .active-link *,
+[data-mj="bottom-nav-item"] [aria-current="page"] * {
+  color: #5a91fe !important;
+  fill: #5a91fe !important;
+  stroke: #5a91fe !important;
+}
+
+[data-mj="bottom-nav"] .app-ltr-1awe48f {
+  border-top: 1px solid #222c3d !important;
+  border-radius: 16px 16px 0 0 !important;
+}
