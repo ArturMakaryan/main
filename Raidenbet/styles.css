@@ -21,3 +21,47 @@
 [data-mj="header-nav-item"] .app-rtl-1g3kp0t {
   font-weight: 300 !important;
 }
+
+@keyframes raiden-register-rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+[data-mj="register-button"] {
+  position: relative !important;
+  z-index: 0 !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  background: rgb(17 24 39 / 80%) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  transition:
+    transform 300ms ease,
+    filter 300ms ease !important;
+}
+
+[data-mj="register-button"]::before {
+  content: "" !important;
+  position: absolute !important;
+  z-index: -1 !important;
+  left: -50% !important;
+  top: -50% !important;
+  width: 200% !important;
+  height: 200% !important;
+  background-image: linear-gradient(#fff, #fff) !important;
+  background-position: 100% 50% !important;
+  background-repeat: no-repeat !important;
+  background-size: 50% 30% !important;
+  filter: blur(6px) !important;
+  animation: raiden-register-rotate 4s linear infinite !important;
+  pointer-events: none !important;
+}
+
+[data-mj="register-button"]:hover {
+  transform: scale(1.05) !important;
+}
+
+[data-mj="register-button"]:active {
+  transform: scale(1) !important;
+}
