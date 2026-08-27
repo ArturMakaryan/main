@@ -1,1 +1,16 @@
 /* Raidenbet custom styles */
+
+@media (min-width: 1200px) {
+  [data-mj="footer"].app-ltr-1ldnvmh {
+    padding-bottom: 0 !important;
+  }
+}
+
+[data-mj="widget-pages-item"] .app-ltr-lhbbxp {
+  right: auto !important;
+  padding: 16px !important;
+}
+
+[data-mj="header-nav-item"].app-ltr-1g3kp0t {
+  font-weight: 300 !important;
+}
