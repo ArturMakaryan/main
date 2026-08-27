@@ -1,16 +1,19 @@
 /* Raidenbet custom styles */
 
 @media (min-width: 1200px) {
-  [data-mj="footer"].app-ltr-1ldnvmh {
+  [data-mj="footer"].app-ltr-1ldnvmh,
+  [data-mj="footer"].app-rtl-1ldnvmh {
     padding-bottom: 60px !important;
   }
 }
 
-[data-mj="widget-pages-item"] .app-ltr-lhbbxp.app-rtl-lhbbxp {
+[data-mj="widget-pages-item"] .app-ltr-lhbbxp,
+[data-mj="widget-pages-item"] .app-rtl-lhbbxp {
   padding: 16px !important;
 }
 
-[data-mj="widget-pages-item"] .app-ltr-1uys7bq {
+[data-mj="widget-pages-item"] .app-ltr-1uys7bq,
+[data-mj="widget-pages-item"] .app-rtl-1uys7bq {
   text-align: left !important;
 }
 
