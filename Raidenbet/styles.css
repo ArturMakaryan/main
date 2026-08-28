@@ -48,7 +48,7 @@
 
 [data-mj="nav-item"],
 [data-mj="nav-item"] * {
-  color: #a0a4b8 !important;
+  color: #9fa4bc !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
@@ -91,9 +91,9 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
 
 [data-mj="header-nav-item"],
 [data-mj="header-nav-item"] * {
-  color: #a0a4b8 !important;
-  fill: #a0a4b8 !important;
-  stroke: #a0a4b8 !important;
+  color: #9fa4bc !important;
+  fill: #9fa4bc !important;
+  stroke: #9fa4bc !important;
 }
 
 [data-mj="header-nav-item"]:hover {
@@ -121,9 +121,9 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
 
 [data-mj="bottom-nav-item"],
 [data-mj="bottom-nav-item"] * {
-  color: #a0a4b8 !important;
-  fill: #a0a4b8 !important;
-  stroke: #a0a4b8 !important;
+  color: #9fa4bc !important;
+  fill: #9fa4bc !important;
+  stroke: #9fa4bc !important;
 }
 
 [data-mj="bottom-nav-item"].active-link,
