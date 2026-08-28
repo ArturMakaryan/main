@@ -41,6 +41,12 @@
   border-color: #222c3d !important;
 }
 
+a[data-mj="game-catalog-mobile-category-chip"] {
+  background-color: #2e3348 !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
 [data-mj="game-catalog-mobile-search-toggle"] {
   background-color: #1a1e2d !important;
   border-color: #222c3d !important;
