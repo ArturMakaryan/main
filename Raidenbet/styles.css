@@ -110,7 +110,7 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
   border-radius: 16px 16px 0 0 !important;
 }
 
-[data-mj="login-button"] {
+[data-mj="register-button"] {
   background-image: linear-gradient(162deg, #ffc63d, #cb7e15) !important;
   box-shadow:
     0 0 1px 2px #ff700026,
@@ -122,7 +122,7 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
     transform 180ms ease !important;
 }
 
-[data-mj="login-button"]:hover {
+[data-mj="register-button"]:hover {
   background-image: linear-gradient(117deg, #ffc63d, #cb7e15) !important;
   box-shadow:
     0 0 3px 1px #ff70006b,
@@ -131,7 +131,7 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
   transform: translateY(-1px) !important;
 }
 
-[data-mj="login-button"]:active {
+[data-mj="register-button"]:active {
   background-image: linear-gradient(162deg, #ffc63d, #cb7e15) !important;
   box-shadow:
     0 0 1px 2px #ff700026,
