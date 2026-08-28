@@ -109,3 +109,33 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
   border-top: 1px solid #222c3d !important;
   border-radius: 16px 16px 0 0 !important;
 }
+
+[data-mj="login-button"] {
+  background-image: linear-gradient(162deg, #ffc63d, #cb7e15) !important;
+  box-shadow:
+    0 0 1px 2px #ff700026,
+    0 2px 5px #653f0a,
+    -1px -1px 2px #ffd674 inset !important;
+  transition:
+    background-image 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease !important;
+}
+
+[data-mj="login-button"]:hover {
+  background-image: linear-gradient(117deg, #ffc63d, #cb7e15) !important;
+  box-shadow:
+    0 0 3px 1px #ff70006b,
+    0 2px 5px #653f0a,
+    -1px -1px 2px #ffd674 inset !important;
+  transform: translateY(-1px) !important;
+}
+
+[data-mj="login-button"]:active {
+  background-image: linear-gradient(162deg, #ffc63d, #cb7e15) !important;
+  box-shadow:
+    0 0 1px 2px #ff700026,
+    0 2px 5px #653f0a,
+    -1px -1px 2px #ffd674 inset !important;
+  transform: translateY(0) !important;
+}
