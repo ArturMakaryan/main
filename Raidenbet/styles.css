@@ -36,32 +36,6 @@
   border-color: #222c3d !important;
 }
 
-[data-mj="game-catalog-mobile-provider-input"],
-[data-mj="game-catalog-mobile-provider-input"] * {
-  background-color: #2e3348 !important;
-  color: #9fa4bc !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-}
-
-[data-mj="game-catalog-mobile-provider-input"] {
-  border-color: #222c3d !important;
-}
-
-[data-mj="game-catalog-mobile-provider-input"]:hover,
-[data-mj="game-catalog-mobile-provider-input"]:focus,
-[data-mj="game-catalog-mobile-provider-input"]:focus-visible,
-[data-mj="game-catalog-mobile-provider-input"]:active,
-[data-mj="game-catalog-mobile-provider-input"]:hover *,
-[data-mj="game-catalog-mobile-provider-input"]:focus *,
-[data-mj="game-catalog-mobile-provider-input"]:focus-visible *,
-[data-mj="game-catalog-mobile-provider-input"]:active * {
-  background-color: #2e3348 !important;
-  color: #9fa4bc !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-}
-
 [data-mj="game-catalog-mobile-search-toggle"] {
   background-color: #1a1e2d !important;
   border-color: #222c3d !important;
