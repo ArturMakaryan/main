@@ -78,6 +78,13 @@ a[data-mj="game-catalog-mobile-category-chip"] {
   font-weight: 300 !important;
 }
 
+[data-mj="footer-nav-item"],
+[data-mj="footer-nav-item"] * {
+  color: #9fa4bc !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
 button[role="button"][aria-label="arrow_up"][name="arrow_up"]:hover,
 button[role="button"][aria-label="arrow_down"][name="arrow_down"]:hover,
 button[role="button"][aria-label="arrow_up"][name="arrow_up"]:disabled,
