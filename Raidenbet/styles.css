@@ -1,5 +1,9 @@
 /* Raidenbet custom styles */
 
+[data-mj="logo"] {
+  max-width: 72px !important;
+}
+
 @media (min-width: 1200px) {
   [data-mj="footer"].app-ltr-1ldnvmh,
   [data-mj="footer"].app-rtl-1ldnvmh {
