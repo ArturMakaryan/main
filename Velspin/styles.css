@@ -1,2 +1,90 @@
-/* Velspin custom styles */
+[data-mj="header-nav-item"],
+[data-mj="header-nav-item"] * {
+  font-weight: 300 !important;
+  transition:
+    color 180ms ease,
+    fill 180ms ease,
+    stroke 180ms ease,
+    transform 180ms ease !important;
+}
 
+[data-mj="header-nav-item"],
+[data-mj="header-nav-item"] * {
+  color: #a0a4b8 !important;
+}
+
+[data-mj="header-nav-item"]:hover {
+  transform: translateY(-1px) !important;
+}
+
+[data-mj="header-nav-item"]:hover,
+[data-mj="header-nav-item"]:hover * {
+  color: #fff !important;
+  text-shadow: 0 0 6px #22d3ff !important;
+}
+
+[data-mj="header-nav-item"].active-link,
+[data-mj="header-nav-item"][aria-current="page"],
+[data-mj="header-nav-item"] .active-link,
+[data-mj="header-nav-item"] [aria-current="page"],
+[data-mj="header-nav-item"].active-link *,
+[data-mj="header-nav-item"][aria-current="page"] *,
+[data-mj="header-nav-item"] .active-link *,
+[data-mj="header-nav-item"] [aria-current="page"] * {
+  color: #22d3ff !important;
+  font-weight: 300 !important;
+  text-shadow: 0 0 6px #008db0 !important;
+}
+
+[data-mj="header-nav-item"]:is(.active-link, [aria-current="page"]),
+[data-mj="header-nav-item"]:has(:is(.active-link, [aria-current="page"])) {
+  background: rgb(34 211 255 / .15) !important;
+  border-radius: 12px !important;
+  border-bottom: 1px solid #1acdf566 !important;
+}
+
+[data-mj="header-nav-item"]:is(.active-link, [aria-current="page"]) *,
+[data-mj="header-nav-item"]:has(:is(.active-link, [aria-current="page"])) * {
+  color: #17cef5 !important;
+  fill: #17cef5 !important;
+  stroke: #17cef5 !important;
+}
+
+[data-mj="nav-item"],
+[data-mj="nav-item"] * {
+  color: #cccfdd !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="nav-item"].active-link,
+[data-mj="nav-item"][aria-current="page"],
+[data-mj="nav-item"] .active-link,
+[data-mj="nav-item"] [aria-current="page"],
+[data-mj="nav-item"].active-link *,
+[data-mj="nav-item"][aria-current="page"] *,
+[data-mj="nav-item"] .active-link *,
+[data-mj="nav-item"] [aria-current="page"] * {
+  color: #22d3ff !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-game-search"] {
+  background-color: #161b22 !important;
+  border: 1px solid #242930;
+}
+
+.sl-select__control {
+  background-color: #161b22 !important;
+  border: 1px solid #242930 !important;
+}
+
+.app-ltr-1d93vvc {
+  background-color: #161b22 !important;
+  border: none !important;
+  box-shadow: inset 0 0 0 1px #242930 !important;
+  border-radius: 12px !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
