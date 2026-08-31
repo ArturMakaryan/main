@@ -1,1 +1,146 @@
 /* Slotfer custom styles */
+
+[data-mj="widget-collection-slider-item"],
+[data-mj="widget-pages-item"],
+[data-mj="widget-game-card"] {
+  position: relative !important;
+  overflow: hidden !important;
+  cursor: pointer;
+}
+
+[data-mj="widget-collection-slider-item"]::before,
+[data-mj="widget-pages-item"]::before,
+[data-mj="widget-game-card"]::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -60%;
+  width: 25%;
+  height: 120%;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.18) 50%,
+    transparent 70%
+  );
+  transform: skewX(-15deg);
+  z-index: 9;
+  pointer-events: none;
+  transition: left 0.45s ease;
+  opacity: 0;
+}
+
+[data-mj="widget-collection-slider-item"]:hover::before,
+[data-mj="widget-pages-item"]:hover::before,
+[data-mj="widget-game-card"]:hover::before {
+  left: 120%;
+  opacity: 1;
+}
+
+[data-mj="header-nav-item"] {
+  position: relative !important;
+  z-index: 1 !important;
+  font-weight: 300 !important;
+  color: #bfc5e1 !important;
+  transition:
+    color 180ms ease,
+    transform 180ms ease,
+    text-shadow 180ms ease !important;
+}
+
+[data-mj="header-nav-item"] * {
+  color: inherit !important;
+  font-weight: inherit !important;
+}
+
+[data-mj="header-nav-item"]:hover {
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+  text-shadow: 0 0 6px #4a75ca !important;
+}
+
+[data-mj="header-nav-item"].active::before,
+[data-mj="header-nav-item"].active-link::before,
+[data-mj="header-nav-item"][aria-current="page"]::before,
+[data-mj="header-nav-item"]:has(.active)::before,
+[data-mj="header-nav-item"]:has(.active-link)::before,
+[data-mj="header-nav-item"]:has([aria-current="page"])::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: #1df0f421 !important;
+  border: 1px solid #1df0f4ed !important;
+  clip-path: polygon(
+    14px 0,
+    100% 0,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    0 100%,
+    0 14px
+  ) !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+}
+
+[data-mj="header-nav-item"].active,
+[data-mj="header-nav-item"].active-link,
+[data-mj="header-nav-item"][aria-current="page"],
+[data-mj="header-nav-item"]:has(.active),
+[data-mj="header-nav-item"]:has(.active-link),
+[data-mj="header-nav-item"]:has([aria-current="page"]) {
+  color: #202020 !important;
+  text-shadow: none !important;
+}
+
+[data-mj="header-nav-item"].active *,
+[data-mj="header-nav-item"].active-link *,
+[data-mj="header-nav-item"][aria-current="page"] *,
+[data-mj="header-nav-item"]:has(.active) *,
+[data-mj="header-nav-item"]:has(.active-link) *,
+[data-mj="header-nav-item"]:has([aria-current="page"]) * {
+  color: #202020 !important;
+  text-shadow: none !important;
+}
+
+[data-mj="header-nav-item"].active-link,
+[data-mj="header-nav-item"][aria-current="page"],
+[data-mj="header-nav-item"] .active-link,
+[data-mj="header-nav-item"] [aria-current="page"],
+[data-mj="header-nav-item"].active-link *,
+[data-mj="header-nav-item"][aria-current="page"] *,
+[data-mj="header-nav-item"] .active-link *,
+[data-mj="header-nav-item"] [aria-current="page"] * {
+  color: #00ffeb !important;
+  font-weight: 300 !important;
+  text-shadow: 0 0 6px #6bdcd2 !important;
+}
+
+[data-mj="nav-item"],
+[data-mj="nav-item"] * {
+  color: #bfc5e1 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="nav-item"].active-link,
+[data-mj="nav-item"][aria-current="page"],
+[data-mj="nav-item"] .active-link,
+[data-mj="nav-item"] [aria-current="page"],
+[data-mj="nav-item"].active-link *,
+[data-mj="nav-item"][aria-current="page"] *,
+[data-mj="nav-item"] .active-link *,
+[data-mj="nav-item"] [aria-current="page"] * {
+  color: #1df0f4 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+.app-ltr-1q5mnmx {
+  padding: 16px 8px 16px 12px !important;
+}
+
+.app-ltr-129y8n7 {
+  width: 20px !important;
+  min-width: 20px !important;
+  height: 20px !important;
+}
