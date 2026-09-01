@@ -3,6 +3,7 @@
   color: #b5b7cb !important;
   font-size: 14px !important;
   font-weight: 300 !important;
+  border-radius: 20px;
 }
 
 [data-mj="nav-item"].active-link,
