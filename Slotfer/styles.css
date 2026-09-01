@@ -194,20 +194,6 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol * {
   border: none !important;
 }
 
-.sl-select__control.app-ltr-ky0ql3-control {
-  background: #261739 !important;
-  border: 1px solid #1df0f4ed !important;
-  border-radius: 0 !important;
-  clip-path: polygon(
-    14px 0,
-    100% 0,
-    100% calc(100% - 14px),
-    calc(100% - 14px) 100%,
-    0 100%,
-    0 14px
-  ) !important;
-}
-
 .app-ltr-1q5mnmx {
   padding: 16px 8px 16px 12px !important;
 }
