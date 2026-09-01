@@ -182,27 +182,6 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol * {
   color: #1df0f4 !important;
 }
 
-[data-mj="game-catalog-mobile-provider-input"] {
-  position: relative !important;
-  z-index: 1 !important;
-  border: none !important;
-  border-radius: 0 !important;
-  background: #261739 !important;
-  clip-path: polygon(
-    14px 0,
-    100% 0,
-    100% calc(100% - 14px),
-    calc(100% - 14px) 100%,
-    0 100%,
-    0 14px
-  ) !important;
-  font-weight: 300 !important;
-}
-
-[data-mj="game-catalog-mobile-provider-input"] * {
-  font-weight: 300 !important;
-}
-
 [data-mj="game-catalog-game-search"],
 .app-ltr-x1jmid .app-ltr-1tvzmkd .app-ltr-b62m3t-container > [class="sl-select__control app-ltr-63dtec-control"] {
   background: #261739 !important;
@@ -212,14 +191,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol * {
 [data-mj="game-catalog-mobile-provider-input"],
 [data-mj="game-catalog-mobile-search-toggle"] {
   background: #261739 !important;
-  clip-path: polygon(
-    14px 0,
-    100% 0,
-    100% calc(100% - 14px),
-    calc(100% - 14px) 100%,
-    0 100%,
-    0 14px
-  ) !important;
+  border: none !important;
 }
 
 .sl-select__control.app-ltr-ky0ql3-control {
@@ -234,11 +206,6 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol * {
     0 100%,
     0 14px
   ) !important;
-}
-
-
-[data-mj="game-catalog-mobile-search-toggle"] {
-  box-shadow: none !important;
 }
 
 .app-ltr-1q5mnmx {
