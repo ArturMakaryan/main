@@ -50,6 +50,10 @@
   width: 100% !important;
 }
 
+.app-ltr-1q5mnmx {
+  padding: 16px 8px 16px 12px !important;
+}
+
 li[data-mj="sidebar-section"],
 [data-mj="sidebar-group"] {
   background-color: transparent !important;
