@@ -212,6 +212,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
   pointer-events: none !important;
 }
 
+[data-mj="game-catalog-game-search"],
 [data-mj="game-catalog-mobile-provider-input"],
 .app-ltr-x1jmid .app-ltr-1tvzmkd .app-ltr-b62m3t-container > [class="sl-select__control app-ltr-63dtec-control"] {
   position: relative !important;
@@ -230,25 +231,13 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
   font-weight: 300 !important;
 }
 
+[data-mj="game-catalog-game-search"] *,
 [data-mj="game-catalog-mobile-provider-input"] *,
 .app-ltr-x1jmid .app-ltr-1tvzmkd .app-ltr-b62m3t-container > [class="sl-select__control app-ltr-63dtec-control"] * {
   font-weight: 300 !important;
 }
 
 [data-mj="game-catalog-game-search"] {
-  position: relative !important;
-  z-index: 1 !important;
-  border: none !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  overflow: hidden !important;
-  font-weight: 300 !important;
-}
-
-[data-mj="game-catalog-game-search"]::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
   background: #261739 !important;
   clip-path: polygon(
     14px 0,
@@ -258,15 +247,6 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
     0 100%,
     0 14px
   ) !important;
-  z-index: -1 !important;
-  pointer-events: none !important;
-}
-
-[data-mj="game-catalog-game-search"] * {
-  position: relative !important;
-  z-index: 1 !important;
-  color: #bfc5e1 !important;
-  font-weight: 300 !important;
 }
 
 [data-mj="game-catalog-mobile-provider-input"],
