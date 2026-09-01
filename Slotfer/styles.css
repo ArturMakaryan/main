@@ -209,7 +209,8 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
 }
 
 [data-mj="game-catalog-game-search"],
-[data-mj="game-catalog-mobile-provider-input"] {
+[data-mj="game-catalog-mobile-provider-input"],
+.sl-select__control.app-ltr-63dtec-control {
   position: relative !important;
   z-index: 1 !important;
   border: none !important;
@@ -219,16 +220,18 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
 }
 
 [data-mj="game-catalog-game-search"] *,
-[data-mj="game-catalog-mobile-provider-input"] * {
+[data-mj="game-catalog-mobile-provider-input"] *,
+.sl-select__control.app-ltr-63dtec-control * {
   font-weight: 300 !important;
 }
 
 [data-mj="game-catalog-game-search"]::before,
-[data-mj="game-catalog-mobile-provider-input"]::before {
+[data-mj="game-catalog-mobile-provider-input"]::before,
+.sl-select__control.app-ltr-63dtec-control::before {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
-  background: #27163d !important;
+  background: #1df0f421 !important;
   border: none !important;
   border-radius: 0 !important;
   clip-path: polygon(
