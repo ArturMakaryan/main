@@ -214,7 +214,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
 
 [data-mj="game-catalog-game-search"],
 [data-mj="game-catalog-mobile-provider-input"],
-.sl-select__control.app-ltr-63dtec-control {
+.app-ltr-x1jmid .app-ltr-1tvzmkd .app-ltr-b62m3t-container > .sl-select__control.app-ltr-63dtec-control {
   position: relative !important;
   z-index: 1 !important;
   border: none !important;
@@ -225,7 +225,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
 
 [data-mj="game-catalog-game-search"] *,
 [data-mj="game-catalog-mobile-provider-input"] *,
-.sl-select__control.app-ltr-63dtec-control * {
+.app-ltr-x1jmid .app-ltr-1tvzmkd .app-ltr-b62m3t-container > .sl-select__control.app-ltr-63dtec-control * {
   font-weight: 300 !important;
 }
 
@@ -268,7 +268,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
   ) !important;
 }
 
-.sl-select__control.app-ltr-63dtec-control::before {
+.app-ltr-x1jmid .app-ltr-1tvzmkd .app-ltr-b62m3t-container > .sl-select__control.app-ltr-63dtec-control::before {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
