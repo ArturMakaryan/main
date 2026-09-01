@@ -167,6 +167,11 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol {
   color: #1cf0f4 !important;
 }
 
+a[data-mj="game-catalog-category-slider-item"].app-ltr-kt4jqo:hover,
+a[data-mj="game-catalog-category-slider-item"].app-ltr-1fel7e4:hover {
+  border-color: #1df0f4ed !important;
+}
+
 a[data-mj="game-catalog-category-slider-item"].app-ltr-kt4jqo *,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-r88un6 * {
   color: #a297b3 !important;
