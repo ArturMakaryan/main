@@ -1,5 +1,9 @@
 /* Slotfer custom styles */
 
+[data-mj="footer"] {
+  margin-top: 32px !important;
+}
+
 [data-mj="widget-collection-slider-item"],
 [data-mj="widget-pages-item"],
 [data-mj="widget-game-card"] {
