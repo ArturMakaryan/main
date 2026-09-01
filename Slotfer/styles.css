@@ -153,7 +153,9 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol {
     0 100%,
     0 14px
   ) !important;
+  border: 1px solid transparent !important;
   border-radius: 0 !important;
+  box-sizing: border-box !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
@@ -161,8 +163,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol {
 a[data-mj="game-catalog-category-slider-item"].app-ltr-1fel7e4,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol {
   background: #261739 !important;
-  border: 1px solid #1df0f4ed !important;
-  box-sizing: border-box !important;
+  border-color: #1df0f4ed !important;
   color: #1cf0f4 !important;
 }
 
