@@ -1,3 +1,7 @@
+[data-mj="nav-item"] {
+  border-radius: 20px;
+}
+
 [data-mj="nav-item"],
 [data-mj="nav-item"] * {
   color: #b5b7cb !important;
