@@ -1,0 +1,200 @@
+/* Likebahis custom styles */
+
+:root {
+  --likebahis-bg: #111821;
+  --likebahis-surface: #172331;
+  --likebahis-surface-strong: #203247;
+  --likebahis-border: #2b3f55;
+  --likebahis-text: #dce7ef;
+  --likebahis-muted: #94a8b8;
+  --likebahis-green: #38d77a;
+  --likebahis-green-soft: rgb(56 215 122 / 18%);
+  --likebahis-gold: #f4c84b;
+}
+
+[data-mj="header"],
+[data-mj="custom-header"] {
+  background: var(--likebahis-bg) !important;
+  border-bottom: 1px solid rgb(255 255 255 / 9%) !important;
+  box-shadow: none !important;
+}
+
+[data-mj="logo"] {
+  max-width: 96px !important;
+}
+
+[data-mj="sidebar"] {
+  background: var(--likebahis-bg) !important;
+}
+
+[data-mj="sidebar"].app-ltr-1huuf1k,
+[data-mj="sidebar"].app-rtl-1huuf1k {
+  width: 260px !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+[data-mj="sidebar"].app-ltr-17u1px6,
+[data-mj="sidebar"].app-rtl-17u1px6 {
+  width: 68px !important;
+  padding: 0 !important;
+}
+
+[data-mj="sidebar-content"] {
+  border-right: 1px solid rgb(255 255 255 / 9%) !important;
+  border-radius: 0 !important;
+  padding: 12px 12px 12px 0 !important;
+}
+
+[data-mj="sidebar-nav"] {
+  width: 100% !important;
+}
+
+li[data-mj="sidebar-section"],
+[data-mj="sidebar-group"] {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  min-height: 40px !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="sidebar"] .sl-navlink,
+[data-mj="nav-item"],
+[data-mj="nav-item"] *,
+[data-mj="header-nav-item"],
+[data-mj="header-nav-item"] *,
+[data-mj="bottom-nav-item"],
+[data-mj="bottom-nav-item"] * {
+  color: var(--likebahis-muted) !important;
+  fill: var(--likebahis-muted) !important;
+  stroke: var(--likebahis-muted) !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  transition:
+    color 180ms ease,
+    fill 180ms ease,
+    stroke 180ms ease,
+    transform 180ms ease,
+    background-color 180ms ease !important;
+}
+
+[data-mj="header-nav-item"]:hover,
+[data-mj="sidebar"] .sl-navlink:hover {
+  transform: translateY(-1px) !important;
+}
+
+[data-mj="header-nav-item"]:hover,
+[data-mj="header-nav-item"]:hover *,
+[data-mj="sidebar"] .sl-navlink:hover,
+[data-mj="sidebar"] .sl-navlink:hover * {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+[data-mj="nav-item"].active-link,
+[data-mj="nav-item"][aria-current="page"],
+[data-mj="nav-item"] .active-link,
+[data-mj="nav-item"] [aria-current="page"],
+[data-mj="header-nav-item"].active-link,
+[data-mj="header-nav-item"][aria-current="page"],
+[data-mj="header-nav-item"] .active-link,
+[data-mj="header-nav-item"] [aria-current="page"],
+[data-mj="bottom-nav-item"].active-link,
+[data-mj="bottom-nav-item"][aria-current="page"],
+[data-mj="bottom-nav-item"] .active-link,
+[data-mj="bottom-nav-item"] [aria-current="page"],
+[data-mj="sidebar"] .sl-navlink.active-link,
+[data-mj="sidebar-group"].active-link {
+  color: var(--likebahis-green) !important;
+  fill: var(--likebahis-green) !important;
+  stroke: var(--likebahis-green) !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="header-nav-item"]:is(.active-link, [aria-current="page"]),
+[data-mj="header-nav-item"]:has(:is(.active-link, [aria-current="page"])) {
+  background: var(--likebahis-green-soft) !important;
+  border-radius: 12px !important;
+}
+
+[data-mj="sidebar"] .sl-navlink.active-link {
+  background: var(--likebahis-green-soft) !important;
+  border-radius: 0 8px 8px 0 !important;
+}
+
+[data-mj="game-catalog-game-search"],
+[data-mj="game-catalog-provider-search"],
+[data-mj="game-catalog-mobile-provider-input"],
+[data-mj="game-catalog-mobile-search-toggle"],
+.sl-select__control {
+  background-color: var(--likebahis-surface) !important;
+  border: 1px solid var(--likebahis-border) !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-game-search"]:focus-within,
+[data-mj="game-catalog-provider-search"]:focus-within,
+[data-mj="game-catalog-mobile-provider-input"]:focus,
+.sl-select__control--is-focused,
+.sl-select__control:focus-within {
+  border-color: var(--likebahis-green) !important;
+  box-shadow: 0 0 0 2px rgb(56 215 122 / 16%) !important;
+}
+
+[data-mj="game-catalog-category-slider-item"],
+[data-mj="game-catalog-mobile-category-chip"] {
+  background: var(--likebahis-surface) !important;
+  border: 1px solid var(--likebahis-border) !important;
+  color: var(--likebahis-text) !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].active,
+[data-mj="game-catalog-category-slider-item"].active-link,
+[data-mj="game-catalog-category-slider-item"][aria-current="page"],
+[data-mj="game-catalog-mobile-category-chip"].active,
+[data-mj="game-catalog-mobile-category-chip"].active-link,
+[data-mj="game-catalog-mobile-category-chip"][aria-current="page"] {
+  background:
+    linear-gradient(var(--likebahis-surface), var(--likebahis-surface-strong)) padding-box,
+    linear-gradient(135deg, var(--likebahis-green), var(--likebahis-gold)) border-box !important;
+  border: 1px solid transparent !important;
+  color: #ffffff !important;
+}
+
+[data-mj="login-button"],
+[data-mj="register-button"] {
+  background-image: linear-gradient(135deg, var(--likebahis-green), #1ea95d) !important;
+  color: #06140c !important;
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 12%) inset,
+    0 8px 18px rgb(56 215 122 / 22%) !important;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    filter 180ms ease !important;
+}
+
+[data-mj="login-button"]:hover,
+[data-mj="register-button"]:hover {
+  filter: brightness(1.05) !important;
+  transform: translateY(-1px) !important;
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 18%) inset,
+    0 10px 22px rgb(56 215 122 / 28%) !important;
+}
+
+[data-mj="account-menu"],
+[data-mj="account-menu-item"] {
+  background: var(--likebahis-surface) !important;
+  border-color: var(--likebahis-border) !important;
+  color: var(--likebahis-text) !important;
+}
+
+[data-mj="bottom-nav"] {
+  background: var(--likebahis-bg) !important;
+  border-top: 1px solid rgb(255 255 255 / 9%) !important;
+}
