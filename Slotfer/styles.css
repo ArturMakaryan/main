@@ -72,7 +72,7 @@
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
-  background: #1df0f421 !important;
+  background: #261739 !important;
   border: 1px solid #1df0f4ed !important;
   clip-path: polygon(
     14px 0,
@@ -198,7 +198,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
-  background: #1cf0f421 !important;
+  background: #261739 !important;
   border: 1px solid #1df0f4ed !important;
   clip-path: polygon(
     14px 0,
@@ -230,7 +230,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
 }
 
 [data-mj="game-catalog-game-search"] {
-  background: #1df0f421 !important;
+  background: #261739 !important;
   clip-path: polygon(
     14px 0,
     100% 0,
@@ -241,12 +241,24 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
   ) !important;
 }
 
-[data-mj="game-catalog-mobile-provider-input"]::before,
+[data-mj="game-catalog-mobile-provider-input"],
+[data-mj="game-catalog-mobile-search-toggle"] {
+  background: #261739 !important;
+  clip-path: polygon(
+    14px 0,
+    100% 0,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    0 100%,
+    0 14px
+  ) !important;
+}
+
 .sl-select__control.app-ltr-63dtec-control::before {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
-  background: #1df0f421 !important;
+  background: #261739 !important;
   border: none !important;
   border-radius: 0 !important;
   clip-path: polygon(
