@@ -176,7 +176,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-d3dwkc::before {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
-  background: #27163d !important;
+  background: #1cf0f421 !important;
   clip-path: polygon(
     14px 0,
     100% 0,
@@ -194,7 +194,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
-  background: #27163d !important;
+  background: #1cf0f421 !important;
   border: 1px solid #1df0f4ed !important;
   clip-path: polygon(
     14px 0,
@@ -206,6 +206,45 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
   ) !important;
   z-index: -1 !important;
   pointer-events: none !important;
+}
+
+[data-mj="game-catalog-game-search"],
+[data-mj="game-catalog-mobile-provider-input"] {
+  position: relative !important;
+  z-index: 1 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-game-search"] *,
+[data-mj="game-catalog-mobile-provider-input"] * {
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-game-search"]::before,
+[data-mj="game-catalog-mobile-provider-input"]::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: #27163d !important;
+  border: none !important;
+  border-radius: 0 !important;
+  clip-path: polygon(
+    14px 0,
+    100% 0,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    0 100%,
+    0 14px
+  ) !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+}
+
+[data-mj="game-catalog-mobile-search-toggle"] {
+  box-shadow: none !important;
 }
 
 .app-ltr-1q5mnmx {
