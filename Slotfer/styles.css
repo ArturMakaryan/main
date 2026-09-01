@@ -160,6 +160,10 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol {
   box-shadow: none !important;
 }
 
+a[data-mj="game-catalog-category-slider-item"].app-ltr-bczwna {
+  box-shadow: none !important;
+}
+
 a[data-mj="game-catalog-category-slider-item"].app-ltr-1b1enyj::before,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-d3dwkc::before {
   content: "" !important;
