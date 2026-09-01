@@ -168,13 +168,6 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-bczwna {
   box-shadow: none !important;
 }
 
-a[data-mj="game-catalog-category-slider-item"].app-ltr-bczwna,
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol,
-a[data-mj="game-catalog-category-slider-item"].app-ltr-bczwna *,
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol * {
-  color: #1cf0f4 !important;
-}
-
 a[data-mj="game-catalog-category-slider-item"].app-ltr-1b1enyj::before,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-d3dwkc::before {
   content: "" !important;
@@ -200,6 +193,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
   inset: 0 !important;
   background: #261739 !important;
   border: 1px solid #1df0f4ed !important;
+  border-radius: 0 !important;
   clip-path: polygon(
     14px 0,
     100% 0,
