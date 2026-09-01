@@ -225,7 +225,18 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
   font-weight: 300 !important;
 }
 
-[data-mj="game-catalog-game-search"]::before,
+[data-mj="game-catalog-game-search"] {
+  background: #1df0f421 !important;
+  clip-path: polygon(
+    14px 0,
+    100% 0,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    0 100%,
+    0 14px
+  ) !important;
+}
+
 [data-mj="game-catalog-mobile-provider-input"]::before,
 .sl-select__control.app-ltr-63dtec-control::before {
   content: "" !important;
