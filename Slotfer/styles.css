@@ -254,6 +254,19 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1lghrol::before {
   ) !important;
 }
 
+.sl-select__control.app-ltr-ky0ql3-control {
+  background: #261739 !important;
+  border: 1px solid #1df0f4ed !important;
+  clip-path: polygon(
+    14px 0,
+    100% 0,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    0 100%,
+    0 14px
+  ) !important;
+}
+
 .sl-select__control.app-ltr-63dtec-control::before {
   content: "" !important;
   position: absolute !important;
