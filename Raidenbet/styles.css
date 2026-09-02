@@ -49,8 +49,10 @@
 
 a[data-mj="game-catalog-mobile-category-chip"] {
   background-color: #2e3348 !important;
+  color: rgb(255 255 255) !important;
   font-weight: 300 !important;
   font-size: 14px !important;
+  box-shadow: none !important;
 }
 
 [data-mj="game-catalog-mobile-search-toggle"] {
