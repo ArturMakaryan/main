@@ -158,3 +158,24 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-2wx915 {
     transform: rotate(4deg);
   }
 }
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("./like-bg-.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
