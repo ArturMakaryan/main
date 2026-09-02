@@ -55,6 +55,11 @@ a[data-mj="game-catalog-mobile-category-chip"] {
   box-shadow: none !important;
 }
 
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-19790bj {
+  color: rgb(128, 169, 249) !important;
+  box-shadow: rgb(128, 169, 249) 0px 0px 0px 1px inset !important;
+}
+
 [data-mj="game-catalog-mobile-search-toggle"] {
   background-color: #1a1e2d !important;
   border-color: #222c3d !important;
