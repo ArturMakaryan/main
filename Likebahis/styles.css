@@ -172,10 +172,18 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("./like-bg-.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image:
+    linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)),
+    url("./like-bg-.jpg");
+  background-position:
+    center,
+    center top;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-size:
+    cover,
+    cover;
   pointer-events: none;
   z-index: 0;
 }
