@@ -107,6 +107,16 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-2wx915 {
   box-shadow: rgb(239 206 57) 0 0 0 1px inset !important;
 }
 
+a[data-mj="game-catalog-category-slider-item"].app-ltr-ztukqa,
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-2wx915 {
+  background-image:
+    url("../assets/Casino%20Tag%20Select.svg"),
+    linear-gradient(192deg, #1c205a, #212775) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
 [data-mj="game-catalog-game-search"],
 .sl-select__control.app-ltr-ft8z04-control,
 [data-mj="game-catalog-mobile-provider-input"],
