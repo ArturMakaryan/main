@@ -180,7 +180,7 @@ body::before {
   z-index: 1;
 }
 
-[data-mj="game-catalog-right-section"].app-ltr-g06n4c {
+[data-mj="game-catalog-right-section"] .app-ltr-g06n4c {
   border-radius: 24px;
   padding: 8px 8px 8px 8px;
   margin-bottom: 8px;
