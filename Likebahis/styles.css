@@ -186,9 +186,6 @@ body::before {
 }
 
 [data-mj="game-catalog-mobile-filters"] {
-  position: sticky !important;
-  top: 8px !important;
-  z-index: 100 !important;
   background-color: #121968b5 !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
@@ -203,4 +200,22 @@ body::before {
   border-radius: 24px;
   padding: 8px 8px 8px 8px;
   margin-bottom: 8px;
+}
+
+[data-mj="widget-pages-item"] .app-ltr-gvuq9o {
+  position: static !important;
+  inset: auto !important;
+}
+
+[data-mj="widget-pages-item"] .app-ltr-1f8yjb {
+  padding-top: 0 !important;
+}
+
+[data-mj="widget-pages-item"] {
+  gap: 8px;
+  border: none !important;
+}
+
+[data-mj="widget-pages-grid"] {
+  gap: 8px !important;
 }
