@@ -114,3 +114,6 @@ border: 1px solid rgb(249 199 28) !important;
 .app-ltr-1t69v1f .app-ltr-1qqvnmp .app-ltr-7wh13m {
 max-width: 200px !important;
 }
+[data-mj="register-button"] {
+transition: opacity 150ms ease-out;
+}
