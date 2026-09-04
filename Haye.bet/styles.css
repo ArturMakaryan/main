@@ -63,13 +63,13 @@
 .sl-select__control.app-ltr-17rlgwu-control,
 [data-mj="game-catalog-mobile-provider-input"],
 [data-mj="game-catalog-mobile-search-toggle"] {
-  background-color: #265845 !important;
+  background-color: #143025 !important;
   border-color: #0e3828 !important;
   font-weight: 300 !important;
 }
 
 [data-mj="game-catalog-mobile-search"] {
-  background: #265845 !important;
+  background: #143025 !important;
   border: 1px solid #0e3828 !important;
   font-weight: 300 !important;
 }
@@ -81,7 +81,7 @@
 [data-mj="game-catalog-game-search"].active-link,
 [data-mj="game-catalog-game-search"][aria-current="page"],
 [data-mj="game-catalog-game-search"][aria-expanded="true"] {
-  background: #265845 !important;
+  background: #143025 !important;
   border: 1px solid #2abd84 !important;
 }
 
@@ -99,14 +99,14 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-amnql4 * {
 
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-cru1n,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-12nzcu {
-  background: #265845 !important;
-  box-shadow: #265845 0 0 0 1px inset !important;
+  background: #143025 !important;
+  box-shadow: #143025 0 0 0 1px inset !important;
   color: #fff !important;
 }
 
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-amnql4 {
   background: #205e48 !important;
-  box-shadow: #265845 0 0 0 1px inset !important;
+  box-shadow: #143025 0 0 0 1px inset !important;
   color: #fff !important;
 }
 
@@ -117,19 +117,19 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-12nzcu * {
 }
 
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-yf9m6h {
-  background: #265845 !important;
+  background: #143025 !important;
 }
 
 [data-mj="game-catalog-category-slider-item"].app-ltr-1ixupck,
 [data-mj="game-catalog-category-slider-item"].app-ltr-1nhfwct {
-  background: #265845 !important;
+  background: #143025 !important;
   font-weight: 300 !important;
   font-size: 14px !important;
 }
 
 [data-mj="game-catalog-category-slider-item"].app-ltr-s20xhc,
 [data-mj="game-catalog-category-slider-item"].app-ltr-y5b7v1 {
-  background: #265845 !important;
+  background: #143025 !important;
   box-shadow: #29bd84 0 0 0 1px inset !important;
   font-weight: 300 !important;
   font-size: 14px !important;
@@ -142,11 +142,11 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-1qirgwv {
 a[data-mj="game-catalog-category-slider-item"].app-ltr-s20xhc,
 a[data-mj="game-catalog-category-slider-item"].app-ltr-y5b7v1,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-yf9m6h {
-  background: #265845 !important;
+  background: #143025 !important;
 }
 
 [data-mj="game-catalog-category-slider-item"]:hover {
-  background: #265845 !important;
+  background: #143025 !important;
 }
 
 .app-ltr-1q5mnmx {
