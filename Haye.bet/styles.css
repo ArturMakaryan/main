@@ -71,9 +71,14 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-amnql4 * {
   font-size: 14px !important;
 }
 
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-amnql4,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-12nzcu {
   background: #0e3b2a !important;
+  box-shadow: #0e3b2a 0 0 0 1px inset !important;
+  color: #fff !important;
+}
+
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-amnql4 {
+  background: #205e48 !important;
   box-shadow: #0e3b2a 0 0 0 1px inset !important;
   color: #fff !important;
 }
