@@ -8,7 +8,7 @@
 
 [data-mj="header-nav-item"],
 [data-mj="header-nav-item"] * {
-  color: #b0c7c7 !important;
+  color: #b5e5d3 !important;
 }
 
 [data-mj="header-nav-item"]:hover {
@@ -65,12 +65,15 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-12nzcu,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-12nzcu *,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-yf9m6h,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-yf9m6h *,
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-cru1n,
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-cru1n *,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-amnql4,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-amnql4 * {
   font-weight: 300 !important;
   font-size: 14px !important;
 }
 
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-cru1n,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-12nzcu {
   background: #0e3b2a !important;
   box-shadow: #0e3b2a 0 0 0 1px inset !important;
@@ -84,6 +87,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-amnql4 {
 }
 
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-amnql4 *,
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-cru1n *,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-12nzcu * {
   color: #fff !important;
 }
@@ -92,12 +96,14 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-yf9m6h {
   background: #0e3b2a !important;
 }
 
+[data-mj="game-catalog-category-slider-item"].app-ltr-1ixupck,
 [data-mj="game-catalog-category-slider-item"].app-ltr-1nhfwct {
   background: #0e3b2a !important;
   font-weight: 300 !important;
   font-size: 14px !important;
 }
 
+[data-mj="game-catalog-category-slider-item"].app-ltr-s20xhc,
 [data-mj="game-catalog-category-slider-item"].app-ltr-y5b7v1 {
   background: #0e3b2a !important;
   box-shadow: #29bd84 0 0 0 1px inset !important;
@@ -109,6 +115,7 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-1qirgwv {
   background-color: #0d3b2a !important;
 }
 
+a[data-mj="game-catalog-category-slider-item"].app-ltr-s20xhc,
 a[data-mj="game-catalog-category-slider-item"].app-ltr-y5b7v1,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-yf9m6h {
   background: #0e3b2a !important;
