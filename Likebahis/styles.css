@@ -99,6 +99,10 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-2rg9qj {
   font-size: 14px !important;
 }
 
+[data-mj="game-catalog-category-slider-item"]:hover {
+  box-shadow: rgb(239 206 57) 0 0 0 1px inset !important;
+}
+
 [data-mj="game-catalog-category-slider-item"].active,
 [data-mj="game-catalog-category-slider-item"].active-link,
 [data-mj="game-catalog-category-slider-item"][aria-current="page"],
@@ -118,6 +122,11 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-2rg9qj {
 [data-mj="game-catalog-mobile-search-toggle"] {
   background-color: #0d1456 !important;
   border-color: #171e66 !important;
+}
+
+[data-mj="game-catalog-game-search"],
+[data-mj="game-catalog-mobile-provider-input"] {
+  font-weight: 300 !important;
 }
 
 [data-mj="game-catalog-mobile-search"] {
