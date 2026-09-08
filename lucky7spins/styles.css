@@ -9,18 +9,10 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image:
-    linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)),
-    url("./lucky7-pattern-bg.svg");
-  background-position:
-    center,
-    left top;
-  background-repeat:
-    no-repeat,
-    repeat;
-  background-size:
-    cover,
-    203px 203px;
+  background-image: url("./lucky7-pattern-bg.svg") !important;
+  background-position: left top !important;
+  background-repeat: repeat !important;
+  background-size: 203px 203px !important;
   pointer-events: none;
   z-index: 0;
 }
