@@ -328,7 +328,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-3jppi1 {
   font-size: 14px !important;
   font-weight: 300 !important;
-  background: #364551 !important;
+  background: #112828 !important;
   color: #b5b8c3 !important;
   box-shadow: none !important;
 }
@@ -337,7 +337,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-1bsflji {
   font-size: 14px !important;
   font-weight: 300 !important;
-  background: #364551 !important;
+  background: #112828 !important;
   color: #b5b8c3 !important;
   box-shadow: none !important;
 }
@@ -350,8 +350,8 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
 
 [data-mj="game-catalog-game-search"].app-ltr-elgstd,
 [data-mj="game-catalog-mobile-provider-input"].app-ltr-elgstd {
-  border: 1px solid #242c46 !important;
-  background: #141a35 !important;
+  border: 1px solid #223939 !important;
+  background: #112828 !important;
   color: #fff !important;
   box-shadow: none !important;
 }
@@ -363,16 +363,16 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
 }
 
 [data-mj="game-catalog-mobile-search-toggle"].app-ltr-5acx5s {
-  border: 1px solid #242c46 !important;
+  border: 1px solid #223939 !important;
   border-radius: 8px !important;
-  background: #141a35 !important;
+  background: #112828 !important;
   color: #a0a4b7 !important;
   box-shadow: none !important;
 }
 
 [data-mj="game-catalog-module"] .sl-select__control {
-  border: 1px solid #242c46 !important;
-  background: #141a35 !important;
+  border: 1px solid #223939 !important;
+  background: #112828 !important;
   box-shadow: none !important;
 }
 
@@ -497,7 +497,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
   [data-mj="sidebar-footer"].app-ltr-1kzawap,
   [data-mj="sidebar-footer"] {
     border-top: 0 !important;
-    padding: 12px 0 0 12px !important;
+    padding: 12px 4px 0 0px !important;
   }
 }
 
