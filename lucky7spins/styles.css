@@ -1,0 +1,460 @@
+/* Lucky7Spins custom styles mapped from Beybets */
+
+[data-mj="header"] {
+  border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
+  background: #1a2c38 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="custom-header"] {
+  background: #1a2c38 !important;
+}
+
+[data-mj="sidebar"].app-ltr-1huuf1k {
+  width: 260px !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+[data-mj="sidebar"].app-ltr-17u1px6 {
+  width: 68px !important;
+  padding: 0 !important;
+}
+
+[data-mj="sidebar-content"] {
+  border-right: 1px solid rgb(255 255 255 / 10%) !important;
+  border-radius: 0 !important;
+  padding: 12px 12px 12px 0 !important;
+}
+
+[data-mj="sidebar-content"] .app-ltr-py5jdu {
+  padding-top: 55px !important;
+  padding-left: 8px !important;
+}
+
+[data-mj="sidebar-nav"] {
+  width: 100% !important;
+}
+
+[data-mj="sidebar-nav-list"] .app-ltr-10t84xr {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+li[data-mj="sidebar-section"] {
+  display: flex !important;
+  background-color: transparent !important;
+  margin-bottom: 8px !important;
+  border-radius: 0 !important;
+  min-height: 40px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="sidebar-group"] {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  min-height: 40px !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+[data-mj="sidebar-group"].active-link {
+  color: #47ff97 !important;
+}
+
+.app-ltr-1q5mnmx {
+  scrollbar-gutter: unset !important;
+  padding: 0 !important;
+}
+
+.app-ltr-10a4mqi {
+  display: flex !important;
+  flex-direction: row !important;
+  background: #0e132a !important;
+  border-radius: 8px !important;
+  border: 1px solid rgb(48 56 82) !important;
+  gap: 0 !important;
+  margin: 12px 0 12px 56px !important;
+  padding: 12px 12px 0 12px !important;
+  transform-origin: left center !important;
+  transition:
+    margin 220ms ease,
+    padding 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: l7-sidebar-group-horizontal 220ms ease-out !important;
+}
+
+.app-ltr-10a4mqi > * {
+  transition:
+    transform 220ms ease,
+    opacity 180ms ease !important;
+}
+
+[data-mj="sidebar"].app-ltr-17u1px6 [data-mj="sidebar-group"] {
+  background: #0e132a !important;
+  border: 1px solid rgb(48 56 82) !important;
+  border-radius: 8px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  margin-left: 0 !important;
+}
+
+@keyframes l7-sidebar-group-horizontal {
+  from {
+    opacity: 0.86;
+    transform: translateX(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+[data-mj="sidebar"] .app-ltr-1trb7go {
+  min-width: 20px !important;
+  height: 20px !important;
+  opacity: 1 !important;
+}
+
+[data-mj="sidebar"] .sl-navlink.app-ltr-5wkz3k {
+  color: #a0a4b8 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  padding: 4px 32px 4px 22px !important;
+}
+
+.sl-navlink.app-ltr-5wkz3k {
+  color: #a0a4b8 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="sidebar"] .sl-navlink.app-ltr-5wkz3k.active-link,
+.sl-navlink.app-ltr-5wkz3k.active-link {
+  border-radius: 0 8px 8px 0 !important;
+  background: #ffffff0d !important;
+  color: #47ff97 !important;
+}
+
+[data-mj="sidebar"] .sl-navlink.app-ltr-5wkz3k:hover {
+  border-radius: 0 8px 8px 0 !important;
+  background: #ffffff0d !important;
+}
+
+li[data-mj="sidebar-section"].app-ltr-1vbndh7
+  > .app-ltr-8atqhb
+  > .sl-navlink.app-ltr-5wkz3k
+  > .app-ltr-1trb7go {
+  width: 20px !important;
+  min-width: 20px !important;
+  height: 20px !important;
+}
+
+[data-mj="sidebar-footer"] {
+  border-top: 0 !important;
+  padding: 12px 0 0 12px !important;
+}
+
+button[data-mj="sidebar-collapse"].sl-icon:not(.app-ltr-d0de7) {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  background:
+    linear-gradient(#241d33, #2b243b) padding-box,
+    linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon:not(.app-ltr-d0de7) {
+  inset-inline-end: 14px !important;
+  top: 8px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  background-image: url("../RoyalBets/Burger.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 24px 24px !important;
+}
+
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon:not(.app-ltr-d0de7) {
+  inset-inline-end: 207px !important;
+  top: 12px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  background-image: url("../RoyalBets/Burger.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 24px 24px !important;
+}
+
+button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon:not(.app-ltr-d0de7) > svg,
+button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon:not(.app-ltr-d0de7) > svg {
+  display: none !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+button[data-mj="sidebar-collapse"].sl-icon,
+button[data-mj="sidebar-collapse"].sl-icon > svg {
+  transition: none !important;
+  transition-property: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+html body button[data-mj="sidebar-collapse"].sl-icon.app-ltr-pag0ae,
+html body button[data-mj="sidebar-collapse"].sl-icon.app-ltr-pag0ae > svg {
+  transition: none !important;
+  transition-property: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-pag0ae,
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-pag0ae {
+  position: fixed !important;
+  left: 14px !important;
+  inset-inline-end: auto !important;
+  top: 12px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+}
+
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-pag0ae > svg,
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-pag0ae > svg {
+  display: none !important;
+}
+
+[data-mj="sidebar"] button[aria-label="arrow_down"].sl-icon,
+[data-mj="sidebar"] button[aria-label="arrow_up"].sl-icon {
+  width: 32px !important;
+  min-width: 32px !important;
+  height: 32px !important;
+  background-color: transparent !important;
+  right: 6px !important;
+}
+
+[data-mj="sidebar"] button[aria-label="arrow_down"].sl-icon:hover,
+[data-mj="sidebar"] button[aria-label="arrow_up"].sl-icon:hover {
+  background-color: rgb(255 255 255 / 4%) !important;
+}
+
+[data-mj="content-wrapper"] {
+  display: flex !important;
+  max-width: calc(100% - 68px) !important;
+  margin-right: initial !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-fxk13v,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-3jppi1 {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  background: #364551 !important;
+  color: #b5b8c3 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-djymzu,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1bsflji {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  background: #364551 !important;
+  color: #b5b8c3 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-fxk13v:hover,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-3jppi1:hover {
+  background: #ffffff0d !important;
+  color: #fff !important;
+}
+
+[data-mj="game-catalog-game-search"].app-ltr-elgstd,
+[data-mj="game-catalog-mobile-provider-input"].app-ltr-elgstd {
+  border: 1px solid #242c46 !important;
+  background: #141a35 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-game-search"].app-ltr-elgstd::placeholder,
+[data-mj="game-catalog-mobile-provider-input"].app-ltr-elgstd::placeholder {
+  color: #a0a4b7 !important;
+  opacity: 1 !important;
+}
+
+[data-mj="game-catalog-mobile-search-toggle"].app-ltr-5acx5s {
+  border: 1px solid #242c46 !important;
+  border-radius: 8px !important;
+  background: #141a35 !important;
+  color: #a0a4b7 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-module"] .sl-select__control {
+  border: 1px solid #242c46 !important;
+  background: #141a35 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-module"] .sl-select__placeholder,
+[data-mj="game-catalog-module"] .sl-select__single-value,
+[data-mj="game-catalog-module"] .sl-select__input {
+  color: #bfb6d8 !important;
+}
+
+[data-mj="game-catalog-card"].app-ltr-9f9tqm {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+}
+
+.ph-event-card {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  background:
+    linear-gradient(9deg, #112f43, #0d2333) padding-box,
+    linear-gradient(113.67deg, rgb(29 68 92) 0%, rgb(23 42 52) 100%) border-box !important;
+}
+
+[data-mj="footer-nav"] {
+  padding: 29px !important;
+}
+
+[data-mj="widget-payments"] {
+  box-shadow: none !important;
+}
+
+[data-mj="footer"] {
+  border-top: 1px solid rgb(255 255 255 / 10%) !important;
+}
+
+.app-ltr-ca8dpi-container {
+  margin-left: 12px !important;
+}
+
+@media (max-width: 992px) {
+  [data-mj="sidebar"] {
+    padding: 0 !important;
+  }
+
+  [data-mj="sidebar"].app-ltr-17u1px6 {
+    width: 68px !important;
+  }
+
+  [data-mj="sidebar"].app-ltr-1huuf1k {
+    width: 260px !important;
+  }
+
+  [data-mj="content-wrapper"] {
+    max-width: none !important;
+  }
+
+  [data-mj="sidebar-nav"],
+  [data-mj="sidebar-nav-list"] {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  [data-mj="sidebar-section"] {
+    display: flex !important;
+    background-color: transparent !important;
+    margin-bottom: 8px !important;
+    border-radius: 0 !important;
+    min-height: 40px !important;
+    font-weight: 300 !important;
+  }
+
+  [data-mj="sidebar"] [data-mj="sidebar-group"] {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    min-height: 40px !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+  }
+
+  [data-mj="sidebar"].app-ltr-17u1px6 [data-mj="sidebar-group"] {
+    background: #0e132a !important;
+    border: 1px solid rgb(48 56 82) !important;
+    border-radius: 8px !important;
+  }
+
+  [data-mj="sidebar"] .sl-navlink.app-ltr-5wkz3k {
+    color: #a0a4b8 !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    padding: 4px 32px 4px 22px !important;
+  }
+
+  [data-mj="sidebar"] .sl-navlink.app-ltr-5wkz3k.active-link {
+    border-radius: 0 8px 8px 0 !important;
+    background: #ffffff0d !important;
+    color: #47ff97 !important;
+  }
+
+  [data-mj="sidebar"] .app-ltr-1trb7go {
+    min-width: 20px !important;
+    height: 20px !important;
+    opacity: 1 !important;
+  }
+
+  .app-ltr-10a4mqi {
+    display: flex !important;
+    flex-direction: row !important;
+    background: #0e132a !important;
+    border-radius: 8px !important;
+    border: 1px solid rgb(48 56 82) !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    margin: 12px 0 12px 12px !important;
+  }
+
+  [data-mj="sidebar-content"] {
+    padding: 12px 12px 12px 0 !important;
+  }
+
+  [data-mj="sidebar-footer"] {
+    border-top: 0 !important;
+    padding: 12px 0 0 12px !important;
+  }
+}
+
+@media (min-width: 993px) {
+  [data-mj="sidebar-footer"],
+  .app-ltr-10a4mqi {
+    padding: 0 !important;
+  }
+}
+
+/* Hide mobile bottom navigation only while a game/sportsbook player is open. */
+@media screen and (max-width: 1024px) {
+  html body [data-mj="root-layout"]:has(#sportsbook-wrapper) [data-mj="bottom-nav"],
+  html body [data-mj="content-wrapper"]:has(#sportsbook-wrapper) > [data-mj="bottom-nav"],
+  html body [data-mj="page-content"]:has(#sportsbook-wrapper) ~ [data-mj="bottom-nav"],
+  html body [data-mj="page-content"]:has(iframe#firstSportbook) ~ [data-mj="bottom-nav"],
+  html.lucky7spins-game-open body [data-mj="bottom-nav"],
+  body.lucky7spins-game-open [data-mj="bottom-nav"],
+  html body [data-mj="bottom-nav"][data-lucky7spins-game-hidden="true"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+}
