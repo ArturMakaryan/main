@@ -1,6 +1,35 @@
 
 /* Lucky7Spins custom styles mapped from Spinwin. */
 
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)),
+    url("./lucky7-pattern-bg.svg");
+  background-position:
+    center,
+    left top;
+  background-repeat:
+    no-repeat,
+    repeat;
+  background-size:
+    cover,
+    203px 203px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
 [data-mj="header"] {
   background-color: #071818 !important;
   border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
@@ -456,7 +485,7 @@ i[aria-label="filter"].sl-icon.app-ltr-r87dsi {
   border-radius: 8px !important;
   box-shadow: none !important;
   background:
-    linear-gradient(#071818, #303c6c) padding-box,
+    linear-gradient(#071818, #e7c78114) padding-box,
     linear-gradient(135deg, #fff3 10%, #ffffff03 25%, #fff3 50%, #ffffff03 75%, #fff3 90%) border-box !important;
   background-color: #071818 !important;
   font-size: 14px !important;
