@@ -90,7 +90,23 @@ li[data-mj="sidebar-section"] {
 }
 
 .app-ltr-es55kh {
-  margin-left: 5px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background: #0e132a !important;
+  border-radius: 8px !important;
+  border: 1px solid rgb(48 56 82) !important;
+  gap: 0px !important;
+  margin-left: 13px !important;
+  width: 42px !important;
+  margin-top: 60px !important;
+  transform-origin: top center !important;
+  transition:
+    margin 220ms ease,
+    width 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-group-vertical 220ms ease-out !important;
 }
 
 .app-ltr-10a4mqi {
@@ -112,6 +128,7 @@ li[data-mj="sidebar-section"] {
   animation: rb-sidebar-group-horizontal 220ms ease-out !important;
 }
 
+.app-ltr-es55kh > *,
 .app-ltr-10a4mqi > * {
   transition:
     transform 220ms ease,
