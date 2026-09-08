@@ -339,7 +339,6 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
   font-weight: 300 !important;
   background: #112828 !important;
   color: #b5b8c3 !important;
-  box-shadow: none !important;
 }
 
 [data-mj="game-catalog-category-slider-item"].app-ltr-fxk13v:hover,
@@ -353,12 +352,12 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
   border: 1px solid #223939 !important;
   background: #112828 !important;
   color: #fff !important;
-  box-shadow: none !important;
 }
 
 [data-mj="game-catalog-game-search"].app-ltr-elgstd::placeholder,
 [data-mj="game-catalog-mobile-provider-input"].app-ltr-elgstd::placeholder {
-  color: #a0a4b7 !important;
+  color: #9CADAD !important;
+  font-weight: 300 !important;
   opacity: 1 !important;
 }
 
@@ -366,7 +365,8 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
   border: 1px solid #223939 !important;
   border-radius: 8px !important;
   background: #112828 !important;
-  color: #a0a4b7 !important;
+  color: #9CADAD !important;
+  font-weight: 300 !important;
   box-shadow: none !important;
 }
 
