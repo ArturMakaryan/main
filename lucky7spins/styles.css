@@ -25,7 +25,7 @@
 [data-mj="sidebar-content"] {
   border-right: 1px solid rgb(255 255 255 / 10%) !important;
   border-radius: 0 !important;
-  padding: 0 12px 12px 0px !important;
+  padding: 0 10px 12px 0px !important;
 }
 
 [data-mj="sidebar-nav"].app-ltr-upe1zs,
@@ -491,7 +491,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.a
 
   [data-mj="sidebar-content"].app-ltr-bavpp,
   [data-mj="sidebar-content"] {
-    padding: 0 12px 12px 0px !important;
+    padding: 0 10px 12px 0px !important;
   }
 
   [data-mj="sidebar-footer"].app-ltr-1kzawap,
