@@ -1,17 +1,17 @@
-[data-mj="nav-item"],
-[data-mj="nav-item"] * {
+.sl-navlink,
+.sl-navlink * {
 color: #cbd0e7 !important;
 font-size: 14px !important;
 font-weight: 300 !important;
 }
-[data-mj="nav-item"].active-link,
-[data-mj="nav-item"][aria-current="page"],
-[data-mj="nav-item"] .active-link,
-[data-mj="nav-item"] [aria-current="page"],
-[data-mj="nav-item"].active-link *,
-[data-mj="nav-item"][aria-current="page"] *,
-[data-mj="nav-item"] .active-link *,
-[data-mj="nav-item"] [aria-current="page"] * {
+.sl-navlink.active-link,
+.sl-navlink[aria-current="page"],
+.sl-navlink .active-link,
+.sl-navlink [aria-current="page"],
+.sl-navlink.active-link *,
+.sl-navlink[aria-current="page"] *,
+.sl-navlink .active-link *,
+.sl-navlink [aria-current="page"] * {
 color: #F9C71C !important;
 font-size: 14px !important;
 font-weight: 300 !important;
