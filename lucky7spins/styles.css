@@ -361,14 +361,18 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   height: 42px !important;
 }
 
-.app-ltr-8ac7ob,
-[data-mj="game-catalog-card"].app-ltr-9f9tqm {
+.app-ltr-8ac7ob {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
   background:
     linear-gradient(#283152, #242d4e) padding-box,
     linear-gradient(180deg, #30354b 0%, #4c5371 100%) border-box !important;
+}
+
+[data-mj="game-catalog-card"].app-ltr-9f9tqm,
+[data-mj="game-catalog-card"] {
+  border: 1px solid #202f2f !important;
 }
 
 .ph-event-card {
@@ -415,6 +419,25 @@ input[data-mj="game-catalog-mobile-provider-input"] {
   font-weight: 300 !important;
 }
 
+[data-mj="game-catalog-game-search"].app-ltr-elgstd:focus,
+[data-mj="game-catalog-game-search"].app-ltr-elgstd:focus-within,
+input[data-mj="game-catalog-game-search"]:focus,
+input[data-mj="game-catalog-game-search"]:focus-within {
+  border-color: #e7c780 !important;
+}
+
+[data-mj="game-catalog-mobile-search"]:focus,
+[data-mj="game-catalog-mobile-search"]:focus-within,
+[data-mj="game-catalog-mobile-search"].active,
+[data-mj="game-catalog-mobile-search"].active-link,
+[data-mj="game-catalog-mobile-search"][aria-current="page"],
+[data-mj="game-catalog-mobile-search"][aria-expanded="true"] {
+  background-color: #112828 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  border-color: #e7c780 !important;
+}
+
 [data-mj="game-catalog-game-search"].app-ltr-elgstd::placeholder,
 [data-mj="game-catalog-mobile-provider-input"].app-ltr-elgstd::placeholder,
 input[data-mj="game-catalog-game-search"]::placeholder,
@@ -427,12 +450,22 @@ input[data-mj="game-catalog-mobile-provider-input"]::placeholder {
 .sl-select__control.app-ltr-qwgxii-control,
 .sl-select__control.app-ltr-1iqdwxp-control,
 .sl-select__control.app-ltr-yccp9d-control,
+.sl-select__control.app-ltr-2in2wx-control,
 .sl-select__control {
   display: flex !important;
   border-color: #223939 !important;
   border-radius: 8px !important;
   box-shadow: none !important;
   background-color: #112828 !important;
+}
+
+.sl-select__control.app-ltr-2in2wx-control:focus,
+.sl-select__control.app-ltr-2in2wx-control:focus-within,
+.sl-select__control.app-ltr-2in2wx-control.sl-select__control--is-focused,
+.sl-select__control:focus,
+.sl-select__control:focus-within,
+.sl-select__control.sl-select__control--is-focused {
+  border-color: #e7c780 !important;
 }
 
 .app-ltr-79elbk,
@@ -497,7 +530,7 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
 
 [data-mj="game-catalog-list"].app-ltr-1wvroac,
 [data-mj="game-catalog-list"].app-ltr-1niugc4 {
-  gap: 16px !important;
+  gap: 12px !important;
 }
 
 [data-mj="game-catalog-module"].app-ltr-2rvojp,
