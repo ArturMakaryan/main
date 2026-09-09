@@ -91,6 +91,9 @@ font-weight: 300;
 font-size: 14px;
 font-weight: 300;
 }
+a[data-mj="game-catalog-category-list-item"].active.sl-navlink.app-ltr-rpgj1s {
+color: rgb(249, 199, 28) !important;
+}
 .app-ltr-1q5mnmx {
 padding: 16px 8px 16px 12px !important;
 }
