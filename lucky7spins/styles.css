@@ -376,6 +376,29 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   border: 1px solid #4d6060 !important;
 }
 
+[data-mj="game-catalog-play-button"].app-ltr-1ewnczt,
+[data-mj="game-catalog-play-button"] {
+  width: 64px !important;
+  min-width: 64px !important;
+  height: 64px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  background-image: url("./play-button.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  box-shadow: none !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  overflow: hidden !important;
+}
+
+[data-mj="game-catalog-play-button"] > * {
+  display: none !important;
+}
+
 .ph-event-card {
   border: 1px solid rgb(255 255 255 / 15%) !important;
   border-radius: 8px !important;
