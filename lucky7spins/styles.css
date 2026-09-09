@@ -408,6 +408,11 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   display: none !important;
 }
 
+[data-mj="game-catalog-demo-button"],
+[data-mj="game-catalog-demo-button"] * {
+  color: #fff !important;
+}
+
 .ph-event-card {
   border: 1px solid rgb(255 255 255 / 15%) !important;
   border-radius: 8px !important;
@@ -536,7 +541,6 @@ i[aria-label="filter"].sl-icon.app-ltr-r87dsi {
 [data-mj="game-catalog-category-slider-item"].app-ltr-fxk13v:hover,
 [data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-1bsflji):hover,
 [data-mj="game-catalog-category-slider-item"]:not(.app-ltr-djymzu):hover {
-  border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
   background: linear-gradient(#071818, #e7c7811a) !important;
