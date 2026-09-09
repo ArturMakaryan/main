@@ -530,9 +530,7 @@ i[aria-label="filter"].sl-icon.app-ltr-r87dsi {
   border: 1px solid transparent !important;
   border-radius: 8px !important;
   box-shadow: none !important;
-  background:
-    linear-gradient(#071818, #e7c78114) padding-box,
-    linear-gradient(135deg, #fff3 10%, #ffffff03 25%, #fff3 50%, #ffffff03 75%, #fff3 90%) border-box !important;
+  background: linear-gradient(#071818, #e7c7811a) !important;
   background-color: #071818 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
@@ -630,4 +628,15 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 [data-mj="bottom-nav"].app-ltr-1xo2uwt {
   border-top: 1px solid rgb(255 255 255 / 10%) !important;
   background-color: #071818 !important;
+}
+
+[data-mj="bottom-nav-item"],
+[data-mj="bottom-nav-item"] * {
+  color: #adc0c0 !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="bottom-nav-item"] .sl-navlink.app-ltr-3nkdeh.active-link,
+[data-mj="bottom-nav-item"] .sl-navlink.active-link {
+  color: #e7c780 !important;
 }
