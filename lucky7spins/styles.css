@@ -385,7 +385,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   border: 0 !important;
   border-radius: 50% !important;
   background-color: transparent !important;
-  background-image: url("./play-button.png") !important;
+  background-image: url("./play-button.svg") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: contain !important;
