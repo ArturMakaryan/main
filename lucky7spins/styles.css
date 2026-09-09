@@ -372,7 +372,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
 
 [data-mj="game-catalog-card"].app-ltr-9f9tqm,
 [data-mj="game-catalog-card"] {
-  border: 1px solid #202f2f !important;
+  border: 1px solid #4d6060 !important;
 }
 
 .ph-event-card {
