@@ -56,10 +56,7 @@ body > * {
 }
 
 [data-mj="sidebar-nav"].app-ltr-upe1zs,
-[data-mj="sidebar-nav"] {
-  width: 100% !important;
-}
-
+[data-mj="sidebar-nav"],
 [data-mj="sidebar-nav-list"].app-ltr-0,
 [data-mj="sidebar-nav-list"] {
   width: 100% !important;
@@ -111,7 +108,11 @@ li[data-mj="sidebar-section"] {
 [data-mj="sidebar-group"].active-link,
 [data-mj="sidebar-group"][aria-current="page"],
 [data-mj="sidebar-group"] .active-link,
-[data-mj="sidebar-group"] [aria-current="page"] {
+[data-mj="sidebar-group"] [aria-current="page"],
+[data-mj="game-catalog-category-slider-item"].app-ltr-djymzu,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1bsflji,
+[data-mj="bottom-nav-item"] .sl-navlink.app-ltr-3nkdeh.active-link,
+[data-mj="bottom-nav-item"] .sl-navlink.active-link {
   color: #e7c780 !important;
 }
 
@@ -412,7 +413,9 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9:hover {
 [data-mj="game-catalog-game-search"].app-ltr-elgstd,
 [data-mj="game-catalog-mobile-provider-input"].app-ltr-elgstd,
 input[data-mj="game-catalog-game-search"],
-input[data-mj="game-catalog-mobile-provider-input"] {
+input[data-mj="game-catalog-mobile-provider-input"],
+[data-mj="game-catalog-provider-bottom-sheet-search"],
+input[data-mj="game-catalog-provider-bottom-sheet-search"] {
   border-color: #223939 !important;
   background-color: #112828 !important;
   font-size: 14px !important;
@@ -422,7 +425,13 @@ input[data-mj="game-catalog-mobile-provider-input"] {
 [data-mj="game-catalog-game-search"].app-ltr-elgstd:focus,
 [data-mj="game-catalog-game-search"].app-ltr-elgstd:focus-within,
 input[data-mj="game-catalog-game-search"]:focus,
-input[data-mj="game-catalog-game-search"]:focus-within {
+input[data-mj="game-catalog-game-search"]:focus-within,
+.sl-select__control.app-ltr-2in2wx-control:focus,
+.sl-select__control.app-ltr-2in2wx-control:focus-within,
+.sl-select__control.app-ltr-2in2wx-control.sl-select__control--is-focused,
+.sl-select__control:focus,
+.sl-select__control:focus-within,
+.sl-select__control.sl-select__control--is-focused {
   border-color: #e7c780 !important;
 }
 
@@ -459,15 +468,6 @@ input[data-mj="game-catalog-mobile-provider-input"]::placeholder {
   background-color: #112828 !important;
 }
 
-.sl-select__control.app-ltr-2in2wx-control:focus,
-.sl-select__control.app-ltr-2in2wx-control:focus-within,
-.sl-select__control.app-ltr-2in2wx-control.sl-select__control--is-focused,
-.sl-select__control:focus,
-.sl-select__control:focus-within,
-.sl-select__control.sl-select__control--is-focused {
-  border-color: #e7c780 !important;
-}
-
 .app-ltr-79elbk,
 .css-hzxgfa.app-ltr-rnjuc1,
 i[aria-label="search"].sl-icon.app-ltr-45fs6o,
@@ -482,24 +482,22 @@ i[aria-label="filter"].sl-icon.app-ltr-r87dsi {
 [data-mj="game-catalog-category-slider-item"].app-ltr-fxk13v,
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-3jppi1,
 [data-mj="game-catalog-category-slider-item"]:not(.app-ltr-djymzu),
-[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-1bsflji) {
+[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-1bsflji),
+[data-mj="game-catalog-category-slider-item"].app-ltr-djymzu,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1bsflji {
   border: 1px solid #223939 !important;
   border-radius: 8px !important;
-  box-shadow: none !important;
-  color: #b5b8c3 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
   background: #112828 !important;
 }
 
-[data-mj="game-catalog-category-slider-item"].app-ltr-djymzu,
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-1bsflji {
-  border: 1px solid #223939 !important;
-  border-radius: 8px !important;
-  background: #112828 !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-  color: #e7c780 !important;
+[data-mj="game-catalog-category-slider-item"].app-ltr-fxk13v,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-3jppi1,
+[data-mj="game-catalog-category-slider-item"]:not(.app-ltr-djymzu),
+[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-1bsflji) {
+  box-shadow: none !important;
+  color: #b5b8c3 !important;
 }
 
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-3jppi1:hover,
@@ -609,9 +607,4 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 [data-mj="bottom-nav"].app-ltr-1xo2uwt {
   border-top: 1px solid rgb(255 255 255 / 10%) !important;
   background-color: #071818 !important;
-}
-
-[data-mj="bottom-nav-item"] .sl-navlink.app-ltr-3nkdeh.active-link,
-[data-mj="bottom-nav-item"] .sl-navlink.active-link {
-  color: #e7c780 !important;
 }
