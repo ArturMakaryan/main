@@ -73,7 +73,7 @@ body > * {
 .sl-navlink.app-ltr-5wkz3k {
   display: flex !important;
   background-color: transparent !important;
-  border-radius: 0 !important;
+  border-radius: 0 8px 8px 0 !important;
   min-height: 40px !important;
   font-weight: 300 !important;
   padding: 4px 38px 4px 14px !important;
