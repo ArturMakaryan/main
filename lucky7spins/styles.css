@@ -17,11 +17,6 @@ body::before {
   z-index: 0;
 }
 
-body > * {
-  position: relative;
-  z-index: 1;
-}
-
 [data-mj="header"] {
   background-color: #071818 !important;
   border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
