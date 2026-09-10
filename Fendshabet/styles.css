@@ -1,21 +1,3 @@
-.sl-navlink,
-.sl-navlink * {
-color: #cbd0e7 !important;
-font-size: 14px !important;
-font-weight: 300 !important;
-}
-.sl-navlink.active-link,
-.sl-navlink[aria-current="page"],
-.sl-navlink .active-link,
-.sl-navlink [aria-current="page"],
-.sl-navlink.active-link *,
-.sl-navlink[aria-current="page"] *,
-.sl-navlink .active-link *,
-.sl-navlink [aria-current="page"] * {
-color: #F9C71C !important;
-font-size: 14px !important;
-font-weight: 300 !important;
-}
 [data-mj="bottom-nav-item"],
 [data-mj="bottom-nav-item"] * {
 font-weight: 300 !important;
