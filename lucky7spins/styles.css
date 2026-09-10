@@ -71,6 +71,16 @@ body > * {
   font-weight: 300 !important;
 }
 
+.sl-navlink.app-ltr-5wkz3k {
+  display: flex !important;
+  background-color: transparent !important;
+  margin-bottom: 8px !important;
+  border-radius: 0 !important;
+  min-height: 40px !important;
+  font-weight: 300 !important;
+  padding: 4px 32px 4px 14px !important;
+}
+
 li.sl-navlink.app-ltr-5wkz3k,
 li.sl-navlink {
   display: flex !important;
