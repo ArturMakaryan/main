@@ -406,37 +406,6 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   border-radius: 4px !important;
 }
 
-button[aria-label="arrow_down"].sl-icon.app-ltr-bymed4,
-button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4,
-button[aria-label="arrow_down"].sl-icon.app-ltr-16d61q9,
-button[aria-label="arrow_up"].sl-icon.app-ltr-16d61q9,
-button[aria-label="arrow_down"].sl-icon.app-ltr-ovzae9,
-button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9,
-button[aria-label="arrow_down"].sl-icon.app-ltr-19qouyg,
-button[aria-label="arrow_up"].sl-icon.app-ltr-19qouyg {
-  width: 32px !important;
-  min-width: 32px !important;
-  height: 32px !important;
-  background-color: transparent !important;
-  right: 6px !important;
-}
-
-button[aria-label="arrow_down"].sl-icon.app-ltr-19qouyg,
-button[aria-label="arrow_up"].sl-icon.app-ltr-19qouyg {
-  right: 4px !important;
-}
-
-button[aria-label="arrow_down"].sl-icon.app-ltr-bymed4:hover,
-button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4:hover,
-button[aria-label="arrow_down"].sl-icon.app-ltr-16d61q9:hover,
-button[aria-label="arrow_up"].sl-icon.app-ltr-16d61q9:hover,
-button[aria-label="arrow_down"].sl-icon.app-ltr-ovzae9:hover,
-button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9:hover,
-button[aria-label="arrow_down"].sl-icon.app-ltr-19qouyg:hover,
-button[aria-label="arrow_up"].sl-icon.app-ltr-19qouyg:hover {
-  background-color: rgb(255 255 255 / 4%) !important;
-}
-
 [data-mj="content-wrapper"].app-ltr-fkpkqq,
 [data-mj="content-wrapper"] {
   display: flex !important;
