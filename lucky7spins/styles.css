@@ -432,6 +432,11 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-19qouyg {
   right: 6px !important;
 }
 
+button[aria-label="arrow_down"].sl-icon.app-ltr-19qouyg,
+button[aria-label="arrow_up"].sl-icon.app-ltr-19qouyg {
+  right: 1px !important;
+}
+
 button[aria-label="arrow_down"].sl-icon.app-ltr-bymed4:hover,
 button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4:hover,
 button[aria-label="arrow_down"].sl-icon.app-ltr-16d61q9:hover,
