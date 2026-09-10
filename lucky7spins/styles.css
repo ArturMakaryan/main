@@ -62,8 +62,7 @@ body > * {
   width: 100% !important;
 }
 
-li[data-mj="sidebar-section"].app-ltr-1vbndh7,
-li[data-mj="sidebar-section"] {
+.sl-navlink.app-ltr-5wkz3k {
   display: flex !important;
   background-color: transparent !important;
   margin-bottom: 8px !important;
@@ -72,21 +71,21 @@ li[data-mj="sidebar-section"] {
   font-weight: 300 !important;
 }
 
-[data-mj="sidebar-section"],
-[data-mj="sidebar-section"] * {
+.sl-navlink.app-ltr-5wkz3k,
+.sl-navlink.app-ltr-5wkz3k * {
   color: #adc0c0 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
 
-[data-mj="sidebar-section"].active-link,
-[data-mj="sidebar-section"][aria-current="page"],
-[data-mj="sidebar-section"] .active-link,
-[data-mj="sidebar-section"] [aria-current="page"],
-[data-mj="sidebar-section"].active-link *,
-[data-mj="sidebar-section"][aria-current="page"] *,
-[data-mj="sidebar-section"] .active-link *,
-[data-mj="sidebar-section"] [aria-current="page"] * {
+.sl-navlink.app-ltr-5wkz3k.active-link,
+.sl-navlink.app-ltr-5wkz3k[aria-current="page"],
+.sl-navlink.app-ltr-5wkz3k .active-link,
+.sl-navlink.app-ltr-5wkz3k [aria-current="page"],
+.sl-navlink.app-ltr-5wkz3k.active-link *,
+.sl-navlink.app-ltr-5wkz3k[aria-current="page"] *,
+.sl-navlink.app-ltr-5wkz3k .active-link *,
+.sl-navlink.app-ltr-5wkz3k [aria-current="page"] * {
   color: #e7c780 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
@@ -423,7 +422,9 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4,
 button[aria-label="arrow_down"].sl-icon.app-ltr-16d61q9,
 button[aria-label="arrow_up"].sl-icon.app-ltr-16d61q9,
 button[aria-label="arrow_down"].sl-icon.app-ltr-ovzae9,
-button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9 {
+button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9,
+button[aria-label="arrow_down"].sl-icon.app-ltr-19qouyg,
+button[aria-label="arrow_up"].sl-icon.app-ltr-19qouyg {
   width: 32px !important;
   min-width: 32px !important;
   height: 32px !important;
@@ -436,7 +437,9 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-bymed4:hover,
 button[aria-label="arrow_down"].sl-icon.app-ltr-16d61q9:hover,
 button[aria-label="arrow_up"].sl-icon.app-ltr-16d61q9:hover,
 button[aria-label="arrow_down"].sl-icon.app-ltr-ovzae9:hover,
-button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9:hover {
+button[aria-label="arrow_up"].sl-icon.app-ltr-ovzae9:hover,
+button[aria-label="arrow_down"].sl-icon.app-ltr-19qouyg:hover,
+button[aria-label="arrow_up"].sl-icon.app-ltr-19qouyg:hover {
   background-color: rgb(255 255 255 / 4%) !important;
 }
 
