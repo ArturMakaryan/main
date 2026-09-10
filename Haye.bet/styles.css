@@ -39,6 +39,10 @@
   border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
 }
 
+[data-mj="header-nav-list"] {
+  justify-content: center !important;
+}
+
 [data-mj="nav-item"],
 [data-mj="nav-item"] * {
   color: #b9d5cb !important;
