@@ -269,21 +269,6 @@ body > * {
   padding: 4px 32px 4px 22px !important;
 }
 
-[data-mj="sidebar"] .sl-navlink.app-ltr-5wkz3k.active-link,
-.sl-navlink.app-ltr-5wkz3k.active-link,
-[data-mj="sidebar"] .sl-navlink.app-ltr-5wkz3k[aria-current="page"],
-.sl-navlink.app-ltr-5wkz3k[aria-current="page"] {
-  border-radius: 0 8px 8px 0 !important;
-  background: #ffffff0d !important;
-  color: #e7c780 !important;
-}
-
-[data-mj="sidebar"] .sl-navlink.app-ltr-5wkz3k:hover,
-.sl-navlink.app-ltr-5wkz3k:hover {
-  border-radius: 0 8px 8px 0 !important;
-  background: #ffffff0d !important;
-}
-
 [data-mj="sidebar-footer"].app-ltr-1kzawap,
 [data-mj="sidebar-footer"] {
   border-top: 0 !important;
