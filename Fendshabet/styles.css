@@ -34,8 +34,8 @@ color: #A6B5C2 !important;
 [data-mj="bottom-nav-item"] [aria-current="page"] * {
 color: #F9C71C !important;
 }
-.sl-navlink.app-ltr-1jp60oi,
-.sl-navlink.app-ltr-1jp60oi * {
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi,
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi * {
 font-weight: 300 !important;
 transition:
 color 180ms ease,
@@ -43,26 +43,26 @@ fill 180ms ease,
 stroke 180ms ease,
 transform 180ms ease !important;
 }
-.sl-navlink.app-ltr-1jp60oi,
-.sl-navlink.app-ltr-1jp60oi * {
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi,
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi * {
 color: #cbd0e7 !important;
 }
-.sl-navlink.app-ltr-1jp60oi:hover {
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi:hover {
 transform: translateY(-1px) !important;
 }
-.sl-navlink.app-ltr-1jp60oi:hover,
-.sl-navlink.app-ltr-1jp60oi:hover * {
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi:hover,
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi:hover * {
 color: #fff !important;
 text-shadow: 0 0 6px #ffde7973 !important;
 }
-.sl-navlink.app-ltr-1jp60oi.active-link,
-.sl-navlink.app-ltr-1jp60oi[aria-current="page"],
-.sl-navlink.app-ltr-1jp60oi .active-link,
-.sl-navlink.app-ltr-1jp60oi [aria-current="page"],
-.sl-navlink.app-ltr-1jp60oi.active-link *,
-.sl-navlink.app-ltr-1jp60oi[aria-current="page"] *,
-.sl-navlink.app-ltr-1jp60oi .active-link *,
-.sl-navlink.app-ltr-1jp60oi [aria-current="page"] * {
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi.active-link,
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi[aria-current="page"],
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi .active-link,
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi [aria-current="page"],
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi.active-link *,
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi[aria-current="page"] *,
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi .active-link *,
+[data-mj="header-nav-item"] .sl-navlink.app-ltr-1jp60oi [aria-current="page"] * {
 color: #F2C230 !important;
 font-weight: 300 !important;
 text-shadow: 0 0 6px #ffde7973 !important;
