@@ -638,6 +638,7 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 [data-mj="bottom-nav-item"],
 [data-mj="bottom-nav-item"] * {
   color: #adc0c0 !important;
+  font-size: 10px !important;
   font-weight: 300 !important;
 }
 
