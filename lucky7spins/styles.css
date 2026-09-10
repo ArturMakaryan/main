@@ -101,6 +101,10 @@ li.sl-navlink {
   font-weight: 300 !important;
 }
 
+.sl-navlink.app-ltr-5wkz3k.active-link {
+  background: #ffffff0d !important;
+}
+
 [data-mj="sidebar-group"],
 [data-mj="sidebar-group"].app-ltr-cfsksk,
 [data-mj="sidebar-group"].app-ltr-16k90pd,
