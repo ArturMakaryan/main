@@ -378,6 +378,28 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   display: none !important;
 }
 
+[data-mj="widget-game-card"] .app-ltr-ay9269 .app-ltr-1ewnczt {
+  width: 54px !important;
+  min-width: 54px !important;
+  height: 54px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  background-image: url("./play-button.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  box-shadow: none !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  overflow: hidden !important;
+}
+
+[data-mj="widget-game-card"] .app-ltr-ay9269 .app-ltr-1ewnczt > * {
+  display: none !important;
+}
+
 [data-mj="game-catalog-demo-button"],
 [data-mj="game-catalog-demo-button"] * {
   color: #fff !important;
