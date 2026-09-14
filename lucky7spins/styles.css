@@ -33,7 +33,7 @@ body::before {
 }
 
 [data-mj="login-button"] {
-  background: none rgb(34, 47, 47) !important;
+  background: rgb(34, 47, 47) !important;
 }
 
 [data-mj="login-button"]:hover {
