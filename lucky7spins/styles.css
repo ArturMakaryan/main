@@ -33,6 +33,8 @@ body::before {
 }
 
 .app-ltr-amsejv {
+  width: fit-content !important;
+  height: fit-content !important;
   padding: 7px 10px 7px 7px !important;
   display: flex !important;
   align-items: center !important;
@@ -44,6 +46,10 @@ body::before {
   min-width: 72px !important;
   padding-top: 0 !important;
   min-height: 92px !important;
+}
+
+.app-ltr-1268fb8 {
+  max-width: 100% !important;
 }
 
 [data-mj="sidebar"].app-ltr-1huuf1k {
