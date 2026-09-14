@@ -52,6 +52,18 @@ body::before {
   max-width: 100% !important;
 }
 
+.top-events {
+  scrollbar-width: none !important;
+}
+
+.app-ltr-zza7s,
+.app-ltr-1a7kbg9 {
+  background-color: transparent !important;
+  color: #bccbcb !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
 [data-mj="sidebar"].app-ltr-1huuf1k {
   width: 260px !important;
   padding: 0 !important;
