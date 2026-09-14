@@ -39,8 +39,11 @@ body::before {
 }
 
 .app-ltr-121fhed {
+  border-radius: 6px !important;
+  aspect-ratio: 427 / 575 !important;
+  min-width: 72px !important;
   padding-top: 0 !important;
-  height: 92px !important;
+  min-height: 92px !important;
 }
 
 [data-mj="sidebar"].app-ltr-1huuf1k {
