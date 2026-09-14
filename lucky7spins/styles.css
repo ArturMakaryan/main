@@ -32,6 +32,17 @@ body::before {
   box-shadow: none !important;
 }
 
+.app-ltr-amsejv {
+  padding: 7px 10px 7px 7px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.app-ltr-121fhed {
+  padding-top: 0 !important;
+  height: 92px !important;
+}
+
 [data-mj="sidebar"].app-ltr-1huuf1k {
   width: 260px !important;
   padding: 0 !important;
