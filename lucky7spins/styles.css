@@ -43,13 +43,13 @@ body::before {
 .app-ltr-amsejv {
   width: fit-content !important;
   height: fit-content !important;
-  padding: 7px 10px 7px 7px !important;
+  padding: 4px 8px 4px 4px !important;
   display: flex !important;
   align-items: center !important;
 }
 
 .app-ltr-121fhed {
-  border-radius: 6px !important;
+  border-radius: 4px !important;
   aspect-ratio: 427 / 575 !important;
   min-width: 72px !important;
   padding-top: 0 !important;
