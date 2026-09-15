@@ -79,6 +79,10 @@ body::before {
   color: #ffffff !important;
 }
 
+.app-ltr-yawtgd {
+  align-items: flex-start !important;
+}
+
 [data-mj="sidebar"].app-ltr-1huuf1k {
   width: 260px !important;
   padding: 0 !important;
