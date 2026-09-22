@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 760 360">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0 {
+        font-size: 34px;
+      }
+
+      .st0, .st1 {
+        fill: #fff;
+      }
+
+      .st0, .st2 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+        isolation: isolate;
+      }
+
+      .st3 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .st2 {
+        fill: #d9d9e8;
+        font-size: 23px;
+      }
+    </style>
+  </defs>
+  <rect class="st3" x="10" y="10" width="740" height="340" rx="22" ry="22"/>
+  <g>
+    <path class="st1" d="M156.55,292.16c-61.84,0-112.16-50.31-112.16-112.16s50.31-112.16,112.16-112.16,112.16,50.31,112.16,112.16-50.31,112.16-112.16,112.16ZM156.55,90.6c-49.3,0-89.4,40.11-89.4,89.4s40.11,89.4,89.4,89.4,89.4-40.11,89.4-89.4-40.11-89.4-89.4-89.4Z"/>
+    <path class="st1" d="M156.55,98.73l22.76,55.27,58.52,6.5-45.51,39.01,13,58.52-48.76-32.51-48.76,32.51,13-58.52-45.51-39.01,58.52-6.5,22.76-55.27Z"/>
+  </g>
+  <g>
+    <text class="st0" transform="translate(330.62 129.25)"><tspan x="0" y="0">WINNER</tspan><tspan x="0" y="40.8">Best Gaming Innovation</tspan><tspan x="0" y="81.6">Award 2024</tspan></text>
+    <text class="st2" transform="translate(330.62 251.26)"><tspan x="0" y="0">International Gaming Excellence</tspan></text>
+  </g>
+</svg>
