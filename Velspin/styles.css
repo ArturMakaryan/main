@@ -94,6 +94,13 @@
 }
 
 /* Velspin footer */
+[data-mj="footer"].velspin-footer {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .velspin-footer,
 .velspin-footer * {
   box-sizing: border-box;
