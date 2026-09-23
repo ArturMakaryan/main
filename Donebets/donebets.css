@@ -40,6 +40,26 @@ body:has(#container .chatButtonContainer)::before {
   background-color: #161117 !important;
 }
 
+button[aria-label="search"][name="search"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px !important;
+  width: fit-content !important;
+  max-width: max-content !important;
+  flex: 0 0 auto !important;
+  padding: 12px;
+  background: #16111696 !important;
+  border: 1px solid #251f24 !important;
+  margin-left: 16px;
+}
+
+button[aria-label="search"][name="search"]::after {
+  content: "Search games";
+  font-size: 14px;
+  font-weight: 300;
+  color: #b6aba7;
+}
+
 span.app-ltr-1phvdj0,
 span.app-rtl-1phvdj0 {
   display: inline-flex !important;
@@ -246,7 +266,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-rtl-yx0s3n * {
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-yx0s3n,
 a[data-mj="game-catalog-mobile-category-chip"].app-rtl-yx0s3n {
   background-image: linear-gradient(174deg, #191819, #1b1614) !important;
-  box-shadow: #262424 0 0 0 1px inset !important;
+  box-shadow: #302e2e 0 0 0 1px inset !important;
   color: #c0b9b9 !important;
 }
 
@@ -266,7 +286,7 @@ a[data-mj="game-catalog-category-slider-item"] {
   font-weight: 300 !important;
   font-size: 14px !important;
   color: #c0b9b9 !important;
-  box-shadow: #262424 0 0 0 1px inset !important;
+  box-shadow: #302e2e 0 0 0 1px inset !important;
 }
 
 [data-mj="game-catalog-category-slider-item"]:hover {
