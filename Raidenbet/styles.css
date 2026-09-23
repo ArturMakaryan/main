@@ -115,11 +115,10 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
     transform 180ms ease !important;
 }
 
-[data-mj="header-nav-item"],
-[data-mj="header-nav-item"] * {
+[data-mj="header-nav-list"] p {
+  font-weight: 300 !important;
+  font-size: 14px !important;
   color: #9fa4bc !important;
-  fill: #9fa4bc !important;
-  stroke: #9fa4bc !important;
 }
 
 [data-mj="header-nav-item"]:hover {
