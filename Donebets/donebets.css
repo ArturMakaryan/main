@@ -40,26 +40,6 @@ body:has(#container .chatButtonContainer)::before {
   background-color: #161117 !important;
 }
 
-button[aria-label="search"][name="search"] {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px !important;
-  width: fit-content !important;
-  max-width: max-content !important;
-  flex: 0 0 auto !important;
-  padding: 12px;
-  background: #16111696 !important;
-  border: 1px solid #251f24 !important;
-  margin-left: 16px;
-}
-
-button[aria-label="search"][name="search"]::after {
-  content: "Search games";
-  font-size: 14px;
-  font-weight: 300;
-  color: #b6aba7;
-}
-
 span.app-ltr-1phvdj0,
 span.app-rtl-1phvdj0 {
   display: inline-flex !important;
@@ -313,7 +293,7 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
 [data-mj="game-catalog-mobile-provider-input"].app-rtl-1ivm3u9,
 [data-mj="game-catalog-provider-bottom-sheet-search"] ,
 [data-mj="game-catalog-mobile-search-toggle"] {
-  background: #1B1919 !important;
+  background: #100f0f !important;
   border-color: #262424 !important;
   box-shadow: none;
 }
@@ -326,7 +306,7 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
 }
 
 [data-mj="game-catalog-mobile-search"] {
-  background: #1B1919 !important;
+  background: #100f0f !important;
   border: 1px solid #262424 !important;
   font-weight: 300 !important;
 }
@@ -335,12 +315,12 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
 [data-mj="game-catalog-game-search"]:focus.active-link,
 [data-mj="game-catalog-game-search"][aria-current="page"],
 [data-mj="game-catalog-game-search"][aria-expanded="true"] {
-  background: #1B1919 !important;
+  background: #100f0f !important;
   border: 1px solid #F15A22 !important;
 }
 
 [data-mj="game-catalog-game-search"] {
-  background: #1B1919 !important;
+  background: #100f0f !important;
   border-color: #262424 !important;
   font-weight: 300 !important;
 }
@@ -488,4 +468,8 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.top-events {
+  scrollbar-width: none !important;
 }
