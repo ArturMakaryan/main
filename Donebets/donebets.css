@@ -40,6 +40,14 @@ body:has(#container .chatButtonContainer)::before {
   background-color: #161117 !important;
 }
 
+.app-ltr-f9ygiv {
+  padding: 0 4px 4px 4px !important;
+  border-radius: 20px !important;
+  background-color: #09080d9c !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
+
 span.app-ltr-1phvdj0,
 span.app-rtl-1phvdj0 {
   display: inline-flex !important;
