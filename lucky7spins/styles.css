@@ -32,13 +32,11 @@ body::before {
   box-shadow: none !important;
 }
 
-[data-mj="login-button"].app-ltr-zza7s,
-[data-mj="login-button"].app-ltr-1a7kbg9 {
+[data-mj="login-button"].app-ltr-zza7s {
   background: rgb(34, 47, 47) !important;
 }
 
-[data-mj="login-button"].app-ltr-zza7s:hover,
-[data-mj="login-button"].app-ltr-1a7kbg9:hover {
+[data-mj="login-button"].app-ltr-zza7s:hover {
   background-color: rgb(7, 24, 24) !important;
 }
 
@@ -67,7 +65,7 @@ body::before {
 }
 
 .app-ltr-zza7s:not([data-mj="login-button"]),
-.app-ltr-1a7kbg9:not([data-mj="login-button"]) {
+.app-ltr-1a7kbg9 {
   background-color: transparent !important;
   color: #bccbcb !important;
   font-size: 14px !important;
@@ -75,7 +73,7 @@ body::before {
 }
 
 .app-ltr-zza7s:not([data-mj="login-button"]):hover,
-.app-ltr-1a7kbg9:not([data-mj="login-button"]):hover {
+.app-ltr-1a7kbg9:hover {
   background-color: rgb(34 47 47) !important;
   color: #ffffff !important;
 }
