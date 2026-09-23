@@ -40,14 +40,6 @@ body:has(#container .chatButtonContainer)::before {
   background-color: #161117 !important;
 }
 
-.app-ltr-f9ygiv {
-  padding: 0 4px 4px 4px !important;
-  border-radius: 20px !important;
-  background-color: #09080d9c !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-}
-
 span.app-ltr-1phvdj0,
 span.app-rtl-1phvdj0 {
   display: inline-flex !important;
@@ -270,6 +262,7 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-17wq370,
 [data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
   background-image: linear-gradient(174deg, #37221B, #201F1E) !important;
   box-shadow: #F15A22 0 0 0 1px inset !important;
+  color: #f15922 !important;
 }
 
 [data-mj="game-catalog-game-search"]:focus,
