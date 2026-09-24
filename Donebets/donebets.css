@@ -210,6 +210,16 @@ button[aria-label="arrow_up"].sl-icon.app-rtl-1x639s0 {
   background-color: transparent !important;
 }
 
+button[aria-label="arrow_down"].sl-icon.app-ltr-1x639s0,
+button[aria-label="arrow_up"].sl-icon.app-ltr-1x639s0 {
+  right: 6px !important;
+}
+
+button[aria-label="arrow_down"].sl-icon.app-rtl-1x639s0,
+button[aria-label="arrow_up"].sl-icon.app-rtl-1x639s0 {
+  left: 6px !important;
+}
+
 [data-mj="bottom-nav-item"],
 [data-mj="bottom-nav-item"] * {
   font-weight: 300 !important;
