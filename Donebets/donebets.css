@@ -492,6 +492,7 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
 
 .top-events {
   scrollbar-width: none !important;
+  gap: 8px !important;
 }
 
 [data-mj="login-button"] {
@@ -762,4 +763,12 @@ button[aria-label="search"][name="search"]:hover,
       rgba(255, 91, 31, 0.12),
       transparent 75%
     );
+}
+
+.app-ltr-r2jm6p {
+  background-image: linear-gradient(174deg, #0e0e11, #13131b) !important;
+}
+
+[data-mj="widget-pages-grid"] {
+  gap: 8px !important;
 }
