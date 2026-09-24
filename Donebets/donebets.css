@@ -409,8 +409,6 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
 .app-ltr-i6bazn,
 .app-rtl-i6bazn {
   height: auto !important;
-  margin-left: 26px !important;
-  border-left: 1px solid #ffffff21 !important;
   padding-top: 4px !important;
   overflow: hidden !important;
   transform-origin: top left !important;
@@ -419,6 +417,16 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
     clip-path 240ms ease,
     opacity 200ms ease,
     transform 240ms ease !important;
+}
+
+.app-ltr-i6bazn {
+  margin-left: 26px !important;
+  border-left: 1px solid #ffffff21 !important;
+}
+
+.app-rtl-i6bazn {
+  margin-right: 26px !important;
+  border-right: 1px solid #ffffff21 !important;
 }
 
 .app-ltr-3qxets,
