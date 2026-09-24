@@ -670,11 +670,6 @@ button[aria-label="search"][name="search"]:hover,
   margin-left: 16px !important;
 }
 
-.app-ltr-nmc407 {
-  flex-direction: row !important;
-  align-items: center;
-}
-
 @media (max-width: 992px) {
   [data-mj="custom-header"] {
     border-bottom: 1px solid #251f24 !important;
