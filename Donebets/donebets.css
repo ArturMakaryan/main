@@ -498,6 +498,12 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
   color: #b6aba7 !important;
 }
 
+[data-mj="account-menu-item"] span {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: #b6aba7 !important;
+}
+
 /* Account menu/modal left side */
 .app-ltr-h5qxq2,
 .app-rtl-h5qxq2 {
@@ -671,4 +677,35 @@ button[aria-label="search"][name="search"]:hover,
   font-size: 14px !important;
   font-weight: 300 !important;
   color: #b6aba7 !important;
+}
+
+/* Mobile menu logo */
+.app-ltr-1ku0cza,
+.app-rtl-1ku0cza {
+  justify-content: flex-start !important;
+  padding: 12px 0 8px 16px !important;
+}
+
+/* Mobile menu structure */
+[data-mj="mobile-nav-list"] {
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+.app-ltr-1ebprri,
+.app-rtl-1ebprri {
+  flex: 1;
+  overflow: auto;
+}
+
+/* Language select */
+.app-ltr-7tfc0v,
+.app-rtl-7tfc0v {
+  margin-top: 12px !important;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
 }
