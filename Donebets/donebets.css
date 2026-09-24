@@ -257,7 +257,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-rtl-yx0s3n * {
 
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-yx0s3n,
 a[data-mj="game-catalog-mobile-category-chip"].app-rtl-yx0s3n {
-  background-image: linear-gradient(174deg, #191819, #1b1614) !important;
+  background-image: linear-gradient(174deg, #0e0e11, #13131b) !important;
   box-shadow: #302e2e 0 0 0 1px inset !important;
   color: #c0b9b9 !important;
 }
@@ -274,7 +274,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-rtl-8wtuim {
 }
 
 a[data-mj="game-catalog-category-slider-item"] {
-  background-image: linear-gradient(174deg, #191819, #1b1614) !important;
+  background-image: linear-gradient(174deg, #0e0e11, #13131b) !important;
   font-weight: 300 !important;
   font-size: 14px !important;
   color: #c0b9b9 !important;
@@ -598,7 +598,7 @@ button[aria-label="search"][name="search"],
 .app-rtl-1qyij3p,
 .app-ltr-nleqph,
 .app-rtl-nleqph {
-  background-image: linear-gradient(174deg, #191819, #1b1614) !important;
+  background-image: linear-gradient(174deg, #0e0e11, #13131b) !important;
   border: 1px solid #1c1c26 !important;
 }
 
@@ -637,7 +637,7 @@ button[aria-label="search"][name="search"]:hover,
 
 .app-ltr-16dvelw:hover,
 .app-rtl-16dvelw:hover {
-  background: #1d171d !important;
+  background: #16161f !important;
   box-shadow: inset 0 0 0 1px #221c22 !important;
 }
 
@@ -662,7 +662,7 @@ button[aria-label="search"][name="search"]:hover,
 }
 
 .ph-event-card:hover {
-  background: #1d171d !important;
+  background: #16161f !important;
   box-shadow: inset 0 0 0 1px #221c22 !important;
 }
 
@@ -722,4 +722,9 @@ button[aria-label="search"][name="search"]:hover,
 
 [data-mj="widget-fixed-image-banner-container"] img {
   border-radius: 12px !important;
+}
+
+.app-ltr-vvhetf,
+.app-rtl-vvhetf {
+  display: none;
 }
