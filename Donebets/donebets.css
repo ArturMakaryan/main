@@ -724,3 +724,7 @@ button[aria-label="search"][name="search"]:hover,
   width: 4px;
   height: 4px;
 }
+
+[data-mj="widget-fixed-image-banner-container"] img {
+  border-radius: 12px !important;
+}
