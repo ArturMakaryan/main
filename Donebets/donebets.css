@@ -144,7 +144,7 @@ html body [data-mj="footer-bottom"] [data-mj="footer-copyright"] {
   margin: 0 auto !important;
   text-align: center !important;
   line-height: 1.45 !important;
-  color: #b6aba7;
+  color: #b6aba7 !important;
   font-size: 13px;
 }
 
