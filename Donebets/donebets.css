@@ -144,6 +144,8 @@ html body [data-mj="footer-bottom"] [data-mj="footer-copyright"] {
   margin: 0 auto !important;
   text-align: center !important;
   line-height: 1.45 !important;
+  color: #b6aba7;
+  font-size: 13px;
 }
 
 [data-donebets-vip-status-ready="true"] {
@@ -472,4 +474,117 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
 
 .top-events {
   scrollbar-width: none !important;
+}
+
+[data-mj="login-button"] {
+  background-image: linear-gradient(174deg, #1B1919, #262421) !important;
+  border: 1px solid #262424 !important;
+}
+
+[data-mj="game-catalog-game-search"]:focus {
+  border: 1px solid #f159229c !important;
+}
+
+[data-mj="account-menu"] p {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="account-menu"] svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Account menu/modal left side */
+.app-ltr-h5qxq2,
+.app-rtl-h5qxq2 {
+  padding-left: 11px !important;
+}
+
+.app-ltr-1ct7xlg,
+.app-rtl-1ct7xlg {
+  background-color: #161117 !important;
+  padding: 10px !important;
+}
+
+.app-ltr-1duonan,
+.app-rtl-1duonan {
+  padding: 8px !important;
+  border-bottom: 1px solid #251f24 !important;
+  background: none !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+}
+
+.app-ltr-1wcaknn,
+.app-rtl-1wcaknn {
+  padding: 8px !important;
+}
+
+.app-ltr-1akxrfz,
+.app-rtl-1akxrfz {
+  margin-top: 12px !important;
+}
+
+.app-ltr-71qgm6,
+.app-rtl-71qgm6 {
+  background-color: rgb(255 255 255 / 5%) !important;
+}
+
+.app-ltr-1jp2anc,
+.app-rtl-1jp2anc {
+  padding: 16px 16px 12px 18px !important;
+}
+
+.app-ltr-p2ly1m,
+.app-rtl-p2ly1m {
+  padding-left: 20px !important;
+}
+
+.app-ltr-1h3h9hr,
+.app-rtl-1h3h9hr {
+  padding: 8px 16px !important;
+  background-color: rgb(255 255 255 / 3%) !important;
+}
+
+.app-ltr-1h3h9hr,
+.app-ltr-1h3h9hr *,
+.app-rtl-1h3h9hr,
+.app-rtl-1h3h9hr * {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+.app-ltr-1h3h9hr svg,
+.app-rtl-1h3h9hr svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+[data-mj="account-menu-list"] {
+  margin: 0 !important;
+}
+
+/* Buttons: Show All / Arrows / User / Search */
+button[aria-label="arrow_left"][name="arrow_left"],
+button[aria-label="arrow_right"][name="arrow_right"],
+button[aria-label="user"][name="user"],
+button[aria-label="search"][name="search"],
+.app-ltr-1qyij3p,
+.app-rtl-1qyij3p,
+.app-ltr-nleqph,
+.app-rtl-nleqph {
+  background-image: linear-gradient(174deg, #191819, #1b1614) !important;
+  border: 1px solid #251f24 !important;
+}
+
+button[aria-label="arrow_left"][name="arrow_left"]:hover,
+button[aria-label="arrow_right"][name="arrow_right"]:hover,
+button[aria-label="user"][name="user"]:hover,
+button[aria-label="search"][name="search"]:hover,
+.app-ltr-1qyij3p:hover,
+.app-rtl-1qyij3p:hover,
+.app-ltr-nleqph:hover,
+.app-rtl-nleqph:hover {
+  background-image: linear-gradient(174deg, #37221B, #201F1E) !important;
 }
