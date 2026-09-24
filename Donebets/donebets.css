@@ -672,9 +672,9 @@ button[aria-label="search"][name="search"]:hover,
   margin-left: 16px !important;
 }
 
-.app-ltr-nmc407,
-.app-rtl-nmc407 {
+.app-ltr-nmc407 {
   flex-direction: row !important;
+  align-items: center;
 }
 
 @media (max-width: 992px) {
