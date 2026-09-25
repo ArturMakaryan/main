@@ -106,7 +106,7 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
 }
 
 [data-mj="header-nav-item"],
-[data-mj="header-nav-item"] * {
+[data-mj="header-nav-item"] *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
   font-weight: 300 !important;
   transition:
     color 180ms ease,
@@ -126,7 +126,7 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
 }
 
 [data-mj="header-nav-item"]:hover,
-[data-mj="header-nav-item"]:hover * {
+[data-mj="header-nav-item"]:hover *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
   color: #fff !important;
   text-shadow: 0 0 6px #4a75ca !important;
 }
@@ -135,10 +135,10 @@ button[role="button"][aria-label="arrow_down"][name="arrow_down"][aria-disabled=
 [data-mj="header-nav-item"][aria-current="page"],
 [data-mj="header-nav-item"] .active-link,
 [data-mj="header-nav-item"] [aria-current="page"],
-[data-mj="header-nav-item"].active-link *,
-[data-mj="header-nav-item"][aria-current="page"] *,
-[data-mj="header-nav-item"] .active-link *,
-[data-mj="header-nav-item"] [aria-current="page"] * {
+[data-mj="header-nav-item"].active-link *:not([data-site-badge="true"]):not([data-site-badge="true"] *),
+[data-mj="header-nav-item"][aria-current="page"] *:not([data-site-badge="true"]):not([data-site-badge="true"] *),
+[data-mj="header-nav-item"] .active-link *:not([data-site-badge="true"]):not([data-site-badge="true"] *),
+[data-mj="header-nav-item"] [aria-current="page"] *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
   color: #80a9f9 !important;
   font-weight: 300 !important;
   text-shadow: 0 0 6px #4a75ca !important;
