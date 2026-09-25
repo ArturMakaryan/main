@@ -1,0 +1,19 @@
+/* Exact inline border declaration */
+[style*="border: 1px solid rgb(179, 179, 179)"] {
+  border-color: #b3b3b3 !important;
+}
+
+/* Any inline style containing this RGB color */
+[style*="rgb(179, 179, 179)"] {
+  border-color: #b3b3b3 !important;
+}
+
+/* Same color written as HEX */
+[style*="#b3b3b3"] {
+  border-color: #b3b3b3 !important;
+}
+
+/* Same HEX color written uppercase */
+[style*="#B3B3B3"] {
+  border-color: #b3b3b3 !important;
+}
