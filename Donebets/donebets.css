@@ -373,6 +373,14 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
     transform 200ms ease !important;
 }
 
+[data-mj="header-nav-item"] a {
+  padding: 0 8px !important;
+}
+
+.app-ltr-8zi5g1 {
+  gap: 8px !important;
+}
+
 
 
 [data-mj="header-nav-item"] a:hover {
