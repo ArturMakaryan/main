@@ -891,3 +891,77 @@ html body [data-mj="widget-bet-win"] .esportesnow-bet-win-provider {
   font-weight: 650 !important;
   line-height: 1.1 !important;
 }
+
+[data-mj="game-catalog-card"] {
+  border: 1px solid #1c1c26 !important;
+}
+
+[data-mj="game-catalog-list"].app-ltr-1wvroac,
+[data-mj="game-catalog-list"].app-rtl-1wvroac,
+[data-mj="game-catalog-list"].app-ltr-1niugc4,
+[data-mj="game-catalog-list"].app-rtl-1niugc4 {
+  gap: 12px !important;
+}
+
+[data-mj="game-catalog-play-button"].app-ltr-16lhusi,
+[data-mj="game-catalog-play-button"].app-rtl-16lhusi,
+[data-mj="game-catalog-play-button"] {
+  width: 54px !important;
+  min-width: 54px !important;
+  height: 54px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  background-image: url("./donebets-play-button.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  box-shadow: none !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  overflow: hidden !important;
+  transform-origin: center !important;
+  transition: transform 180ms ease !important;
+}
+
+[data-mj="game-catalog-play-button"].app-ltr-16lhusi:hover,
+[data-mj="game-catalog-play-button"].app-ltr-16lhusi:focus-visible,
+[data-mj="game-catalog-play-button"].app-rtl-16lhusi:hover,
+[data-mj="game-catalog-play-button"].app-rtl-16lhusi:focus-visible,
+[data-mj="game-catalog-play-button"]:hover,
+[data-mj="game-catalog-play-button"]:focus-visible,
+[data-mj="widget-game-card"] .app-ltr-1l4n363 .app-ltr-16lhusi:hover,
+[data-mj="widget-game-card"] .app-ltr-1l4n363 .app-ltr-16lhusi:focus-visible,
+[data-mj="widget-game-card"] .app-rtl-1l4n363 .app-rtl-16lhusi:hover,
+[data-mj="widget-game-card"] .app-rtl-1l4n363 .app-rtl-16lhusi:focus-visible {
+  transform: scale(1.08) !important;
+}
+
+[data-mj="game-catalog-play-button"] > * {
+  display: none !important;
+}
+
+[data-mj="widget-game-card"] .app-ltr-1l4n363 .app-ltr-16lhusi,
+[data-mj="widget-game-card"] .app-rtl-1l4n363 .app-rtl-16lhusi {
+  width: 54px !important;
+  min-width: 54px !important;
+  height: 54px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  background-image: url("./donebets-play-button.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  box-shadow: none !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  overflow: hidden !important;
+}
+
+[data-mj="widget-game-card"] .app-ltr-1l4n363 .app-ltr-16lhusi > *,
+[data-mj="widget-game-card"] .app-rtl-1l4n363 .app-rtl-16lhusi > * {
+  display: none !important;
+}
