@@ -632,7 +632,7 @@ button[aria-label="search"][name="search"]:hover,
 .app-ltr-16dvelw:hover,
 .app-rtl-16dvelw:hover {
   background: #16161f !important;
-  box-shadow: inset 0 0 0 1px #221c22 !important;
+  box-shadow: inset 0 0 0 1px #1c1c26 !important;
 }
 
 .app-ltr-121fhed,
@@ -656,6 +656,10 @@ button[aria-label="search"][name="search"]:hover,
   width: 100%;
 }
 
+.app-ltr-mwpk1c .app-ltr-1blkpw5 {
+  justify-content: center !important;
+}
+
 .app-ltr-15o2l2m,
 .app-rtl-15o2l2m {
   overflow: hidden;
@@ -665,12 +669,12 @@ button[aria-label="search"][name="search"]:hover,
 
 .ph-event-card {
   background: #13131b !important;
-  box-shadow: inset 0 0 0 1px #221c22 !important;
+  box-shadow: inset 0 0 0 1px #1c1c26 !important;
 }
 
 .ph-event-card:hover {
   background: #16161f !important;
-  box-shadow: inset 0 0 0 1px #221c22 !important;
+  box-shadow: inset 0 0 0 1px #1c1c26 !important;
 }
 
 [data-mj="header-left"] button[aria-label="search"][name="search"] {
@@ -894,6 +898,11 @@ html body [data-mj="widget-bet-win"] .esportesnow-bet-win-provider {
 
 [data-mj="game-catalog-card"] {
   border: 1px solid #1c1c26 !important;
+}
+
+[data-mj="widget-game-card"]:hover,
+[data-mj="game-catalog-card"]:hover {
+  border: 1px solid #30303f !important;
 }
 
 [data-mj="widget-payments"] {
