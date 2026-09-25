@@ -29,6 +29,10 @@ body:has(#container .chatButtonContainer)::before {
   background-color: #13131b !important;
 }
 
+[data-mj="header-special-button"] {
+  background: none !important;
+}
+
 span.app-ltr-1phvdj0,
 span.app-rtl-1phvdj0 {
   display: inline-flex !important;
