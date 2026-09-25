@@ -602,6 +602,7 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
   height: 40px !important;
   min-height: 40px !important;
   padding: 0 !important;
+  border-radius: 16px !important;
   background-image: linear-gradient(174deg, #0e0e11, #13131b) !important;
   border: 1px solid #1c1c26 !important;
   color: #fff !important;
@@ -618,13 +619,9 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
   height: 24px !important;
 }
 
-@media (max-width: 576px) {
-  .donebets-header-action {
-    flex-basis: 32px !important;
-    width: 32px !important;
-    min-width: 32px !important;
-    height: 32px !important;
-    min-height: 32px !important;
+@media (max-width: 992px) {
+  .donebets-header-actions {
+    display: none !important;
   }
 }
 
