@@ -30,7 +30,7 @@ body:has(#container .chatButtonContainer)::before {
 }
 
 [data-mj="header-special-button"] {
-  background: none !important;
+  background-color: rgb(0 0 0 / 0%) !important;
 }
 
 span.app-ltr-1phvdj0,
