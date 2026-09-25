@@ -378,7 +378,7 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
 }
 
 .app-ltr-8zi5g1 {
-  gap: 8px !important;
+  gap: 12px !important;
 }
 
 
@@ -969,8 +969,10 @@ html body [data-mj="widget-bet-win"] .esportesnow-bet-win-provider {
   background-color: #00000000 !important;
 }
 
-.wheelWrapper_content__ZLP-C {
-  background-position: initial !important;
+@media (min-width: 1200px) {
+  .wheelWrapper_content__ZLP-C {
+    background-position: initial !important;
+  }
 }
 
 .app-ltr-1qqvnmp {
