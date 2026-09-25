@@ -896,13 +896,14 @@ html body [data-mj="widget-bet-win"] .esportesnow-bet-win-provider {
   line-height: 1.1 !important;
 }
 
-[data-mj="game-catalog-card"] {
+[data-mj="game-catalog-card"],
+[data-mj="widget-game-card"] {
   border: 1px solid #1c1c26 !important;
 }
 
-[data-mj="widget-game-card"]:hover,
-[data-mj="game-catalog-card"]:hover {
-  box-shadow: inset 0 0 0 1px #30303f !important;
+[data-mj="game-catalog-card"]:hover,
+[data-mj="widget-game-card"]:hover {
+  border: 1px solid #30303f !important;
 }
 
 [data-mj="widget-payments"] {
