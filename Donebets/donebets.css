@@ -591,6 +591,10 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
   margin: 0 !important;
 }
 
+[data-mj="account-menu"] li {
+  margin: 0 !important;
+}
+
 /* Buttons: Show All / Arrows / User / Search */
 .donebets-header-actions {
   display: inline-flex !important;
