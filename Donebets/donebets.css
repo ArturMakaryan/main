@@ -133,9 +133,9 @@ html body [data-mj="footer-bottom"] [data-mj="footer-copyright"] {
   max-width: 1080px !important;
   margin: 0 auto !important;
   text-align: center !important;
-  line-height: 1 !important;
+  line-height: 0.8 !important;
   color: #b6aba7 !important;
-  font-size: 13px;
+  font-size: 12px !important;
 }
 
 [data-donebets-vip-status-ready="true"] {
@@ -345,10 +345,18 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
   font-weight: 300 !important;
 }
 
+[data-mj="footer-nav"] {
+  gap: 0 !important;
+}
+
+[data-mj="footer-nav"],
+[data-mj="footer-nav"] * {
+  font-size: 12px !important;
+}
+
 [data-mj="footer-nav-item"],
 [data-mj="footer-nav-item"] * {
   color: #9E9E9E !important;
-  font-size: 14px !important;
   font-weight: 300 !important;
 }
 
