@@ -902,7 +902,7 @@ html body [data-mj="widget-bet-win"] .esportesnow-bet-win-provider {
 
 [data-mj="widget-game-card"]:hover,
 [data-mj="game-catalog-card"]:hover {
-  border: 1px solid #30303f !important;
+  box-shadow: inset 0 0 0 1px #30303f !important;
 }
 
 [data-mj="widget-payments"] {
