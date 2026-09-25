@@ -38,10 +38,10 @@
   }
 
   function addHeaderActions() {
-    document.querySelectorAll('[data-mj="header-right"]').forEach(function (headerRight) {
+    document.querySelectorAll('[data-mj="header-left"]').forEach(function (headerLeft) {
       var group;
 
-      if (headerRight.querySelector('[data-donebets-header-actions="true"]')) return;
+      if (headerLeft.querySelector('[data-donebets-header-actions="true"]')) return;
 
       group = document.createElement("div");
       group.className = "donebets-header-actions";
@@ -51,7 +51,7 @@
         group.appendChild(createAction(action));
       });
 
-      headerRight.insertBefore(group, headerRight.firstChild);
+      headerLeft.appendChild(group);
     });
   }
 
