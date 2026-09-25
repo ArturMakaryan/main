@@ -900,6 +900,10 @@ html body [data-mj="widget-bet-win"] .esportesnow-bet-win-provider {
   box-shadow: none !important;
 }
 
+[data-mj="widget-anjuan-license"] {
+  background-color: #00000000 !important;
+}
+
 [data-mj="game-catalog-list"].app-ltr-1wvroac,
 [data-mj="game-catalog-list"].app-rtl-1wvroac,
 [data-mj="game-catalog-list"].app-ltr-1niugc4,
