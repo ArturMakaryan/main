@@ -109,6 +109,7 @@ html body [class*="gdo5mm"] p[class*="lneb7o"][color="#858585"] {
 [data-mj="footer"] {
   border-top: 1px solid #1c1c26 !important;
   background-color: #13131b !important;
+  padding-bottom: 64px !important;
 }
 
 /* Footer legal text alignment */
@@ -132,7 +133,7 @@ html body [data-mj="footer-bottom"] [data-mj="footer-copyright"] {
   max-width: 1080px !important;
   margin: 0 auto !important;
   text-align: center !important;
-  line-height: 1.45 !important;
+  line-height: 1 !important;
   color: #b6aba7 !important;
   font-size: 13px;
 }
@@ -349,6 +350,10 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
   color: #9E9E9E !important;
   font-size: 14px !important;
   font-weight: 300 !important;
+}
+
+[data-mj="header-nav-item"] {
+  padding: 0 !important;
 }
 
 [data-mj="header-nav-item"] a,
