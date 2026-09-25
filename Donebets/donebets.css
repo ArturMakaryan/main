@@ -794,6 +794,12 @@ button[aria-label="search"][name="search"]:hover,
   min-height: 40px !important;
 }
 
+@media (min-width: 577px) {
+  [data-mj="widget-phoenix-sport-header"] .inancbet-slider-control {
+    border-radius: 12px !important;
+  }
+}
+
 @media (max-width: 576px) {
   [data-mj="widget-phoenix-sport-header"] .inancbet-slider-control {
     width: 32px !important;
