@@ -1,7 +1,9 @@
 /* Raidenbet custom styles */
 
-[data-mj="logo"] {
-  max-width: 72px !important;
+@media (max-width: 992px) {
+  [data-mj="logo"] {
+    max-width: 72px !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -79,6 +81,13 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-19790bj {
 [data-mj="nav-item"] .active-link *:not([data-site-badge="true"]),
 [data-mj="nav-item"] [aria-current="page"] *:not([data-site-badge="true"]) {
   color: #5a91fe !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="footer-nav-item"],
+[data-mj="footer-nav-item"] * {
+  color: #9fa4bc !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
