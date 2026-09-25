@@ -778,3 +778,14 @@ button[aria-label="search"][name="search"]:hover,
 .app-rtl-zut9e9 {
   display: none !important;
 }
+
+[data-mj="widget-phoenix-sport-header"] .inancbet-slider-controls {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  margin-inline-start: 8px !important;
+}
+
+[data-mj="widget-phoenix-sport-header"] .inancbet-slider-control {
+  flex: 0 0 auto !important;
+}
