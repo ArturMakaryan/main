@@ -798,6 +798,11 @@ button[aria-label="search"][name="search"]:hover,
   [data-mj="widget-phoenix-sport-header"] .inancbet-slider-control {
     border-radius: 12px !important;
   }
+
+  [data-mj="widget-phoenix-sport-header"] .inancbet-slider-control svg {
+    width: 34px !important;
+    height: 34px !important;
+  }
 }
 
 @media (max-width: 576px) {
