@@ -395,6 +395,7 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
 [data-mj="header-nav-item"] a.active-link,
 [data-mj="header-nav-item"] a[aria-current="page"] {
   background-image: linear-gradient(180deg, #201f1e00, #f15a2226) !important;
+  box-shadow: inset 0 -2px 0 #F15A22 !important;
   color: #F15A22 !important;
   fill: #F15A22 !important;
 }
@@ -404,10 +405,6 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
 [data-mj="header-nav-item"] a.active-link * {
   color: #F15A22 !important;
   border: 1px solid transparent !important;
-}
-
-[data-mj="header-nav-item"] a.active-link {
-  border-bottom: 1px solid #F15A22 !important;
 }
 
 [data-mj="header-nav-list"] p {
