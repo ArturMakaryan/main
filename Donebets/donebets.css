@@ -896,6 +896,10 @@ html body [data-mj="widget-bet-win"] .esportesnow-bet-win-provider {
   border: 1px solid #1c1c26 !important;
 }
 
+[data-mj="widget-payments"] {
+  box-shadow: none !important;
+}
+
 [data-mj="game-catalog-list"].app-ltr-1wvroac,
 [data-mj="game-catalog-list"].app-rtl-1wvroac,
 [data-mj="game-catalog-list"].app-ltr-1niugc4,
