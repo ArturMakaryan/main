@@ -609,20 +609,27 @@ button[aria-label="search"][name="search"]:hover,
 }
 
 /* Last Winners */
-.app-ltr-1268fb8,
+.app-ltr-1268fb8 {
+  width: 200px !important;
+  max-width: 200px !important;
+}
+
 .app-rtl-1268fb8 {
   max-width: 100% !important;
 }
 
 .app-ltr-16dvelw,
 .app-rtl-16dvelw {
-  width: fit-content !important;
   height: fit-content !important;
   padding: 4px 8px 4px 4px !important;
   display: flex !important;
   align-items: center !important;
   background: #13131b !important;
   box-shadow: inset 0 0 0 1px #ffffff0d !important;
+}
+
+.app-rtl-16dvelw {
+  width: fit-content !important;
 }
 
 .app-ltr-16dvelw:hover,
