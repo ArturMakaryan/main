@@ -784,6 +784,9 @@ button[aria-label="search"][name="search"]:hover,
   align-items: center !important;
   gap: 8px !important;
   margin-inline-start: 8px !important;
+  position: relative !important;
+  z-index: 2 !important;
+  pointer-events: auto !important;
 }
 
 [data-mj="widget-phoenix-sport-header"] .inancbet-slider-control {
@@ -792,6 +795,7 @@ button[aria-label="search"][name="search"]:hover,
   min-width: 40px !important;
   height: 40px !important;
   min-height: 40px !important;
+  pointer-events: auto !important;
 }
 
 @media (min-width: 577px) {
@@ -800,8 +804,8 @@ button[aria-label="search"][name="search"]:hover,
   }
 
   [data-mj="widget-phoenix-sport-header"] .inancbet-slider-control svg {
-    width: 34px !important;
-    height: 34px !important;
+    width: 24px !important;
+    height: 24px !important;
   }
 }
 
