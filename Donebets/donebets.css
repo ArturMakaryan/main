@@ -785,3 +785,18 @@ button[aria-label="search"][name="search"]:hover,
   box-shadow: 0 0 7px 2px #f15a2280 !important;
   color: #050505 !important;
 }
+
+.app-ltr-1uys7bq,
+.app-rtl-1uys7bq {
+  text-align: left !important;
+}
+
+.app-ltr-lhbbxp,
+.app-rtl-lhbbxp {
+  padding: 4px 4px 8px 12px;
+}
+
+.app-ltr-zut9e9,
+.app-rtl-zut9e9 {
+  display: none !important;
+}
