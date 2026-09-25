@@ -609,10 +609,14 @@ button[aria-label="search"][name="search"]:hover,
 }
 
 /* Last Winners */
-.app-ltr-1268fb8,
-.app-rtl-1268fb8 {
+.app-ltr-1268fb8 {
   width: 200px !important;
   max-width: 200px !important;
+}
+
+.app-rtl-1268fb8 {
+  width: 180px !important;
+  max-width: 180px !important;
 }
 
 .app-ltr-16dvelw,
