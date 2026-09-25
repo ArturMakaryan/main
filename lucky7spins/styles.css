@@ -444,6 +444,13 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   color: transparent !important;
   font-size: 0 !important;
   overflow: hidden !important;
+  transform-origin: center !important;
+  transition: transform 180ms ease !important;
+}
+
+[data-mj="widget-game-card"] .app-ltr-ay9269 .app-ltr-1ewnczt:hover,
+[data-mj="widget-game-card"] .app-ltr-ay9269 .app-ltr-1ewnczt:focus-visible {
+  transform: scale(1.08) !important;
 }
 
 [data-mj="widget-game-card"] .app-ltr-ay9269 .app-ltr-1ewnczt > * {
