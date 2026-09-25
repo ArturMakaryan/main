@@ -959,6 +959,8 @@ html body [data-mj="widget-bet-win"] .esportesnow-bet-win-provider {
   color: transparent !important;
   font-size: 0 !important;
   overflow: hidden !important;
+  transform-origin: center !important;
+  transition: transform 180ms ease !important;
 }
 
 [data-mj="widget-game-card"] .app-ltr-1l4n363 .app-ltr-16lhusi > *,
