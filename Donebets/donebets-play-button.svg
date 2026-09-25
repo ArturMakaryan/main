@@ -1,26 +1,38 @@
 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_34806_14452)">
-<g filter="url(#filter0_d_34806_14452)">
-<circle cx="26" cy="26" r="22" fill="url(#paint0_linear_34806_14452)"/>
+<g clip-path="url(#clip0_34806_14464)">
+<g filter="url(#filter0_di_34806_14464)">
+<circle cx="26" cy="26" r="22" fill="url(#paint0_linear_34806_14464)" fill-opacity="0.85" shape-rendering="crispEdges"/>
+<circle cx="26" cy="26" r="21.5" stroke="url(#paint1_linear_34806_14464)" shape-rendering="crispEdges"/>
 </g>
-<path d="M20.333 33.3313V18.6688C20.333 18.2674 20.4747 17.9309 20.758 17.6594C21.0413 17.3879 21.3719 17.2521 21.7497 17.2521C21.8677 17.2521 21.9917 17.2698 22.1215 17.3052C22.2514 17.3406 22.3754 17.3938 22.4934 17.4646L34.0393 24.7959C34.2518 24.9375 34.4111 25.1146 34.5174 25.3271C34.6236 25.5396 34.6768 25.7639 34.6768 26C34.6768 26.2361 34.6236 26.4604 34.5174 26.6729C34.4111 26.8854 34.2518 27.0625 34.0393 27.2042L22.4934 34.5354C22.3754 34.6063 22.2514 34.6594 22.1215 34.6948C21.9917 34.7302 21.8677 34.7479 21.7497 34.7479C21.3719 34.7479 21.0413 34.6122 20.758 34.3406C20.4747 34.0691 20.333 33.7327 20.333 33.3313Z" fill="white"/>
+<path d="M20.333 33.3312V18.6687C20.333 18.2674 20.4747 17.9309 20.758 17.6594C21.0413 17.3878 21.3719 17.2521 21.7497 17.2521C21.8677 17.2521 21.9917 17.2698 22.1215 17.3052C22.2514 17.3406 22.3754 17.3937 22.4934 17.4646L34.0393 24.7958C34.2518 24.9375 34.4111 25.1146 34.5174 25.3271C34.6236 25.5396 34.6768 25.7639 34.6768 26C34.6768 26.2361 34.6236 26.4604 34.5174 26.6729C34.4111 26.8854 34.2518 27.0625 34.0393 27.2042L22.4934 34.5354C22.3754 34.6062 22.2514 34.6594 22.1215 34.6948C21.9917 34.7302 21.8677 34.7479 21.7497 34.7479C21.3719 34.7479 21.0413 34.6121 20.758 34.3406C20.4747 34.0691 20.333 33.7326 20.333 33.3312Z" fill="white"/>
 </g>
 <defs>
-<filter id="filter0_d_34806_14452" x="1" y="1" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_di_34806_14464" x="1" y="1" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dx="1" dy="1"/>
 <feGaussianBlur stdDeviation="2"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0.390475 0 0 0 0 0.114813 0 0 0 0 0.012195 0 0 0 1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_34806_14452"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_34806_14452" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_34806_14464"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_34806_14464" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect2_innerShadow_34806_14464"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.390306 0 0 0 0 0.113265 0 0 0 0 0 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_34806_14464"/>
 </filter>
-<linearGradient id="paint0_linear_34806_14452" x1="4" y1="4" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_34806_14464" x1="26" y1="4" x2="26" y2="48" gradientUnits="userSpaceOnUse">
+<stop stop-color="#13131C"/>
+<stop offset="1" stop-color="#361C1E"/>
+</linearGradient>
+<linearGradient id="paint1_linear_34806_14464" x1="4" y1="4" x2="48" y2="48" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FF6E38"/>
 <stop offset="1" stop-color="#982900"/>
 </linearGradient>
-<clipPath id="clip0_34806_14452">
+<clipPath id="clip0_34806_14464">
 <rect width="52" height="52" fill="white"/>
 </clipPath>
 </defs>
