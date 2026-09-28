@@ -137,6 +137,7 @@ html body [data-mj="footer-bottom"] [data-mj="footer-copyright"] {
   max-width: 1080px !important;
   margin: 0 auto !important;
   text-align: center !important;
+  line-height: 16px !important;
   color: #b6aba7 !important;
   font-size: 12px !important;
 }
