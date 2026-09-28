@@ -1,0 +1,200 @@
+[data-mj="header-nav"] {
+  background-color: #181829 !important;
+}
+
+
+[data-mj="header-nav-list"] {
+    justify-content: center;
+
+}
+
+[data-mj="header"] {
+  box-shadow: none !important;
+}
+
+[data-mj="header-nav-item"] {
+  padding: 0 !important;
+}
+
+[data-mj="header-nav-item"] a {
+  padding: 0 8px !important;
+}
+
+[data-mj="header-nav-item"] a,
+[data-mj="header-nav-item"] a * {
+  color: #fff !important;
+  font-weight: 300 !important;
+  transition:
+  color 200ms ease,
+  transform 200ms ease !important;
+}
+
+.app-ltr-8zi5g1,
+.app-rtl-8zi5g1 {
+  gap: 12px !important;
+}
+
+[data-mj="header-nav-item"] a:hover {
+  transform: translateY(-1px) !important;
+}
+
+[data-mj="header-nav-item"] a:hover * {
+  color: #63b606 !important;
+  text-shadow: 0 0 6px #315a02 !important;
+}
+
+[data-mj="header-nav-item"] a.active-link,
+[data-mj="header-nav-item"] a[aria-current="page"] {
+  background-color: #63b60612 !important;
+  color: #63b606 !important;
+  fill: #63b606 !important;
+}
+
+[data-mj="header-nav-item"] a.active-link *,
+[data-mj="header-nav-item"] a[aria-current="page"] * {
+  color: #63b606 !important;
+}
+
+[data-mj="header-nav-list"] p {
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="header-nav-list"] button {
+  transition:
+    color 200ms ease,
+    transform 200ms ease !important;
+}
+
+[data-mj="header-nav-list"] button:hover {
+  transform: translateY(-1px) !important;
+}
+
+/* =========================
+   Mobile categories
+   ========================= */
+
+[data-mj="game-catalog-mobile-category-chip"],
+[data-mj="game-catalog-mobile-category-chip"] * {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+/* Inactive mobile categories */
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-bk2tas,
+a[data-mj="game-catalog-mobile-category-chip"].app-rtl-bk2tas {
+  background: #1e1e31 !important;
+  box-shadow: #292938 0 0 0 1px inset !important;
+  color: #c0b9b9 !important;
+}
+
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-bk2tas *,
+a[data-mj="game-catalog-mobile-category-chip"].app-rtl-bk2tas * {
+  color: #c0b9b9 !important;
+  border-color: #292938 !important;
+}
+
+/* Active mobile category */
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-dzlhvf,
+a[data-mj="game-catalog-mobile-category-chip"].app-rtl-dzlhvf {
+  background: #1e1e31 !important;
+  box-shadow: #63b606 0 0 0 1px inset !important;
+  color: #63b606 !important;
+}
+
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-dzlhvf *,
+a[data-mj="game-catalog-mobile-category-chip"].app-rtl-dzlhvf * {
+  color: #63b606 !important;
+}
+
+/* =========================
+   Desktop category slider
+   ========================= */
+
+a[data-mj="game-catalog-category-slider-item"] {
+  background: #1e1e31 !important;
+  box-shadow: #292938 0 0 0 1px inset !important;
+  color: #c0b9b9 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-category-slider-item"]:hover {
+  box-shadow: #63b60673 0 0 0 1px inset !important;
+}
+
+/* Active Casino and Live Casino categories */
+a[data-mj="game-catalog-category-slider-item"].app-ltr-m1fbjj,
+a[data-mj="game-catalog-category-slider-item"].app-rtl-m1fbjj,
+a[data-mj="game-catalog-category-slider-item"].app-ltr-124i84t,
+a[data-mj="game-catalog-category-slider-item"].app-rtl-124i84t,
+[data-mj="game-catalog-category-slider-item"].active,
+[data-mj="game-catalog-category-slider-item"].active-link,
+[data-mj="game-catalog-category-slider-item"][aria-current="page"],
+[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
+  background: #1e1e31 !important;
+  box-shadow: #63b606 0 0 0 1px inset !important;
+  color: #63b606 !important;
+}
+
+/* =========================
+   Search and provider controls
+   ========================= */
+
+[data-mj="game-catalog-game-search"],
+[data-mj="game-catalog-game-search"]:focus,
+[data-mj="game-catalog-mobile-provider-input"],
+[data-mj="game-catalog-provider-bottom-sheet-search"],
+[data-mj="game-catalog-mobile-search-toggle"],
+[data-mj="game-catalog-mobile-search"],
+.sl-select__control.app-ltr-j19at5-control,
+.sl-select__control.app-rtl-j19at5-control {
+  background: #1e1e31 !important;
+}
+
+[data-mj="game-catalog-game-search"],
+[data-mj="game-catalog-game-search"]:focus,
+[data-mj="game-catalog-mobile-provider-input"],
+[data-mj="game-catalog-provider-bottom-sheet-search"],
+[data-mj="game-catalog-mobile-search-toggle"],
+.sl-select__control.app-ltr-j19at5-control,
+.sl-select__control.app-rtl-j19at5-control {
+  border-color: #292938 !important;
+  box-shadow: none !important;
+  font-weight: 300 !important;
+
+}
+
+[data-mj="game-catalog-mobile-provider-input"],
+[data-mj="game-catalog-provider-bottom-sheet-search"],
+[data-mj="game-catalog-game-search"]:focus {
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-mobile-search"] {
+  border: 1px solid #292938 !important;
+  font-weight: 300 !important;
+}
+
+/* Active and focused search */
+[data-mj="game-catalog-game-search"]:focus.active,
+[data-mj="game-catalog-game-search"]:focus.active-link,
+[data-mj="game-catalog-game-search"][aria-current="page"],
+[data-mj="game-catalog-game-search"][aria-expanded="true"] {
+  background: #1e1e31 !important;
+  border: 1px solid #63b606 !important;
+}
+
+/* =========================
+   Catalog wrappers
+   ========================= */
+
+/* Casino */
+.app-ltr-d3s3rs,
+.app-rtl-d3s3rs,
+/* Live Casino */
+.app-ltr-1ip08xp,
+.app-rtl-1ip08xp {
+  padding-top: 12px !important;
+}
