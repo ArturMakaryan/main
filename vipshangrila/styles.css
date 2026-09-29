@@ -50,20 +50,20 @@
 }
 
 [data-mj="header-nav-item"] a:hover * {
-  color: #31835A !important;
+  color: #63b606 !important;
   text-shadow: 0 0 6px #315a02 !important;
 }
 
 [data-mj="header-nav-item"] a.active-link,
 [data-mj="header-nav-item"] a[aria-current="page"] {
-  background-color: #31835A12 !important;
-  color: #31835A !important;
-  fill: #31835A !important;
+  background-color: #63b60612 !important;
+  color: #63b606 !important;
+  fill: #63b606 !important;
 }
 
 [data-mj="header-nav-item"] a.active-link *,
 [data-mj="header-nav-item"] a[aria-current="page"] * {
-  color: #31835A !important;
+  color: #63b606 !important;
 }
 
 [data-mj="header-nav-list"] p {
@@ -109,12 +109,12 @@ a[data-mj="game-catalog-mobile-category-chip"].app-rtl-bk2tas * {
 /* Active mobile category */
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8jjmj7 {
   background: #1e1e31 !important;
-  box-shadow: #31835A 0 0 0 1px inset !important;
-  color: #31835A !important;
+  box-shadow: #63b606 0 0 0 1px inset !important;
+  color: #63b606 !important;
 }
 
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8jjmj7 * {
-  color: #31835A !important;
+  color: #63b606 !important;
 }
 
 /* =========================
@@ -130,7 +130,7 @@ a[data-mj="game-catalog-category-slider-item"] {
 }
 
 [data-mj="game-catalog-category-slider-item"]:hover {
-  box-shadow: #31835A73 0 0 0 1px inset !important;
+  box-shadow: #63b60673 0 0 0 1px inset !important;
 }
 
 /* Active Casino and Live Casino categories */
@@ -140,8 +140,8 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot,
 [data-mj="game-catalog-category-slider-item"][aria-current="page"],
 [data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
   background: #1e1e31 !important;
-  box-shadow: #31835A 0 0 0 1px inset !important;
-  color: #31835A !important;
+  box-shadow: #63b606 0 0 0 1px inset !important;
+  color: #63b606 !important;
 }
 
 a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot {
@@ -193,7 +193,7 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot {
 [data-mj="game-catalog-game-search"][aria-current="page"],
 [data-mj="game-catalog-game-search"][aria-expanded="true"] {
   background: #1e1e31 !important;
-  border: 1px solid #31835A !important;
+  border: 1px solid #63b606 !important;
 }
 
 /* =========================
