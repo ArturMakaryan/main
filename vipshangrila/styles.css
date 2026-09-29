@@ -76,20 +76,20 @@ body::before {
 }
 
 [data-mj="header-nav-item"] a:hover * {
-  color: #63b606 !important;
-  text-shadow: 0 0 6px #315a02 !important;
+  color: #ffd167 !important;
+  text-shadow: 0 0 6px #ffd167 !important;
 }
 
 [data-mj="header-nav-item"] a.active-link,
 [data-mj="header-nav-item"] a[aria-current="page"] {
-  background-color: #63b60612 !important;
-  color: #63b606 !important;
-  fill: #63b606 !important;
+  background-color: #ffd16712 !important;
+  color: #ffd167 !important;
+  fill: #ffd167 !important;
 }
 
 [data-mj="header-nav-item"] a.active-link *,
 [data-mj="header-nav-item"] a[aria-current="page"] * {
-  color: #63b606 !important;
+  color: #ffd167 !important;
 }
 
 [data-mj="header-nav-list"] p {
@@ -202,12 +202,12 @@ a[data-mj="game-catalog-mobile-category-chip"].app-rtl-13qsdce * {
 /* Active mobile category */
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-jo7hzr {
   background: #1e1e31 !important;
-  box-shadow: #63b606 0 0 0 1px inset !important;
-  color: #63b606 !important;
+  box-shadow: #ffd167 0 0 0 1px inset !important;
+  color: #ffd167 !important;
 }
 
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-jo7hzr * {
-  color: #63b606 !important;
+  color: #ffd167 !important;
 }
 
 /* Sticky catalog controls */
@@ -248,7 +248,7 @@ a[data-mj="game-catalog-category-slider-item"] {
 }
 
 [data-mj="game-catalog-category-slider-item"]:hover {
-  box-shadow: #63b60673 0 0 0 1px inset !important;
+  box-shadow: #ffd16773 0 0 0 1px inset !important;
 }
 
 /* Active Casino and Live Casino categories */
@@ -258,8 +258,8 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-14wj75s,
 [data-mj="game-catalog-category-slider-item"][aria-current="page"],
 [data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
   background: #1e1e31 !important;
-  box-shadow: #63b606 0 0 0 1px inset !important;
-  color: #63b606 !important;
+  box-shadow: #ffd167 0 0 0 1px inset !important;
+  color: #ffd167 !important;
 }
 
 /* =========================
@@ -288,7 +288,7 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-14wj75s,
 }
 
 [data-mj="game-catalog-game-search"]:focus {
-  border-color: #63b606 !important;
+  border-color: #ffd167 !important;
 }
 
 [data-mj="game-catalog-mobile-search"] {
