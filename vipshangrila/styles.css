@@ -186,34 +186,34 @@ body::before {
 }
 
 /* Inactive mobile categories */
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-bk2tas,
-a[data-mj="game-catalog-mobile-category-chip"].app-rtl-bk2tas {
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-13qsdce,
+a[data-mj="game-catalog-mobile-category-chip"].app-rtl-13qsdce {
   background: #1e1e31 !important;
   box-shadow: #292938 0 0 0 1px inset !important;
   color: #c0c0d8 !important;
 }
 
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-bk2tas *,
-a[data-mj="game-catalog-mobile-category-chip"].app-rtl-bk2tas * {
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-13qsdce *,
+a[data-mj="game-catalog-mobile-category-chip"].app-rtl-13qsdce * {
   color: #c0c0d8 !important;
   border-color: #292938 !important;
 }
 
 /* Active mobile category */
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8jjmj7 {
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-jo7hzr {
   background: #1e1e31 !important;
   box-shadow: #63b606 0 0 0 1px inset !important;
   color: #63b606 !important;
 }
 
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8jjmj7 * {
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-jo7hzr * {
   color: #63b606 !important;
 }
 
 /* Sticky catalog controls */
 [data-mj="game-catalog-category-slider"],
 [data-mj="game-catalog-mobile-filters"],
-.app-ltr-d3s3rs,
+.app-ltr-18kj1qy,
 .app-ltr-1ip08xp,
 .app-ltr-b7repu {
   z-index: 20 !important;
@@ -252,7 +252,7 @@ a[data-mj="game-catalog-category-slider-item"] {
 }
 
 /* Active Casino and Live Casino categories */
-a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot,
+a[data-mj="game-catalog-category-slider-item"].app-ltr-14wj75s,
 [data-mj="game-catalog-category-slider-item"].active,
 [data-mj="game-catalog-category-slider-item"].active-link,
 [data-mj="game-catalog-category-slider-item"][aria-current="page"],
@@ -271,8 +271,8 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot,
 [data-mj="game-catalog-provider-bottom-sheet-search"],
 [data-mj="game-catalog-mobile-search-toggle"],
 [data-mj="game-catalog-mobile-search"],
-.sl-select__control.app-ltr-j19at5-control,
-.sl-select__control.app-rtl-j19at5-control {
+.sl-select__control.app-ltr-1gs5x2m-control,
+.sl-select__control.app-rtl-1gs5x2m-control {
   background: #1e1e31 !important;
 }
 
@@ -280,8 +280,8 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot,
 [data-mj="game-catalog-mobile-provider-input"],
 [data-mj="game-catalog-provider-bottom-sheet-search"],
 [data-mj="game-catalog-mobile-search-toggle"],
-.sl-select__control.app-ltr-j19at5-control,
-.sl-select__control.app-rtl-j19at5-control {
+.sl-select__control.app-ltr-1gs5x2m-control,
+.sl-select__control.app-rtl-1gs5x2m-control {
   border-color: #292938 !important;
   box-shadow: none !important;
   font-weight: 300 !important;
@@ -301,8 +301,8 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot,
    ========================= */
 
 /* Casino */
-.app-ltr-d3s3rs,
-.app-rtl-d3s3rs,
+.app-ltr-18kj1qy,
+.app-rtl-18kj1qy,
 /* Live Casino */
 .app-ltr-1ip08xp,
 .app-rtl-1ip08xp {
