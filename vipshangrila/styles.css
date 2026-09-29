@@ -229,6 +229,12 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8jjmj7 * {
    Desktop category slider
    ========================= */
 
+[data-mj="game-catalog-category-slider"]:has(
+  [data-mj="game-catalog-category-slider-list"] > :only-child
+) {
+  display: none !important;
+}
+
 [data-mj="game-catalog-category-slider-list"]:has(> :only-child) {
   display: none !important;
 }
