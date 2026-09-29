@@ -16,8 +16,8 @@ body::before {
 
 [data-mj="header-nav"] {
   background-color: #181829 !important;
-  border-top: 1px solid rgb(41 41 56) !important;
-  border-bottom: 1px solid rgb(41 41 56) !important;
+  border-top: 1px solid rgb(41 41 56 / 42%) !important;
+  border-bottom: 1px solid rgb(31 31 47) !important;
 }
 
 @media screen and (max-width: 992px) {
