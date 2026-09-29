@@ -193,6 +193,12 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-jo7hzr * {
   color: #ffd167 !important;
 }
 
+[data-mj="game-catalog-mobile-categories"]:has(
+  > [data-mj="game-catalog-mobile-category-chip"]:only-child
+) {
+  display: none !important;
+}
+
 /* =========================
    Desktop category slider
    ========================= */
