@@ -178,6 +178,10 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot,
   font-weight: 300 !important;
 }
 
+[data-mj="game-catalog-game-search"]:focus {
+  box-shadow: #63b606 0 0 0 1px inset !important;
+}
+
 [data-mj="game-catalog-mobile-search"] {
   border: 1px solid #292938 !important;
   font-weight: 300 !important;
