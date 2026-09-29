@@ -121,6 +121,10 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8jjmj7 * {
    Desktop category slider
    ========================= */
 
+[data-mj="game-catalog-category-slider-list"]:has(> :only-child) {
+  display: none !important;
+}
+
 a[data-mj="game-catalog-category-slider-item"] {
   background: #1e1e31 !important;
   box-shadow: #292938 0 0 0 1px inset !important;
