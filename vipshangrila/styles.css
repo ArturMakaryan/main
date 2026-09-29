@@ -82,10 +82,54 @@
   transform: translateY(-1px) !important;
 }
 
+/* Account menu elements */
+[data-mj="account-menu"] p {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+.sl-navlink.app-ltr-16c0i8v .app-ltr-0 {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+[data-mj="account-menu"] svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.sl-navlink.app-ltr-5lvqzp {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+/* Game cards */
+[data-mj="widget-game-slider-slide"],
+[data-mj="game-catalog-card"] {
+  border: 1px solid rgb(41, 41, 56) !important;
+  border-radius: 8px !important;
+}
+
 [data-mj="game-catalog-category-slider-item"],
 [data-mj="game-catalog-mobile-category-chip"] {
   gap: 8px !important;
   flex-direction: column !important;
+  min-width: 60px;
+}
+
+[data-mj="game-catalog-category-slider-item"] span:first-of-type,
+[data-mj="game-catalog-mobile-category-chip"] span:first-of-type {
+  margin-right: 0 !important;
+  width: 24px !important;
+  height: 24px !important;
+  mask-size: 24px auto !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"] {
+  height: fit-content !important;
+  min-height: 0 !important;
+  flex: 0 0 auto !important;
+  padding: 12px;
 }
 
 /* =========================
