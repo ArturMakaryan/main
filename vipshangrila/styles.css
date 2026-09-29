@@ -82,6 +82,12 @@
   transform: translateY(-1px) !important;
 }
 
+[data-mj="game-catalog-category-slider-item"],
+[data-mj="game-catalog-mobile-category-chip"] {
+  gap: 8px !important;
+  flex-direction: column !important;
+}
+
 /* =========================
    Mobile categories
    ========================= */
