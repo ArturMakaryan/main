@@ -1,6 +1,6 @@
 [data-mj="header-nav"] {
-  border-top: 1px solid rgb(41 41 56 / 42%) !important;
-  border-bottom: 1px solid rgb(31 31 47) !important;
+  border-top: 1px solid #142119 !important;
+  border-bottom: 1px solid #142119 !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -239,8 +239,7 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-14wj75s,
 [data-mj="game-catalog-provider-bottom-sheet-search"],
 [data-mj="game-catalog-mobile-search-toggle"],
 [data-mj="game-catalog-mobile-search"],
-.sl-select__control.app-ltr-1gs5x2m-control,
-.sl-select__control.app-rtl-1gs5x2m-control {
+.sl-select__control {
   background: #14211a !important;
 }
 
@@ -248,14 +247,17 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-14wj75s,
 [data-mj="game-catalog-mobile-provider-input"],
 [data-mj="game-catalog-provider-bottom-sheet-search"],
 [data-mj="game-catalog-mobile-search-toggle"],
-.sl-select__control.app-ltr-1gs5x2m-control,
-.sl-select__control.app-rtl-1gs5x2m-control {
+.sl-select__control {
   border-color: #23352b !important;
   box-shadow: none !important;
   font-weight: 300 !important;
 }
 
 [data-mj="game-catalog-game-search"]:focus {
+  border-color: #ffd167 !important;
+}
+
+.sl-select__control:hover {
   border-color: #ffd167 !important;
 }
 
