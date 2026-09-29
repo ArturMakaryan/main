@@ -171,7 +171,6 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot,
 
 [data-mj="game-catalog-game-search"]:focus {
   border-color: #63b606 !important;
-  box-shadow: #63b606 0 0 0 1px inset !important;
 }
 
 [data-mj="game-catalog-mobile-search"] {
