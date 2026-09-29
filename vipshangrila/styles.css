@@ -103,6 +103,23 @@
   font-weight: 300 !important;
 }
 
+/* Mobile menu */
+[data-mj="mobile-nav-list"] * {
+  font-weight: 300 !important;
+}
+
+.app-ltr-1q5mnmx {
+  padding: 12px 4px 12px 8px !important;
+}
+
+.app-ltr-1wcaknn {
+  padding: 0 !important;
+}
+
+.app-ltr-101dpk6 {
+  padding: 16px !important;
+}
+
 /* Game cards */
 [data-mj="widget-game-slider-slide"],
 [data-mj="game-catalog-card"] {
