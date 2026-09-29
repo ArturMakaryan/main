@@ -151,6 +151,10 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-124i84t,
   color: #31835A !important;
 }
 
+a[data-mj="game-catalog-category-slider-item"].app-ltr-ba1jky {
+  box-shadow: none !important;
+}
+
 /* =========================
    Search and provider controls
    ========================= */
