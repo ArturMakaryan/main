@@ -1,3 +1,19 @@
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("./background-pattern.png") !important;
+  background-position: left top !important;
+  background-repeat: repeat !important;
+  background-size: 203px 203px !important;
+  pointer-events: none;
+  z-index: 0;
+}
+
 [data-mj="header-nav"] {
   background-color: #181829 !important;
   border-top: 1px solid rgb(41 41 56) !important;
