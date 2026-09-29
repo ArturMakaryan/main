@@ -208,6 +208,21 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8jjmj7 * {
   color: #63b606 !important;
 }
 
+/* Sticky catalog controls */
+[data-mj="game-catalog-category-slider"],
+[data-mj="game-catalog-mobile-filters"],
+.app-ltr-d3s3rs,
+.app-ltr-1ip08xp,
+.app-ltr-b7repu {
+  z-index: 20 !important;
+  background-color: #181829 !important;
+  background-image: url("./background-pattern.png") !important;
+  background-position: left top !important;
+  background-repeat: repeat !important;
+  background-size: 203px 203px !important;
+  background-attachment: fixed !important;
+}
+
 /* =========================
    Desktop category slider
    ========================= */
