@@ -129,7 +129,7 @@
 
 [data-mj="game-catalog-category-slider-item"],
 [data-mj="game-catalog-mobile-category-chip"] {
-  gap: 8px !important;
+  gap: 4px !important;
   flex-direction: column !important;
   min-width: 60px;
 }
