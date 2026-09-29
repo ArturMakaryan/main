@@ -136,10 +136,7 @@ a[data-mj="game-catalog-category-slider-item"] {
 }
 
 /* Active Casino and Live Casino categories */
-a[data-mj="game-catalog-category-slider-item"].app-ltr-m1fbjj,
-a[data-mj="game-catalog-category-slider-item"].app-rtl-m1fbjj,
-a[data-mj="game-catalog-category-slider-item"].app-ltr-124i84t,
-a[data-mj="game-catalog-category-slider-item"].app-rtl-124i84t,
+a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot,
 [data-mj="game-catalog-category-slider-item"].active,
 [data-mj="game-catalog-category-slider-item"].active-link,
 [data-mj="game-catalog-category-slider-item"][aria-current="page"],
@@ -149,7 +146,7 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-124i84t,
   color: #31835A !important;
 }
 
-a[data-mj="game-catalog-category-slider-item"].app-ltr-ba1jky {
+a[data-mj="game-catalog-category-slider-item"].app-ltr-1em9wot {
   box-shadow: none !important;
 }
 
