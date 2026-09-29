@@ -107,15 +107,13 @@ a[data-mj="game-catalog-mobile-category-chip"].app-rtl-bk2tas * {
 }
 
 /* Active mobile category */
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-dzlhvf,
-a[data-mj="game-catalog-mobile-category-chip"].app-rtl-dzlhvf {
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8jjmj7 {
   background: #1e1e31 !important;
   box-shadow: #31835A 0 0 0 1px inset !important;
   color: #31835A !important;
 }
 
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-dzlhvf *,
-a[data-mj="game-catalog-mobile-category-chip"].app-rtl-dzlhvf * {
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8jjmj7 * {
   color: #31835A !important;
 }
 
