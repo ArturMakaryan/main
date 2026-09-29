@@ -4,6 +4,14 @@
   border-bottom: 1px solid rgb(41 41 56) !important;
 }
 
+[data-mj="custom-header"] {
+  border-bottom: 1px solid rgb(41 41 56) !important;
+}
+
+.app-ltr-x4xc5i {
+  border-top: 1px solid rgb(41 41 56) !important;
+}
+
 [data-mj="widget-multi-banner-item"] {
   border: 1px solid rgb(41, 41, 56) !important;
   border-radius: 12px;
