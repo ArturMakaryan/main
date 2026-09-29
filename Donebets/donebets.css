@@ -731,16 +731,6 @@ button[aria-label="search"][name="search"]:hover,
 }
 /* End Last Winners */
 
-.ph-event-card {
-  background: #13131b !important;
-  box-shadow: inset 0 0 0 1px #1c1c26 !important;
-}
-
-.ph-event-card:hover {
-  background: #16161f !important;
-  box-shadow: inset 0 0 0 1px #1c1c26 !important;
-}
-
 [data-mj="header-left"] button[aria-label="search"][name="search"] {
   margin-left: 16px !important;
 }
