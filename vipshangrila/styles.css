@@ -117,6 +117,10 @@
   font-weight: 300 !important;
 }
 
+[data-mj="bottom-nav-item"] {
+  font-weight: 300 !important;
+}
+
 .app-ltr-1q5mnmx {
   padding: 12px 8px 12px 10px !important;
 }
