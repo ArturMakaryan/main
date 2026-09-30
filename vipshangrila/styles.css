@@ -293,3 +293,13 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-14wj75s,
 .app-rtl-1ip08xp {
   padding-top: 12px !important;
 }
+
+[data-mj="footer-copyright"] {
+  line-height: 22px;
+}
+
+@media (min-width: 1200px) {
+  .app-ltr-123oxoy {
+    padding-bottom: 64px;
+  }
+}
