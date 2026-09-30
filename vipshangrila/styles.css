@@ -133,6 +133,11 @@
   padding: 16px !important;
 }
 
+.app-ltr-cldnrx button,
+.app-rtl-cldnrx button {
+  gap: 0 !important;
+}
+
 /* Game cards */
 [data-mj="widget-game-slider-slide"],
 [data-mj="game-catalog-card"] {
