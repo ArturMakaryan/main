@@ -13,9 +13,17 @@
   border-top: 1px solid #142119 !important;
 }
 
+.app-ltr-xa6uaj {
+  background-color: transparent !important;
+}
+
 [data-mj="widget-multi-banner-item"] {
   border: 1px solid #e1ba6b30 !important;
   border-radius: 8px;
+}
+
+[data-mj="widget-top-providers-item"] {
+  border: 1px solid #e1ba6b30 !important;
 }
 
 .app-ltr-1cjlsuo,
@@ -308,6 +316,6 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 
 @media (min-width: 1200px) {
   .app-ltr-13yn07s {
-    padding-bottom: 144px;
+    padding-bottom: 64px;
   }
 }
