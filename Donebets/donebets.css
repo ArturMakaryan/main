@@ -1049,3 +1049,17 @@ html body [data-mj="widget-bet-win"] .esportesnow-bet-win-provider {
 [data-mj="widget-game-card"] .app-rtl-1l4n363 .app-rtl-16lhusi > * {
   display: none !important;
 }
+
+[data-mj="loading-overlay"] .loader-container {
+  width: 100% !important;
+  max-width: 200px !important;
+  height: auto !important;
+}
+
+[data-mj="loading-overlay"] .loader-container img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 200px !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
