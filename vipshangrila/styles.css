@@ -114,6 +114,10 @@
   font-weight: 300 !important;
 }
 
+[data-mj="account-menu-list"] {
+  margin-bottom: 0 !important;
+}
+
 .sl-navlink.app-ltr-16c0i8v .app-ltr-0 {
   width: 20px !important;
   height: 20px !important;
@@ -142,8 +146,8 @@
   padding: 12px 8px 12px 10px !important;
 }
 
-.app-ltr-1wcaknn {
-  padding: 0 !important;
+.app-ltr-1yyh18p {
+  padding: 14px !important;
 }
 
 .app-ltr-101dpk6 {
