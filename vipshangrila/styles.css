@@ -309,6 +309,10 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   line-height: 22px;
 }
 
+[data-mj="footer-logo"] {
+  max-width: 140px !important;
+}
+
 [data-mj="footer-nav"],
 [data-mj="footer-nav"] * {
   font-weight: 300 !important;
@@ -319,6 +323,8 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 28px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
