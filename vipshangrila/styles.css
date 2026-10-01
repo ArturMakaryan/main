@@ -392,6 +392,12 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   border: 1px solid rgb(42 58 48) !important;
 }
 
+.react-daterange-picker__wrapper {
+  border-color: #142119 !important;
+  box-shadow: none !important;
+  font-weight: 300 !important;
+}
+
 :is(
   .app-ltr-91ud2y,
   .app-rtl-91ud2y,
