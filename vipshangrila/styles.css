@@ -314,6 +314,13 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   font-weight: 300 !important;
 }
 
+[data-mj="footer-payment-assets"] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 1200px) {
   .app-ltr-13yn07s {
     padding-bottom: 64px;
