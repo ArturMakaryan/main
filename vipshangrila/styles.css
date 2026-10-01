@@ -166,7 +166,7 @@
 /* Game cards */
 [data-mj="widget-game-slider-slide"],
 [data-mj="game-catalog-card"] {
-  border: 1px solid #142119 !important;
+  border: 1px solid #e1ba6b30 !important;
   border-radius: 8px !important;
 }
 
