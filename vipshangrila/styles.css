@@ -379,7 +379,8 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 .app-ltr-91ud2y,
 .app-rtl-91ud2y,
 .app-ltr-dblg32,
-.app-ltr-1liha85 {
+.app-ltr-1liha85,
+.app-rtl-1liha85 {
   background: #14211a !important;
   font-weight: 300 !important;
   border: 1px solid rgb(42 58 48) !important;
@@ -396,40 +397,48 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   .app-rtl-91ud2y,
   .app-ltr-dblg32,
   .app-ltr-1liha85,
+  .app-rtl-1liha85,
   .app-ltr-91ud2y input,
   .app-rtl-91ud2y input,
   .app-ltr-dblg32 input,
-  .app-ltr-1liha85 input
+  .app-ltr-1liha85 input,
+  .app-rtl-1liha85 input
 ):-webkit-autofill,
 :is(
   .app-ltr-91ud2y,
   .app-rtl-91ud2y,
   .app-ltr-dblg32,
   .app-ltr-1liha85,
+  .app-rtl-1liha85,
   .app-ltr-91ud2y input,
   .app-rtl-91ud2y input,
   .app-ltr-dblg32 input,
-  .app-ltr-1liha85 input
+  .app-ltr-1liha85 input,
+  .app-rtl-1liha85 input
 ):-webkit-autofill:hover,
 :is(
   .app-ltr-91ud2y,
   .app-rtl-91ud2y,
   .app-ltr-dblg32,
   .app-ltr-1liha85,
+  .app-rtl-1liha85,
   .app-ltr-91ud2y input,
   .app-rtl-91ud2y input,
   .app-ltr-dblg32 input,
-  .app-ltr-1liha85 input
+  .app-ltr-1liha85 input,
+  .app-rtl-1liha85 input
 ):-webkit-autofill:focus,
 :is(
   .app-ltr-91ud2y,
   .app-rtl-91ud2y,
   .app-ltr-dblg32,
   .app-ltr-1liha85,
+  .app-rtl-1liha85,
   .app-ltr-91ud2y input,
   .app-rtl-91ud2y input,
   .app-ltr-dblg32 input,
-  .app-ltr-1liha85 input
+  .app-ltr-1liha85 input,
+  .app-rtl-1liha85 input
 ):-webkit-autofill:active {
   -webkit-text-fill-color: #EDEADB !important;
   caret-color: #EDEADB !important;
