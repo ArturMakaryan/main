@@ -30,13 +30,29 @@
   border: 1px solid #e1ba6b30 !important;
 }
 
+[data-mj="promotions-grid"] > * {
+  border: 1px solid #e1ba6b30 !important;
+  border-radius: 8px;
+}
+
+[data-mj="promotions-grid"] > *:hover {
+  border: 1px solid #e1ba6b7d !important;
+}
+
+[data-mj="promotion-image"] {
+  border: 1px solid #e1ba6b30 !important;
+  border-radius: 8px;
+}
+
 .app-ltr-1iczmls {
   border-radius: 8px;
   border: 1px solid #e1b96b30;
 }
 
 .app-ltr-ojgw2o .app-ltr-7ipxxj,
-.app-ltr-ojgw2o .app-ltr-vi8osr {
+.app-ltr-ojgw2o .app-ltr-vi8osr,
+.app-rtl-ojgw2o .app-rtl-7ipxxj,
+.app-rtl-ojgw2o .app-rtl-vi8osr {
   color: rgb(236 234 219 / 50%) !important;
 }
 
@@ -352,6 +368,7 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 
 .app-ltr-19zdw54 .app-ltr-uykrtt {
   background-color: rgb(20 33 25) !important;
+  color: rgb(236 234 219) !important;
 }
 
 [data-mj="footer-copyright"] {
@@ -361,7 +378,14 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 
 .app-ltr-91ud2y,
 .app-rtl-91ud2y,
+.app-ltr-dblg32,
 .app-ltr-1liha85 {
+  background: #14211a !important;
+  font-weight: 300 !important;
+  border: 1px solid rgb(42 58 48) !important;
+}
+
+.react-date-picker__wrapper {
   background: #14211a !important;
   font-weight: 300 !important;
   border: 1px solid rgb(42 58 48) !important;
@@ -370,33 +394,41 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 :is(
   .app-ltr-91ud2y,
   .app-rtl-91ud2y,
+  .app-ltr-dblg32,
   .app-ltr-1liha85,
   .app-ltr-91ud2y input,
   .app-rtl-91ud2y input,
+  .app-ltr-dblg32 input,
   .app-ltr-1liha85 input
 ):-webkit-autofill,
 :is(
   .app-ltr-91ud2y,
   .app-rtl-91ud2y,
+  .app-ltr-dblg32,
   .app-ltr-1liha85,
   .app-ltr-91ud2y input,
   .app-rtl-91ud2y input,
+  .app-ltr-dblg32 input,
   .app-ltr-1liha85 input
 ):-webkit-autofill:hover,
 :is(
   .app-ltr-91ud2y,
   .app-rtl-91ud2y,
+  .app-ltr-dblg32,
   .app-ltr-1liha85,
   .app-ltr-91ud2y input,
   .app-rtl-91ud2y input,
+  .app-ltr-dblg32 input,
   .app-ltr-1liha85 input
 ):-webkit-autofill:focus,
 :is(
   .app-ltr-91ud2y,
   .app-rtl-91ud2y,
+  .app-ltr-dblg32,
   .app-ltr-1liha85,
   .app-ltr-91ud2y input,
   .app-rtl-91ud2y input,
+  .app-ltr-dblg32 input,
   .app-ltr-1liha85 input
 ):-webkit-autofill:active {
   -webkit-text-fill-color: #EDEADB !important;
