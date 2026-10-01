@@ -334,6 +334,36 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   border: 1px solid rgb(28 44 34) !important;
 }
 
+:is(
+  .app-ltr-91ud2y,
+  .app-ltr-1liha85,
+  .app-ltr-91ud2y input,
+  .app-ltr-1liha85 input
+):-webkit-autofill,
+:is(
+  .app-ltr-91ud2y,
+  .app-ltr-1liha85,
+  .app-ltr-91ud2y input,
+  .app-ltr-1liha85 input
+):-webkit-autofill:hover,
+:is(
+  .app-ltr-91ud2y,
+  .app-ltr-1liha85,
+  .app-ltr-91ud2y input,
+  .app-ltr-1liha85 input
+):-webkit-autofill:focus,
+:is(
+  .app-ltr-91ud2y,
+  .app-ltr-1liha85,
+  .app-ltr-91ud2y input,
+  .app-ltr-1liha85 input
+):-webkit-autofill:active {
+  -webkit-text-fill-color: #EDEADB !important;
+  caret-color: #EDEADB !important;
+  -webkit-box-shadow: 0 0 0 1000px #14211a inset !important;
+  box-shadow: 0 0 0 1000px #14211a inset !important;
+}
+
 [data-mj="footer-logo"] {
   max-width: 140px !important;
 }
