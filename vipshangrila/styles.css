@@ -390,6 +390,21 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   border: 1px solid rgb(42 58 48) !important;
 }
 
+.app-ltr-i4qzgn {
+  background: #14211a !important;
+  font-weight: 300 !important;
+  border: 1px solid rgb(42 58 48) !important;
+}
+
+.app-ltr-i4qzgn:active,
+.app-ltr-i4qzgn:focus,
+.app-ltr-i4qzgn:focus-within,
+.app-ltr-i4qzgn.active,
+.app-ltr-i4qzgn[aria-expanded="true"],
+.app-ltr-i4qzgn[aria-selected="true"] {
+  border-color: #e1b96b !important;
+}
+
 .react-date-picker__wrapper {
   background: #14211a !important;
   font-weight: 300 !important;
