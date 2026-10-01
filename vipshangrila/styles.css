@@ -181,12 +181,13 @@
   border: 1px solid #142119 !important;
 }
 
-[data-mj="game-catalog-category-slider-item"],
+a[data-mj="game-catalog-category-slider-item"],
 [data-mj="game-catalog-mobile-category-chip"] {
   gap: 4px !important;
   flex-direction: column !important;
   min-width: 60px;
-  padding: 6px 12px 6px 12px;
+  padding: 6px 12px 8px 12px;
+  box-shadow: #203126 0 0 0 1px inset !important;
 }
 
 [data-mj="game-catalog-category-slider-item"] span:first-of-type,
@@ -217,7 +218,6 @@
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-13qsdce,
 a[data-mj="game-catalog-mobile-category-chip"].app-rtl-13qsdce {
   background: #14211a !important;
-  box-shadow: #142119 0 0 0 1px inset !important;
   color: #c0cdc6 !important;
 }
 
@@ -260,7 +260,6 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-pkg7q1 * {
 
 a[data-mj="game-catalog-category-slider-item"] {
   background: #14211a !important;
-  box-shadow: #203126 0 0 0 1px inset !important;
   color: #c0cdc6 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
@@ -361,6 +360,7 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 }
 
 .app-ltr-91ud2y,
+.app-rtl-91ud2y,
 .app-ltr-1liha85 {
   background: #14211a !important;
   font-weight: 300 !important;
@@ -369,26 +369,34 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 
 :is(
   .app-ltr-91ud2y,
+  .app-rtl-91ud2y,
   .app-ltr-1liha85,
   .app-ltr-91ud2y input,
+  .app-rtl-91ud2y input,
   .app-ltr-1liha85 input
 ):-webkit-autofill,
 :is(
   .app-ltr-91ud2y,
+  .app-rtl-91ud2y,
   .app-ltr-1liha85,
   .app-ltr-91ud2y input,
+  .app-rtl-91ud2y input,
   .app-ltr-1liha85 input
 ):-webkit-autofill:hover,
 :is(
   .app-ltr-91ud2y,
+  .app-rtl-91ud2y,
   .app-ltr-1liha85,
   .app-ltr-91ud2y input,
+  .app-rtl-91ud2y input,
   .app-ltr-1liha85 input
 ):-webkit-autofill:focus,
 :is(
   .app-ltr-91ud2y,
+  .app-rtl-91ud2y,
   .app-ltr-1liha85,
   .app-ltr-91ud2y input,
+  .app-rtl-91ud2y input,
   .app-ltr-1liha85 input
 ):-webkit-autofill:active {
   -webkit-text-fill-color: #EDEADB !important;
