@@ -7,6 +7,10 @@
   [data-mj="custom-header"] {
     border-bottom: 1px solid #142119 !important;
   }
+
+  .app-ltr-19zdw54 {
+    margin-top: 16px !important;
+  }
 }
 
 .app-ltr-x4xc5i {
@@ -345,6 +349,10 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 
 [data-mj="footer"] .app-ltr-1kaa6in {
   display: none !important;
+}
+
+.app-ltr-19zdw54 .app-ltr-uykrtt {
+  background-color: rgb(20 33 25) !important;
 }
 
 [data-mj="footer-copyright"] {
