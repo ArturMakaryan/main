@@ -244,7 +244,7 @@ a[data-mj="game-catalog-mobile-category-chip"].app-rtl-13qsdce {
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-13qsdce *,
 a[data-mj="game-catalog-mobile-category-chip"].app-rtl-13qsdce * {
   color: #c0cdc6 !important;
-  border-color: #142119 !important;
+  border-color: #203126 !important;
 }
 
 /* Active mobile category */
@@ -318,7 +318,7 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 [data-mj="game-catalog-provider-bottom-sheet-search"],
 [data-mj="game-catalog-mobile-search-toggle"],
 .sl-select__control {
-  border-color: #142119 !important;
+  border-color: #203126 !important;
   box-shadow: none !important;
   font-weight: 300 !important;
 }
