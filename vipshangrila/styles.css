@@ -67,19 +67,19 @@
 }
 
 [data-mj="header-nav-item"] a:hover * {
-  color: #ffd167 !important;
+  color: #e1b96b !important;
 }
 
 [data-mj="header-nav-item"] a.active-link,
 [data-mj="header-nav-item"] a[aria-current="page"] {
-  background-color: #ffd16712 !important;
-  color: #ffd167 !important;
-  fill: #ffd167 !important;
+  background-color: #e1b96b12 !important;
+  color: #e1b96b !important;
+  fill: #e1b96b !important;
 }
 
 [data-mj="header-nav-item"] a.active-link *,
 [data-mj="header-nav-item"] a[aria-current="page"] * {
-  color: #ffd167 !important;
+  color: #e1b96b !important;
 }
 
 [data-mj="header-nav-list"] p {
@@ -156,6 +156,15 @@
   border-radius: 8px !important;
 }
 
+[data-mj="game-catalog-card-overlay"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: url("./game-card-hover-money.png") center / cover no-repeat;
+  pointer-events: none;
+}
+
 [data-mj="game-catalog-category-slider-item"],
 [data-mj="game-catalog-mobile-category-chip"] {
   gap: 4px !important;
@@ -205,12 +214,12 @@ a[data-mj="game-catalog-mobile-category-chip"].app-rtl-13qsdce * {
 /* Active mobile category */
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-pkg7q1 {
   background: #14211a !important;
-  box-shadow: #ffd167 0 0 0 1px inset !important;
-  color: #ffd167 !important;
+  box-shadow: #e1b96b 0 0 0 1px inset !important;
+  color: #e1b96b !important;
 }
 
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-pkg7q1 * {
-  color: #ffd167 !important;
+  color: #e1b96b !important;
 }
 
 [data-mj="game-catalog-mobile-categories"]:has(
@@ -242,7 +251,7 @@ a[data-mj="game-catalog-category-slider-item"] {
 }
 
 [data-mj="game-catalog-category-slider-item"]:hover {
-  box-shadow: #ffd16773 0 0 0 1px inset !important;
+  box-shadow: #e1b96b73 0 0 0 1px inset !important;
 }
 
 /* Active Casino and Live Casino categories */
@@ -252,8 +261,8 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 [data-mj="game-catalog-category-slider-item"][aria-current="page"],
 [data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
   background: #14211a !important;
-  box-shadow: #ffd167 0 0 0 1px inset !important;
-  color: #ffd167 !important;
+  box-shadow: #e1b96b 0 0 0 1px inset !important;
+  color: #e1b96b !important;
 }
 
 /* =========================
@@ -280,11 +289,11 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 }
 
 [data-mj="game-catalog-game-search"]:focus {
-  border-color: #ffd167 !important;
+  border-color: #e1b96b !important;
 }
 
 .sl-select__control:hover {
-  border-color: #ffd167 !important;
+  border-color: #e1b96b !important;
 }
 
 [data-mj="game-catalog-mobile-search"] {
