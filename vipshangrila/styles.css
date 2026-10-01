@@ -340,7 +340,11 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
 
 [data-mj="footer"] {
   background-color: #08120d !important;
-  border-top: 1px solid #142119 !important;
+  border-top: 1px solid #1d2721 !important;
+}
+
+.app-ltr-1kaa6in {
+  border-color: #142119 !important;
 }
 
 [data-mj="footer-copyright"] {
