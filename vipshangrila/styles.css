@@ -327,6 +327,11 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   margin-bottom: 20px;
 }
 
+[data-mj="footer-payment-assets"] img {
+  width: auto;
+  height: 24px;
+}
+
 @media (min-width: 1200px) {
   .app-ltr-13yn07s {
     padding-bottom: 64px;
