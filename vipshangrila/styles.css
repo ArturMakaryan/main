@@ -156,13 +156,28 @@
   border-radius: 8px !important;
 }
 
-[data-mj="game-catalog-card-overlay"]::after {
+[data-mj="game-catalog-card"] {
+  position: relative;
+  isolation: isolate;
+}
+
+[data-mj="game-catalog-card"]::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 1;
   background: url("./game-card-hover-money.png") center / cover no-repeat;
+  opacity: 0;
   pointer-events: none;
+  transition: opacity 200ms ease;
+}
+
+[data-mj="game-catalog-card"]:hover::after {
+  opacity: 1;
+}
+
+[data-mj="game-catalog-card-overlay"] {
+  z-index: 2 !important;
 }
 
 [data-mj="game-catalog-category-slider-item"],
