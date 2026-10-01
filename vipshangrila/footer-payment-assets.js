@@ -1,6 +1,7 @@
 (() => {
   const assetBase =
     "https://cdn.jsdelivr.net/gh/ArturMakaryan/main@9d791ae/vipshangrila/payment-assets/";
+  const depositUrl = "https://vipshangrila.com/en/?m=account&t=deposit";
   const assets = [
     ["ApplePay%201.svg", "Apple Pay"],
     ["GooglePay%201.svg", "Google Pay"],
@@ -29,12 +30,18 @@
       container.dataset.mj = "footer-payment-assets";
 
       for (const [filename, alt] of assets) {
+        const link = document.createElement("a");
+        link.href = depositUrl;
+        link.ariaLabel = `Deposit with ${alt}`;
+
         const image = document.createElement("img");
         image.src = assetBase + filename;
         image.alt = alt;
         image.loading = "lazy";
         image.decoding = "async";
-        container.append(image);
+
+        link.append(image);
+        container.append(link);
       }
     }
 
