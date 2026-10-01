@@ -305,8 +305,33 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   padding-top: 12px !important;
 }
 
+.app-ltr-jz3jyz .app-ltr-dofl23 {
+  padding: 16px !important;
+}
+
+.app-ltr-b2xcke .app-ltr-1y7byw {
+  padding: 4px 16px !important;
+}
+
+.sl-navlink.app-ltr-lvkyd8 {
+  font-weight: 300 !important;
+}
+
+[data-mj="footer"] {
+  background-color: #08120d !important;
+  border-top: 1px solid #142119 !important;
+}
+
 [data-mj="footer-copyright"] {
+  color: #83877c !important;
   line-height: 22px;
+}
+
+.app-ltr-91ud2y,
+.app-ltr-1liha85 {
+  border-color: #142119 !important;
+  font-weight: 300 !important;
+  border: 1px solid rgb(28 44 34) !important;
 }
 
 [data-mj="footer-logo"] {
@@ -324,7 +349,8 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   justify-content: center;
   align-items: center;
   gap: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 [data-mj="footer-payment-assets"] img {
