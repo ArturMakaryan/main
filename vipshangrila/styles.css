@@ -343,8 +343,8 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   border-top: 1px solid #1d2721 !important;
 }
 
-.app-ltr-1kaa6in {
-  border-color: #142119 !important;
+[data-mj="footer"] .app-ltr-1kaa6in {
+  display: none !important;
 }
 
 [data-mj="footer-copyright"] {
