@@ -195,6 +195,7 @@
 
 [data-mj="widget-game-card"] {
   border: 1px solid #e1ba6b30 !important;
+  border-radius: 8px;
 }
 
 [data-mj="game-catalog-card"] {
