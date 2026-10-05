@@ -1,5 +1,9 @@
 @import url("footer.css");
 
+.vf-providers {
+  margin-bottom: 40px !important;
+}
+
 [data-mj="header-nav-list"] {
   justify-content: center !important;
 }
