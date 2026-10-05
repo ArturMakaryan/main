@@ -56,6 +56,7 @@
     const wrap = document.createElement("div");
     wrap.innerHTML = footerMarkup(ASSET);
     root.append(wrap);
+    root.querySelector(".vf-providers").style.setProperty("margin-bottom", "40px", "important");
     const cols = [...root.querySelectorAll(".vf-col")];
     const mobile = matchMedia("(max-width: 768px)");
     const sync = () => cols.forEach((col, index) => { const list = col.querySelector(".vf-list"), button = col.querySelector(".vf-title"), open = mobile.matches ? col.classList.contains("is-open") : true; list.hidden = !open; button.setAttribute("aria-expanded", String(open)); if (mobile.matches && index === 0 && !cols.some(c => c.classList.contains("is-open"))) col.classList.add("is-open"); });
