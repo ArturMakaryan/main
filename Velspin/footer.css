@@ -5,6 +5,7 @@ img { display: block; max-width: 100%; height: auto; }
 
 .vf-footer {
   overflow: hidden;
+  margin-bottom: 60px;
   color: #fff;
   background: #07070b;
   font: 500 14px/1.2 Montserrat, "Open Sans", Arial, sans-serif;
