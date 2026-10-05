@@ -29,6 +29,25 @@
 
   function mount(target) {
     if (!target || target.shadowRoot) return;
+
+    // Neutralize platform styles applied to the host itself, including rules
+    // such as [data-mj="footer"] { padding, background, border, box-shadow }.
+    const hostReset = {
+      all: "initial",
+      display: "block",
+      width: "100%",
+      margin: "0",
+      padding: "0",
+      border: "0",
+      background: "transparent",
+      boxShadow: "none",
+      color: "initial",
+      font: "initial"
+    };
+    Object.entries(hostReset).forEach(([property, value]) => {
+      target.style.setProperty(property.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`), value, "important");
+    });
+
     const root = target.attachShadow({ mode: "open" });
     const link = document.createElement("link");
     link.rel = "stylesheet";
