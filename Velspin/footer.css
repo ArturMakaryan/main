@@ -34,7 +34,7 @@ img { display: block; max-width: 100%; height: auto; }
 .vf-awards:hover > div { animation-play-state: paused; }
 .vf-pay, .vf-providers { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .vf-pay { background: #161b22; }
-.vf-providers { background: #0b0d12; }
+.vf-providers { margin-bottom: 40px; background: #0b0d12; }
 .vf-pay img, .vf-providers img { width: 100%; max-width: none; }
 @keyframes vf-awards { to { transform: translateX(-50%); } }
 
