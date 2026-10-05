@@ -36,7 +36,7 @@
       all: "initial",
       display: "block",
       width: "100%",
-      margin: "0 0 40px",
+      margin: "0",
       padding: "0",
       border: "0",
       background: "transparent",
