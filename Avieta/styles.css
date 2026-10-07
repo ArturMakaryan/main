@@ -1,0 +1,136 @@
+/* Desktop nav item */
+[data-mj="header-nav-item"],
+[data-mj="header-nav-item"] *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
+  font-weight: 300 !important;
+  transition:
+    color 180ms ease,
+    fill 180ms ease,
+    stroke 180ms ease,
+    transform 180ms ease !important;
+}
+
+[data-mj="header-nav-list"] p {
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  color: #d6d6d6 !important;
+}
+
+[data-mj="header-nav-item"]:hover {
+  transform: translateY(-1px) !important;
+}
+
+[data-mj="header-nav-item"]:hover,
+[data-mj="header-nav-item"]:hover *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
+  color: #fff !important;
+}
+
+[data-mj="header-nav-item"].active-link,
+[data-mj="header-nav-item"][aria-current="page"],
+[data-mj="header-nav-item"] .active-link,
+[data-mj="header-nav-item"] [aria-current="page"],
+[data-mj="header-nav-item"].active-link *:not([data-site-badge="true"]):not([data-site-badge="true"] *),
+[data-mj="header-nav-item"][aria-current="page"] *:not([data-site-badge="true"]):not([data-site-badge="true"] *),
+[data-mj="header-nav-item"] .active-link *:not([data-site-badge="true"]):not([data-site-badge="true"] *),
+[data-mj="header-nav-item"] [aria-current="page"] *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
+  color: #ed2b32 !important;
+  font-weight: 300 !important;
+}
+
+/* Mobile nav item */
+[data-mj="nav-item"],
+[data-mj="nav-item"] *:not([data-site-badge="true"]) {
+  color: #d6d6d6 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="nav-item"].active-link,
+[data-mj="nav-item"][aria-current="page"],
+[data-mj="nav-item"] .active-link,
+[data-mj="nav-item"] [aria-current="page"],
+[data-mj="nav-item"].active-link *:not([data-site-badge="true"]),
+[data-mj="nav-item"][aria-current="page"] *:not([data-site-badge="true"]),
+[data-mj="nav-item"] .active-link *:not([data-site-badge="true"]),
+[data-mj="nav-item"] [aria-current="page"] *:not([data-site-badge="true"]) {
+  color: #ed2b32 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+/* Mobile category chips */
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1vqt9j3,
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1vqt9j3 *,
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1mxymj3,
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1mxymj3 * {
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1mxymj3 {
+  background-color: #1e222700 !important;
+  box-shadow: #302e2e 0 0 0 1px inset !important;
+  color: #c0b9b9 !important;
+  border-color: #1c1c26 !important;
+}
+
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1vqt9j3 {
+  background-color: #1e222700 !important;
+}
+
+/* Category slider */
+a[data-mj="game-catalog-category-slider-item"] {
+  background-color: #1e222700 !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  color: #c0b9b9 !important;
+  box-shadow: #272c32 0 0 0 1px inset !important;
+}
+
+a[data-mj="game-catalog-category-slider-item"]:hover {
+  box-shadow: #ed2b3270 0 0 0 1px inset !important;
+  background-color: #2d343e !important;
+}
+
+a[data-mj="game-catalog-category-slider-item"].app-ltr-w0hrwq,
+a[data-mj="game-catalog-category-slider-item"].active,
+a[data-mj="game-catalog-category-slider-item"].active-link,
+a[data-mj="game-catalog-category-slider-item"][aria-current="page"],
+a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
+  background-color: #1e2227 !important;
+  box-shadow: #ed2b32 0 0 0 1px inset !important;
+  color: #ed2b32 !important;
+}
+
+/* Search and provider inputs */
+[data-mj="game-catalog-game-search"].app-ltr-1833qdr,
+[data-mj="game-catalog-mobile-provider-input"].app-ltr-1833qdr,
+.sl-select__control.app-ltr-1m7pcro-control {
+  background: #161b21 !important;
+  border-color: #272c32 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-game-search"].app-ltr-1833qdr,
+[data-mj="game-catalog-mobile-provider-input"].app-ltr-1833qdr {
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-game-search"].app-ltr-1833qdr:focus {
+  border: 1px solid #ed2b32 !important;
+}
+
+[data-mj="game-catalog-provider-bottom-sheet-search"],
+[data-mj="game-catalog-mobile-search"] {
+  background-color: #1e2227 !important;
+  border-color: #272c32 !important;
+}
+
+[data-mj="login-button"] {
+  outline: 1px solid #ed2b32 !important;
+  background: none !important;
+  color: #ed2b32 !important;
+}
+
+[data-mj="register-button"] {
+  color: #fff !important;
+}
