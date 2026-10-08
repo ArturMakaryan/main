@@ -124,7 +124,7 @@ a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
 [data-mj="game-catalog-game-search"].app-ltr-1833qdr,
 [data-mj="game-catalog-mobile-provider-input"].app-ltr-1833qdr,
 .sl-select__control.app-ltr-1m7pcro-control {
-  background: #161b21 !important;
+  background: #11171e !important;
   border-color: #272c32 !important;
   box-shadow: none !important;
 }
@@ -160,7 +160,7 @@ a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
 }
 
 [data-mj="game-catalog-mobile-search-toggle"] {
-  background: #161b21 !important;
+  background: #11171e !important;
   box-shadow: rgb(39 44 50) 0 0 0 1px inset !important;
 }
 
@@ -203,7 +203,7 @@ a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
 .react-date-picker__wrapper,
 .app-ltr-1hfrxhr,
 .react-daterange-picker__wrapper {
-  background: #161b21 !important;
+  background: #11171e !important;
   border-color: #272c32 !important;
   font-weight: 300 !important;
 }
@@ -250,8 +250,8 @@ a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
 ):-webkit-autofill:active {
   -webkit-text-fill-color: #EDEADB !important;
   caret-color: #EDEADB !important;
-  -webkit-box-shadow: 0 0 0 1000px #161b21 inset !important;
-  box-shadow: 0 0 0 1000px #161b21 inset !important;
+  -webkit-box-shadow: 0 0 0 1000px #11171e inset !important;
+  box-shadow: 0 0 0 1000px #11171e inset !important;
 }
 
 [data-mj="account-menu-list"] p,
@@ -279,9 +279,6 @@ a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
 
 .app-ltr-1x96zeq {
   padding: 12px !important;
-  background: #fff0 !important;
-  border-bottom: 1px solid hsla(0, 0%, 100%, 0.18) !important;
-  border-radius: 0;
 }
 
 .sl-navlink {
