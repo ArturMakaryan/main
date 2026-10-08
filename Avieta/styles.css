@@ -158,3 +158,8 @@ a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
 .app-ltr-1q5mnmx {
   padding: 16px 8px 16px 12px !important;
 }
+
+[data-mj="game-catalog-mobile-search-toggle"] {
+  background: #161b21 !important;
+  box-shadow: rgb(39 44 50) 0 0 0 1px inset !important;
+}
