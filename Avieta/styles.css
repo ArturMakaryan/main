@@ -1,7 +1,6 @@
 /* Desktop nav item */
 [data-mj="header-nav-item"],
-[data-mj="header-nav-item"]
-  *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
+[data-mj="header-nav-item"] *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
   font-weight: 300 !important;
   transition:
     color 180ms ease,
@@ -11,9 +10,9 @@
 }
 
 [data-mj="header-nav-list"] p {
-  color: #b7bcc0 !important;
-  font-size: 14px !important;
   font-weight: 300 !important;
+  font-size: 14px !important;
+  color: #b7bcc0 !important;
 }
 
 [data-mj="header-nav-item"] [style*="mask-image:"] {
@@ -25,19 +24,18 @@
 }
 
 [data-mj="header-nav-item"]:hover,
-[data-mj="header-nav-item"]:hover
-  *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
+[data-mj="header-nav-item"]:hover *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
   color: #fff !important;
 }
 
-[data-mj="header-nav-item"]:is(.active-link, [aria-current="page"]),
-[data-mj="header-nav-item"]
-  :is(.active-link, [aria-current="page"]),
-[data-mj="header-nav-item"]:is(.active-link, [aria-current="page"])
-  *:not([data-site-badge="true"]):not([data-site-badge="true"] *),
-[data-mj="header-nav-item"]
-  :is(.active-link, [aria-current="page"])
-  *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
+[data-mj="header-nav-item"].active-link,
+[data-mj="header-nav-item"][aria-current="page"],
+[data-mj="header-nav-item"] .active-link,
+[data-mj="header-nav-item"] [aria-current="page"],
+[data-mj="header-nav-item"].active-link *:not([data-site-badge="true"]):not([data-site-badge="true"] *),
+[data-mj="header-nav-item"][aria-current="page"] *:not([data-site-badge="true"]):not([data-site-badge="true"] *),
+[data-mj="header-nav-item"] .active-link *:not([data-site-badge="true"]):not([data-site-badge="true"] *),
+[data-mj="header-nav-item"] [aria-current="page"] *:not([data-site-badge="true"]):not([data-site-badge="true"] *) {
   color: #ed2b32 !important;
   font-weight: 300 !important;
 }
@@ -50,24 +48,26 @@
   font-weight: 300 !important;
 }
 
-[data-mj="nav-item"]:is(.active-link, [aria-current="page"]),
-[data-mj="nav-item"] :is(.active-link, [aria-current="page"]),
-[data-mj="nav-item"]:is(.active-link, [aria-current="page"])
-  *:not([data-site-badge="true"]),
-[data-mj="nav-item"]
-  :is(.active-link, [aria-current="page"])
-  *:not([data-site-badge="true"]) {
+[data-mj="nav-item"].active-link,
+[data-mj="nav-item"][aria-current="page"],
+[data-mj="nav-item"] .active-link,
+[data-mj="nav-item"] [aria-current="page"],
+[data-mj="nav-item"].active-link *:not([data-site-badge="true"]),
+[data-mj="nav-item"][aria-current="page"] *:not([data-site-badge="true"]),
+[data-mj="nav-item"] .active-link *:not([data-site-badge="true"]),
+[data-mj="nav-item"] [aria-current="page"] *:not([data-site-badge="true"]) {
   color: #ed2b32 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
 
 /* Mobile category chips */
+
 [data-mj="game-catalog-mobile-category-chip"] {
-  height: 32px !important;
-  padding: 0 16px !important;
-  font-size: 12px !important;
   font-weight: 300 !important;
+  font-size: 12px !important;
+  padding: 0 16px !important;
+  height: 32px !important;
 }
 
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1vqt9j3 {
@@ -77,49 +77,48 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1vqt9j3 {
 
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1mxymj3 {
   background-color: #1e222700 !important;
-  border-color: #1c1c26 !important;
   box-shadow: #561d22 0 0 0 1px inset !important;
   color: #fff !important;
+  border-color: #1c1c26 !important;
 }
 
-a[data-mj="game-catalog-mobile-category-chip"]:is(
-    .app-ltr-1usdjcr,
-    .app-ltr-1vqt9j3
-  )
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1usdjcr
+  span:not([data-site-badge="true"]),
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-1vqt9j3
   span:not([data-site-badge="true"]) {
   background-color: #fff !important;
 }
 
-/* Desktop category chips */
-a[data-mj="game-catalog-category-slider-item"]:is(
-    .app-ltr-w0hrwq,
-    .app-ltr-1a2jtya
-  )
+/* Desktop category chips  */
+
+a[data-mj="game-catalog-category-slider-item"].app-ltr-w0hrwq
+  span:not([data-site-badge="true"]),
+a[data-mj="game-catalog-category-slider-item"].app-ltr-1a2jtya
   span:not([data-site-badge="true"]) {
   background-color: #fff !important;
 }
 
 a[data-mj="game-catalog-category-slider-item"] {
   background-color: #1e222700 !important;
-  box-shadow: #ed2b3270 0 0 0 1px inset !important;
-  font-size: 14px !important;
   font-weight: 300 !important;
+  font-size: 14px !important;
+  box-shadow: #ed2b3270 0 0 0 1px inset !important;
 }
 
 a[data-mj="game-catalog-category-slider-item"]:hover {
+  box-shadow: #ed2b3270 0 0 0 1px inset !important;
   background-color: #ed2b3238 !important;
 }
 
-a[data-mj="game-catalog-category-slider-item"]:is(
-    .app-ltr-w0hrwq,
-    .active,
-    .active-link,
-    [aria-current="page"],
-    [aria-selected="true"]
-  ) {
+a[data-mj="game-catalog-category-slider-item"].app-ltr-w0hrwq,
+a[data-mj="game-catalog-category-slider-item"].active,
+a[data-mj="game-catalog-category-slider-item"].active-link,
+a[data-mj="game-catalog-category-slider-item"][aria-current="page"],
+a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
   background-color: #ed2b32 !important;
   color: #fff !important;
 }
+/* Desktop category chips */
 
 /* Search and provider inputs */
 [data-mj="game-catalog-game-search"].app-ltr-1833qdr,
@@ -147,9 +146,9 @@ a[data-mj="game-catalog-category-slider-item"]:is(
 }
 
 [data-mj="login-button"] {
-  background: transparent !important;
-  color: #ed2b32 !important;
   outline: 1px solid #ed2b32 !important;
+  background: none !important;
+  color: #ed2b32 !important;
 }
 
 [data-mj="register-button"] {
