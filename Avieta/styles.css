@@ -163,3 +163,93 @@ a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
   background: #161b21 !important;
   box-shadow: rgb(39 44 50) 0 0 0 1px inset !important;
 }
+
+[data-mj="bottom-nav-item"],
+[data-mj="bottom-nav-item"] * {
+  color: #ffffff8c !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="bottom-nav-item"].active-link,
+[data-mj="bottom-nav-item"][aria-current="page"],
+[data-mj="bottom-nav-item"] .active-link,
+[data-mj="bottom-nav-item"] [aria-current="page"],
+[data-mj="bottom-nav-item"].active-link *,
+[data-mj="bottom-nav-item"][aria-current="page"] *,
+[data-mj="bottom-nav-item"] .active-link *,
+[data-mj="bottom-nav-item"] [aria-current="page"] * {
+  color: #c1272d !important;
+  font-weight: 300 !important;
+}
+
+.app-ltr-1fg8vzl {
+  background: linear-gradient(
+    165deg,
+    #242a32fa,
+    #12161cfc 55%,
+    #0e1218
+  ) !important;
+}
+
+.app-ltr-1wcaknn {
+  padding: 0 !important;
+}
+
+.app-ltr-1ext0bl {
+  padding: 12px !important;
+}
+
+.app-ltr-1gip10g,
+.react-date-picker__wrapper,
+.app-ltr-1hfrxhr,
+.react-daterange-picker__wrapper {
+  background: #161b21 !important;
+  border-color: #272c32 !important;
+  font-weight: 300 !important;
+}
+
+:is(
+  .app-ltr-1gip10g,
+  .react-date-picker__wrapper,
+  .app-ltr-1hfrxhr,
+  .react-daterange-picker__wrapper,
+  .app-ltr-1gip10g input,
+  .react-date-picker__wrapper input,
+  .app-ltr-1hfrxhr input,
+  .react-daterange-picker__wrapper input
+):-webkit-autofill,
+:is(
+  .app-ltr-1gip10g,
+  .react-date-picker__wrapper,
+  .app-ltr-1hfrxhr,
+  .react-daterange-picker__wrapper,
+  .app-ltr-1gip10g input,
+  .react-date-picker__wrapper input,
+  .app-ltr-1hfrxhr input,
+  .react-daterange-picker__wrapper input
+):-webkit-autofill:hover,
+:is(
+  .app-ltr-1gip10g,
+  .react-date-picker__wrapper,
+  .app-ltr-1hfrxhr,
+  .react-daterange-picker__wrapper,
+  .app-ltr-1gip10g input,
+  .react-date-picker__wrapper input,
+  .app-ltr-1hfrxhr input,
+  .react-daterange-picker__wrapper input
+):-webkit-autofill:focus,
+:is(
+  .app-ltr-1gip10g,
+  .react-date-picker__wrapper,
+  .app-ltr-1hfrxhr,
+  .react-daterange-picker__wrapper,
+  .app-ltr-1gip10g input,
+  .react-date-picker__wrapper input,
+  .app-ltr-1hfrxhr input,
+  .react-daterange-picker__wrapper input
+):-webkit-autofill:active {
+  -webkit-text-fill-color: #EDEADB !important;
+  caret-color: #EDEADB !important;
+  -webkit-box-shadow: 0 0 0 1000px #161b21 inset !important;
+  box-shadow: 0 0 0 1000px #161b21 inset !important;
+}
