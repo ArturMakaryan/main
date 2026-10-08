@@ -278,7 +278,7 @@ a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
 }
 
 .app-ltr-1x96zeq {
-  padding: 0 0 12px 0 !important;
+  padding: 12px !important;
   background: #fff0 !important;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.18) !important;
   border-radius: 0;
