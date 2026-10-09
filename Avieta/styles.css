@@ -151,6 +151,10 @@ a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
   color: #ed2b32 !important;
 }
 
+[data-mj="login-button"]:hover {
+  background: #ed2b3270 !important;
+}
+
 [data-mj="register-button"] {
   color: #fff !important;
 }
