@@ -12,11 +12,11 @@
 [data-mj="header-nav-list"] p {
   font-weight: 300 !important;
   font-size: 14px !important;
-  color: #b7bcc0 !important;
+  color: #d6dadc !important;
 }
 
 [data-mj="header-nav-item"] [style*="mask-image:"] {
-  color: #b7bcc0 !important;
+  color: #d6dadc !important;
 }
 
 [data-mj="header-nav-item"]:hover {
