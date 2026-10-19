@@ -673,6 +673,17 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
   --site-header-height: unset !important;
 }
 
+.app-ltr-1q5mnmx {
+  padding: 16px 8px 16px 12px !important;
+}
+
+.app-ltr-13jylwu,
+.react-date-picker__wrapper,
+.app-ltr-w5avp {
+  border: 1px solid var(--waliawin-border) !important;
+  background: #151e27 !important;
+}
+
 /* =========================
    Responsive adjustments
    ========================= */
