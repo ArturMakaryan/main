@@ -106,7 +106,6 @@ body :where(button, a, input, select, textarea):focus-visible {
 
 [data-mj="custom-header"] {
   min-height: 76px !important;
-  background: none !important;
   box-shadow:
     0 14px 34px rgba(0, 0, 0, 0.24),
     inset 0 1px 0 rgba(255, 255, 255, 0.025) !important;
@@ -691,7 +690,13 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
 @media screen and (max-width: 992px) {
   [data-mj="custom-header"] {
     min-height: 62px !important;
-    background: none !important;
+    background:
+      radial-gradient(
+        circle at 50% -80%,
+        rgba(var(--waliawin-ambient-rgb), 0.2),
+        transparent 52%
+      ),
+      linear-gradient(180deg, #18232d 0%, #111920 100%) !important;
   }
 
   [data-mj="header-right"] {
@@ -728,6 +733,12 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
   [data-mj="footer-bottom"] {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  [data-mj="custom-header"] {
+    background: none !important;
   }
 }
 
