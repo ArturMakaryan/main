@@ -105,7 +105,6 @@ body :where(button, a, input, select, textarea):focus-visible {
 }
 
 [data-mj="custom-header"] {
-  min-height: 76px !important;
   box-shadow:
     0 14px 34px rgba(0, 0, 0, 0.24),
     inset 0 1px 0 rgba(255, 255, 255, 0.025) !important;
@@ -683,11 +682,20 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
   background: #151e27 !important;
 }
 
+.top-events {
+  scrollbar-width: none !important;
+  gap: 8px !important;
+}
+
 /* =========================
    Responsive adjustments
    ========================= */
 
 @media screen and (max-width: 992px) {
+  [aria-label="site-header"] {
+    border-bottom: 1px solid var(--waliawin-border) !important;
+  }
+
   [data-mj="custom-header"] {
     min-height: 62px !important;
     background:
