@@ -709,6 +709,7 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
 }
 
 .top-events {
+  overflow-x: overlay;
   scrollbar-width: none !important;
   gap: 8px !important;
 }
