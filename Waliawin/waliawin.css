@@ -332,6 +332,10 @@ body :where(button, a, input, select, textarea):focus-visible {
   color: var(--waliawin-text) !important;
 }
 
+[data-mj="widget-pages-grid"] {
+  gap: 8px !important;
+}
+
 /* Clear the catalog surfaces; the generated wrapper is nested inside the
    right section rather than being the same element. */
 html body [data-mj="game-catalog-layout"],
