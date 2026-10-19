@@ -94,7 +94,13 @@ body :where(button, a, input, select, textarea):focus-visible {
 [data-mj="header"] {
   position: relative;
   z-index: 20;
-  background: var(--waliawin-bg) !important;
+  background:
+    radial-gradient(
+      circle at 50% -80%,
+      rgba(var(--waliawin-ambient-rgb), 0.2),
+      transparent 52%
+    ),
+    linear-gradient(180deg, #18232d 0%, #111920 100%) !important;
   box-shadow: none !important;
 }
 
