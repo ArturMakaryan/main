@@ -679,6 +679,27 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
   padding: 16px 8px 16px 12px !important;
 }
 
+.app-ltr-1wcaknn {
+  padding: 0 !important;
+}
+
+.app-ltr-e7ncvb {
+  padding: 14px !important;
+}
+
+.app-ltr-17aox92 {
+  padding: 8px;
+}
+
+.sl-navlink.app-ltr-1wv5rsb {
+  font-weight: 300;
+}
+
+.react-daterange-picker__wrapper {
+  border: 1px solid var(--waliawin-border) !important;
+  background: var(--waliawin-surface) !important;
+}
+
 .app-ltr-13jylwu,
 .react-date-picker__wrapper,
 .app-ltr-w5avp {
