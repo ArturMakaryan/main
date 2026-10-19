@@ -686,6 +686,10 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
 .app-ltr-13jylwu input:-webkit-autofill:hover,
 .app-ltr-13jylwu input:-webkit-autofill:focus,
 .app-ltr-13jylwu input:-webkit-autofill:active,
+.app-ltr-13jylwu:-webkit-autofill,
+.app-ltr-13jylwu:-webkit-autofill:hover,
+.app-ltr-13jylwu:-webkit-autofill:focus,
+.app-ltr-13jylwu:-webkit-autofill:active,
 .react-date-picker__wrapper input:-webkit-autofill,
 .react-date-picker__wrapper input:-webkit-autofill:hover,
 .react-date-picker__wrapper input:-webkit-autofill:focus,
@@ -693,7 +697,11 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
 .app-ltr-w5avp input:-webkit-autofill,
 .app-ltr-w5avp input:-webkit-autofill:hover,
 .app-ltr-w5avp input:-webkit-autofill:focus,
-.app-ltr-w5avp input:-webkit-autofill:active {
+.app-ltr-w5avp input:-webkit-autofill:active,
+.app-ltr-w5avp:-webkit-autofill,
+.app-ltr-w5avp:-webkit-autofill:hover,
+.app-ltr-w5avp:-webkit-autofill:focus,
+.app-ltr-w5avp:-webkit-autofill:active {
   -webkit-text-fill-color: var(--waliawin-text) !important;
   caret-color: var(--waliawin-text) !important;
   -webkit-box-shadow: 0 0 0 1000px var(--waliawin-surface) inset !important;
