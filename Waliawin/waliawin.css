@@ -714,6 +714,10 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
   gap: 8px !important;
 }
 
+#ph-sport-widget:hover > .top-events {
+  overflow-x: overlay;
+}
+
 /* =========================
    Responsive adjustments
    ========================= */
