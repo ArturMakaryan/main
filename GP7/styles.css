@@ -29,6 +29,11 @@ body {
   background: transparent !important;
 }
 
+[data-mj="root-layout"] [data-mj="content-wrapper"] {
+  max-width: none !important;
+  width: 100% !important;
+}
+
 [data-mj="header"] {
   background: var(--gp7-header) !important;
   border-bottom: 1px solid var(--gp7-border) !important;
