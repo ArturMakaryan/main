@@ -421,6 +421,10 @@ button[data-mj="sidebar-collapse"].sl-icon > svg {
   background: transparent !important;
 }
 
+[data-mj="game-catalog-category-slider-item"] {
+  font-weight: 300 !important;
+}
+
 [data-mj="game-catalog-category-slider-item"]:hover {
   background: #3f474f !important;
   background-color: #3f474f !important;
