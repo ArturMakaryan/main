@@ -245,7 +245,6 @@ li[data-mj="sidebar-section"].app-ltr-6crnis {
 }
 
 [data-mj="sidebar-footer"] .sl-select__control.app-ltr-2z1tzc-control {
-  min-height: 38px !important;
   padding: 0 16px !important;
 }
 
@@ -486,9 +485,9 @@ input[data-mj="game-catalog-provider-bottom-sheet-search"].app-ltr-nxr204 {
 .sl-select__control,
 .sl-select__control.app-ltr-qwgxii-control,
 .sl-select__control.app-ltr-1iqdwxp-control,
-.sl-select__control.app-ltr-yccp9d-control {
+.sl-select__control.app-ltr-yccp9d-control,
+.sl-select__control.app-ltr-875szl-control {
   display: flex !important;
-  min-height: 38px !important;
   border: 1px solid var(--gp7-input-border) !important;
   border-radius: 8px !important;
   outline: 0 !important;
