@@ -235,6 +235,7 @@ li[data-mj="sidebar-section"].app-ltr-6crnis {
 }
 
 [data-mj="sidebar-footer"] .sl-select__control.app-ltr-2z1tzc-control {
+  min-height: 38px !important;
   padding: 0 16px !important;
 }
 
@@ -463,8 +464,8 @@ input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1opgtzu {
   border: 1px solid var(--gp7-input-border) !important;
   border-radius: 8px !important;
   outline: 0 !important;
-  background: #1f242880 !important;
-  background-color: #1f242880 !important;
+  background: var(--gp7-surface) !important;
+  background-color: var(--gp7-surface) !important;
   color: #fff !important;
   font-size: 14px !important;
   font-weight: 300 !important;
@@ -492,8 +493,8 @@ input[data-mj="game-catalog-mobile-provider-input"]:focus {
   border-radius: 8px !important;
   outline: 0 !important;
   box-shadow: none !important;
-  background: #1f242880 !important;
-  background-color: #1f242880 !important;
+  background: var(--gp7-surface) !important;
+  background-color: var(--gp7-surface) !important;
   color: #fff !important;
 }
 
@@ -501,6 +502,23 @@ input[data-mj="game-catalog-mobile-provider-input"]:focus {
 .sl-select__control--is-focused {
   border-color: var(--gp7-selected) !important;
   box-shadow: 0 0 0 1px var(--gp7-selected) !important;
+}
+
+.sl-select__option--is-selected,
+.sl-select__option[aria-selected="true"] {
+  background: var(--gp7-selected) !important;
+  color: #121619 !important;
+}
+
+.sl-select__option--is-focused:not(.sl-select__option--is-selected) {
+  background: rgb(81 237 163 / 15%) !important;
+  color: #fff !important;
+}
+
+.sl-select__single-value,
+.sl-select__input-container,
+.sl-select__placeholder {
+  color: #bfb6d8 !important;
 }
 
 i[aria-label="search"].sl-icon,
@@ -512,8 +530,8 @@ button[data-mj="game-catalog-mobile-search-toggle"] {
   border: 1px solid var(--gp7-input-border) !important;
   border-radius: 8px !important;
   box-shadow: none !important;
-  background: #1f242880 !important;
-  background-color: #1f242880 !important;
+  background: var(--gp7-surface) !important;
+  background-color: var(--gp7-surface) !important;
   color: #a0a4b7 !important;
 }
 
