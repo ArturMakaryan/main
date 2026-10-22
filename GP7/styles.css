@@ -108,9 +108,8 @@ body {
   gap: 0 !important;
   margin: 12px 0 12px 56px !important;
   padding: 12px 12px 0 !important;
-  border: 1px solid var(--gp7-group-border) !important;
+  border: 1px solid rgb(255 255 255 / 6%) !important;
   border-radius: 8px !important;
-  background: var(--gp7-sidebar) !important;
   transform-origin: left center !important;
   transition:
     margin 220ms ease,
@@ -165,6 +164,10 @@ body {
 [data-mj="sidebar-group"].app-ltr-gmzssj.active-link,
 [data-mj="sidebar-group"].app-ltr-15nsiin.active-link {
   color: var(--gp7-active) !important;
+}
+
+[data-mj="sidebar-group"]:hover {
+  color: #000000 !important;
 }
 
 [data-mj="sidebar-section"],
@@ -473,7 +476,7 @@ input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1opgtzu {
   border-radius: 8px !important;
   outline: 0 !important;
   background: var(--gp7-surface) !important;
-  background-color: var(--gp7-surface) !important;
+  background-color: #1f242880 !important;
   color: #fff !important;
   font-size: 14px !important;
   font-weight: 300 !important;
