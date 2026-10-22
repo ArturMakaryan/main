@@ -82,6 +82,26 @@ body {
   padding: 0 !important;
 }
 
+.app-ltr-es55kh {
+  display: flex !important;
+  flex-direction: column !important;
+  background: var(--gp7-sidebar) !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--gp7-group-border) !important;
+  gap: 0 !important;
+  margin-left: 13px !important;
+  width: 42px !important;
+  margin-top: 60px !important;
+  transform-origin: top center !important;
+  transition:
+    margin 220ms ease,
+    width 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: gp7-sidebar-group-vertical 220ms ease-out !important;
+}
+
 .app-ltr-10a4mqi {
   display: flex !important;
   flex-direction: row !important;
@@ -91,6 +111,45 @@ body {
   border: 1px solid var(--gp7-group-border) !important;
   border-radius: 8px !important;
   background: var(--gp7-sidebar) !important;
+  transform-origin: left center !important;
+  transition:
+    margin 220ms ease,
+    padding 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: gp7-sidebar-group-horizontal 220ms ease-out !important;
+}
+
+.app-ltr-es55kh > *,
+.app-ltr-10a4mqi > * {
+  transition:
+    transform 220ms ease,
+    opacity 180ms ease !important;
+}
+
+@keyframes gp7-sidebar-group-horizontal {
+  from {
+    opacity: 0.86;
+    transform: translateX(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes gp7-sidebar-group-vertical {
+  from {
+    opacity: 0.86;
+    transform: translateY(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 [data-mj="sidebar-group"].app-ltr-gmzssj,
@@ -487,18 +546,21 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-nqb4gp:hover {
   }
 
   .app-ltr-10a4mqi {
-    margin: 12px 0 12px 12px !important;
+    margin: 12px 0px 12px 12px !important;
     padding: 0px 0px 0px 0px !important;
   }
 
 }
 
 @media (min-width: 993px) {
+  .app-ltr-10a4mqi {
+    padding: 0 !important;
+  }
+
   [data-mj="sidebar-footer"].app-ltr-cf583f,
   [data-mj="sidebar-footer"].app-ltr-z5dmj7,
   [data-mj="sidebar-footer"],
-  [data-mj="sidebar-nav-list"] > li.app-ltr-10a4mqi,
-  .app-ltr-10a4mqi {
+  [data-mj="sidebar-nav-list"] > li.app-ltr-10a4mqi {
     padding: 0 !important;
   }
 }
