@@ -110,7 +110,6 @@ body {
   padding: 12px 12px 0 !important;
   border: 1px solid var(--gp7-group-border) !important;
   border-radius: 8px !important;
-  background: var(--gp7-sidebar) !important;
   transform-origin: left center !important;
   transition:
     margin 220ms ease,
