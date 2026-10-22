@@ -3,12 +3,12 @@
 :root {
   --gp7-header: #1f2428;
   --gp7-sidebar: #1f2428;
-  --gp7-border: rgb(255 255 255 / 10%);
-  --gp7-group-border: #353a3d;
+  --gp7-border: rgb(255 255 255 / 6%);
+  --gp7-group-border: rgb(255 255 255 / 6%);
   --gp7-text: #acaeaf;
   --gp7-active: #51eda3;
   --gp7-surface: #121619;
-  --gp7-input-border: #343a3f;
+  --gp7-input-border: rgb(255 255 255 / 6%);
   --gp7-selected: #51eda3;
   --gp7-card-start: #283152;
   --gp7-card-end: #242d4e;
@@ -59,7 +59,7 @@ body {
 }
 
 [data-mj="sidebar-content"] {
-  border-right: 1px solid #353a3d !important;
+  border-right: 1px solid rgb(255 255 255 / 6%) !important;
   border-radius: 0 !important;
   padding: 0 12px 12px 0 !important;
 }
@@ -274,7 +274,7 @@ li[data-mj="sidebar-section"].app-ltr-6crnis {
   margin-left: 24px !important;
   padding-top: 4px !important;
   overflow: hidden !important;
-  border-left: 1px solid #ffffff21 !important;
+  border-left: 1px solid rgb(255 255 255 / 6%) !important;
   transform-origin: top left !important;
   animation: gp7-sidebar-submenu-open 240ms ease-out !important;
 }
@@ -472,10 +472,9 @@ input[data-mj="game-catalog-game-search"],
 input[data-mj="game-catalog-mobile-provider-input"],
 input[data-mj="game-catalog-game-search"].app-ltr-1opgtzu,
 input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1opgtzu {
-  border: 1px solid var(--gp7-input-border) !important;
+  border: 1px solid var(--gp7-border) !important;
   border-radius: 8px !important;
   outline: 0 !important;
-  background: var(--gp7-surface) !important;
   background-color: #1f242880 !important;
   color: #fff !important;
   font-size: 14px !important;
@@ -562,12 +561,12 @@ button[data-mj="game-catalog-mobile-search-toggle"] {
   box-shadow: none !important;
   background:
     linear-gradient(var(--gp7-card-start), var(--gp7-card-end)) padding-box,
-    linear-gradient(180deg, #30354b 0%, #4c5371 100%) border-box !important;
+    linear-gradient(180deg, rgb(255 255 255 / 6%) 0%, rgb(255 255 255 / 6%) 100%) border-box !important;
 }
 
 [data-mj="widget-pages-item"].app-ltr-1bba9js,
 [data-mj="widget-pages-item"] {
-  border: 1px solid rgb(255 255 255 / 15%) !important;
+  border: 1px solid rgb(255 255 255 / 6%) !important;
   border-radius: 8px !important;
   overflow: hidden !important;
 }
@@ -591,7 +590,7 @@ button[data-mj="game-catalog-mobile-search-toggle"] {
 
 [data-mj="widget-phoenix-sport"] a,
 .ph-event-card {
-  border: 1px solid rgb(255 255 255 / 15%) !important;
+  border: 1px solid rgb(255 255 255 / 6%) !important;
   border-radius: 8px !important;
 }
 
