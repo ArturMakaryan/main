@@ -481,18 +481,6 @@ input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1opgtzu {
   font-weight: 300 !important;
 }
 
-input[data-mj="game-catalog-game-search"]::placeholder,
-input[data-mj="game-catalog-mobile-provider-input"]::placeholder {
-  color: #a0a4b7 !important;
-  opacity: 1 !important;
-}
-
-input[data-mj="game-catalog-game-search"]:focus,
-input[data-mj="game-catalog-mobile-provider-input"]:focus {
-  border-color: var(--gp7-selected) !important;
-  box-shadow: 0 0 0 1px var(--gp7-selected) !important;
-}
-
 .sl-select__control,
 .sl-select__control.app-ltr-qwgxii-control,
 .sl-select__control.app-ltr-1iqdwxp-control,
