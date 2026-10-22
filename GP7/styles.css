@@ -161,12 +161,6 @@ body {
   font-weight: 300 !important;
 }
 
-[data-mj="sidebar-group"].active-link,
-[data-mj="sidebar-group"].app-ltr-gmzssj.active-link,
-[data-mj="sidebar-group"].app-ltr-15nsiin.active-link {
-  color: var(--gp7-active) !important;
-}
-
 [data-mj="sidebar-section"],
 li[data-mj="sidebar-section"] {
   display: flex !important;
