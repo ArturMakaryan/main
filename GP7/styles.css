@@ -5,7 +5,7 @@
   --gp7-sidebar: #1f2428;
   --gp7-border: rgb(255 255 255 / 10%);
   --gp7-group-border: #353a3d;
-  --gp7-text: #a0a4b8;
+  --gp7-text: #acaeaf;
   --gp7-active: #51eda3;
   --gp7-surface: #121619;
   --gp7-input-border: #343a3f;
@@ -443,7 +443,7 @@ button[data-mj="sidebar-collapse"].sl-icon > svg {
 [data-mj="widget-phoenix-sport-header"] a,
 [data-mj="widget-top-providers"] a,
 [data-mj="widget-promotions-slider"] a {
-  color: #a0a4b8 !important;
+  color: #acaeaf !important;
 }
 
 input[data-mj="game-catalog-game-search"],
@@ -593,12 +593,12 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-nqb4gp:hover {
 }
 
 [data-mj="footer-content"] {
-  color: #a0a4b8 !important;
+  color: #acaeaf !important;
 }
 
 [data-mj="footer-bottom"],
 [data-mj="footer-copyright"] {
-  color: #a0a4b8 !important;
+  color: #acaeaf !important;
 }
 
 [data-mj="footer-nav"] .sl-navlink {
