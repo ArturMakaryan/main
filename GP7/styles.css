@@ -167,10 +167,6 @@ body {
   color: var(--gp7-active) !important;
 }
 
-[data-mj="sidebar-group"]:hover {
-  color: var(--gp7-active) !important;
-}
-
 [data-mj="sidebar-section"],
 li[data-mj="sidebar-section"] {
   display: flex !important;
