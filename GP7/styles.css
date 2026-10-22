@@ -452,8 +452,8 @@ input[data-mj="game-catalog-mobile-provider-input"].app-ltr-1opgtzu {
   border: 1px solid var(--gp7-input-border) !important;
   border-radius: 8px !important;
   outline: 0 !important;
-  background: var(--gp7-surface) !important;
-  background-color: var(--gp7-surface) !important;
+  background: #1f242880 !important;
+  background-color: #1f242880 !important;
   color: #fff !important;
   font-size: 14px !important;
   font-weight: 300 !important;
@@ -481,8 +481,8 @@ input[data-mj="game-catalog-mobile-provider-input"]:focus {
   border-radius: 8px !important;
   outline: 0 !important;
   box-shadow: none !important;
-  background: var(--gp7-surface) !important;
-  background-color: var(--gp7-surface) !important;
+  background: #1f242880 !important;
+  background-color: #1f242880 !important;
   color: #fff !important;
 }
 
@@ -512,8 +512,8 @@ button[data-mj="game-catalog-mobile-search-toggle"] {
   border: 1px solid var(--gp7-input-border) !important;
   border-radius: 8px !important;
   box-shadow: none !important;
-  background: var(--gp7-surface) !important;
-  background-color: var(--gp7-surface) !important;
+  background: #1f242880 !important;
+  background-color: #1f242880 !important;
   color: #a0a4b7 !important;
 }
 
