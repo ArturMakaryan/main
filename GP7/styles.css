@@ -421,6 +421,24 @@ button[data-mj="sidebar-collapse"].sl-icon > svg {
   background: transparent !important;
 }
 
+[data-mj="game-catalog-category-slider-item"]:hover {
+  background: #3f474f !important;
+  background-color: #3f474f !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"] {
+  font-weight: 300 !important;
+  background-color: #252b30 !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-1rf5ez8 {
+  background-color: #252b30 !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-17t6hd2 {
+  box-shadow: none !important;
+}
+
 [data-mj="widget-multi-banner"],
 [data-mj="widget-game-slider"],
 [data-mj="widget-pages"],
