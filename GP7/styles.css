@@ -242,6 +242,7 @@ li[data-mj="sidebar-section"].app-ltr-6crnis {
 }
 
 [data-mj="sidebar-footer"].app-ltr-z5dmj7 .app-ltr-ca8dpi-container {
+  margin-left: 12px !important;
   margin-bottom: 16px !important;
 }
 
@@ -491,12 +492,6 @@ input[data-mj="game-catalog-mobile-provider-input"]:focus {
 .sl-select__control--is-focused {
   border-color: var(--gp7-selected) !important;
   box-shadow: 0 0 0 1px var(--gp7-selected) !important;
-}
-
-.sl-select__single-value,
-.sl-select__input-container,
-.sl-select__placeholder {
-  color: #bfb6d8 !important;
 }
 
 .sl-select__option--is-selected,
