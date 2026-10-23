@@ -714,3 +714,32 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 .app-ltr-wz10jn {
   max-width: 76px !important;
 }
+
+[data-mj="account-menu"] p {
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+.app-ltr-1wcaknn {
+  padding: 0px !important;
+}
+
+[data-mj="footer-nav-item"] a {
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+.app-ltr-1qqvnmp,
+.app-ltr-7wh13m {
+  height: 50px !important;
+}
+
+.app-ltr-1t69v1f,
+.app-ltr-2goyt1 {
+  font-size: 22px !important;
+}
+
+.app-ltr-j8ygnr,
+.app-ltr-11fdzpo {
+  font-size: 22px !important;
+}
