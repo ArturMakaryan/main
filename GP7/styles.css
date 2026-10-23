@@ -596,6 +596,18 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-nqb4gp:hover {
   color: var(--gp7-text) !important;
 }
 
+[data-mj="footer-nav-item"] a {
+  font-weight: 300 !important;
+}
+
+[data-mj="account-menu"] p {
+  font-weight: 300 !important;
+}
+
+.app-ltr-1wcaknn {
+  padding: 0 !important;
+}
+
 @media (max-width: 992px) {
   [data-mj="root-layout"] [data-mj="content-wrapper"].app-ltr-fkpkqq,
   [data-mj="root-layout"] [data-mj="content-wrapper"] {
