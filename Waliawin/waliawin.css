@@ -701,7 +701,7 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
 [data-mj="footer-bottom"] {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   padding-top: 16px !important;
 }
@@ -910,7 +910,7 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
 
   [data-mj="footer-top"],
   [data-mj="footer-bottom"] {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
   }
 }
