@@ -445,7 +445,6 @@ html body [data-mj="game-catalog-layout"]
   border-color: var(--waliawin-mint) !important;
   background: rgba(var(--waliawin-mint-rgb), 0.08) !important;
   color: var(--waliawin-mint) !important;
-  box-shadow: 0 0 14px rgba(var(--waliawin-mint-rgb), 0.08) !important;
 }
 
 [data-mj="game-catalog-category-slider-item"] span:first-of-type,
