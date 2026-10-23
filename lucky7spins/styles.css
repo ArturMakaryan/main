@@ -733,3 +733,42 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 .app-ltr-7wh13m {
   height: 50px !important;
 }
+
+.lucky7spins-telegram-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 32px !important;
+  width: 32px !important;
+  min-width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 4px !important;
+  background: #222f2f !important;
+  color: #34aae7 !important;
+  cursor: pointer !important;
+}
+
+.lucky7spins-telegram-button::before {
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: #34aae7;
+  -webkit-mask: url("https://raw.githubusercontent.com/ArturMakaryan/main/refs/heads/main/assets/telegram-white.svg") center / contain no-repeat;
+  mask: url("https://raw.githubusercontent.com/ArturMakaryan/main/refs/heads/main/assets/telegram-white.svg") center / contain no-repeat;
+}
+
+@media (min-width: 993px) {
+  .lucky7spins-telegram-button {
+    flex-basis: 40px !important;
+    width: 40px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+  }
+
+  .lucky7spins-telegram-button::before {
+    width: 24px;
+    height: 24px;
+  }
+}

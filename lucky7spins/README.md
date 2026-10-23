@@ -13,3 +13,7 @@ https://lucky7spins.com/en/home
 CDN format:
 
 https://cdn.jsdelivr.net/gh/ArturMakaryan/main@COMMIT/lucky7spins/styles.css
+
+Header button script:
+
+https://cdn.jsdelivr.net/gh/ArturMakaryan/main@COMMIT/lucky7spins/header-button.js
