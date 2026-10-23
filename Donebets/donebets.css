@@ -638,12 +638,6 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17wq370,
   height: 24px !important;
 }
 
-@media (max-width: 991px) {
-  .donebets-header-actions {
-    display: none !important;
-  }
-}
-
 button[aria-label="arrow_left"][name="arrow_left"],
 button[aria-label="arrow_right"][name="arrow_right"],
 button[aria-label="user"][name="user"],
