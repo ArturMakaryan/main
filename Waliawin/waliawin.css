@@ -316,6 +316,17 @@ body :where(button, a, input, select, textarea):focus-visible {
   font-weight: 300 !important;
 }
 
+.app-ltr-117hepw {
+  border-top: 1px solid #2c4e51 !important;
+  background:
+    radial-gradient(
+      circle at 50% -80%,
+      rgba(var(--waliawin-ambient-rgb), 0.2),
+      transparent 52%
+    ),
+    linear-gradient(180deg, #18232d 0%, #111920 100%) !important;
+}
+
 [data-mj="header-nav-list"] span {
   color: inherit !important;
 }
