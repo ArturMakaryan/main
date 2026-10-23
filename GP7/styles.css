@@ -564,6 +564,11 @@ button[data-mj="game-catalog-mobile-search-toggle"] {
   border-radius: 8px !important;
 }
 
+.top-events {
+  scrollbar-width: none !important;
+  gap: 8px !important;
+}
+
 button[aria-label="arrow_down"].sl-icon.app-ltr-nqb4gp,
 button[aria-label="arrow_up"].sl-icon.app-ltr-nqb4gp {
   width: 32px !important;
@@ -598,6 +603,7 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-nqb4gp:hover {
 
 [data-mj="footer-nav-item"] a {
   font-weight: 300 !important;
+  font-size: 14px !important;
 }
 
 [data-mj="account-menu"] p {
