@@ -1,0 +1,84 @@
+/* Donebets casino catalog styles. */
+
+/* Desktop category slider */
+[data-mj="game-catalog-category-slider-item"] {
+  background-image: linear-gradient(174deg, #0e0e11, #13131b) !important;
+  box-shadow: #302e2e 0 0 0 1px inset !important;
+  color: #c0b9b9 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-category-slider-item"]:hover {
+  box-shadow: #f15a2273 0 0 0 1px inset !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].active,
+[data-mj="game-catalog-category-slider-item"].active-link,
+[data-mj="game-catalog-category-slider-item"][aria-current="page"],
+[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
+  background-image: linear-gradient(174deg, #37221b, #13131b) !important;
+  box-shadow: #f15a22 0 0 0 1px inset !important;
+  color: #f15922 !important;
+}
+
+/* Mobile category chips */
+[data-mj="game-catalog-mobile-category-chip"] {
+  color: #c0b9b9 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-8wtuim):not(.app-rtl-8wtuim) {
+  background-image: linear-gradient(174deg, #0e0e11, #13131b) !important;
+  box-shadow: #302e2e 0 0 0 1px inset !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-8wtuim):not(.app-rtl-8wtuim) * {
+  border-color: #1c1c26 !important;
+  color: #c0b9b9 !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-8wtuim,
+[data-mj="game-catalog-mobile-category-chip"].app-rtl-8wtuim {
+  background-image: linear-gradient(255deg, #2b1d18, #201f1e) !important;
+}
+
+/* Search and provider filters */
+[data-mj="game-catalog-game-search"],
+[data-mj="game-catalog-mobile-provider-input"],
+[data-mj="game-catalog-mobile-search-toggle"],
+.sl-select__control {
+  background: #0d0d12 !important;
+  border-color: #1c1c26 !important;
+  box-shadow: none !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-game-search"]:focus,
+[data-mj="game-catalog-game-search"].active,
+[data-mj="game-catalog-game-search"].active-link,
+[data-mj="game-catalog-game-search"][aria-current="page"],
+[data-mj="game-catalog-game-search"][aria-expanded="true"] {
+  background: #0d0d12 !important;
+  border: 1px solid #f159229c !important;
+}
+
+[data-mj="game-catalog-mobile-search"] {
+  background: #0d0d12 !important;
+  border: 1px solid #1c1c26 !important;
+  font-weight: 300 !important;
+}
+
+/* Catalog wrapper spacing */
+.app-ltr-f9ygiv,
+.app-rtl-f9ygiv {
+  padding-top: 12px !important;
+}
+
+/* Hide header actions below the desktop breakpoint */
+@media (max-width: 991px) {
+  .donebets-header-actions {
+    display: none !important;
+  }
+}
