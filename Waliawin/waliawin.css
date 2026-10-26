@@ -457,6 +457,75 @@ html body [data-mj="game-catalog-layout"]
   border-radius: inherit;
 }
 
+[data-mj="game-catalog-category-slider-item"],
+[data-mj="game-catalog-mobile-category-chip"] {
+  background-color: #212e3a !important;
+  border: 1px solid #224441 !important;
+  padding: 0 16px !important;
+  box-shadow: none !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  color: #bccad6 !important;
+}
+
+/* Active and hover states */
+[data-mj="game-catalog-category-slider-item"]:hover,
+[data-mj="game-catalog-category-slider-item"].active,
+[data-mj="game-catalog-category-slider-item"].active-link,
+[data-mj="game-catalog-category-slider-item"][aria-current="page"],
+[data-mj="game-catalog-category-slider-item"][aria-selected="true"],
+[data-mj="game-catalog-category-slider-item"].app-ltr-17wq370,
+[data-mj="game-catalog-category-slider-item"].app-ltr-1vdjf42,
+[data-mj="game-catalog-mobile-category-chip"]:hover,
+[data-mj="game-catalog-mobile-category-chip"].active,
+[data-mj="game-catalog-mobile-category-chip"].active-link,
+[data-mj="game-catalog-mobile-category-chip"][aria-current="page"],
+[data-mj="game-catalog-mobile-category-chip"][aria-selected="true"],
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-8wtuim,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-153shi9 {
+  background-color: #5bf3be1f !important;
+  border: 1px solid #5bf3be !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-game-search"],
+[data-mj="game-catalog-mobile-search-toggle"],
+[data-mj="game-catalog-mobile-provider-input"],
+[data-mj="game-catalog-mobile-search"],
+.sl-select__control.app-ltr-xesueg-control {
+  background-color: #212e3a !important;
+  border: 1px solid #224441 !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+[data-mj="game-catalog-game-search"]:hover,
+.sl-select__control.app-ltr-xesueg-control:hover {
+  background-color: #5bf3be0f !important;
+  border: 1px solid #5bf3be !important;
+}
+
+[data-mj="game-catalog-game-search"]:focus,
+[data-mj="game-catalog-game-search"]:focus-visible,
+[data-mj="game-catalog-game-search"].active,
+[data-mj="game-catalog-game-search"][aria-expanded="true"],
+.sl-select__control.app-ltr-xesueg-control:focus-within {
+  background-color: #212e3a !important;
+  border: 1px solid #5bf3be !important;
+}
+
+[data-mj="game-catalog-game-search"]::placeholder,
+.sl-select__placeholder.app-ltr-1ol3d88-placeholder,
+[data-mj="game-catalog-mobile-provider-wrapper"] input::placeholder,
+[data-mj="game-catalog-mobile-search-wrapper"] input::placeholder {
+  color: #bccad6a3 !important;
+  opacity: 1 !important;
+}
+
+[data-mj="game-catalog-mobile-search-toggle"] {
+  box-shadow: none !important;
+}
+
 [data-mj="page-content"] button,
 [data-mj="page-content"] [role="button"] {
   border-color: var(--waliawin-border) !important;
