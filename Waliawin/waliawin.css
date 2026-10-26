@@ -462,63 +462,6 @@ html body [data-mj="game-catalog-layout"]
   border-radius: inherit;
 }
 
-[data-mj="game-catalog-category-slider-item"],
-[data-mj="game-catalog-mobile-category-chip"] {
-  min-width: 60px;
-  gap: 4px !important;
-  padding: 6px 12px !important;
-  border-radius: 8px !important;
-  background: var(--waliawin-surface) !important;
-  color: var(--waliawin-text-soft) !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
-}
-
-[data-mj="game-catalog-category-slider-item"] *,
-[data-mj="game-catalog-mobile-category-chip"] * {
-  color: inherit !important;
-}
-
-[data-mj="game-catalog-category-slider-item"]:hover,
-[data-mj="game-catalog-mobile-category-chip"]:hover,
-[data-mj="game-catalog-category-slider-item"].active,
-[data-mj="game-catalog-category-slider-item"].active-link,
-[data-mj="game-catalog-category-slider-item"][aria-current="page"],
-[data-mj="game-catalog-category-slider-item"][aria-selected="true"],
-[data-mj="game-catalog-mobile-category-chip"].active,
-[data-mj="game-catalog-mobile-category-chip"].active-link,
-[data-mj="game-catalog-mobile-category-chip"][aria-current="page"],
-[data-mj="game-catalog-mobile-category-chip"][aria-selected="true"] {
-  border-color: var(--waliawin-mint) !important;
-  background: rgba(var(--waliawin-mint-rgb), 0.08) !important;
-  color: var(--waliawin-mint) !important;
-}
-
-[data-mj="game-catalog-category-slider-item"] span:first-of-type,
-[data-mj="game-catalog-mobile-category-chip"] span:first-of-type {
-  width: 24px !important;
-  height: 24px !important;
-  margin-right: 0 !important;
-  mask-size: 24px auto !important;
-}
-
-[data-mj="game-catalog-mobile-category-chip"] {
-  height: fit-content !important;
-  min-height: 0 !important;
-  flex: 0 0 auto !important;
-}
-
-[data-mj="game-catalog-mobile-categories"]:has(
-    > [data-mj="game-catalog-mobile-category-chip"]:only-child
-  ),
-[data-mj="game-catalog-category-slider"]:has(
-    [data-mj="game-catalog-category-slider-list"] > :only-child
-  ),
-[data-mj="game-catalog-category-slider-list"]:has(> :only-child) {
-  display: none !important;
-}
-
 [data-mj="page-content"] button,
 [data-mj="page-content"] [role="button"] {
   border-color: var(--waliawin-border) !important;
