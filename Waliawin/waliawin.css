@@ -519,55 +519,6 @@ html body [data-mj="game-catalog-layout"]
   display: none !important;
 }
 
-/* Search, provider, and select controls. */
-
-[data-mj="game-catalog-game-search"],
-[data-mj="game-catalog-mobile-provider-input"],
-[data-mj="game-catalog-provider-bottom-sheet-search"],
-[data-mj="game-catalog-mobile-search-toggle"],
-[data-mj="game-catalog-mobile-search"],
-.sl-select__control {
-  border: 1px solid var(--waliawin-border) !important;
-  background: var(--waliawin-surface) !important;
-  box-shadow: none !important;
-  color: var(--waliawin-text) !important;
-  font-weight: 400 !important;
-}
-
-[data-mj="game-catalog-game-search"]:focus,
-[data-mj="game-catalog-mobile-provider-input"]:focus,
-[data-mj="game-catalog-provider-bottom-sheet-search"]:focus,
-[data-mj="game-catalog-mobile-search-toggle"]:focus,
-[data-mj="game-catalog-mobile-search"]:focus,
-.sl-select__control:hover,
-.sl-select__control:focus-within {
-  border-color: var(--waliawin-mint) !important;
-  box-shadow: 0 0 0 2px rgba(var(--waliawin-mint-rgb), 0.1) !important;
-}
-
-[data-mj="game-catalog-game-search"]:focus-visible {
-  outline: none !important;
-  outline-offset: 0;
-  box-shadow: none !important;
-}
-
-/* The React Select input is visually contained by the control. Its own
-   focus outline creates the unwanted vertical line inside the field. */
-html body .sl-select__control .sl-select__input:focus,
-html body .sl-select__control .sl-select__input:focus-visible {
-  border: 0 !important;
-  outline: 0 !important;
-  outline-offset: 0 !important;
-  box-shadow: none !important;
-}
-
-[data-mj="game-catalog-game-search"]::placeholder,
-[data-mj="game-catalog-mobile-provider-input"]::placeholder,
-[data-mj="game-catalog-provider-bottom-sheet-search"]::placeholder,
-[data-mj="game-catalog-mobile-search"]::placeholder {
-  color: var(--waliawin-text-muted) !important;
-}
-
 [data-mj="page-content"] button,
 [data-mj="page-content"] [role="button"] {
   border-color: var(--waliawin-border) !important;
