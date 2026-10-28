@@ -133,7 +133,7 @@ body * {
   width: 0 !important;
   height: 2px !important;
   border-radius: 999px !important;
-  background: linear-gradient(90deg, transparent, #00aa57, transparent) !important;
+  background: linear-gradient(90deg, transparent, #D5BB7C, transparent) !important;
   transform: translateX(-50%) !important;
   transition: width 0.22s ease !important;
 }
