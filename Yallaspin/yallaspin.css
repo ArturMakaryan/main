@@ -387,7 +387,6 @@ body::before {
 [data-mj="game-catalog-category-slider-item"].active-link,
 [data-mj="game-catalog-category-slider-item"][aria-current="page"],
 [data-mj="game-catalog-category-slider-item"][aria-selected="true"],
-[data-mj="game-catalog-mobile-category-chip"]:hover,
 [data-mj="game-catalog-mobile-category-chip"].active,
 [data-mj="game-catalog-mobile-category-chip"].active-link,
 [data-mj="game-catalog-mobile-category-chip"][aria-current="page"],
