@@ -347,3 +347,8 @@ a.app-ltr-fmy2kh {
   transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease, background 0.22s ease !important;
   text-decoration: none !important;
 }
+
+.app-ltr-15dmxd0:hover > a > * {
+  transition: color 0.2s;
+  color: #f8dea3;
+}
