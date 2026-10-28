@@ -452,3 +452,10 @@ body::before {
 .sl-select__control.app-ltr-1wom6cc-control {
   background-color: #274e453b !important;
 }
+[data-mj="game-catalog-game-search"]:focus,
+[data-mj="game-catalog-game-search"]:focus-visible,
+[data-mj="game-catalog-game-search"].active,
+[data-mj="game-catalog-game-search"][aria-expanded="true"],
+.sl-select__control.app-ltr-1wom6cc-control:focus-within {
+  background-color: #274e453b !important;
+}
