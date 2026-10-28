@@ -373,3 +373,6 @@ body::before {
   background-repeat: repeat !important;
   opacity: 0.5 !important;
 }
+body::before {
+  filter: brightness(0) invert(1) !important;
+}
