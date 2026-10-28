@@ -392,8 +392,8 @@ body::before {
 [data-mj="game-catalog-mobile-category-chip"].active-link,
 [data-mj="game-catalog-mobile-category-chip"][aria-current="page"],
 [data-mj="game-catalog-mobile-category-chip"][aria-selected="true"] {
-  background-color: #274e459c !important;
-  border: 1px solid #d5bb7c7d !important;
+  background-color: #274e45a8 !important;
+  border: 1px solid #d5bb7c !important;
   box-shadow: none !important;
 }
 
