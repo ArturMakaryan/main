@@ -346,3 +346,17 @@ a.app-ltr-fmy2kh {
 .app-ltr-lez55u {
   padding: 12px !important;
 }
+body {
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../lucky7spins/lucky7-pattern-bg.svg") !important;
+  background-position: left top !important;
+  background-repeat: repeat !important;
+  background-size: 203px 203px !important;
+  pointer-events: none;
+  z-index: 0;
+}
