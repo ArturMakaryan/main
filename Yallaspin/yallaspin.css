@@ -446,3 +446,9 @@ body::before {
   padding: 16px !important;
   border-radius: 0px !important;
 }
+
+
+[data-mj="game-catalog-game-search"],
+.sl-select__control.app-ltr-1wom6cc-control {
+  background-color: #274e453b !important;
+}
