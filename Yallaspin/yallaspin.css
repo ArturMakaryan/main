@@ -146,7 +146,7 @@ body * {
 [data-mj="header-nav-item"] a.active-link::after,
 [data-mj="header-nav-item"] a[class*="active"]::after,
 [data-mj="header-nav-item"] a[aria-current="page"]::after {
-  width: 70% !important;
+  width: 90% !important;
 }
 
 .app-ltr-19zdw54 .app-ltr-c7y9k9 {
