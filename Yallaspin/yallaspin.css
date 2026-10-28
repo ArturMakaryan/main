@@ -365,6 +365,6 @@ body::before {
   background-color: rgba(0, 0, 0, 0.4) !important;
   background-size: 240px 240px !important;
   background-repeat: repeat !important;
-  opacity: 0.5 !important;
+  opacity: 0.2 !important;
   filter: none !important;
 }
