@@ -118,17 +118,18 @@ body * {
 [data-mj="header-nav-item"] a.active-link,
 [data-mj="header-nav-item"] a[class*="active"],
 [data-mj="header-nav-item"] a[aria-current="page"] {
-  color: #00a858 !important;
-  background: rgba(0, 170, 87, 0.18) !important;
+  color: #f8dea3;
+  background: linear-gradient(185deg, #ffe6ab12 0.5%, #f6dda152 100%) !important;
   transform: none !important;
   outline: none !important;
+  border-radius: 8px;
 }
 
 [data-mj="header-nav-item"] a::after {
   content: "" !important;
   position: absolute !important;
   left: 50% !important;
-  bottom: 4px !important;
+  bottom: 0px !important;
   width: 0 !important;
   height: 2px !important;
   border-radius: 999px !important;
