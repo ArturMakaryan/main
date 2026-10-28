@@ -368,3 +368,69 @@ body::before {
   opacity: 0.2 !important;
   filter: none !important;
 }
+
+
+[data-mj="game-catalog-category-slider-item"],
+[data-mj="game-catalog-mobile-category-chip"] {
+  background-color: #274e457a !important;
+  border: 1px solid #274E45 !important;
+  padding: 0 16px !important;
+  box-shadow: none !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  color: #fffc !important;
+}
+
+/* Active and hover states */
+[data-mj="game-catalog-category-slider-item"]:hover,
+[data-mj="game-catalog-category-slider-item"].active,
+[data-mj="game-catalog-category-slider-item"].active-link,
+[data-mj="game-catalog-category-slider-item"][aria-current="page"],
+[data-mj="game-catalog-category-slider-item"][aria-selected="true"],
+[data-mj="game-catalog-mobile-category-chip"]:hover,
+[data-mj="game-catalog-mobile-category-chip"].active,
+[data-mj="game-catalog-mobile-category-chip"].active-link,
+[data-mj="game-catalog-mobile-category-chip"][aria-current="page"],
+[data-mj="game-catalog-mobile-category-chip"][aria-selected="true"] {
+  background-color: #274e459c !important;
+  border: 1px solid #d5bb7c7d !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-game-search"],
+[data-mj="game-catalog-mobile-search-toggle"],
+[data-mj="game-catalog-mobile-provider-input"],
+[data-mj="game-catalog-mobile-search"],
+.sl-select__control.app-ltr-1wom6cc-control {
+  background-color: #274e457a !important;
+  border: 1px solid #274E45 !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+[data-mj="game-catalog-game-search"]:hover,
+.sl-select__control.app-ltr-1wom6cc-control:hover {
+  background-color: #274e459c !important;
+  border: 1px solid #d5bb7c7d !important;
+}
+
+[data-mj="game-catalog-game-search"]:focus,
+[data-mj="game-catalog-game-search"]:focus-visible,
+[data-mj="game-catalog-game-search"].active,
+[data-mj="game-catalog-game-search"][aria-expanded="true"],
+.sl-select__control.app-ltr-1wom6cc-control:focus-within {
+  background-color: #274e457a !important;
+  border: 1px solid #d5bb7c !important;
+}
+
+[data-mj="game-catalog-game-search"]::placeholder,
+.sl-select__placeholder.app-ltr-gquhdi-placeholder,
+[data-mj="game-catalog-mobile-provider-wrapper"] input::placeholder,
+[data-mj="game-catalog-mobile-search-wrapper"] input::placeholder {
+  color: #fffc !important;
+  opacity: 1 !important;
+}
+
+[data-mj="game-catalog-mobile-search-toggle"] {
+  box-shadow: none !important;
+}
