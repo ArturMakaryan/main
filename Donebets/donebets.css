@@ -679,8 +679,9 @@ button[aria-label="search"][name="search"]:hover,
   max-width: 180px !important;
 }
 
-.app-ltr-16dvelw,
-.app-rtl-16dvelw {
+.app-ltr-1l6j627,
+.app-rtl-1l6j627 {
+  width: fit-content !important;
   height: fit-content !important;
   padding: 4px 8px 4px 4px !important;
   display: flex !important;
@@ -689,8 +690,8 @@ button[aria-label="search"][name="search"]:hover,
   box-shadow: inset 0 0 0 1px #ffffff0d !important;
 }
 
-.app-ltr-16dvelw:hover,
-.app-rtl-16dvelw:hover {
+.app-ltr-1l6j627:hover,
+.app-rtl-1l6j627:hover {
   background: #16161f !important;
   box-shadow: inset 0 0 0 1px #1c1c26 !important;
 }
@@ -814,7 +815,7 @@ button[aria-label="search"][name="search"]:hover,
   );
 }
 
-.app-ltr-r2jm6p {
+.app-ltr-1fizt1d {
   background-image: linear-gradient(174deg, #0e0e11, #13131b) !important;
 }
 
