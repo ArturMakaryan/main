@@ -473,6 +473,9 @@ body::before {
 [data-mj="logout-button"] {
   padding: 0px !important;
   font-size: 14px !important;
+}
+
+[data-mj="logout-button"] svg {
   width: 20px !important;
   height: 20px !important;
 }
