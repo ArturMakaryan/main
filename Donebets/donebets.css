@@ -820,15 +820,13 @@ button[aria-label="search"][name="search"]:hover,
   gap: 8px !important;
 }
 
-[data-mj="register-button"].app-ltr-p5t74v,
-[data-mj="register-button"].app-rtl-p5t74v {
+[data-mj="register-button"] {
   box-shadow: 0 0 4px 1px #f15a2266 !important;
   color: #050505 !important;
   font-weight: 500 !important;
 }
 
-[data-mj="register-button"].app-ltr-p5t74v:hover,
-[data-mj="register-button"].app-rtl-p5t74v:hover {
+[data-mj="register-button"]:hover {
   box-shadow: 0 0 7px 2px #f15a2280 !important;
   color: #050505 !important;
 }
