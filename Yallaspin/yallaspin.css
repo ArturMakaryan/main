@@ -155,7 +155,7 @@ body * {
 
 .app-ltr-1l44gyp,
 .app-rtl-1l44gyp {
-  max-width: 2000px !important;
+  max-width: 1640px !important;
 }
 
 .app-ltr-19zdw54 .app-ltr-15kov7,
@@ -263,7 +263,7 @@ html body [data-mj="lobby-catalog-mobile-categories"] > a[data-mj="lobby-catalog
 [data-mj="widget-banner-container"],
 [data-mj="widget-pages-container"],
 [data-mj="widget-fixed-image-banner-container"] {
-  max-width: 2000px !important;
+  max-width: 1640px !important;
 }
 
 .app-ltr-zav1vi .modal.app-ltr-1er4w4i {
@@ -465,4 +465,43 @@ body::before {
 .app-ltr-19o3rh0 {
   border: 1px solid #ffffff1a !important;
   border-radius: 8px !important;
+}
+
+/* Last winner widget */
+.app-ltr-1268fb8 {
+  width: 200px !important;
+  max-width: 200px !important;
+}
+
+.app-ltr-142r9oh {
+  height: fit-content !important;
+  padding: 4px 8px 4px 4px !important;
+  display: flex !important;
+  align-items: center !important;
+  background: #122b25 !important;
+  box-shadow: inset 0 0 0 1px #ffffff0d !important;
+}
+
+.app-ltr-142r9oh:hover {
+  background: #16332c !important;
+  box-shadow: inset 0 0 0 1px #ffffff14 !important;
+}
+
+.app-ltr-121fhed {
+  border-radius: 4px !important;
+  aspect-ratio: 427 / 575 !important;
+  min-width: 72px !important;
+  padding-top: 0 !important;
+  min-height: 92px !important;
+}
+
+.app-ltr-yawtgd {
+  align-items: flex-start !important;
+  overflow: hidden;
+  padding: 8px 0 8px 8px;
+}
+
+.app-ltr-hef4vd {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
