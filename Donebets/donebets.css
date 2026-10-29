@@ -819,6 +819,10 @@ button[aria-label="search"][name="search"]:hover,
   background-image: linear-gradient(174deg, #0e0e11, #13131b) !important;
 }
 
+.app-ltr-1fizt1d:hover {
+  background-image: linear-gradient(174deg, #37221B, #13131b) !important;
+}
+
 [data-mj="widget-pages-grid"] {
   gap: 8px !important;
 }
