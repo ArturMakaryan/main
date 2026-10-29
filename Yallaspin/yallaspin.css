@@ -306,8 +306,7 @@ html body [data-mj="lobby-catalog-mobile-categories"] > a[data-mj="lobby-catalog
 
 [data-mj="widget-game-card"]:hover {
   z-index: 2 !important;
-  transform: scale(1) translateY(-4px) !important;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34), 0 0 24px rgba(0, 170, 87, 0.22) !important;
+  transform: scale(1.03) translateY(0px) !important;
 }
 
 [data-mj="widget-game-slider-slide"] [data-mj="widget-game-card"] .app-ltr-3kzt60,
