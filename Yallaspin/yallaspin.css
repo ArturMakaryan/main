@@ -485,6 +485,10 @@ body::before {
   height: 20px !important;
 }
 
+[data-mj="account-menu"] li {
+  margin-bottom: 0px !important;
+}
+
 [data-mj="account-menu-list"] {
   margin: 12px 0 0 0 !important;
 }
