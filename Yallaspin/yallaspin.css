@@ -466,3 +466,77 @@ body::before {
   border: 1px solid #ffffff1a !important;
   border-radius: 8px !important;
 }
+
+
+[data-mj="game-catalog-card"] {
+  position: relative;
+  width: 157px;
+  height: 211.78px;
+  overflow: hidden;
+}
+
+[data-mj="game-catalog-card-overlay"] {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Left background curtain */
+[data-mj="game-catalog-card-overlay"]::before {
+  content: "";
+  position: absolute;
+  inset: -5% 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background: url("/assets/thumbnail-action-animation-left.webp")
+    right bottom / 51% 100% no-repeat;
+
+  transform: translateX(-170%) translateY(-90%)
+    rotate(45deg) scale(2);
+
+  transition: transform 0.4s cubic-bezier(1, 0.17, 0, 0.85);
+}
+
+/* Right background curtain */
+[data-mj="game-catalog-card-overlay"]::after {
+  content: "";
+  position: absolute;
+  inset: -5% 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background: url("/assets/thumbnail-action-animation-right.webp")
+    left bottom / 51% 100% no-repeat;
+
+  transform: translateX(170%) translateY(-90%)
+    rotate(-45deg) scale(2);
+
+  transition: transform 0.4s cubic-bezier(1, 0.17, 0, 0.85);
+}
+
+/* Keep existing buttons/content above the animation */
+[data-mj="game-catalog-card-overlay"] > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  [data-mj="game-catalog-card"]:hover
+    [data-mj="game-catalog-card-overlay"]::before {
+    transform: translateX(-50%);
+  }
+
+  [data-mj="game-catalog-card"]:hover
+    [data-mj="game-catalog-card-overlay"]::after {
+    transform: translateX(50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-mj="game-catalog-card-overlay"]::before,
+  [data-mj="game-catalog-card-overlay"]::after {
+    transition: none;
+  }
+}
