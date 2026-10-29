@@ -241,23 +241,23 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8wtuim,
 a[data-mj="game-catalog-mobile-category-chip"].app-ltr-8wtuim *,
 a[data-mj="game-catalog-mobile-category-chip"].app-rtl-8wtuim,
 a[data-mj="game-catalog-mobile-category-chip"].app-rtl-8wtuim *,
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-pdqcwp,
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-pdqcwp *,
-a[data-mj="game-catalog-mobile-category-chip"].app-rtl-pdqcwp,
-a[data-mj="game-catalog-mobile-category-chip"].app-rtl-pdqcwp * {
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-btovuq,
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-btovuq *,
+a[data-mj="game-catalog-mobile-category-chip"].app-rtl-btovuq,
+a[data-mj="game-catalog-mobile-category-chip"].app-rtl-btovuq * {
   font-weight: 300 !important;
   font-size: 14px !important;
 }
 
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-pdqcwp,
-a[data-mj="game-catalog-mobile-category-chip"].app-rtl-pdqcwp {
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-btovuq,
+a[data-mj="game-catalog-mobile-category-chip"].app-rtl-btovuq {
   background-image: linear-gradient(174deg, #0e0e11, #13131b) !important;
   box-shadow: #302e2e 0 0 0 1px inset !important;
   color: #c0b9b9 !important;
 }
 
-a[data-mj="game-catalog-mobile-category-chip"].app-ltr-pdqcwp *,
-a[data-mj="game-catalog-mobile-category-chip"].app-rtl-pdqcwp * {
+a[data-mj="game-catalog-mobile-category-chip"].app-ltr-btovuq *,
+a[data-mj="game-catalog-mobile-category-chip"].app-rtl-btovuq * {
   color: #c0b9b9 !important;
   border-color: #1c1c26 !important;
 }
@@ -279,8 +279,8 @@ a[data-mj="game-catalog-category-slider-item"] {
   box-shadow: #f15a2273 0 0 0 1px inset !important;
 }
 
-a[data-mj="game-catalog-category-slider-item"].app-ltr-17y8lip,
-a[data-mj="game-catalog-category-slider-item"].app-rtl-17y8lip,
+a[data-mj="game-catalog-category-slider-item"].app-ltr-ezsda4,
+a[data-mj="game-catalog-category-slider-item"].app-rtl-ezsda4,
 [data-mj="game-catalog-category-slider-item"].active,
 [data-mj="game-catalog-category-slider-item"].active-link,
 [data-mj="game-catalog-category-slider-item"][aria-current="page"],
@@ -293,8 +293,8 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17y8lip,
 [data-mj="game-catalog-game-search"]:focus,
 .sl-select__control.app-ltr-1ku3ahu-control,
 .sl-select__control.app-rtl-1ku3ahu-control,
-[data-mj="game-catalog-mobile-provider-input"].app-ltr-1d8c72f,
-[data-mj="game-catalog-mobile-provider-input"].app-rtl-1d8c72f,
+[data-mj="game-catalog-mobile-provider-input"].app-ltr-1sk4ul0,
+[data-mj="game-catalog-mobile-provider-input"].app-rtl-1sk4ul0,
 [data-mj="game-catalog-provider-bottom-sheet-search"] ,
 [data-mj="game-catalog-mobile-search-toggle"] {
   background: #0d0d12 !important;
@@ -304,8 +304,8 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-17y8lip,
 
 [data-mj="game-catalog-provider-bottom-sheet-search"],
 [data-mj="game-catalog-game-search"]:focus,
-[data-mj="game-catalog-mobile-provider-input"].app-ltr-1d8c72f,
-[data-mj="game-catalog-mobile-provider-input"].app-rtl-1d8c72f {
+[data-mj="game-catalog-mobile-provider-input"].app-ltr-1sk4ul0,
+[data-mj="game-catalog-mobile-provider-input"].app-rtl-1sk4ul0 {
   font-weight: 300 !important;
 }
 
