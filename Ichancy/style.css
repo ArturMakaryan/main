@@ -129,7 +129,8 @@ body {
 .sl-navlink.app-ltr-5wkz3k.active-link,
 .sl-navlink.app-ltr-5wkz3k:hover {
   border-radius: 0 8px 8px 0 !important;
-  background: #ffffff0d !important;
+  border-right: 1px solid #8cc4df !important;
+  background: #8cc4df1f !important;
   color: #8CC4DF !important;
 }
 
@@ -787,7 +788,8 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 .sl-navlink.app-ltr-1mj9rd0.active-link,
 .sl-navlink.app-ltr-1mj9rd0:hover {
   border-radius: 0 8px 8px 0 !important;
-  background: #ffffff0d !important;
+  border-right: 1px solid #8cc4df !important;
+  background: #8cc4df1f !important;
   color: #8CC4DF !important;
 }
 
@@ -814,4 +816,13 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: 24px 24px !important;
+}
+
+[data-mj="login-button"] {
+  outline: 1px solid #8cc4df !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="register-button"] {
+  font-weight: 300 !important;
 }
