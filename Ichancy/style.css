@@ -843,10 +843,10 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 [data-mj="sidebar-section"]::after {
   content: "" !important;
   position: absolute !important;
-  right: 0 !important;
+  right: 9px !important;
   bottom: 0 !important;
-  left: 20px !important;
-  border-bottom: 1px solid rgb(255 255 255 / 6%) !important;
+  left: 62px !important;
+  border-bottom: 1px solid rgb(255 255 255 / 3%) !important;
   pointer-events: none !important;
 }
 
