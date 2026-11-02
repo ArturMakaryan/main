@@ -835,3 +835,18 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   color: #8CC4DF !important;
   font-weight: 300 !important;
 }
+
+[data-mj="sidebar-section"] {
+  position: relative !important;
+}
+
+[data-mj="sidebar-section"]::after {
+  content: "" !important;
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 20px !important;
+  border-bottom: 1px solid rgb(255 255 255 / 6%) !important;
+  pointer-events: none !important;
+}
+
