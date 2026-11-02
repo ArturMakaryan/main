@@ -396,7 +396,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   border: 0 !important;
   border-radius: 50% !important;
   background-color: transparent !important;
-  background-image: url("https://raw.githubusercontent.com/ArturMakaryan/main/main/lucky7spins/play-button.svg") !important;
+  background-image: url("./ichancy-play-button.svg") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: contain !important;
@@ -427,7 +427,7 @@ html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.ap
   border: 0 !important;
   border-radius: 50% !important;
   background-color: transparent !important;
-  background-image: url("https://raw.githubusercontent.com/ArturMakaryan/main/main/lucky7spins/play-button.svg") !important;
+  background-image: url("./ichancy-play-button.svg") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: contain !important;
