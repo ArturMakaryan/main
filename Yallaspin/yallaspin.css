@@ -515,6 +515,59 @@ body::before {
   gap: 4px !important;
 }
 
+/* Mobile bottom navigation */
+@media (max-width: 767px) {
+  .app-ltr-x4xc5i,
+  .app-rtl-x4xc5i {
+    display: flex !important;
+    width: 100% !important;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+
+  .app-ltr-1ntiqn0,
+  .app-rtl-1ntiqn0 {
+    overflow: visible !important;
+  }
+
+  [data-mj="bottom-nav-item"] {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  [data-mj="bottom-nav-item"][href*="/casino/"] {
+    position: relative !important;
+    isolation: isolate !important;
+    margin-bottom: 8px !important;
+  }
+
+  [data-mj="bottom-nav-item"][href*="/casino/"]::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -17px !important;
+    left: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    transform: translateX(-50%) !important;
+    border-radius: 50% !important;
+    background: #5a5f44 !important;
+    z-index: -1 !important;
+    box-shadow: 0 0 0 4px #122b25 !important;
+  }
+
+  [data-mj="bottom-nav-item"][href*="/casino/"] > span {
+    position: relative !important;
+    transform: translateY(-8px) !important;
+    margin-bottom: 8px !important;
+  }
+}
+
 .app-ltr-19o3rh0 {
   border: 1px solid #ffffff1a !important;
   border-radius: 8px !important;
