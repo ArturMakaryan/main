@@ -838,6 +838,7 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 
 [data-mj="sidebar-section"] {
   position: relative !important;
+  margin-bottom: 0 !important;
 }
 
 [data-mj="sidebar-section"]::after {
