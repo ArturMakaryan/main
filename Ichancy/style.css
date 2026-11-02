@@ -826,3 +826,12 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 [data-mj="register-button"] {
   font-weight: 300 !important;
 }
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-bxgurs,
+[data-mj="game-catalog-category-slider-item"].app-ltr-n5qkzc {
+  border: 1px solid #8cc4df !important;
+  border-radius: 4px !important;
+  background: #8cc4df1f !important;
+  color: #8CC4DF !important;
+  font-weight: 300 !important;
+}
