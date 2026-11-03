@@ -720,11 +720,6 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
   font-size: 14px !important;
 }
 
-.app-ltr-1qqvnmp,
-.app-ltr-7wh13m {
-  height: 50px !important;
-}
-
 .lucky7spins-telegram-button {
   display: inline-flex !important;
   align-items: center !important;
@@ -1642,11 +1637,6 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 [data-mj="footer-nav-item"] a {
   font-weight: 300 !important;
   font-size: 14px !important;
-}
-
-.app-rtl-1qqvnmp,
-.app-rtl-7wh13m {
-  height: 50px !important;
 }
 
 .lucky7spins-telegram-button {
