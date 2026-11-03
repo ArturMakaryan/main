@@ -803,6 +803,10 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
   color: #8CC4DF !important;
 }
 
+.sl-navlink.app-ltr-1mj9rd0.active-link {
+  color: #8cc4df !important;
+}
+
 button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   border: 1px solid transparent !important;
   border-radius: 4px !important;
