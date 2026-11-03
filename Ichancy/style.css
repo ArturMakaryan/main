@@ -913,6 +913,12 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   }
 }
 
+@media (max-width: 992px) {
+  [data-mj="sidebar-content"].app-rtl-czso89 {
+    padding: 0 0 12px 10px !important;
+  }
+}
+
 [dir="rtl"] .sl-navlink.app-rtl-1mj9rd0 {
   padding: 0 20px 0 18px !important;
 }
