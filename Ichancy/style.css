@@ -107,6 +107,14 @@ body {
   font-weight: 300 !important;
 }
 
+[data-mj="sidebar-section"]:focus,
+[data-mj="sidebar-section"]:focus-visible,
+[data-mj="sidebar-section"] *:focus,
+[data-mj="sidebar-section"] *:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 [data-mj="sidebar-section"].active-link,
 [data-mj="sidebar-section"][aria-current="page"],
 [data-mj="sidebar-section"] .active-link,
@@ -693,6 +701,7 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 [data-mj="bottom-nav"].app-ltr-1xo2uwt {
   border-top: 1px solid rgb(255 255 255 / 10%) !important;
   background-color: #122543 !important;
+  border-radius: 8px 8px 0 0 !important;
 }
 
 [data-mj="sidebar-special-button"] {
@@ -842,11 +851,6 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   left: 62px !important;
   border-bottom: 1px solid rgb(255 255 255 / 3%) !important;
   pointer-events: none !important;
-}
-
-[data-mj="bottom-nav"].app-ltr-x4xc5i {
-  border-top: 1px solid rgb(255 255 255 / 10%) !important;
-  border-radius: 8px 8px 0 0 !important;
 }
 
 /* Complete RTL overrides */
