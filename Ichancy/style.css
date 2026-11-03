@@ -860,10 +860,13 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   border-radius: 4px !important;
 }
 
-[dir="rtl"] .app-rtl-10a4mqi,
-[dir="rtl"] .app-ltr-10a4mqi {
+[dir="rtl"] .app-rtl-es55kh {
+  margin-right: 0px !important;
+}
+
+[dir="rtl"] .app-rtl-10a4mqi {
   direction: rtl !important;
-  margin: 12px 56px 12px 0 !important;
+  margin: 12px 56px 12px 0px !important;
   border-radius: 4px !important;
 }
 
@@ -922,7 +925,7 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 }
 
 [dir="rtl"] .sl-navlink.app-rtl-1mj9rd0 {
-  padding: 0 20px 0 18px !important;
+  padding: 0 10px 0 18px !important;
 }
 
 /* RTL aliases for generated classes. */
