@@ -6,7 +6,7 @@ body {
 }
 
 [data-mj="header"] {
-  background-color: #122543 !important;
+  background-color: #0e1c32 !important;
   border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
   box-shadow: none !important;
 }
@@ -15,7 +15,7 @@ body {
 [data-mj="custom-header"].app-ltr-181sjs,
 [data-mj="custom-header"].app-ltr-36wkws {
   display: flex !important;
-  background-color: #122543 !important;
+  background-color: #0e1c32 !important;
   border-bottom: 0 !important;
   box-shadow: none !important;
 }
@@ -85,6 +85,7 @@ body {
 
 [data-mj="sidebar-content"].app-ltr-bavpp,
 [data-mj="sidebar-content"] {
+  background-color: #0e1c32 !important;
   border-right: 1px solid rgb(255 255 255 / 10%) !important;
   border-radius: 0 !important;
   padding: 0 10px 12px 0px !important;
@@ -92,7 +93,7 @@ body {
 
 [data-mj="sidebar-section"] {
   display: flex !important;
-  background-color: #ffffff12 !important;
+  background-color: rgb(255 255 255 / 3%) !important;
   border-radius: 0 6px 6px 0 !important;
   min-height: 40px !important;
   font-weight: 300 !important;
@@ -671,7 +672,7 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 }
 
 [data-mj="bottom-nav"].app-ltr-1xo2uwt {
-  background-color: #122543 !important;
+  background-color: #0e1c32 !important;
 }
 
 .app-ltr-x4xc5i {
@@ -852,16 +853,6 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   font-weight: 300 !important;
 }
 
-[data-mj="sidebar-section"]::after {
-  content: "" !important;
-  position: absolute !important;
-  right: 9px !important;
-  bottom: 0 !important;
-  left: 62px !important;
-  border-bottom: 1px solid rgb(255 255 255 / 3%) !important;
-  pointer-events: none !important;
-}
-
 [data-mj="sidebar-group"].active-link,
 [data-mj="sidebar-group"][aria-current="page"],
 [data-mj="sidebar-group"] .active-link,
@@ -899,7 +890,7 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   min-height: 40px !important;
   margin-bottom: 4px !important;
   border-radius: 0 6px 6px 0 !important;
-  background-color: #ffffff12 !important;
+  background-color: rgb(255 255 255 / 3%) !important;
 }
 
 [data-mj="sidebar-section"] > div {
@@ -942,11 +933,6 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 [dir="rtl"] [data-mj="sidebar-section"] .sl-navlink.app-rtl-1mj9rd0 {
   padding: 0 10px 0 18px !important;
   border-radius: 0 8px 8px 0 !important;
-}
-
-[dir="rtl"] [data-mj="sidebar-section"]::after {
-  right: 62px !important;
-  left: 9px !important;
 }
 
 /* Complete RTL overrides */
@@ -1043,7 +1029,7 @@ body {
 }
 
 [data-mj="header"] {
-  background-color: #122543 !important;
+  background-color: #0e1c32 !important;
   border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
   box-shadow: none !important;
 }
@@ -1052,7 +1038,7 @@ body {
 [data-mj="custom-header"].app-rtl-181sjs,
 [data-mj="custom-header"].app-rtl-36wkws {
   display: flex !important;
-  background-color: #122543 !important;
+  background-color: #0e1c32 !important;
   border-bottom: 0 !important;
   box-shadow: none !important;
 }
@@ -1664,7 +1650,7 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 
 [data-mj="bottom-nav"].app-rtl-1xo2uwt {
   border-top: 1px solid rgb(255 255 255 / 10%) !important;
-  background-color: #122543 !important;
+  background-color: #0e1c32 !important;
 }
 
 [data-mj="sidebar-special-button"] {
