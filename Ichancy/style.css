@@ -866,8 +866,9 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 
 [dir="rtl"] .app-rtl-10a4mqi {
   direction: rtl !important;
-  margin: 12px 56px 12px 0px !important;
+  margin: 12px 48px 12px 12px !important;
   border-radius: 4px !important;
+  overflow: hidden !important;
 }
 
 [dir="rtl"] [data-mj="sidebar-section"] {
