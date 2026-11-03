@@ -963,6 +963,29 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   left: 9px !important;
 }
 
+/* Current game catalog active-state classes */
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-16ndkry,
+[data-mj="game-catalog-category-slider-item"].app-ltr-n5qkzc {
+  border: 1px solid #8cc4df !important;
+  border-radius: 4px !important;
+  background: #8cc4df1f !important;
+  background-color: #8cc4df1f !important;
+  box-shadow: none !important;
+  color: #8cc4df !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-rtl-16ndkry,
+[data-mj="game-catalog-category-slider-item"].app-rtl-n5qkzc {
+  border: 1px solid #8cc4df !important;
+  border-radius: 4px !important;
+  background: #8cc4df1f !important;
+  background-color: #8cc4df1f !important;
+  box-shadow: none !important;
+  color: #8cc4df !important;
+  font-weight: 300 !important;
+}
+
 /* Complete RTL overrides */
 
 [dir="rtl"] [data-mj="sidebar-content"] {
