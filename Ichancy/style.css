@@ -871,8 +871,9 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 
 .app-ltr-f567ui {
   display: flex !important;
-  align-items: flex-start !important;
+  align-items: flex-start;
   justify-content: space-between !important;
+  flex-direction: column;
 }
 
 [data-mj="sidebar-group"].active-link,
