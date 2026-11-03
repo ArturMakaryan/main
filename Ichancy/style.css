@@ -106,10 +106,6 @@ body {
   font-weight: 300 !important;
 }
 
-[data-mj="sidebar-section"] * {
-  color: #afbabf !important;
-}
-
 [data-mj="sidebar-section"]:focus,
 [data-mj="sidebar-section"]:focus-visible,
 [data-mj="sidebar-section"] *:focus,
@@ -870,6 +866,63 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   left: 62px !important;
   border-bottom: 1px solid rgb(255 255 255 / 3%) !important;
   pointer-events: none !important;
+}
+
+/* Consolidated sidebar structure */
+[data-mj="sidebar-section"] {
+  display: flex !important;
+  position: relative !important;
+  min-height: 40px !important;
+  margin-bottom: 4px !important;
+  border-radius: 0 6px 6px 0 !important;
+  background-color: #ffffff12 !important;
+}
+
+[data-mj="sidebar-section"] > div {
+  width: 100% !important;
+}
+
+[data-mj="sidebar-section"] .sl-navlink.app-ltr-1mj9rd0 {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-height: 40px !important;
+  box-sizing: border-box !important;
+  padding: 4px 32px 4px 22px !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="sidebar-section"] .sl-navlink.app-ltr-1mj9rd0.active-link,
+[data-mj="sidebar-section"] .sl-navlink.app-ltr-1mj9rd0[aria-current="page"] {
+  border-right: 1px solid #8cc4df !important;
+  background: #8cc4df1f !important;
+  color: #8cc4df !important;
+}
+
+[data-mj="sidebar-section"] .sl-navlink.app-ltr-1mj9rd0.active-link > *:not([data-site-badge="true"]),
+[data-mj="sidebar-section"] .sl-navlink.app-ltr-1mj9rd0[aria-current="page"] > *:not([data-site-badge="true"]) {
+  color: #8cc4df !important;
+}
+
+[data-mj="sidebar-section"] .sl-navlink.app-ltr-1mj9rd0:hover:not(.active-link):not([aria-current="page"]) {
+  color: #ffffff !important;
+}
+
+[dir="rtl"] [data-mj="sidebar-section"] {
+  border-radius: 0 6px 6px 0 !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] [data-mj="sidebar-section"] .sl-navlink.app-rtl-1mj9rd0 {
+  padding: 0 10px 0 18px !important;
+  border-radius: 0 8px 8px 0 !important;
+}
+
+[dir="rtl"] [data-mj="sidebar-section"]::after {
+  right: 62px !important;
+  left: 9px !important;
 }
 
 /* Complete RTL overrides */
