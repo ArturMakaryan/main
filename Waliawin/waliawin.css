@@ -871,12 +871,6 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
   }
 }
 
-@media screen and (max-width: 830px) {
-  [data-mj="footer"] > .app-ltr-1l44gyp {
-    padding-bottom: 80px !important;
-  }
-}
-
 @media screen and (max-width: 600px) {
   [data-mj="header-left"] {
     max-width: 42vw;
@@ -909,5 +903,17 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
 
   [data-mj="footer-copyright"] {
     line-height: 1.5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app-ltr-voocjd {
+    padding-bottom: 44px;
+  }
+}
+
+@media (max-width: 840px) {
+  .app-ltr-voocjd {
+    padding-bottom: 24px;
   }
 }
