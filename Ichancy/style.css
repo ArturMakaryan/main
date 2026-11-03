@@ -892,18 +892,6 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   color: #b8bcc1 !important;
 }
 
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-3jppi1:hover,
-[data-mj="game-catalog-category-slider-item"].app-ltr-meob9p:hover,
-[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-16ndkry):hover,
-[data-mj="game-catalog-category-slider-item"]:not(.app-ltr-n5qkzc):hover {
-  border-radius: 4px !important;
-  box-shadow: none !important;
-  background: linear-gradient(#112643, #223550) !important;
-  background-color: #071818 !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-}
-
 /* Consolidated sidebar structure */
 [data-mj="sidebar-section"] {
   display: flex !important;
