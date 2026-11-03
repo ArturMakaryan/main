@@ -848,6 +848,80 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   pointer-events: none !important;
 }
 
+/* Complete RTL overrides */
+
+[dir="rtl"] [data-mj="sidebar-content"] {
+  direction: rtl !important;
+  padding: 0 0 12px 10px !important;
+  border-right: 0 !important;
+  border-left: 1px solid rgb(255 255 255 / 10%) !important;
+}
+
+[dir="rtl"] .app-rtl-es55kh,
+[dir="rtl"] .app-ltr-es55kh {
+  direction: rtl !important;
+  margin-right: 13px !important;
+  margin-left: 0 !important;
+  border-radius: 4px !important;
+}
+
+[dir="rtl"] .app-rtl-10a4mqi,
+[dir="rtl"] .app-ltr-10a4mqi {
+  direction: rtl !important;
+  margin: 12px 56px 12px 0 !important;
+  border-radius: 4px !important;
+}
+
+[dir="rtl"] [data-mj="sidebar-section"] {
+  direction: rtl !important;
+  border-radius: 6px 0 0 6px !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] [data-mj="sidebar-section"]::after {
+  right: 62px !important;
+  left: 9px !important;
+}
+
+[dir="rtl"] .sl-navlink.active-link,
+[dir="rtl"] .sl-navlink:hover {
+  border-right: 0 !important;
+  border-left: 1px solid #8cc4df !important;
+  border-radius: 6px 0 0 6px !important;
+  background: #8cc4df1f !important;
+  color: #8cc4df !important;
+}
+
+[dir="rtl"] [data-mj="sidebar-footer"] {
+  direction: rtl !important;
+  padding: 12px 12px 0 0 !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] button[data-mj="sidebar-collapse"] {
+  left: auto !important;
+  right: 14px !important;
+}
+
+@media (max-width: 992px) {
+  [dir="rtl"] [data-mj="sidebar-content"] {
+    padding: 0 0 12px 10px !important;
+  }
+
+  [dir="rtl"] [data-mj="sidebar-footer"] {
+    padding: 12px 8px 0 4px !important;
+  }
+
+  [dir="rtl"] .app-rtl-10a4mqi,
+  [dir="rtl"] .app-ltr-10a4mqi {
+    margin: 12px 12px 12px 0 !important;
+  }
+}
+
+[dir="rtl"] .sl-navlink.app-rtl-1mj9rd0 {
+  padding: 0 20px 0 18px !important;
+}
+
 /* RTL aliases for generated classes. */
 /* Lucky7Spins custom styles mapped from Spinwin. */
 
