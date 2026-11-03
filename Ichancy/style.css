@@ -922,6 +922,128 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   padding: 0 20px 0 18px !important;
 }
 
+/* Crypto payment section */
+.ichancy-crypto-container {
+  width: 100% !important;
+  max-width: 1432px !important;
+  margin: 32px auto 0 !important;
+  padding: 0 16px !important;
+  box-sizing: border-box !important;
+}
+
+.ichancy-crypto-card {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 32px !important;
+  min-height: 124px !important;
+  padding: 24px 36px !important;
+  border-radius: 12px !important;
+  background: #122d50 !important;
+  box-sizing: border-box !important;
+}
+
+.ichancy-crypto-title {
+  color: #ffffff !important;
+  font-size: 26px !important;
+  font-weight: 300 !important;
+  white-space: nowrap !important;
+}
+
+.ichancy-crypto-title strong {
+  font-weight: 700 !important;
+}
+
+.ichancy-crypto-methods {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 1 !important;
+  gap: 40px !important;
+}
+
+.ichancy-crypto-methods img {
+  display: block !important;
+  width: auto !important;
+  max-width: 120px !important;
+  max-height: 48px !important;
+  object-fit: contain !important;
+}
+
+.ichancy-crypto-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 40px !important;
+  min-width: 235px !important;
+  padding: 0 16px !important;
+  border: 0 !important;
+  outline: 1px solid #8cc4df !important;
+  border-radius: 6px !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  font-weight: 300 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.ichancy-crypto-button:hover {
+  background: rgb(41 64 102) !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 992px) {
+  .ichancy-crypto-card {
+    gap: 20px !important;
+    padding: 22px !important;
+  }
+
+  .ichancy-crypto-title {
+    font-size: 21px !important;
+  }
+
+  .ichancy-crypto-methods {
+    gap: 20px !important;
+  }
+
+  .ichancy-crypto-methods img {
+    max-width: 82px !important;
+    max-height: 36px !important;
+  }
+
+  .ichancy-crypto-button {
+    min-width: 160px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .ichancy-crypto-card {
+    flex-direction: column !important;
+    gap: 24px !important;
+    padding: 24px 16px !important;
+    text-align: center !important;
+  }
+
+  .ichancy-crypto-title {
+    white-space: normal !important;
+  }
+
+  .ichancy-crypto-methods {
+    flex-wrap: wrap !important;
+    gap: 20px 28px !important;
+  }
+
+  .ichancy-crypto-methods img {
+    max-width: 86px !important;
+    max-height: 34px !important;
+  }
+
+  .ichancy-crypto-button {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
 /* RTL aliases for generated classes. */
 /* Lucky7Spins custom styles mapped from Spinwin. */
 
