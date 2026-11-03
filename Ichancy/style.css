@@ -919,6 +919,10 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   }
 }
 
+[dir="rtl"] [data-mj="sidebar-section"] {
+  border-radius: 0 6px 6px 0 !important;
+}
+
 [dir="rtl"] .sl-navlink.app-rtl-1mj9rd0 {
   padding: 0 20px 0 18px !important;
 }
