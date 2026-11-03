@@ -106,6 +106,10 @@ body {
   font-weight: 300 !important;
 }
 
+[data-mj="sidebar-section"] * {
+  color: #afbabf !important;
+}
+
 [data-mj="sidebar-section"]:focus,
 [data-mj="sidebar-section"]:focus-visible,
 [data-mj="sidebar-section"] *:focus,
@@ -798,6 +802,10 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
   border-radius: 0 8px 8px 0 !important;
   border-right: 1px solid #8cc4df !important;
   background: #8cc4df1f !important;
+}
+
+.sl-navlink.app-ltr-1mj9rd0:hover:not(.active-link) {
+  color: #ffffff !important;
 }
 
 button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
