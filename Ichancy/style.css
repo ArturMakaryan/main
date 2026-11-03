@@ -994,7 +994,7 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 
 [dir="rtl"] [data-mj="sidebar-footer"] {
   direction: rtl !important;
-  padding: 12px 12px 0 0 !important;
+  padding: 12px 0 0 12px !important;
   text-align: right !important;
 }
 
