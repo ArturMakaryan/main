@@ -133,7 +133,7 @@ body {
   color: #8cc4df !important;
 }
 
-[data-mj="sidebar-section"] .app-ltr-i6bazn .app-ltr-1trb7go {
+[data-mj="sidebar-section"] .app-ltr-h5qxq2 .app-ltr-1trb7go {
   display: none !important;
 }
 
@@ -251,9 +251,10 @@ body {
   }
 }
 
-.app-ltr-i6bazn {
+.app-ltr-h5qxq2 {
   height: auto !important;
   margin-left: 24px !important;
+  padding-left: 14px !important;
   border-left: 1px solid #ffffff21 !important;
   padding-top: 4px !important;
   overflow: hidden !important;
@@ -270,7 +271,7 @@ body {
   animation: rb-sidebar-submenu-content-open 260ms ease-out !important;
 }
 
-.app-ltr-i6bazn .sl-navlink,
+.app-ltr-h5qxq2 .sl-navlink,
 .app-ltr-7j3ixa .sl-navlink {
   animation: rb-sidebar-submenu-item-open 260ms ease-out both !important;
 }
