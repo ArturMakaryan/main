@@ -1123,6 +1123,21 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   }
 }
 
+/* Responsive payment icon scaling */
+.ichancy-crypto-methods img {
+  width: clamp(52px, 6vw, 120px) !important;
+  height: auto !important;
+  max-height: clamp(24px, 3vw, 48px) !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 700px) {
+  .ichancy-crypto-methods img {
+    width: clamp(48px, 18vw, 82px) !important;
+    max-height: 34px !important;
+  }
+}
+
 /* RTL aliases for generated classes. */
 /* Lucky7Spins custom styles mapped from Spinwin. */
 
