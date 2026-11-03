@@ -123,15 +123,6 @@ body a {
   gap: 8px !important;
 }
 
-.sidebar-content {
-  background: #0e1c32 !important;
-}
-
-[data-mj="sidebar-section"] {
-  background: rgba(255, 255, 255, 0.03) !important;
-  border-color: #0e1c32 !important;
-}
-
 [data-mj="logo"] {
   display: inline-flex !important;
   align-items: center !important;
