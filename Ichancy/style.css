@@ -844,6 +844,11 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   pointer-events: none !important;
 }
 
+[data-mj="bottom-nav"] {
+  border-top: 1px solid rgb(255 255 255 / 10%) !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
 /* Complete RTL overrides */
 
 [dir="rtl"] [data-mj="sidebar-content"] {
