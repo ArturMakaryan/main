@@ -101,7 +101,7 @@ body {
 }
 
 [data-mj="sidebar-section"],
-[data-mj="sidebar-section"] * {
+[data-mj="sidebar-section"] *:not([data-site-badge="true"]) {
   color: #bccbcb !important;
   font-size: 14px !important;
   font-weight: 300 !important;
@@ -1046,7 +1046,7 @@ body {
 }
 
 [data-mj="sidebar-section"],
-[data-mj="sidebar-section"] * {
+[data-mj="sidebar-section"] *:not([data-site-badge="true"]) {
   color: #bccbcb !important;
   font-size: 14px !important;
   font-weight: 300 !important;
