@@ -699,8 +699,11 @@ body.lucky7spins-game-open [data-mj="bottom-nav"] {
 }
 
 [data-mj="bottom-nav"].app-ltr-1xo2uwt {
-  border-top: 1px solid rgb(255 255 255 / 10%) !important;
   background-color: #122543 !important;
+}
+
+.app-ltr-x4xc5i {
+  border-top: 1px solid rgb(255 255 255 / 10%) !important;
   border-radius: 8px 8px 0 0 !important;
 }
 
