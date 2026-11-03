@@ -878,7 +878,6 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   left: 9px !important;
 }
 
-[dir="rtl"] .sl-navlink.active-link,
 [dir="rtl"] .sl-navlink:hover {
   border-right: 0 !important;
   border-left: 1px solid #8cc4df !important;
@@ -904,12 +903,11 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   }
 
   [dir="rtl"] [data-mj="sidebar-footer"] {
-    padding: 12px 8px 0 4px !important;
+    padding: 12px 0 0 12px !important;
   }
 
-  [dir="rtl"] .app-rtl-10a4mqi,
-  [dir="rtl"] .app-ltr-10a4mqi {
-    margin: 12px 12px 12px 0 !important;
+  [dir="rtl"] .app-rtl-10a4mqi {
+    margin: 12px 0 12px 12px !important;
   }
 }
 
