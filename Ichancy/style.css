@@ -92,10 +92,13 @@ body {
 
 [data-mj="sidebar-section"] {
   display: flex !important;
-  background-color: transparent !important;
-  border-radius: 0 !important;
+  background-color: #ffffff12 !important;
+  border-radius: 0 6px 6px 0 !important;
   min-height: 40px !important;
   font-weight: 300 !important;
+  position: relative !important;
+  margin-bottom: 4px !important;
+  padding: 4px 0 4px 0 !important;
 }
 
 [data-mj="sidebar-section"],
@@ -834,11 +837,6 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   background: #8cc4df1f !important;
   color: #8CC4DF !important;
   font-weight: 300 !important;
-}
-
-[data-mj="sidebar-section"] {
-  position: relative !important;
-  margin-bottom: 0 !important;
 }
 
 [data-mj="sidebar-section"]::after {
