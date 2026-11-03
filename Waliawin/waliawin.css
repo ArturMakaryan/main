@@ -70,7 +70,6 @@ textarea {
   z-index: 1 !important;
   display: block !important;
   width: 100% !important;
-  min-height: 0 !important;
   height: auto !important;
   margin-top: auto !important;
   clear: both !important;
