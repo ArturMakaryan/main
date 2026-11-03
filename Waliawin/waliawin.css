@@ -341,6 +341,11 @@ body a {
   color: var(--waliawin-mint) !important;
 }
 
+[data-mj="account-menu-list"] {
+  margin-top: 16px !important;
+  margin-bottom: 0 !important;
+}
+
 [data-floating-ui-focusable][role="dialog"]:has([data-mj="header-nav-item"]),
 [data-floating-ui-focusable][role="dialog"]:has([data-mj="account-menu"]) {
   background: var(--waliawin-surface) !important;
@@ -529,6 +534,10 @@ html body [data-mj="game-catalog-layout"]
 [data-mj="page-content"] [role="button"] {
   border-color: var(--waliawin-border) !important;
   transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.app-ltr-10a4mqi {
+  border-color: #263550 !important;
 }
 
 /* Keep the ETB deposit cashback information open and remove its toggle. */
