@@ -37,8 +37,16 @@
 
   addCryptoSection();
 
-  new MutationObserver(addCryptoSection).observe(document.body, {
-    childList: true,
-    subtree: true
+  var observerTarget = document.documentElement || document.body;
+
+  if (observerTarget) {
+    new MutationObserver(addCryptoSection).observe(observerTarget, {
+      childList: true,
+      subtree: true
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', addCryptoSection, {
+    once: true
   });
 })();
