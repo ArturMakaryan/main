@@ -166,9 +166,7 @@ body {
 [data-mj="sidebar-group"].active-link,
 [data-mj="sidebar-group"][aria-current="page"],
 [data-mj="sidebar-group"] .active-link,
-[data-mj="sidebar-group"] [aria-current="page"],
-[data-mj="game-catalog-category-slider-item"].app-ltr-n5qkzc,
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-16ndkry {
+[data-mj="sidebar-group"] [aria-current="page"] {
   color: #8CC4DF !important;
 }
 
@@ -583,39 +581,6 @@ i[aria-label="filter"].sl-icon.app-ltr-r87dsi {
   color: rgb(191 182 216) !important;
 }
 
-[data-mj="game-catalog-category-slider-item"].app-ltr-1wjq4iq,
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-meob9p,
-[data-mj="game-catalog-category-slider-item"]:not(.app-ltr-n5qkzc),
-[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-16ndkry),
-[data-mj="game-catalog-category-slider-item"].app-ltr-n5qkzc,
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-16ndkry {
-  border: 1px solid #2940666b !important;
-  border-radius: 4px !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-  background: #2940666b !important;
-}
-
-[data-mj="game-catalog-category-slider-item"].app-ltr-1wjq4iq,
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-meob9p,
-[data-mj="game-catalog-category-slider-item"]:not(.app-ltr-n5qkzc),
-[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-16ndkry) {
-  box-shadow: none !important;
-  color: #b5b8c3 !important;
-}
-
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-meob9p:hover,
-[data-mj="game-catalog-category-slider-item"].app-ltr-1wjq4iq:hover,
-[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-16ndkry):hover,
-[data-mj="game-catalog-category-slider-item"]:not(.app-ltr-n5qkzc):hover {
-  border-radius: 4px !important;
-  box-shadow: none !important;
-  background: linear-gradient(#122543, #8CC4DF1A) !important;
-  background-color: #122543 !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-}
-
 [data-mj="game-catalog-mobile-search-toggle"].app-ltr-5acx5s,
 button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   border: 1px solid #2940666b !important;
@@ -887,15 +852,6 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   font-weight: 300 !important;
 }
 
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-16ndkry,
-[data-mj="game-catalog-category-slider-item"].app-ltr-n5qkzc {
-  border: 1px solid #8cc4df !important;
-  border-radius: 4px !important;
-  background: #8cc4df1f !important;
-  color: #8CC4DF !important;
-  font-weight: 300 !important;
-}
-
 [data-mj="sidebar-section"]::after {
   content: "" !important;
   position: absolute !important;
@@ -961,29 +917,6 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 [dir="rtl"] [data-mj="sidebar-section"]::after {
   right: 62px !important;
   left: 9px !important;
-}
-
-/* Current game catalog active-state classes */
-[data-mj="game-catalog-mobile-category-chip"].app-ltr-16ndkry,
-[data-mj="game-catalog-category-slider-item"].app-ltr-n5qkzc {
-  border: 1px solid #8cc4df !important;
-  border-radius: 4px !important;
-  background: #8cc4df1f !important;
-  background-color: #8cc4df1f !important;
-  box-shadow: none !important;
-  color: #8cc4df !important;
-  font-weight: 300 !important;
-}
-
-[data-mj="game-catalog-mobile-category-chip"].app-rtl-16ndkry,
-[data-mj="game-catalog-category-slider-item"].app-rtl-n5qkzc {
-  border: 1px solid #8cc4df !important;
-  border-radius: 4px !important;
-  background: #8cc4df1f !important;
-  background-color: #8cc4df1f !important;
-  box-shadow: none !important;
-  color: #8cc4df !important;
-  font-weight: 300 !important;
 }
 
 /* Complete RTL overrides */
@@ -1197,9 +1130,7 @@ body {
 [data-mj="sidebar-group"].active-link,
 [data-mj="sidebar-group"][aria-current="page"],
 [data-mj="sidebar-group"] .active-link,
-[data-mj="sidebar-group"] [aria-current="page"],
-[data-mj="game-catalog-category-slider-item"].app-rtl-n5qkzc,
-[data-mj="game-catalog-mobile-category-chip"].app-rtl-16ndkry {
+[data-mj="sidebar-group"] [aria-current="page"] {
   color: #8CC4DF !important;
 }
 
@@ -1612,39 +1543,6 @@ i[aria-label="filter"].sl-icon.app-rtl-r87dsi {
   color: rgb(191 182 216) !important;
 }
 
-[data-mj="game-catalog-category-slider-item"].app-rtl-1wjq4iq,
-[data-mj="game-catalog-mobile-category-chip"].app-rtl-meob9p,
-[data-mj="game-catalog-category-slider-item"]:not(.app-rtl-n5qkzc),
-[data-mj="game-catalog-mobile-category-chip"]:not(.app-rtl-16ndkry),
-[data-mj="game-catalog-category-slider-item"].app-rtl-n5qkzc,
-[data-mj="game-catalog-mobile-category-chip"].app-rtl-16ndkry {
-  border: 1px solid #2940666b !important;
-  border-radius: 4px !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-  background: #2940666b !important;
-}
-
-[data-mj="game-catalog-category-slider-item"].app-rtl-1wjq4iq,
-[data-mj="game-catalog-mobile-category-chip"].app-rtl-meob9p,
-[data-mj="game-catalog-category-slider-item"]:not(.app-rtl-n5qkzc),
-[data-mj="game-catalog-mobile-category-chip"]:not(.app-rtl-16ndkry) {
-  box-shadow: none !important;
-  color: #b5b8c3 !important;
-}
-
-[data-mj="game-catalog-mobile-category-chip"].app-rtl-meob9p:hover,
-[data-mj="game-catalog-category-slider-item"].app-rtl-1wjq4iq:hover,
-[data-mj="game-catalog-mobile-category-chip"]:not(.app-rtl-16ndkry):hover,
-[data-mj="game-catalog-category-slider-item"]:not(.app-rtl-n5qkzc):hover {
-  border-radius: 4px !important;
-  box-shadow: none !important;
-  background: linear-gradient(#122543, #8CC4DF1A) !important;
-  background-color: #122543 !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-}
-
 [data-mj="game-catalog-mobile-search-toggle"].app-rtl-5acx5s,
 button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   border: 1px solid #2940666b !important;
@@ -1866,15 +1764,6 @@ button[data-mj="sidebar-collapse"].sl-icon.app-rtl-1wlt9cd {
 }
 
 [data-mj="register-button"] {
-  font-weight: 300 !important;
-}
-
-[data-mj="game-catalog-mobile-category-chip"].app-rtl-16ndkry,
-[data-mj="game-catalog-category-slider-item"].app-rtl-n5qkzc {
-  border: 1px solid #8cc4df !important;
-  border-radius: 4px !important;
-  background: #8cc4df1f !important;
-  color: #8CC4DF !important;
   font-weight: 300 !important;
 }
 
