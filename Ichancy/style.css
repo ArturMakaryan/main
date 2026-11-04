@@ -857,7 +857,8 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 }
 
 [data-mj="login-button"] {
-  outline: 1px solid #8cc4df !important;
+  outline: none !important;
+  box-shadow: inset 0 0 0 1px #8cc4df !important;
   font-weight: 300 !important;
 }
 
@@ -1858,7 +1859,8 @@ button[data-mj="sidebar-collapse"].sl-icon.app-rtl-1wlt9cd {
 }
 
 [data-mj="login-button"] {
-  outline: 1px solid #8cc4df !important;
+  outline: none !important;
+  box-shadow: inset 0 0 0 1px #8cc4df !important;
   font-weight: 300 !important;
 }
 
