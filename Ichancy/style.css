@@ -881,6 +881,24 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   border-top: 1px solid rgb(255 255 255 / 10%) !important;
 }
 
+[data-mj="bottom-nav-item"],
+[data-mj="bottom-nav-item"] * {
+  color: #a5b0c1 !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="bottom-nav-item"].active-link,
+[data-mj="bottom-nav-item"][aria-current="page"],
+[data-mj="bottom-nav-item"] .active-link,
+[data-mj="bottom-nav-item"] [aria-current="page"],
+[data-mj="bottom-nav-item"].active-link *,
+[data-mj="bottom-nav-item"][aria-current="page"] *,
+[data-mj="bottom-nav-item"] .active-link *,
+[data-mj="bottom-nav-item"] [aria-current="page"] * {
+  color: #8cc4df !important;
+  font-weight: 300 !important;
+}
+
 .app-ltr-f567ui {
   display: flex !important;
   align-items: flex-start;
