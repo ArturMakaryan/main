@@ -203,7 +203,6 @@ body {
   border: 1px solid #263347 !important;
   border-radius: 4px !important;
   overflow: hidden !important;
-  border: 1px solid #2940666b !important;
   gap: 0px !important;
   margin: 12px 0px 12px 56px !important;
   transform-origin: left center !important;
@@ -899,8 +898,11 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   font-weight: 300 !important;
 }
 
-.app-ltr-ky5m1:disabled {
-  opacity: 50% !important;
+.app-ltr-ky5m1:disabled,
+.app-ltr-eusxv1:disabled,
+.app-rtl-ky5m1:disabled,
+.app-rtl-eusxv1:disabled {
+  opacity: 40% !important;
 }
 
 .app-ltr-f567ui {
@@ -1254,7 +1256,7 @@ body {
   flex-direction: row !important;
   background: #0B1629 !important;
   border-radius: 4px !important;
-  border: 1px solid #2940666b !important;
+  border: 1px solid #263347 !important;
   gap: 0px !important;
   margin: 12px 0px 12px 56px !important;
   transform-origin: left center !important;
