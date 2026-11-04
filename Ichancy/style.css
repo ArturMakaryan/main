@@ -872,6 +872,10 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   background: linear-gradient(rgb(223, 247, 253) 0%, rgb(38, 89, 140) 100%) !important;
 }
 
+[data-mj="promotions-tabs"]:not(:has(> :nth-child(2))) {
+  display: none !important;
+}
+
 @media (max-width: 840px) {
   .sl-navlink.app-ltr-1mj9rd0:hover:not(.active-link):not([aria-current="page"]),
   .sl-navlink.app-rtl-1mj9rd0:hover:not(.active-link):not([aria-current="page"]) {
