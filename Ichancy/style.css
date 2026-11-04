@@ -200,6 +200,7 @@ body {
   display: flex !important;
   flex-direction: row !important;
   background: #0B1629 !important;
+  border: 1px solid #263347 !important;
   border-radius: 4px !important;
   overflow: hidden !important;
   border: 1px solid #2940666b !important;
@@ -863,6 +864,16 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 
 [data-mj="register-button"] {
   font-weight: 300 !important;
+}
+
+@media (max-width: 840px) {
+  .sl-navlink.app-ltr-1mj9rd0:hover:not(.active-link):not([aria-current="page"]),
+  .sl-navlink.app-rtl-1mj9rd0:hover:not(.active-link):not([aria-current="page"]) {
+    border-right: 0 !important;
+    border-left: 0 !important;
+    background: transparent !important;
+    color: inherit !important;
+  }
 }
 
 [data-mj="footer"] {
