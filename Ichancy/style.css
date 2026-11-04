@@ -863,6 +863,13 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 
 [data-mj="register-button"] {
   font-weight: 300 !important;
+  transition: transform 120ms ease, filter 120ms ease !important;
+}
+
+[data-mj="register-button"]:active {
+  transform: scale(0.99) !important;
+  filter: brightness(0.9) !important;
+  background: linear-gradient(rgb(223, 247, 253) 0%, rgb(38, 89, 140) 100%) !important;
 }
 
 @media (max-width: 840px) {
