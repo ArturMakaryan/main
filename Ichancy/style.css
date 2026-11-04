@@ -899,6 +899,10 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
   font-weight: 300 !important;
 }
 
+.app-ltr-ky5m1:disabled {
+  opacity: 50% !important;
+}
+
 .app-ltr-f567ui {
   display: flex !important;
   align-items: flex-start;
@@ -934,6 +938,19 @@ button[data-mj="sidebar-collapse"].sl-icon.app-ltr-1wlt9cd {
 [data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-16ndkry) {
   box-shadow: none !important;
   color: #b8bcc1 !important;
+}
+
+[data-mj="game-catalog-category-slider-item"]:hover {
+  background-color: #31435d !important;
+  border: 1px solid #475770 !important;
+}
+
+.app-ltr-fh50n8 .app-ltr-1pi0xo3 {
+  display: none !important;
+}
+
+.app-rtl-fh50n8 .app-rtl-1pi0xo3 {
+  display: none !important;
 }
 
 /* Consolidated sidebar structure */
