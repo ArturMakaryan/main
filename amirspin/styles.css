@@ -325,6 +325,42 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   border-radius: 0 !important;
 }
 
+/* Arabic collapsed sidebar */
+[data-mj="sidebar"].app-rtl-17u1px6 {
+  width: 68px !important;
+  padding: 0 !important;
+}
+
+.app-rtl-es55kh {
+  display: flex !important;
+  flex-direction: column !important;
+  border: 1px solid #ffffff14 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  gap: 0 !important;
+  margin-right: 2px !important;
+  width: 42px !important;
+  margin-top: 60px !important;
+  transform-origin: top center !important;
+  transition:
+    margin 220ms ease,
+    width 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-group-vertical 220ms ease-out !important;
+}
+
+.app-rtl-es55kh > * {
+  transition: transform 220ms ease, opacity 180ms ease !important;
+}
+
+/* Arabic mobile sidebar wrapper */
+.app-rtl-1q5mnmx {
+  scrollbar-gutter: unset !important;
+  padding: 0 !important;
+}
+
 [data-mj="sidebar-content"].app-rtl-1gjz10j {
   border-right: 0 !important;
   border-left: 1px solid rgb(255 255 255 / 10%) !important;
