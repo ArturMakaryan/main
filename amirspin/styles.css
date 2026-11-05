@@ -1,0 +1,319 @@
+[data-mj="sidebar-section"] {
+    background-color: #30181c !important;
+    overflow: hidden;
+}
+
+.app-ltr-f7va3x {
+  right: 6px !important;
+}
+
+.sl-navlink {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: #d6c7ca !important;
+  padding-left: 10px;
+  border-radius: 0px;
+}
+
+.sl-navlink.active-link {
+  color: #f2ce7c !important;
+  background: linear-gradient(to right, #4B252D, transparent) no-repeat !important;
+  border-left: 1px solid #f2ce7c !important;
+}
+
+
+
+.sl-navlink [style*="mask-image"] {
+  width: 20px !important;
+  min-width: 20px !important;
+  height: 20px !important;
+  margin-right: 12px;
+  margin-left: 4px;
+}
+
+.sl-navlink {
+  background: linear-gradient(to right, #4B252D, transparent) no-repeat !important;
+  background-position: left center !important;
+  background-size: 0% 100% !important;
+  transition: background-size 0.3s ease !important;
+}
+
+.sl-navlink:hover {
+  background-size: 100% 100% !important;
+}
+
+button.app-ltr-f7va3x[aria-label="arrow_down"],
+button.app-ltr-f7va3x[aria-label="arrow_up"] {
+  background-color: #0f050769 !important;
+}
+
+
+/* Expanded sidebar */
+[data-mj="sidebar"].app-ltr-1huuf1k {
+  width: 260px !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Collapsed sidebar */
+[data-mj="sidebar"].app-ltr-17u1px6 {
+  width: 68px !important;
+  padding: 0 !important;
+}
+
+/* Sidebar content */
+[data-mj="sidebar-content"] {
+  border-right: 1px solid rgb(255 255 255 / 10%) !important;
+  border-radius: 0 !important;
+  padding: 0 10px 12px 10px !important;
+}
+
+.app-ltr-1q5mnmx {
+  scrollbar-gutter: unset !important;
+  padding: 0 !important;
+}
+
+
+/* Sidebar footer */
+[data-mj="sidebar-footer"] {
+  border-top: 0 !important;
+  padding: 12px 0 0 12px !important;
+}
+
+@media (max-width: 992px) {
+  [data-mj="sidebar-footer"] {
+    padding: 12px 4px 0 8px !important;
+  }
+}
+
+/* Collapse button: expanded and collapsed states */
+html body button[data-mj="sidebar-collapse"].sl-icon {
+  position: fixed !important;
+  left: 14px !important;
+  inset-inline-end: auto !important;
+  top: 12px !important;
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  background:
+    url("https://cdn.jsdelivr.net/gh/ArturMakaryan/main@5ccdb7a6b626ad2624fcc22fd668673593a34793/RoyalBets/Burger.svg")
+      center / 24px 24px no-repeat,
+    linear-gradient(#241d33, #2b243b) padding-box,
+    linear-gradient(164deg, rgb(50 49 55) 0%, rgb(47 37 67) 100%) border-box !important;
+
+  transition: none !important;
+  transition-property: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon > svg,
+html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon > svg {
+  display: none !important;
+  transition: none !important;
+  transition-property: none !important;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+/* Lucky7spin hides the special sidebar button */
+[data-mj="sidebar-special-button"] {
+  display: none !important;
+}
+
+
+/* Sidebar group links */
+[data-mj="sidebar-group"] {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  min-height: 40px !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+[data-mj="sidebar-group"].active-link,
+[data-mj="sidebar-group"][aria-current="page"],
+[data-mj="sidebar-group"] .active-link,
+[data-mj="sidebar-group"] [aria-current="page"] {
+  color: #e7c780 !important;
+}
+
+[data-mj="sidebar-group"]:hover {
+  color: #000 !important;
+}
+
+/* Expanded group container */
+.app-ltr-10a4mqi {
+  display: flex !important;
+  flex-direction: row !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  border: 1px solid #ffffff14 !important;
+  gap: 0 !important;
+  margin: 12px 0 12px 56px !important;
+  transform-origin: left center !important;
+  transition:
+    margin 220ms ease,
+    padding 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-group-horizontal 220ms ease-out !important;
+}
+
+/* Collapsed group container */
+.app-ltr-es55kh {
+  display: flex !important;
+  flex-direction: column !important;
+  border: 1px solid #ffffff14 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  gap: 0 !important;
+  margin-left: 2px !important;
+  width: 42px !important;
+  margin-top: 60px !important;
+  transform-origin: top center !important;
+  transition:
+    margin 220ms ease,
+    width 220ms ease,
+    gap 220ms ease,
+    transform 220ms ease,
+    opacity 180ms ease !important;
+  animation: rb-sidebar-group-vertical 220ms ease-out !important;
+}
+
+.app-ltr-es55kh > *,
+.app-ltr-10a4mqi > * {
+  transition:
+    transform 220ms ease,
+    opacity 180ms ease !important;
+}
+
+@keyframes rb-sidebar-group-horizontal {
+  from {
+    opacity: 0.86;
+    transform: translateX(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes rb-sidebar-group-vertical {
+  from {
+    opacity: 0.86;
+    transform: translateY(-8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 992px) {
+  .app-ltr-10a4mqi {
+    padding: 0 !important;
+    margin: 12px 0 12px 2px !important;
+  }
+}
+
+html body button[data-mj="sidebar-collapse"].sl-icon {
+  background-color: transparent !important;
+  background-image: url("https://cdn.jsdelivr.net/gh/ArturMakaryan/main@5ccdb7a6b626ad2624fcc22fd668673593a34793/RoyalBets/Burger.svg") !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+
+
+
+
+/* Default */
+[data-mj="game-catalog-category-slider-item"]:not(.app-ltr-syqgtr),
+[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-og7w64) {
+  background: #33191c !important;
+  font-weight: 300 !important;
+  box-shadow: inset 0 0 0 1px #422127 !important;
+}
+
+/* Hover, excluding active items */
+[data-mj="game-catalog-category-slider-item"]:not(.app-ltr-syqgtr):hover,
+[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-og7w64):hover {
+  background: #47232a !important;
+}
+
+/* Active */
+[data-mj="game-catalog-category-slider-item"].app-ltr-syqgtr,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-og7w64 {
+  background: #46222a !important;
+  font-weight: 300 !important;
+  box-shadow: inset 0 0 0 1px rgb(242, 206, 124) !important;
+}
+
+/* Desktop search and mobile provider input */
+input[data-mj="game-catalog-game-search"],
+input[data-mj="game-catalog-mobile-provider-input"],
+input[data-mj="game-catalog-provider-bottom-sheet-search"] {
+  border-color: #564044 !important;
+  background-color: #46222a85 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+/* Input placeholders */
+input[data-mj="game-catalog-game-search"]::placeholder,
+input[data-mj="game-catalog-mobile-provider-input"]::placeholder,
+input[data-mj="game-catalog-provider-bottom-sheet-search"]::placeholder {
+  color: #ffffff85 !important;
+  font-weight: 300 !important;
+  opacity: 1 !important;
+}
+/* Desktop provider select */
+.app-ltr-x1jmid .sl-select__control {
+  display: flex !important;
+  box-shadow: none !important;
+  border-color: #564044 !important;
+  background-color: #46222a85 !important;
+}
+
+/* Desktop search and select focus */
+input[data-mj="game-catalog-game-search"]:focus,
+.app-ltr-x1jmid .sl-select__control:focus-within,
+.app-ltr-x1jmid .sl-select__control.sl-select__control--is-focused {
+  border-color: #e7c780 !important;
+}
+
+/* Mobile search button */
+button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
+  border-color: #564044 !important;
+  background-color: #46222a85 !important;
+  color: #ffffff85 !important;
+  box-shadow: none !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="header"] {
+    background-color: #230d12 !important;
+    border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
+    box-shadow: none !important;
+}
+
+[data-mj="content-wrapper"].app-ltr-fkpkqq, [data-mj="content-wrapper"] {
+    display: flex !important;
+    max-width: calc(100% - 68px) !important;
+    margin-right: initial !important;
+}
+
+[data-mj="custom-header"] {
+  background-color: #230d12 !important;
+}
