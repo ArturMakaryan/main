@@ -8,7 +8,8 @@
     [data-ichancy-info-text][data-expanded="true"] { max-height: none; }
     [data-ichancy-info-toggle] {
       margin-top: 12px; padding: 8px 16px; border: 1px solid #8cc4df;
-      border-radius: 4px; background: transparent; color: #8cc4df;
+      border-radius: 4px; background: transparent; color: #fff;
+      height: 32px;
       font-weight: 300; cursor: pointer;
     }
     [data-ichancy-info-toggle]:hover { background: #2940666b; }
