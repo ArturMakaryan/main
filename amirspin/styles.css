@@ -324,6 +324,11 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   border: 1px solid #ffffff21 !important;
 }
 
+.app-ltr-lhbbxp p {
+  text-align: left !important;
+  text-shadow: 3px 0 5px rgb(0 0 0 / 100%) !important;
+}
+
 button[role="button"]:disabled {
   opacity: 0.4 !important;
 }
