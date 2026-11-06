@@ -326,7 +326,30 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
 
 .app-ltr-lhbbxp p {
   text-align: left !important;
-  text-shadow: 3px 0 5px rgb(0 0 0 / 100%) !important;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 50%) !important;
+  color: #FDE3A8;
+}
+
+.app-ltr-lhbbxp {
+  padding-left: 10px;
+}
+
+[data-mj="widget-pages-item"] .app-ltr-gvuq9o {
+  position: static !important;
+  inset: auto !important;
+}
+
+[data-mj="widget-pages-item"] .app-ltr-1f8yjb {
+  padding-top: 0 !important;
+}
+
+[data-mj="widget-pages-item"] {
+  gap: 8px;
+  border: none !important;
+}
+
+[data-mj="widget-pages-grid"] {
+  gap: 8px !important;
 }
 
 button[role="button"]:disabled {
