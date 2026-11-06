@@ -10,7 +10,7 @@
       margin-top: 12px; padding: 8px 16px; border: 1px solid #8cc4df;
       border-radius: 4px; background: transparent; color: #fff;
       height: 32px;
-      font-weight: 300; cursor: pointer;
+      font-family: Rubik, sans-serif; font-weight: 300; cursor: pointer;
     }
     [data-ichancy-info-toggle]:hover { background: #2940666b; }
   `;
@@ -24,15 +24,17 @@
       text.dataset.ichancyInfoText = '';
       text.dataset.expanded = 'false';
       const button = document.createElement('button');
+      const isRtl = text.classList.contains('app-rtl-1fpio1d') || getComputedStyle(panel).direction === 'rtl';
+      const labels = isRtl ? ['عرض المزيد', 'عرض أقل'] : ['See more', 'See less'];
       button.type = 'button';
       button.dataset.ichancyInfoToggle = '';
-      button.textContent = 'See more';
+      button.textContent = labels[0];
       button.setAttribute('aria-expanded', 'false');
       button.addEventListener('click', () => {
         const expanded = text.dataset.expanded !== 'true';
         text.dataset.expanded = String(expanded);
         button.setAttribute('aria-expanded', String(expanded));
-        button.textContent = expanded ? 'See less' : 'See more';
+        button.textContent = labels[expanded ? 1 : 0];
       });
       text.after(button);
     });
