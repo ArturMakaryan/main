@@ -320,6 +320,36 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   background-color: #230d12 !important;
 }
 
+[data-mj="login-button"] {
+  border: 1px solid #ffffff21 !important;
+}
+
+button[role="button"]:disabled {
+  opacity: 0.4 !important;
+}
+
+.app-ltr-x4xc5i {
+  border-top: 1px solid rgb(255 255 255 / 10%) !important;
+}
+
+[data-mj="bottom-nav-item"],
+[data-mj="bottom-nav-item"] * {
+  color: #B9ACAF !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="bottom-nav-item"].active-link,
+[data-mj="bottom-nav-item"][aria-current="page"],
+[data-mj="bottom-nav-item"] .active-link,
+[data-mj="bottom-nav-item"] [aria-current="page"],
+[data-mj="bottom-nav-item"].active-link *,
+[data-mj="bottom-nav-item"][aria-current="page"] *,
+[data-mj="bottom-nav-item"] .active-link *,
+[data-mj="bottom-nav-item"] [aria-current="page"] * {
+  color: #f2ce7c !important;
+  font-weight: 300 !important;
+}
+
 /* Arabic sidebar: mirror the expanded layout and spacing. */
 [data-mj="sidebar"].app-rtl-1huuf1k {
   width: 260px !important;
