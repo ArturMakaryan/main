@@ -41,3 +41,26 @@
   color: white !important;
 }
 
+.app-ltr-1r5piae,
+.app-ltr-1wplxy9,
+.app-ltr-g9kdhx,
+[data-mj="register-button"] {
+  transition: transform 120ms ease, filter 120ms ease !important;
+}
+
+.app-ltr-1r5piae:hover,
+.app-ltr-1wplxy9:hover,
+.app-ltr-g9kdhx:hover,
+[data-mj="register-button"]:hover {
+  transform: translateY(-1px) !important;
+  filter: brightness(1.04) !important;
+}
+
+.app-ltr-1r5piae:active,
+.app-ltr-1wplxy9:active,
+.app-ltr-g9kdhx:active,
+[data-mj="register-button"]:active {
+  transform: scale(0.99) !important;
+  filter: brightness(0.9) !important;
+}
+
