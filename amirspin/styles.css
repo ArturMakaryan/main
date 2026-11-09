@@ -321,12 +321,14 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
 }
 
 /* Last Winners */
-.app-ltr-1268fb8 {
+.app-ltr-1268fb8,
+.app-rtl-1268fb8 {
   width: 200px !important;
   max-width: 200px !important;
 }
 
-.app-ltr-svxanb {
+.app-ltr-svxanb,
+.app-rtl-svxanb {
   height: fit-content !important;
   padding: 4px 8px 4px 4px !important;
   display: flex !important;
@@ -335,12 +337,14 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   box-shadow: inset 0 0 0 1px #ffffff0d !important;
 }
 
-.app-ltr-svxanb:hover {
+.app-ltr-svxanb:hover,
+.app-rtl-svxanb:hover {
   background: #291016 !important;
   box-shadow: inset 0 0 0 1px #ffffff0d !important;
 }
 
-.app-ltr-121fhed {
+.app-ltr-121fhed,
+.app-rtl-121fhed {
   border-radius: 4px !important;
   aspect-ratio: 427 / 575 !important;
   min-width: 72px !important;
@@ -348,26 +352,31 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   min-height: 92px !important;
 }
 
-.app-ltr-svxanb .app-ltr-1lhm9a5 {
+.app-ltr-svxanb .app-ltr-1lhm9a5,
+.app-rtl-svxanb .app-rtl-1lhm9a5 {
   transition: transform 0.25s ease !important;
   transform-origin: center !important;
 }
 
-.app-ltr-svxanb:hover .app-ltr-1lhm9a5 {
+.app-ltr-svxanb:hover .app-ltr-1lhm9a5,
+.app-rtl-svxanb:hover .app-rtl-1lhm9a5 {
   transform: scale(1.06) !important;
 }
 
-.app-ltr-yawtgd {
+.app-ltr-yawtgd,
+.app-rtl-yawtgd {
   align-items: flex-start !important;
   overflow: hidden;
   padding: 8px 0 8px 8px;
 }
 
-.app-ltr-1blkpw5 {
+.app-ltr-1blkpw5,
+.app-rtl-1blkpw5 {
   width: 100%;
 }
 
-.app-ltr-i5mymr {
+.app-ltr-i5mymr,
+.app-rtl-i5mymr {
   overflow: hidden;
   text-overflow: ellipsis;
 }
