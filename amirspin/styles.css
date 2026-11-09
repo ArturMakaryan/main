@@ -320,6 +320,58 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   background-color: #230d12 !important;
 }
 
+/* Last Winners */
+.app-ltr-1268fb8 {
+  width: 200px !important;
+  max-width: 200px !important;
+}
+
+.app-ltr-svxanb {
+  height: fit-content !important;
+  padding: 4px 8px 4px 4px !important;
+  display: flex !important;
+  align-items: center !important;
+  background: #13131b !important;
+  box-shadow: inset 0 0 0 1px #ffffff0d !important;
+}
+
+.app-ltr-svxanb:hover {
+  background: #16161f !important;
+  box-shadow: inset 0 0 0 1px #1c1c26 !important;
+}
+
+.app-ltr-121fhed {
+  border-radius: 4px !important;
+  aspect-ratio: 427 / 575 !important;
+  min-width: 72px !important;
+  padding-top: 0 !important;
+  min-height: 92px !important;
+}
+
+.app-ltr-svxanb .app-ltr-1lhm9a5 {
+  transition: transform 0.25s ease !important;
+  transform-origin: center !important;
+}
+
+.app-ltr-svxanb:hover .app-ltr-1lhm9a5 {
+  transform: scale(1.06) !important;
+}
+
+.app-ltr-yawtgd {
+  align-items: flex-start !important;
+  overflow: hidden;
+  padding: 8px 0 8px 8px;
+}
+
+.app-ltr-1blkpw5 {
+  width: 100%;
+}
+
+.app-ltr-i5mymr {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 [data-mj="login-button"] {
   border: 1px solid #ffffff21 !important;
 }
