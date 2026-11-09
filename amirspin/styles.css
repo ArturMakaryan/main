@@ -331,13 +331,13 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   padding: 4px 8px 4px 4px !important;
   display: flex !important;
   align-items: center !important;
-  background: #13131b !important;
+  background: #230d12 !important;
   box-shadow: inset 0 0 0 1px #ffffff0d !important;
 }
 
 .app-ltr-svxanb:hover {
-  background: #16161f !important;
-  box-shadow: inset 0 0 0 1px #1c1c26 !important;
+  background: #291016 !important;
+  box-shadow: inset 0 0 0 1px #ffffff0d !important;
 }
 
 .app-ltr-121fhed {
