@@ -1,2 +1,35 @@
 /* Revbets custom CSS */
-/* Add site-specific styles here. */
+
+/* Account menu styles transferred from Yallaspin */
+[data-mj="account-menu"] p {
+  font-size: 14px !important;
+}
+
+[data-mj="account-menu"] a {
+  padding: 0 !important;
+}
+
+[data-mj="logout-button"] {
+  padding: 0 !important;
+  font-size: 14px !important;
+}
+
+[data-mj="logout-button"] svg,
+[data-mj="account-menu"] svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+[data-mj="account-menu"] li {
+  margin-bottom: 0 !important;
+}
+
+[data-mj="account-menu-list"] {
+  margin: 12px 0 0 !important;
+}
+
+[data-mj="account-menu"] .app-ltr-0,
+[data-mj="account-menu"] .app-rtl-0 {
+  width: 20px !important;
+  height: 20px !important;
+}
