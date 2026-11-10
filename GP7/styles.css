@@ -654,3 +654,22 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-nqb4gp:hover {
     padding: 0 !important;
   }
 }
+[data-mj="sidebar-content"] .sl-navlink {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: #acaeaf !important;
+  padding-left: 10px;
+  border-radius: 0px;
+}
+[data-mj="sidebar-content"] .sl-navlink.active-link {
+  color: #51eda3 !important;
+  border-radius: 0 8px 8px 0 !important;
+  background: #ffffff0d !important;
+}
+[data-mj="sidebar-content"] .sl-navlink:hover {
+  border-radius: 0 8px 8px 0 !important;
+  background: #ffffff0d !important;
+}
+[data-mj="sidebar-legal"] {
+  background: transparent;
+}
