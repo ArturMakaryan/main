@@ -69,6 +69,19 @@
   border: 1px solid #252a3e !important;
 }
 
+[data-mj="game-catalog-provider-search"]:focus,
+[data-mj="game-catalog-game-search"]:focus,
+[data-mj="game-catalog-provider-bottom-sheet-search"]:focus,
+[data-mj="game-catalog-mobile-provider-input"]:focus,
+[data-mj="game-catalog-mobile-search"]:focus,
+[data-mj="game-catalog-provider-search"]:active,
+[data-mj="game-catalog-game-search"]:active,
+[data-mj="game-catalog-provider-bottom-sheet-search"]:active,
+[data-mj="game-catalog-mobile-provider-input"]:active,
+[data-mj="game-catalog-mobile-search"]:active {
+  border: 1px solid #6894ff7a !important;
+}
+
 [data-mj="game-catalog-provider-search"]::placeholder,
 [data-mj="game-catalog-game-search"]::placeholder,
 [data-mj="game-catalog-provider-bottom-sheet-search"]::placeholder,
