@@ -49,8 +49,9 @@ button.app-ltr-1qq4ze1,
 button.app-ltr-1qq4ze1:hover,
 [data-mj="register-button"]:hover {
   transform: translateY(-1px) !important;
-  filter: brightness(1.04) !important;
   background: linear-gradient(143.78deg, rgb(255, 70, 45) 0%, rgb(48, 60, 224) 100%) !important;
+  background-size: 220% 220% !important;
+  animation: revbets-register-gradient 1.8s ease-in-out infinite alternate !important;
 }
 
 .app-ltr-1r5piae:active,
@@ -79,8 +80,9 @@ button.app-ltr-1qq4ze1:active,
 .app-ltr-pbih9z:hover,
 [data-mj="register-button"]:hover {
   transform: translateY(-1px) !important;
-  filter: brightness(1.04) !important;
   background: linear-gradient(143.78deg, rgb(255, 70, 45) 0%, rgb(48, 60, 224) 100%) !important;
+  background-size: 220% 220% !important;
+  animation: revbets-register-gradient 1.8s ease-in-out infinite alternate !important;
 }
 
 .app-ltr-esyg8c:active,
@@ -91,4 +93,14 @@ button.app-ltr-1qq4ze1:active,
   transform: scale(0.99) !important;
   filter: brightness(0.9) !important;
   background: linear-gradient(143.78deg, rgb(185, 28, 10) 0%, rgb(14, 20, 125) 100%) !important;
+}
+
+@keyframes revbets-register-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
 }
