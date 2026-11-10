@@ -61,6 +61,14 @@
   border: 1px solid #181c2f !important;
 }
 
+[data-mj="game-catalog-provider-search"]:hover,
+[data-mj="game-catalog-game-search"]:hover,
+[data-mj="game-catalog-provider-bottom-sheet-search"]:hover,
+[data-mj="game-catalog-mobile-provider-input"]:hover,
+[data-mj="game-catalog-mobile-search"]:hover {
+  border: 1px solid #252a3e !important;
+}
+
 [data-mj="game-catalog-provider-search"]::placeholder,
 [data-mj="game-catalog-game-search"]::placeholder,
 [data-mj="game-catalog-provider-bottom-sheet-search"]::placeholder,
