@@ -8,6 +8,29 @@ button[name="deposit"] svg {
   padding: 16px 8px 16px 12px !important;
 }
 
+.app-ltr-qrf5bq {
+  border-top: 1px solid #222c3d !important;
+  border-radius: 16px 16px 0 0 !important;
+}
+
+[data-mj="bottom-nav-item"],
+[data-mj="bottom-nav-item"] * {
+  color: #afb2be !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="bottom-nav-item"].active-link,
+[data-mj="bottom-nav-item"][aria-current="page"],
+[data-mj="bottom-nav-item"] .active-link,
+[data-mj="bottom-nav-item"] [aria-current="page"],
+[data-mj="bottom-nav-item"].active-link *,
+[data-mj="bottom-nav-item"][aria-current="page"] *,
+[data-mj="bottom-nav-item"] .active-link *,
+[data-mj="bottom-nav-item"] [aria-current="page"] * {
+  color: #6894ff !important;
+  font-weight: 300 !important;
+}
+
 /* Top Navigation */
 [data-mj="header-nav-list"] .sl-navlink,
 [data-mj="header-nav-list"] .sl-navlink p {
