@@ -44,6 +44,33 @@
   gap: 8px !important;
 }
 
+.app-ltr-1wcaknn {
+  padding: 0px !important;
+}
+
+.app-ltr-j9b189 {
+  padding: 20px !important;
+}
+
+[data-mj="game-catalog-provider-search"],
+[data-mj="game-catalog-game-search"],
+[data-mj="game-catalog-provider-bottom-sheet-search"],
+[data-mj="game-catalog-mobile-provider-input"],
+[data-mj="game-catalog-mobile-search"] {
+  background-color: #0c0f1f !important;
+  border: 1px solid #181c2f !important;
+}
+
+[data-mj="game-catalog-provider-search"]::placeholder,
+[data-mj="game-catalog-game-search"]::placeholder,
+[data-mj="game-catalog-provider-bottom-sheet-search"]::placeholder,
+[data-mj="game-catalog-mobile-provider-input"]::placeholder,
+[data-mj="game-catalog-mobile-search"]::placeholder {
+  color: #74798c !important;
+  opacity: 1;
+  font-weight: 300;
+}
+
 /* Account menu styles transferred from Yallaspin */
 [data-mj="account-menu"] p {
   font-size: 14px !important;
@@ -80,26 +107,20 @@
 
 .app-ltr-1r5piae,
 .app-ltr-1wplxy9,
-.app-ltr-g9kdhx,
-button.app-ltr-1qq4ze1,
-[data-mj="register-button"] {
+.app-ltr-g9kdhx {
   color: white !important;
   transition: transform 120ms ease, filter 120ms ease !important;
 }
 
 .app-ltr-1r5piae:hover,
 .app-ltr-1wplxy9:hover,
-.app-ltr-g9kdhx:hover,
-button.app-ltr-1qq4ze1:hover,
-[data-mj="register-button"]:hover {
+.app-ltr-g9kdhx:hover {
   transform: translateY(-1px) !important;
 }
 
 .app-ltr-1r5piae:active,
 .app-ltr-1wplxy9:active,
-.app-ltr-g9kdhx:active,
-button.app-ltr-1qq4ze1:active,
-[data-mj="register-button"]:active {
+.app-ltr-g9kdhx:active {
   transform: scale(0.99) !important;
   filter: brightness(0.9) !important;
   background: linear-gradient(143.78deg, rgb(185, 28, 10) 0%, rgb(14, 20, 125) 100%) !important;
@@ -131,5 +152,23 @@ button.app-ltr-1qq4ze1:active,
   transform: scale(0.99) !important;
   filter: brightness(0.9) !important;
   background: linear-gradient(143.78deg, rgb(185, 28, 10) 0%, rgb(14, 20, 125) 100%) !important;
+}
+
+[data-mj="register-button"]:hover {
+  background-image: linear-gradient(143.78deg, rgb(228, 41, 17), rgb(21, 29, 177), rgb(228, 41, 17)) !important;
+  background-size: 250% 250% !important;
+  animation: revbets-register-background 3.4s ease-in-out infinite;
+}
+
+@keyframes revbets-register-background {
+  0%, 100% { background-position: 0% 50%; }
+  45% { background-position: 100% 50%; }
+  55% { background-position: 85% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-mj="register-button"]:hover {
+    animation: none;
+  }
 }
 
