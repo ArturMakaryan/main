@@ -1,5 +1,49 @@
 /* Revbets custom CSS */
 
+/* Top Navigation */
+[data-mj="header-nav-list"] .sl-navlink,
+[data-mj="header-nav-list"] .sl-navlink p {
+  color: #afb2be !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+[data-mj="header-nav-list"] .sl-navlink {
+  padding: 4px 8px;
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+[data-mj="header-nav-list"] .sl-navlink:hover,
+[data-mj="header-nav-list"] .sl-navlink:hover p {
+  color: #fff !important;
+}
+
+[data-mj="header-nav-list"] .sl-navlink:hover span {
+  color: #fff !important;
+}
+
+[data-mj="header-nav-list"] .sl-navlink.active-link,
+[data-mj="header-nav-list"] .sl-navlink.active-link p,
+[data-mj="header-nav-list"] .sl-navlink.active-link span {
+  color: #85a8fe !important;
+}
+
+.sl-navlink {
+  font-weight: 300 !important;
+}
+
+[data-mj="header-nav-list"] {
+  justify-content: center !important;
+}
+
+[data-mj="header-nav-item"] {
+  padding-right: 0px;
+}
+
+.app-ltr-8zi5g1 {
+  gap: 8px !important;
+}
+
 /* Account menu styles transferred from Yallaspin */
 [data-mj="account-menu"] p {
   font-size: 14px !important;
