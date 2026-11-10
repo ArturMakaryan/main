@@ -62,3 +62,33 @@ button.app-ltr-1qq4ze1:active,
   filter: brightness(0.9) !important;
   background: linear-gradient(143.78deg, rgb(185, 28, 10) 0%, rgb(14, 20, 125) 100%) !important;
 }
+
+/* Register button styles for the second generated-class set */
+.app-ltr-esyg8c,
+.app-ltr-1v4ielr,
+.app-ltr-1qq4ze1,
+.app-ltr-pbih9z,
+[data-mj="register-button"] {
+  color: white !important;
+  transition: transform 120ms ease, filter 120ms ease !important;
+}
+
+.app-ltr-esyg8c:hover,
+.app-ltr-1v4ielr:hover,
+.app-ltr-1qq4ze1:hover,
+.app-ltr-pbih9z:hover,
+[data-mj="register-button"]:hover {
+  transform: translateY(-1px) !important;
+  filter: brightness(1.04) !important;
+  background: linear-gradient(143.78deg, rgb(255, 70, 45) 0%, rgb(48, 60, 224) 100%) !important;
+}
+
+.app-ltr-esyg8c:active,
+.app-ltr-1v4ielr:active,
+.app-ltr-1qq4ze1:active,
+.app-ltr-pbih9z:active,
+[data-mj="register-button"]:active {
+  transform: scale(0.99) !important;
+  filter: brightness(0.9) !important;
+  background: linear-gradient(143.78deg, rgb(185, 28, 10) 0%, rgb(14, 20, 125) 100%) !important;
+}
