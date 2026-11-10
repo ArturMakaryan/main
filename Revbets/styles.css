@@ -92,6 +92,11 @@
   font-weight: 300;
 }
 
+[data-mj="game-catalog-mobile-category-chip"] {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
 /* Account menu styles transferred from Yallaspin */
 [data-mj="account-menu"] p {
   font-size: 14px !important;
