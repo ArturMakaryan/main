@@ -4,6 +4,10 @@ button[name="deposit"] svg {
   color: white !important;
 }
 
+.app-ltr-1q5mnmx {
+  padding: 16px 8px 16px 12px !important;
+}
+
 /* Top Navigation */
 [data-mj="header-nav-list"] .sl-navlink,
 [data-mj="header-nav-list"] .sl-navlink p {
