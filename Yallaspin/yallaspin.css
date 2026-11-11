@@ -517,7 +517,8 @@ body::before {
     overflow: visible !important;
   }
 
-  [data-mj="bottom-nav-item"] {
+  .app-ltr-x4xc5i > button,
+  .app-ltr-x4xc5i > a {
     min-width: 0 !important;
     display: flex !important;
     flex-direction: column !important;
