@@ -502,10 +502,6 @@ body::before {
   gap: 4px !important;
 }
 
-[data-menu-open] {
-  overflow: visible !important;
-}
-
 /* Mobile bottom navigation */
 @media (max-width: 767px) {
   .app-ltr-x4xc5i,
