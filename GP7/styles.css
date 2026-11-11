@@ -183,46 +183,6 @@ li[data-mj="sidebar-section"] {
   }
 }
 
-button[data-mj="sidebar-collapse"].sl-icon {
-  position: fixed !important;
-  left: 14px !important;
-  top: 12px !important;
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  border: 1px solid transparent !important;
-  border-radius: 8px !important;
-  box-shadow: none !important;
-  background:
-    linear-gradient(rgb(255 255 255 / 6%), rgb(255 255 255 / 6%)) padding-box,
-    linear-gradient(164deg, rgb(255 255 255 / 6%) 0%, rgb(255 255 255 / 6%) 100%) border-box !important;
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
-}
-
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon,
-button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon {
-  background-image: url("../RoyalBets/Burger.svg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: 24px 24px !important;
-}
-
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon > svg,
-button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon > svg {
-  display: none !important;
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
-}
-
-button[data-mj="sidebar-collapse"].sl-icon > svg {
-  transition: none !important;
-  animation: none !important;
-  transform: none !important;
-}
-
 [data-mj="page-content"] {
   background: transparent !important;
 }
@@ -318,11 +278,6 @@ button[data-mj="sidebar-collapse"].sl-icon > svg {
   box-shadow: 0 0 0 1px var(--gp7-selected) !important;
 }
 
-i[aria-label="search"].sl-icon,
-i[aria-label="filter"].sl-icon {
-  color: #a0a4b7 !important;
-}
-
 button[data-mj="game-catalog-mobile-search-toggle"] {
   border: 1px solid var(--gp7-input-border) !important;
   border-radius: 8px !important;
@@ -374,20 +329,6 @@ button[data-mj="game-catalog-mobile-search-toggle"] {
 .top-events {
   scrollbar-width: none !important;
   gap: 8px !important;
-}
-
-button[aria-label="arrow_down"].sl-icon.app-ltr-nqb4gp,
-button[aria-label="arrow_up"].sl-icon.app-ltr-nqb4gp {
-  width: 32px !important;
-  min-width: 32px !important;
-  height: 32px !important;
-  right: 6px !important;
-  background: transparent !important;
-}
-
-button[aria-label="arrow_down"].sl-icon.app-ltr-nqb4gp:hover,
-button[aria-label="arrow_up"].sl-icon.app-ltr-nqb4gp:hover {
-  background: rgb(255 255 255 / 4%) !important;
 }
 
 [data-mj="footer"] {
