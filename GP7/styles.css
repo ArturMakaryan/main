@@ -673,3 +673,6 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-nqb4gp:hover {
 [data-mj="sidebar-legal"] {
   background: transparent;
 }
+[data-mj="sidebar-legal"] {
+  border-top: 1px solid #ffffff14;
+}
