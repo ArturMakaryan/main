@@ -4,7 +4,8 @@
 }
 
 /* VIP background */
-.app-ltr-9qe4wz > div {
+.app-ltr-9qe4wz > div,
+.app-ltr-n3laq9 > div {
   background-color: #07120d !important;
   background-image: url("./background-space.png") !important;
   background-position: center !important;
