@@ -424,29 +424,6 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-ezsda4,
   transform: translateY(-1px) !important;
 }
 
-.app-ltr-i6bazn,
-.app-rtl-i6bazn {
-  height: auto !important;
-  padding-top: 4px !important;
-  overflow: hidden !important;
-  transform-origin: top left !important;
-  animation: rb-sidebar-submenu-open 240ms ease-out !important;
-  transition:
-    clip-path 240ms ease,
-    opacity 200ms ease,
-    transform 240ms ease !important;
-}
-
-.app-ltr-i6bazn {
-  margin-left: 26px !important;
-  border-left: 1px solid #ffffff21 !important;
-}
-
-.app-rtl-i6bazn {
-  margin-right: 26px !important;
-  border-right: 1px solid #ffffff21 !important;
-}
-
 .app-ltr-3qxets,
 .app-rtl-3qxets {
   transform-origin: top left !important;
@@ -458,20 +435,6 @@ a[data-mj="game-catalog-category-slider-item"].app-rtl-ezsda4,
 .app-ltr-3qxets .sl-navlink,
 .app-rtl-3qxets .sl-navlink {
   animation: rb-sidebar-submenu-item-open 260ms ease-out both !important;
-}
-
-@keyframes rb-sidebar-submenu-open {
-  from {
-    opacity: 0;
-    clip-path: inset(0 0 100% 0);
-    transform: translateY(-6px);
-  }
-
-  to {
-    opacity: 1;
-    clip-path: inset(0 0 0 0);
-    transform: translateY(0);
-  }
 }
 
 @keyframes rb-sidebar-submenu-content-open {
