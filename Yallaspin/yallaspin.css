@@ -517,17 +517,6 @@ body::before {
     overflow: visible !important;
   }
 
-  .app-ltr-x4xc5i > button,
-  .app-ltr-x4xc5i > a {
-    min-width: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    white-space: nowrap !important;
-  }
-
   [data-mj="bottom-nav-item"][href*="/casino/"] {
     position: relative !important;
     isolation: isolate !important;
