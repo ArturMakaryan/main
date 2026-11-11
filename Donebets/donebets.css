@@ -71,7 +71,8 @@ button[data-donebets-deposit-ready="true"] {
   justify-content: center !important;
   gap: 6px !important;
   width: auto !important;
-  padding: 0 6px !important;
+  min-width: 82px !important;
+  padding: 0 10px !important;
   line-height: 1 !important;
   white-space: nowrap !important;
 }
@@ -175,8 +176,14 @@ html body [data-mj="footer-bottom"] [data-mj="footer-copyright"] {
 .app-rtl-1q5mnmx {
   padding: 16px 8px 16px 12px !important;
 }
-[data-mj="nav-item"],
-[data-mj="nav-item"] .sl-navlink {
+.sl-navlink.app-ltr-1gxbn0w,
+.sl-navlink.app-rtl-1gxbn0w,
+.sl-navlink.app-ltr-1uuw6xy,
+.sl-navlink.app-rtl-1uuw6xy {
+  background: none !important;
+}
+
+[data-mj="nav-item"] {
   background: none !important;
 }
 
