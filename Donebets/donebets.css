@@ -71,7 +71,7 @@ button[data-donebets-deposit-ready="true"] {
   justify-content: center !important;
   gap: 6px !important;
   width: auto !important;
-  padding: 0 10px !important;
+  padding: 0 6px !important;
   line-height: 1 !important;
   white-space: nowrap !important;
 }
