@@ -175,6 +175,7 @@ html body [data-mj="footer-bottom"] [data-mj="footer-copyright"] {
 .app-rtl-1q5mnmx {
   padding: 16px 8px 16px 12px !important;
 }
+[data-mj="nav-item"],
 [data-mj="nav-item"] .sl-navlink {
   background: none !important;
 }
