@@ -4,16 +4,12 @@
 }
 
 /* VIP background */
-.app-ltr-9qe4wz {
+.app-ltr-9qe4wz > div {
   background-color: #07120d !important;
   background-image: url("./background-space.png") !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-}
-
-.app-ltr-9qe4wz * {
-  background-color: transparent !important;
 }
 
 @media screen and (max-width: 992px) {
