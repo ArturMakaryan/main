@@ -23,15 +23,6 @@ body::before {
   box-shadow: none !important;
 }
 
-[data-mj="custom-header"],
-[data-mj="custom-header"].app-ltr-181sjs,
-[data-mj="custom-header"].app-ltr-36wkws {
-  display: flex !important;
-  background-color: #071818 !important;
-  border-bottom: 0 !important;
-  box-shadow: none !important;
-}
-
 [data-mj="login-button"].app-ltr-zza7s,
 [data-mj="login-button"].app-ltr-1a7kbg9 {
   background: rgb(34, 47, 47) !important;
