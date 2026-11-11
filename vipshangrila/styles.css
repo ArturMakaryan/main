@@ -11,6 +11,10 @@
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+
+.app-ltr-9qe4wz > div::before,
+.app-ltr-n3laq9 > div::before {
   opacity: 0.3 !important;
 }
 
