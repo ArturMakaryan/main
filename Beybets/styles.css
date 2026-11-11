@@ -1,0 +1,92 @@
+/* Beybets custom styles */
+
+[data-mj="header"] {
+  border-bottom: 1px solid rgb(255 255 255 / 10%) !important;
+  background: #1a2c38 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="custom-header"] {
+  background: #1a2c38 !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-ym8a8q,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-7ycqt5,
+[data-mj="game-catalog-category-slider-item"].app-ltr-1q03lhd,
+[data-mj="game-catalog-category-slider-item"].app-ltr-1xbjkhs {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  background: #364551 !important;
+  color: #B5B8C3 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-1vffkr3,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-h7o1hn {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  background: #364551 !important;
+  color: #B5B8C3 !important;
+  box-shadow: none !important;
+}
+
+[data-mj="game-catalog-category-slider-item"].app-ltr-123n9wd,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-3viwl0 {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  background: #364551 !important;
+}
+
+.ph-event-card {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  background:
+    linear-gradient(9deg, #112F43, #0D2333) padding-box,
+    linear-gradient(113.67deg, rgb(29 68 92) 0%, rgb(23 42 52) 100%) border-box !important;
+}
+
+.app-ltr-1xe74qf .app-ltr-1268fb8 {
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  background:
+    linear-gradient(9deg, #112F43, #0D2333) padding-box,
+    linear-gradient(113.67deg, rgb(29 68 92) 0%, rgb(23 42 52) 100%) border-box !important;
+}
+
+[data-mj="footer-nav"] {
+  padding: 29px !important;
+}
+
+[data-mj="widget-payments"] {
+  box-shadow: none !important;
+}
+
+[data-mj="footer"] {
+  border-top: 1px solid rgb(255 255 255 / 10%) !important;
+}
+
+.app-ltr-ca8dpi-container {
+  margin-left: 12px !important;
+}
+
+/* Hide mobile bottom navigation only while a game/sportsbook player is open. */
+@media screen and (max-width: 1024px) {
+  html body [data-mj="root-layout"]:has(#sportsbook-wrapper) [data-mj="bottom-nav"],
+  html body [data-mj="content-wrapper"]:has(#sportsbook-wrapper) > [data-mj="bottom-nav"],
+  html body [data-mj="page-content"]:has(#sportsbook-wrapper) ~ [data-mj="bottom-nav"],
+  html body [data-mj="page-content"]:has(iframe#firstSportbook) ~ [data-mj="bottom-nav"],
+  html.beybets-game-open body [data-mj="bottom-nav"],
+  body.beybets-game-open [data-mj="bottom-nav"],
+  html body [data-mj="bottom-nav"][data-beybets-game-hidden="true"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+}
