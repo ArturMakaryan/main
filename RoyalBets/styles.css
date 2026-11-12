@@ -30,23 +30,6 @@ input[data-mj="game-catalog-provider-search"].app-ltr-191h9jm,
   box-shadow: none !important;
 }
 
-[data-mj="sidebar"].app-ltr-17u1px6 {
-  width: 68px !important;
-  padding: 0 !important;
-}
-
-[data-mj="sidebar"].app-ltr-1huuf1k {
-  width: 260px !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-}
-
-li[data-mj="sidebar-section"].app-ltr-io3k4 {
-  display: flex !important;
-  background-color: transparent !important;
-  margin-bottom: 8px !important;
-}
-
 .app-ltr-i6bazn {
   height: auto !important;
   margin-left: 24px !important;
@@ -147,15 +130,6 @@ li[data-mj="sidebar-section"].app-ltr-io3k4 {
   animation: rb-sidebar-group-horizontal 220ms ease-out !important;
 }
 
-button[aria-label="arrow_down"].sl-icon.app-ltr-6zgeic,
-button[aria-label="arrow_up"].sl-icon.app-ltr-6zgeic {
-  width: 32px !important;
-  min-width: 32px !important;
-  height: 32px !important;
-  background-color: transparent !important;
-  right: 6px !important;
-}
-
 .app-ltr-17y30q7,
 .app-ltr-efiit2,
 .app-ltr-1e9xm8a {
@@ -181,16 +155,6 @@ button[aria-label="arrow_up"].sl-icon.app-ltr-6zgeic {
 .keen-slider__slide.app-ltr-upe1zs,
 .app-ltr-xvzcfm,
 .app-ltr-g2l7yj,
-button[aria-label="arrow_left"].sl-icon.app-ltr-1ucxo6b,
-button[aria-label="arrow_right"].sl-icon.app-ltr-1ucxo6b,
-button[aria-label="user"].sl-icon.app-ltr-1ucxo6b,
-button[data-mj="sidebar-collapse"].sl-icon.app-ltr-16cu704,
-button[data-mj="sidebar-collapse"].sl-icon.app-ltr-au4yrk,
-button[aria-label="arrow_left"].sl-icon.app-ltr-1ius09c,
-button[aria-label="arrow_right"].sl-icon.app-ltr-1ius09c,
-button[aria-label="arrow_left"].sl-icon.app-ltr-v4gv5f,
-button[aria-label="arrow_right"].sl-icon.app-ltr-v4gv5f,
-button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914,
 [data-mj="game-catalog-category-slider-item"],
 [data-mj="game-catalog-mobile-category-chip"] {
   border: 1px solid transparent !important;
@@ -262,63 +226,6 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-j2g914,
 .app-ltr-1d93vvc {
   background: #1e162f !important;
   background-color: #1e162f !important;
-}
-
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4yrk {
-  inset-inline-end: 14px !important;
-  top: 8px !important;
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  background-image: url("./Burger.svg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: 24px 24px !important;
-}
-
-button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-au4yrk {
-  inset-inline-end: 207px !important;
-  top: 12px !important;
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  background-image: url("./Burger.svg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: 24px 24px !important;
-}
-
-button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-au4yrk > svg {
-  display: none !important;
-}
-
-button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4yrk > svg {
-  display: none !important;
-}
-
-html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4yrk,
-html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-au4yrk {
-  position: fixed !important;
-  left: 12px !important;
-  inset-inline-end: auto !important;
-  top: 12px !important;
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  transition: none !important;
-  transition-property: none !important;
-  animation: none !important;
-  transform: none !important;
-  will-change: auto !important;
-}
-
-html body button[data-mj="sidebar-collapse"][aria-label="arrow_right"].sl-icon.app-ltr-au4yrk > svg,
-html body button[data-mj="sidebar-collapse"][aria-label="arrow_left"].sl-icon.app-ltr-au4yrk > svg {
-  transition: none !important;
-  transition-property: none !important;
-  animation: none !important;
-  transform: none !important;
-  will-change: auto !important;
 }
 
 .app-ltr-es55kh {
