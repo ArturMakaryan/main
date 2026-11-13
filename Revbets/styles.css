@@ -1,5 +1,37 @@
 /* Revbets custom CSS */
 
+/* Red-to-blue glow on top */
+body::before {
+  content: "";
+  position: fixed;
+  right: 50px;
+  bottom: -100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  background: linear-gradient(109.26deg, rgba(225, 37, 58, 1) 0%, rgba(47, 107, 255, 1) 100%);
+  filter: blur(100px);
+  opacity: 0.35;
+}
+
+/* Blue glow below */
+body::after {
+  content: "";
+  position: fixed;
+  right: -200px;
+  bottom: 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  background: rgba(47, 107, 255, 1);
+  filter: blur(100px);
+  opacity: 0.35;
+}
+
 button[name="deposit"] svg {
   color: white !important;
 }
@@ -69,6 +101,32 @@ button[name="deposit"] svg {
 
 [data-mj="header-nav-item"] {
   padding-right: 0px;
+}
+
+[data-mj="header-nav-item"] a {
+  position: relative;
+}
+
+[data-mj="header-nav-item"] a::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+  left: 12px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(225, 37, 58, 1.00) 0%, rgba(47, 107, 255, 1.00) 100%);
+  box-shadow: 0 0 10px #85a8ff80;
+  opacity: 0;
+  transform: scaleX(0.35);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+[data-mj="header-nav-item"] a:hover::after,
+[data-mj="header-nav-item"] a.active-link::after,
+[data-mj="header-nav-item"] a[aria-current="page"]::after {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 .app-ltr-8zi5g1 {
