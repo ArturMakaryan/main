@@ -46,7 +46,6 @@ textarea {
   display: flex !important;
   flex-direction: column !important;
   width: 100% !important;
-  min-height: 100vh !important;
 }
 
 [data-mj="root-layout"] {
@@ -704,12 +703,6 @@ html body .app-ltr-1wdhvac [wrap="wrap"].app-ltr-1o3dgb
 
 [data-mj="footer"] [data-mj="footer-bottom"] [data-mj="social-links"] svg {
   color: var(--waliawin-mint) !important;
-}
-
-/* Remove the host layout constraints from the generated header wrapper. */
-
-#root {
-  --site-header-height: unset !important;
 }
 
 .app-ltr-1q5mnmx {
