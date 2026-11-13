@@ -42,10 +42,6 @@ textarea {
   font-family: inherit;
 }
 
-#root {
-  --site-header-height: 0px !important;
-}
-
 [data-mj="root-layout"] {
   display: contents !important;
 }
