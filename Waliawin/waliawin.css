@@ -42,14 +42,6 @@ textarea {
   font-family: inherit;
 }
 
-#root {
-  --announcement-height: initial !important;
-  --site-header-height: initial !important;
-  display: flex !important;
-  flex-direction: column !important;
-  width: 100% !important;
-}
-
 [data-mj="root-layout"] {
   display: contents !important;
 }
