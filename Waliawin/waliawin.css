@@ -79,7 +79,6 @@ body a {
    ========================= */
 
 [data-mj="header"] {
-  position: relative;
   z-index: 20;
   background:
     radial-gradient(
