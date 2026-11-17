@@ -290,3 +290,4 @@ button[name="deposit"] svg {
   }
 }
 
+[data-mj="widget-pages"]:has(a[href="/en/home/casino"], a[href="/ru/home/casino"]) .app-ltr-1uys7bq { text-align: left; padding-left: 4px; }
