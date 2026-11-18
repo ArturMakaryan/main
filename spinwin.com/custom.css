@@ -30,7 +30,6 @@
 [data-mj="content-wrapper"].app-ltr-fkpkqq,
 [data-mj="content-wrapper"] {
   display: flex !important;
-  max-width: calc(100% - 68px) !important;
   margin-right: initial !important;
 }
 
@@ -58,7 +57,6 @@ input[data-mj="game-catalog-mobile-provider-input"].app-ltr-tj2ky8 {
 
 .app-ltr-79elbk,
 .css-hzxgfa.app-ltr-rnjuc1,
-i[aria-label="search"].sl-icon.app-ltr-45fs6o,
 i[aria-label="filter"].sl-icon.app-ltr-r87dsi {
   color: #a0a4b7 !important;
 }
@@ -115,12 +113,6 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon.app-ltr-1irgn6z {
   background-color: #19213e !important;
   font-size: 14px !important;
   font-weight: 300 !important;
-}
-
-@media (max-width: 992px) {
-  [data-mj="content-wrapper"].app-ltr-fkpkqq {
-    max-width: none !important;
-  }
 }
 
 .app-ltr-1uu5pku {
