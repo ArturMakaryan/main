@@ -1,43 +1,95 @@
-/* JanoGames custom styles */
+[data-mj="header-nav-item"] a,
+[data-mj="header-nav-item"] a * {
+  color: #9295a9 !important;
+  font-weight: 300 !important;
+  transition:
+    color 200ms ease,
+    transform 200ms ease !important;
+}
 
-[data-mj="header-nav-item"] {
-  padding: 0px !important;
+[data-mj="header-nav-list"] p {
+  font-weight: 300 !important;
+  font-size: 13px !important;
+  color: #9295a9 !important;
+}
+
+[data-mj="header-nav-item"] a:hover {
+  transform: translateY(-2px) !important;
+}
+
+[data-mj="header-nav-item"] a:hover * {
+  color: #fff !important;
+  text-shadow: 0 0 6px #00000061 !important;
+}
+
+[data-mj="header-nav-item"] a.active-link,
+[data-mj="header-nav-item"] a[aria-current="page"] {
+  background-image: linear-gradient(180deg, #201f1e00, #f5b3242e) !important;
+  color: #f5b324 !important;
+  fill: #f5b324 !important;
+}
+
+
+[data-mj="header-nav-item"] a.active-link * {
+  color: #f5b324 !important;
+  border: 1px solid rgb(0 0 0 / 0) !important;
+}
+
+[data-mj="header-nav-item"] a.active-link {
+  border-bottom: 1px solid #ffc62e9e !important;
+}
+
+
+
+[data-mj="header-nav-list"] button {
+  transition:
+    color 200ms ease,
+    transform 200ms ease !important;
+}
+
+[data-mj="header-nav-list"] button:hover {
+  transform: translateY(-2px) !important;
 }
 
 [data-mj="header-nav-list"] {
   justify-content: center !important;
 }
 
+[data-mj="header-nav-item"] {
+  padding: 0px !important;
+}
+
+
 /* ===== Game catalog (ported from amirspin) ===== */
 
 /* Category items: default */
 [data-mj="game-catalog-category-slider-item"]:not(.app-ltr-1xq5651),
 [data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-e6er05) {
-  background: #33191c !important;
+  background: #262c4d !important;
   font-weight: 300 !important;
-  box-shadow: inset 0 0 0 1px #422127 !important;
+  box-shadow: inset 0 0 0 1px #9295a942 !important;
 }
 
 /* Category items: hover, excluding active */
 [data-mj="game-catalog-category-slider-item"]:not(.app-ltr-1xq5651):hover,
 [data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-e6er05):hover {
-  background: #47232a !important;
+  background: #262c4d !important;
 }
 
 /* Category items: active */
 [data-mj="game-catalog-category-slider-item"].app-ltr-1xq5651,
 [data-mj="game-catalog-mobile-category-chip"].app-ltr-e6er05 {
-  background: #46222a !important;
+  background: #262c4d !important;
   font-weight: 300 !important;
-  box-shadow: inset 0 0 0 1px rgb(242, 206, 124) !important;
+  box-shadow: inset 0 0 0 1px #37aefe !important;
 }
 
 /* Desktop search and mobile provider input */
 input[data-mj="game-catalog-game-search"],
 input[data-mj="game-catalog-mobile-provider-input"],
 input[data-mj="game-catalog-provider-bottom-sheet-search"] {
-  border-color: #564044 !important;
-  background-color: #46222a85 !important;
+  border-color: #9295a942 !important;
+  background-color: #262c4d82 !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
@@ -55,23 +107,55 @@ input[data-mj="game-catalog-provider-bottom-sheet-search"]::placeholder {
 .app-ltr-x1jmid .sl-select__control {
   display: flex !important;
   box-shadow: none !important;
-  border-color: #564044 !important;
-  background-color: #46222a85 !important;
+  border-color: #9295a942 !important;
+  background-color: #262c4d75 !important;
 }
 
 /* Desktop search and select focus */
 input[data-mj="game-catalog-game-search"]:focus,
 .app-ltr-x1jmid .sl-select__control:focus-within,
 .app-ltr-x1jmid .sl-select__control.sl-select__control--is-focused {
-  border-color: #e7c780 !important;
+  border-color: #37aefe !important;
 }
 
 /* Mobile search button */
 button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
-  border-color: #564044 !important;
-  background-color: #46222a85 !important;
+  border-color: #9295a942 !important;
+  background-color: #262c4d82 !important;
   color: #ffffff85 !important;
   box-shadow: none !important;
   font-size: 14px !important;
   font-weight: 300 !important;
+}
+
+/* Chip / tab text */
+[data-mj="game-catalog-mobile-category-chip"],
+[data-mj="game-catalog-category-slider-item"] {
+  color: #b2b5c6 !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+/* Chip / tab icon */
+[data-mj="game-catalog-mobile-category-chip"] span,
+[data-mj="game-catalog-category-slider-item"] span {
+  background-color: #b2b5c6 !important;
+}
+
+/* Selected: text */
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-e6er05,
+[data-mj="game-catalog-category-slider-item"].app-ltr-1xq5651 {
+  color: #37aefe !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+/* Selected: icon */
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-e6er05 span,
+[data-mj="game-catalog-category-slider-item"].app-ltr-1xq5651 span {
+  background-color: #37aefe !important;
+}
+
+[data-mj="game-catalog-mobile-category-chip"] {
+  padding: 0px 16px !important;
 }
