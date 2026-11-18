@@ -159,3 +159,62 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
 [data-mj="game-catalog-mobile-category-chip"] {
   padding: 0px 16px !important;
 }
+
+/* Login button */
+[data-mj="login-button"] {
+  border: 1px solid #42476596 !important;
+}
+
+/* Footer links */
+[data-mj="footer-nav-item"] .sl-navlink {
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+/* ===== Account menu (ported from Yallaspin) ===== */
+
+/* Profile card (ID, username, status, balance, bonus) */
+.app-ltr-henbgz {
+  padding: 12px !important;
+}
+
+[data-mj="account-menu-list"] {
+  margin: 12px 0 0 0 !important;
+}
+
+[data-mj="account-menu"] li {
+  margin-bottom: 0px !important;
+}
+
+[data-mj="account-menu"] a {
+  padding: 0px !important;
+}
+
+[data-mj="account-menu"] p {
+  font-size: 14px !important;
+}
+
+[data-mj="account-menu"] svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+[data-mj="account-menu"] .app-ltr-0 {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+[data-mj="logout-button"] {
+  padding: 0px !important;
+  font-size: 14px !important;
+}
+
+[data-mj="logout-button"] svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Header: no shadow */
+[data-mj="header"] {
+  box-shadow: none !important;
+}
