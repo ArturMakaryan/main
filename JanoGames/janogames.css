@@ -1,1 +1,77 @@
 /* JanoGames custom styles */
+
+[data-mj="header-nav-item"] {
+  padding: 0px !important;
+}
+
+[data-mj="header-nav-list"] {
+  justify-content: center !important;
+}
+
+/* ===== Game catalog (ported from amirspin) ===== */
+
+/* Category items: default */
+[data-mj="game-catalog-category-slider-item"]:not(.app-ltr-1xq5651),
+[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-e6er05) {
+  background: #33191c !important;
+  font-weight: 300 !important;
+  box-shadow: inset 0 0 0 1px #422127 !important;
+}
+
+/* Category items: hover, excluding active */
+[data-mj="game-catalog-category-slider-item"]:not(.app-ltr-1xq5651):hover,
+[data-mj="game-catalog-mobile-category-chip"]:not(.app-ltr-e6er05):hover {
+  background: #47232a !important;
+}
+
+/* Category items: active */
+[data-mj="game-catalog-category-slider-item"].app-ltr-1xq5651,
+[data-mj="game-catalog-mobile-category-chip"].app-ltr-e6er05 {
+  background: #46222a !important;
+  font-weight: 300 !important;
+  box-shadow: inset 0 0 0 1px rgb(242, 206, 124) !important;
+}
+
+/* Desktop search and mobile provider input */
+input[data-mj="game-catalog-game-search"],
+input[data-mj="game-catalog-mobile-provider-input"],
+input[data-mj="game-catalog-provider-bottom-sheet-search"] {
+  border-color: #564044 !important;
+  background-color: #46222a85 !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
+
+/* Input placeholders */
+input[data-mj="game-catalog-game-search"]::placeholder,
+input[data-mj="game-catalog-mobile-provider-input"]::placeholder,
+input[data-mj="game-catalog-provider-bottom-sheet-search"]::placeholder {
+  color: #ffffff85 !important;
+  font-weight: 300 !important;
+  opacity: 1 !important;
+}
+
+/* Desktop provider select */
+.app-ltr-x1jmid .sl-select__control {
+  display: flex !important;
+  box-shadow: none !important;
+  border-color: #564044 !important;
+  background-color: #46222a85 !important;
+}
+
+/* Desktop search and select focus */
+input[data-mj="game-catalog-game-search"]:focus,
+.app-ltr-x1jmid .sl-select__control:focus-within,
+.app-ltr-x1jmid .sl-select__control.sl-select__control--is-focused {
+  border-color: #e7c780 !important;
+}
+
+/* Mobile search button */
+button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
+  border-color: #564044 !important;
+  background-color: #46222a85 !important;
+  color: #ffffff85 !important;
+  box-shadow: none !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+}
