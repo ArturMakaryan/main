@@ -326,6 +326,10 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   padding: 8px 0 8px 8px;
 }
 
+.app-rtl-yawtgd {
+  padding: 8px 8px 8px 0px;
+}
+
 .app-ltr-1blkpw5,
 .app-rtl-1blkpw5 {
   width: 100%;
