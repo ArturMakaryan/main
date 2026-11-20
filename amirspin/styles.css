@@ -497,7 +497,7 @@ html body button[data-mj="sidebar-collapse"].app-rtl-32ln4z {
 
 }
 
-/* Currency dropdown (SAR / MAD / USD): hide MAD, the 2nd of exactly 3 options */
-.sl-select__menu:has(.sl-select__option:nth-child(3):last-child) .sl-select__option:nth-child(2) {
+/* Currency dropdown (SAR / MAD / USD): hide SAR, the 1st of exactly 3 options */
+.sl-select__menu:has(.sl-select__option:nth-child(3):last-child) .sl-select__option:nth-child(1) {
   display: none !important;
 }
