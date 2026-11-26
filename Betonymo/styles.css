@@ -214,10 +214,6 @@ form [id^="react-select-"][id$="-listbox"] > .sl-select__menu-list > .sl-select_
   order: 4 !important;
 }
 
-.app-ltr-19zdw54 .app-ltr-d99h6a {
-  color: #fff !important;
-}
-
 /* Hide only the first item in the XP level slider. */
 .keen-slider.app-ltr-1t9dr1w > .keen-slider__slide.app-ltr-1f7ybzm:first-child {
   display: none !important;
