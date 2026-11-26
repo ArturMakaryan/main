@@ -149,20 +149,10 @@ body * {
   width: 90% !important;
 }
 
-.app-ltr-19zdw54 .app-ltr-c7y9k9 {
-  color: #00aa57 !important;
-}
-
 .app-ltr-1l44gyp,
 .app-rtl-1l44gyp {
   max-width: 1640px !important;
 }
-
-.app-ltr-19zdw54 .app-ltr-15kov7,
-.app-rtl-19zdw54 .app-rtl-15kov7 {
-  color: rgb(0 204 118) !important;
-}
-
 
 [data-mj="widget-game-slider-header"] .app-ltr-1dzjkmt .app-ltr-r82wjp {
   position: relative !important;
@@ -458,10 +448,6 @@ body::before {
 .sl-select__control.app-ltr-1wom6cc-control:focus-within {
   background-color: #274e453b !important;
 }
-[data-mj="footer-nav-item"] a {
-  font-size: 14px !important;
-}
-
 [data-mj="account-menu"] p {
   font-size: 14px !important;
 }
