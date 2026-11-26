@@ -53,16 +53,8 @@
     linear-gradient(113.67deg, rgb(29 68 92) 0%, rgb(23 42 52) 100%) border-box !important;
 }
 
-[data-mj="footer-nav"] {
-  padding: 29px !important;
-}
-
 [data-mj="widget-payments"] {
   box-shadow: none !important;
-}
-
-[data-mj="footer"] {
-  border-top: 1px solid rgb(255 255 255 / 10%) !important;
 }
 
 .app-ltr-ca8dpi-container {
