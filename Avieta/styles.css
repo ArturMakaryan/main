@@ -281,10 +281,6 @@ a[data-mj="game-catalog-category-slider-item"][aria-selected="true"] {
   background-color: rgb(255 255 255 / 4%) !important;
 }
 
-.sl-navlink {
-  font-weight: 300 !important;
-}
-
 [data-mj="header-nav-list"] {
   justify-content: center !important;
 }
