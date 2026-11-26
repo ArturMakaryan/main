@@ -91,10 +91,6 @@ button[name="deposit"] svg {
   color: #85a8fe !important;
 }
 
-.sl-navlink {
-  font-weight: 300 !important;
-}
-
 [data-mj="header-nav-list"] {
   justify-content: center !important;
 }
