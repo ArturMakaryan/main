@@ -54,11 +54,6 @@ background-color: #22354380 !important;
 border-color: #2a4050 !important;
 font-weight: 300
 }
-[data-mj="footer-nav-item"],
-[data-mj="footer-nav-item"] * {
-font-size: 14px;
-font-weight: 300;
-}
 [data-mj="game-catalog-provider-search"],
 [data-mj="game-catalog-mobile-provider-input"],
 [data-mj="game-catalog-provider-bottom-sheet-search"],
