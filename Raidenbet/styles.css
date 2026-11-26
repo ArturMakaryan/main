@@ -6,13 +6,6 @@
   }
 }
 
-@media (min-width: 1200px) {
-  [data-mj="footer"].app-ltr-1ldnvmh,
-  [data-mj="footer"].app-rtl-1ldnvmh {
-    padding-bottom: 60px !important;
-  }
-}
-
 [data-mj="widget-pages-item"] .app-ltr-lhbbxp,
 [data-mj="widget-pages-item"] .app-rtl-lhbbxp {
   padding: 4px 6px 8px 12px !important;
@@ -81,13 +74,6 @@ a[data-mj="game-catalog-mobile-category-chip"].app-ltr-19790bj {
 [data-mj="nav-item"] .active-link *:not([data-site-badge="true"]),
 [data-mj="nav-item"] [aria-current="page"] *:not([data-site-badge="true"]) {
   color: #5a91fe !important;
-  font-size: 14px !important;
-  font-weight: 300 !important;
-}
-
-[data-mj="footer-nav-item"],
-[data-mj="footer-nav-item"] * {
-  color: #9fa4bc !important;
   font-size: 14px !important;
   font-weight: 300 !important;
 }
