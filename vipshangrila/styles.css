@@ -459,18 +459,3 @@ a[data-mj="game-catalog-category-slider-item"].app-ltr-g2pq53,
   -webkit-box-shadow: 0 0 0 1000px #14211a inset !important;
   box-shadow: 0 0 0 1000px #14211a inset !important;
 }
-
-[data-mj="footer-payment-assets"] {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
-
-[data-mj="footer-payment-assets"] img {
-  width: auto;
-  height: 24px;
-}
