@@ -192,29 +192,6 @@ button[data-mj="game-catalog-mobile-search-toggle"] {
   gap: 8px !important;
 }
 
-[data-mj="footer"] {
-  border-top: 1px solid var(--gp7-border) !important;
-  background: var(--gp7-header) !important;
-}
-
-[data-mj="footer-content"] {
-  color: #acaeaf !important;
-}
-
-[data-mj="footer-bottom"],
-[data-mj="footer-copyright"] {
-  color: #acaeaf !important;
-}
-
-[data-mj="footer-nav"] .sl-navlink {
-  color: var(--gp7-text) !important;
-}
-
-[data-mj="footer-nav-item"] a {
-  font-weight: 300 !important;
-  font-size: 14px !important;
-}
-
 [data-mj="account-menu"] p {
   font-weight: 300 !important;
 }
