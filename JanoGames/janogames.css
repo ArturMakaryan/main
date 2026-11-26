@@ -165,12 +165,6 @@ button[data-mj="game-catalog-mobile-search-toggle"].sl-icon {
   border: 1px solid #42476596 !important;
 }
 
-/* Footer links */
-[data-mj="footer-nav-item"] .sl-navlink {
-  font-weight: 300 !important;
-  font-size: 14px !important;
-}
-
 /* ===== Account menu (ported from Yallaspin) ===== */
 
 /* Profile card (ID, username, status, balance, bonus) */
